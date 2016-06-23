@@ -1,4 +1,4 @@
-package hello;
+package com.finreport.model;
 
 public class BalSheet {
 	private float compcode;

@@ -1,4 +1,4 @@
-package hello;
+package com.finreport.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

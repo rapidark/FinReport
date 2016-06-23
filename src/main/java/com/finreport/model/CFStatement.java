@@ -1,4 +1,4 @@
-package hello;
+package com.finreport.model;
 
 public class CFStatement {
 	private float compcode;

@@ -1,4 +1,4 @@
-package hello;
+package com.finreport;
 
 import java.io.IOException;
 import java.net.URI;
@@ -13,6 +13,15 @@ import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
+
+import com.finreport.model.BalSheet;
+import com.finreport.model.BalSheetList;
+import com.finreport.model.CFStatement;
+import com.finreport.model.CFStatementList;
+import com.finreport.model.FinMainIndex;
+import com.finreport.model.FinMainIndexList;
+import com.finreport.model.IncStatement;
+import com.finreport.model.IncStatementList;
 
 @Component
 public class ScheduledTasks {
@@ -56,7 +65,6 @@ public class ScheduledTasks {
 			
 			FinMainIndexList finMainIndexList = restTemplate.getForObject("http://xueqiu.com/stock/f10/finmainindex.json?symbol=SZ002353&page=1&size=4&access_token=" + token, FinMainIndexList.class);
 			for (FinMainIndex finMainIndex : finMainIndexList.getList()) {
-				System.out.println(finMainIndex);
 			}
 			
 		} catch (IOException | URISyntaxException e) {

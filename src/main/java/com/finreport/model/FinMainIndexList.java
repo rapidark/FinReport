@@ -1,11 +1,11 @@
-package hello;
+package com.finreport.model;
 
 import java.util.List;
 
-public class BalSheetList {
+public class FinMainIndexList {
 	private int comptype;
 
-	private List<BalSheet> list;
+	private List<FinMainIndex> list;
 
 	public int getComptype() {
 		return comptype;
@@ -15,11 +15,11 @@ public class BalSheetList {
 		this.comptype = comptype;
 	}
 
-	public List<BalSheet> getList() {
+	public List<FinMainIndex> getList() {
 		return list;
 	}
 
-	public void setList(List<BalSheet> list) {
+	public void setList(List<FinMainIndex> list) {
 		this.list = list;
 	}
 }
