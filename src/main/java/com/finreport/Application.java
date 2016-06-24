@@ -13,7 +13,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
 @SpringBootApplication
-@ComponentScan( basePackages = {"hello"} )
+@ComponentScan(basePackages = {"com.finreport"})
 @ImportResource("classpath:applicationContext-mybatis.xml")
 @EnableScheduling
 public class Application {
