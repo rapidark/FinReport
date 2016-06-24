@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <context id="generatorTables" targetRuntime="MyBatis3">
+     <commentGenerator>
+      <property name="suppressAllComments" value="true" />
+	 </commentGenerator>
+	 
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://ocvm.nam.nsroot.net:3306/finstatement" userId="xc03074" password="xc03074@MYSQL7" />
+   
+    <javaModelGenerator targetPackage="com.finreport.generator.model" targetProject="src/main/java" /> 
+    <sqlMapGenerator targetPackage="com.finreport.generator.mapper" targetProject="src/main/java" >
+        <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+    <!-- <javaClientGenerator targetPackage="???" targetProject="???" type="XMLMAPPER" /> -->
+    <table tableName="balance" domainObjectName="BalSheet" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" enableUpdateByPrimaryKey="false" selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false" modelType="flat"/>
+  </context>
+</generatorConfiguration>
