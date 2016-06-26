@@ -1,5 +1,6 @@
-CREATE TABLE `income` (
-  `stockcode` int(11) NOT NULL,
+DROP TABLE IF EXISTS `finstatement`.`income`;
+CREATE TABLE  `finstatement`.`income` (
+  `stockcode` char(6) NOT NULL,
   `compcode` int(11) NOT NULL,
   `publishdate` int(11) NOT NULL,
   `begindate` int(11) NOT NULL,
@@ -96,6 +97,6 @@ CREATE TABLE `income` (
   `accestimatechg` double NOT NULL DEFAULT '0',
   `debtrestruloss` double NOT NULL DEFAULT '0',
   `othersupply` double NOT NULL DEFAULT '0',
-  PRIMARY KEY (`stockcode`),
+  PRIMARY KEY (`stockcode`, `enddate`),
   KEY `date_type_index` (`compcode`,`enddate`,`quarter`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

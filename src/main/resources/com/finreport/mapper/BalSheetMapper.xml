@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.finreport.mapper.BalSheetMapper" >
+  <resultMap id="BaseResultMap" type="com.finreport.model.BalSheet" >
+    <id column="stockcode" property="stockcode" jdbcType="CHAR" />
+    <result column="compcode" property="compcode" jdbcType="INTEGER" />
+    <result column="publishdate" property="publishdate" jdbcType="INTEGER" />
+    <result column="reportdate" property="reportdate" jdbcType="INTEGER" />
+    <result column="reporttype" property="reporttype" jdbcType="INTEGER" />
+    <result column="quarter" property="quarter" jdbcType="VARCHAR" />
+    <result column="adjustdate" property="adjustdate" jdbcType="INTEGER" />
+    <result column="accstacode" property="accstacode" jdbcType="INTEGER" />
+    <result column="accstaname" property="accstaname" jdbcType="VARCHAR" />
+    <result column="curfds" property="curfds" jdbcType="DOUBLE" />
+    <result column="tradfinasset" property="tradfinasset" jdbcType="DOUBLE" />
+    <result column="notesrece" property="notesrece" jdbcType="DOUBLE" />
+    <result column="accorece" property="accorece" jdbcType="DOUBLE" />
+    <result column="prep" property="prep" jdbcType="DOUBLE" />
+    <result column="premrece" property="premrece" jdbcType="DOUBLE" />
+    <result column="interece" property="interece" jdbcType="DOUBLE" />
+    <result column="dividrece" property="dividrece" jdbcType="DOUBLE" />
+    <result column="otherrece" property="otherrece" jdbcType="DOUBLE" />
+    <result column="expotaxrebarece" property="expotaxrebarece" jdbcType="DOUBLE" />
+    <result column="subsrece" property="subsrece" jdbcType="DOUBLE" />
+    <result column="margrece" property="margrece" jdbcType="DOUBLE" />
+    <result column="intelrece" property="intelrece" jdbcType="DOUBLE" />
+    <result column="inve" property="inve" jdbcType="DOUBLE" />
+    <result column="prepexpe" property="prepexpe" jdbcType="DOUBLE" />
+    <result column="unseg" property="unseg" jdbcType="DOUBLE" />
+    <result column="expinoncurrasset" property="expinoncurrasset" jdbcType="DOUBLE" />
+    <result column="othercurrasse" property="othercurrasse" jdbcType="DOUBLE" />
+    <result column="currassetitse" property="currassetitse" jdbcType="DOUBLE" />
+    <result column="currasseform" property="currasseform" jdbcType="DOUBLE" />
+    <result column="totcurrasset" property="totcurrasset" jdbcType="DOUBLE" />
+    <result column="lendandloan" property="lendandloan" jdbcType="DOUBLE" />
+    <result column="avaisellasse" property="avaisellasse" jdbcType="DOUBLE" />
+    <result column="holdinvedue" property="holdinvedue" jdbcType="DOUBLE" />
+    <result column="longrece" property="longrece" jdbcType="DOUBLE" />
+    <result column="equiinve" property="equiinve" jdbcType="DOUBLE" />
+    <result column="otherlonginve" property="otherlonginve" jdbcType="DOUBLE" />
+    <result column="inveprop" property="inveprop" jdbcType="DOUBLE" />
+    <result column="fixedasseimmo" property="fixedasseimmo" jdbcType="DOUBLE" />
+    <result column="accudepr" property="accudepr" jdbcType="DOUBLE" />
+    <result column="fixedassenetw" property="fixedassenetw" jdbcType="DOUBLE" />
+    <result column="fixedasseimpa" property="fixedasseimpa" jdbcType="DOUBLE" />
+    <result column="fixedassenet" property="fixedassenet" jdbcType="DOUBLE" />
+    <result column="consprog" property="consprog" jdbcType="DOUBLE" />
+    <result column="engimate" property="engimate" jdbcType="DOUBLE" />
+    <result column="fixedasseclea" property="fixedasseclea" jdbcType="DOUBLE" />
+    <result column="prodasse" property="prodasse" jdbcType="DOUBLE" />
+    <result column="comasse" property="comasse" jdbcType="DOUBLE" />
+    <result column="hydrasset" property="hydrasset" jdbcType="DOUBLE" />
+    <result column="intaasset" property="intaasset" jdbcType="DOUBLE" />
+    <result column="deveexpe" property="deveexpe" jdbcType="DOUBLE" />
+    <result column="goodwill" property="goodwill" jdbcType="DOUBLE" />
+    <result column="logprepexpe" property="logprepexpe" jdbcType="DOUBLE" />
+    <result column="tradshartrad" property="tradshartrad" jdbcType="DOUBLE" />
+    <result column="defetaxasset" property="defetaxasset" jdbcType="DOUBLE" />
+    <result column="othernoncasse" property="othernoncasse" jdbcType="DOUBLE" />
+    <result column="noncasseitse" property="noncasseitse" jdbcType="DOUBLE" />
+    <result column="noncasseform" property="noncasseform" jdbcType="DOUBLE" />
+    <result column="totalnoncassets" property="totalnoncassets" jdbcType="DOUBLE" />
+    <result column="totassetitse" property="totassetitse" jdbcType="DOUBLE" />
+    <result column="totalasseform" property="totalasseform" jdbcType="DOUBLE" />
+    <result column="totasset" property="totasset" jdbcType="DOUBLE" />
+    <result column="shorttermborr" property="shorttermborr" jdbcType="DOUBLE" />
+    <result column="tradfinliab" property="tradfinliab" jdbcType="DOUBLE" />
+    <result column="notespaya" property="notespaya" jdbcType="DOUBLE" />
+    <result column="accopaya" property="accopaya" jdbcType="DOUBLE" />
+    <result column="advapaym" property="advapaym" jdbcType="DOUBLE" />
+    <result column="copeworkersal" property="copeworkersal" jdbcType="DOUBLE" />
+    <result column="taxespaya" property="taxespaya" jdbcType="DOUBLE" />
+    <result column="intepaya" property="intepaya" jdbcType="DOUBLE" />
+    <result column="divipaya" property="divipaya" jdbcType="DOUBLE" />
+    <result column="otherfeepaya" property="otherfeepaya" jdbcType="DOUBLE" />
+    <result column="margrequ" property="margrequ" jdbcType="DOUBLE" />
+    <result column="intelpay" property="intelpay" jdbcType="DOUBLE" />
+    <result column="otherpay" property="otherpay" jdbcType="DOUBLE" />
+    <result column="accrexpe" property="accrexpe" jdbcType="DOUBLE" />
+    <result column="expecurrliab" property="expecurrliab" jdbcType="DOUBLE" />
+    <result column="copewithreinrece" property="copewithreinrece" jdbcType="DOUBLE" />
+    <result column="inteticksett" property="inteticksett" jdbcType="DOUBLE" />
+    <result column="dometicksett" property="dometicksett" jdbcType="DOUBLE" />
+    <result column="defereve" property="defereve" jdbcType="DOUBLE" />
+    <result column="shorttermbdspaya" property="shorttermbdspaya" jdbcType="DOUBLE" />
+    <result column="duenoncliab" property="duenoncliab" jdbcType="DOUBLE" />
+    <result column="othercurreliabi" property="othercurreliabi" jdbcType="DOUBLE" />
+    <result column="currliabitse" property="currliabitse" jdbcType="DOUBLE" />
+    <result column="currliabform" property="currliabform" jdbcType="DOUBLE" />
+    <result column="totalcurrliab" property="totalcurrliab" jdbcType="DOUBLE" />
+    <result column="longborr" property="longborr" jdbcType="DOUBLE" />
+    <result column="bdspaya" property="bdspaya" jdbcType="DOUBLE" />
+    <result column="longpaya" property="longpaya" jdbcType="DOUBLE" />
+    <result column="specpaya" property="specpaya" jdbcType="DOUBLE" />
+    <result column="expenoncliab" property="expenoncliab" jdbcType="DOUBLE" />
+    <result column="longdefeinco" property="longdefeinco" jdbcType="DOUBLE" />
+    <result column="defeincotaxliab" property="defeincotaxliab" jdbcType="DOUBLE" />
+    <result column="othernoncliabi" property="othernoncliabi" jdbcType="DOUBLE" />
+    <result column="longliabitse" property="longliabitse" jdbcType="DOUBLE" />
+    <result column="longliabform" property="longliabform" jdbcType="DOUBLE" />
+    <result column="totalnoncliab" property="totalnoncliab" jdbcType="DOUBLE" />
+    <result column="totliabitse" property="totliabitse" jdbcType="DOUBLE" />
+    <result column="totliabform" property="totliabform" jdbcType="DOUBLE" />
+    <result column="totliab" property="totliab" jdbcType="DOUBLE" />
+    <result column="paidincapi" property="paidincapi" jdbcType="DOUBLE" />
+    <result column="capisurp" property="capisurp" jdbcType="DOUBLE" />
+    <result column="treastk" property="treastk" jdbcType="DOUBLE" />
+    <result column="specrese" property="specrese" jdbcType="DOUBLE" />
+    <result column="rese" property="rese" jdbcType="DOUBLE" />
+    <result column="generiskrese" property="generiskrese" jdbcType="DOUBLE" />
+    <result column="unreinveloss" property="unreinveloss" jdbcType="DOUBLE" />
+    <result column="undiprof" property="undiprof" jdbcType="DOUBLE" />
+    <result column="topaycashdivi" property="topaycashdivi" jdbcType="DOUBLE" />
+    <result column="curtrandiff" property="curtrandiff" jdbcType="DOUBLE" />
+    <result column="sharrighitse" property="sharrighitse" jdbcType="DOUBLE" />
+    <result column="sharrightform" property="sharrightform" jdbcType="DOUBLE" />
+    <result column="paresharrigh" property="paresharrigh" jdbcType="DOUBLE" />
+    <result column="minysharrigh" property="minysharrigh" jdbcType="DOUBLE" />
+    <result column="righaggritse" property="righaggritse" jdbcType="DOUBLE" />
+    <result column="rightaggrform" property="rightaggrform" jdbcType="DOUBLE" />
+    <result column="righaggr" property="righaggr" jdbcType="DOUBLE" />
+    <result column="rightotitse" property="rightotitse" jdbcType="DOUBLE" />
+    <result column="rightotform" property="rightotform" jdbcType="DOUBLE" />
+    <result column="totliabsharequi" property="totliabsharequi" jdbcType="DOUBLE" />
+    <result column="settresedepo" property="settresedepo" jdbcType="DOUBLE" />
+    <result column="plac" property="plac" jdbcType="DOUBLE" />
+    <result column="derifinaasset" property="derifinaasset" jdbcType="DOUBLE" />
+    <result column="reinrece" property="reinrece" jdbcType="DOUBLE" />
+    <result column="reincontrese" property="reincontrese" jdbcType="DOUBLE" />
+    <result column="purcresaasset" property="purcresaasset" jdbcType="DOUBLE" />
+    <result column="cenbankborr" property="cenbankborr" jdbcType="DOUBLE" />
+    <result column="deposit" property="deposit" jdbcType="DOUBLE" />
+    <result column="fdsborr" property="fdsborr" jdbcType="DOUBLE" />
+    <result column="deriliab" property="deriliab" jdbcType="DOUBLE" />
+    <result column="sellrepasse" property="sellrepasse" jdbcType="DOUBLE" />
+    <result column="copepoun" property="copepoun" jdbcType="DOUBLE" />
+    <result column="insucontrese" property="insucontrese" jdbcType="DOUBLE" />
+    <result column="actitradsecu" property="actitradsecu" jdbcType="DOUBLE" />
+    <result column="actiundesecu" property="actiundesecu" jdbcType="DOUBLE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    stockcode, compcode, publishdate, reportdate, reporttype, quarter, adjustdate, accstacode, 
+    accstaname, curfds, tradfinasset, notesrece, accorece, prep, premrece, interece, 
+    dividrece, otherrece, expotaxrebarece, subsrece, margrece, intelrece, inve, prepexpe, 
+    unseg, expinoncurrasset, othercurrasse, currassetitse, currasseform, totcurrasset, 
+    lendandloan, avaisellasse, holdinvedue, longrece, equiinve, otherlonginve, inveprop, 
+    fixedasseimmo, accudepr, fixedassenetw, fixedasseimpa, fixedassenet, consprog, engimate, 
+    fixedasseclea, prodasse, comasse, hydrasset, intaasset, deveexpe, goodwill, logprepexpe, 
+    tradshartrad, defetaxasset, othernoncasse, noncasseitse, noncasseform, totalnoncassets, 
+    totassetitse, totalasseform, totasset, shorttermborr, tradfinliab, notespaya, accopaya, 
+    advapaym, copeworkersal, taxespaya, intepaya, divipaya, otherfeepaya, margrequ, intelpay, 
+    otherpay, accrexpe, expecurrliab, copewithreinrece, inteticksett, dometicksett, defereve, 
+    shorttermbdspaya, duenoncliab, othercurreliabi, currliabitse, currliabform, totalcurrliab, 
+    longborr, bdspaya, longpaya, specpaya, expenoncliab, longdefeinco, defeincotaxliab, 
+    othernoncliabi, longliabitse, longliabform, totalnoncliab, totliabitse, totliabform, 
+    totliab, paidincapi, capisurp, treastk, specrese, rese, generiskrese, unreinveloss, 
+    undiprof, topaycashdivi, curtrandiff, sharrighitse, sharrightform, paresharrigh, 
+    minysharrigh, righaggritse, rightaggrform, righaggr, rightotitse, rightotform, totliabsharequi, 
+    settresedepo, plac, derifinaasset, reinrece, reincontrese, purcresaasset, cenbankborr, 
+    deposit, fdsborr, deriliab, sellrepasse, copepoun, insucontrese, actitradsecu, actiundesecu
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from balance
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from balance
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.finreport.model.BalSheet" >
+    insert into balance (stockcode, compcode, publishdate, 
+      reportdate, reporttype, quarter, 
+      adjustdate, accstacode, accstaname, 
+      curfds, tradfinasset, notesrece, 
+      accorece, prep, premrece, 
+      interece, dividrece, otherrece, 
+      expotaxrebarece, subsrece, margrece, 
+      intelrece, inve, prepexpe, 
+      unseg, expinoncurrasset, othercurrasse, 
+      currassetitse, currasseform, totcurrasset, 
+      lendandloan, avaisellasse, holdinvedue, 
+      longrece, equiinve, otherlonginve, 
+      inveprop, fixedasseimmo, accudepr, 
+      fixedassenetw, fixedasseimpa, fixedassenet, 
+      consprog, engimate, fixedasseclea, 
+      prodasse, comasse, hydrasset, 
+      intaasset, deveexpe, goodwill, 
+      logprepexpe, tradshartrad, defetaxasset, 
+      othernoncasse, noncasseitse, noncasseform, 
+      totalnoncassets, totassetitse, totalasseform, 
+      totasset, shorttermborr, tradfinliab, 
+      notespaya, accopaya, advapaym, 
+      copeworkersal, taxespaya, intepaya, 
+      divipaya, otherfeepaya, margrequ, 
+      intelpay, otherpay, accrexpe, 
+      expecurrliab, copewithreinrece, inteticksett, 
+      dometicksett, defereve, shorttermbdspaya, 
+      duenoncliab, othercurreliabi, currliabitse, 
+      currliabform, totalcurrliab, longborr, 
+      bdspaya, longpaya, specpaya, 
+      expenoncliab, longdefeinco, defeincotaxliab, 
+      othernoncliabi, longliabitse, longliabform, 
+      totalnoncliab, totliabitse, totliabform, 
+      totliab, paidincapi, capisurp, 
+      treastk, specrese, rese, 
+      generiskrese, unreinveloss, undiprof, 
+      topaycashdivi, curtrandiff, sharrighitse, 
+      sharrightform, paresharrigh, minysharrigh, 
+      righaggritse, rightaggrform, righaggr, 
+      rightotitse, rightotform, totliabsharequi, 
+      settresedepo, plac, derifinaasset, 
+      reinrece, reincontrese, purcresaasset, 
+      cenbankborr, deposit, fdsborr, 
+      deriliab, sellrepasse, copepoun, 
+      insucontrese, actitradsecu, actiundesecu
+      )
+    values (#{stockcode,jdbcType=CHAR}, #{compcode,jdbcType=INTEGER}, #{publishdate,jdbcType=INTEGER}, 
+      #{reportdate,jdbcType=INTEGER}, #{reporttype,jdbcType=INTEGER}, #{quarter,jdbcType=VARCHAR}, 
+      #{adjustdate,jdbcType=INTEGER}, #{accstacode,jdbcType=INTEGER}, #{accstaname,jdbcType=VARCHAR}, 
+      #{curfds,jdbcType=DOUBLE}, #{tradfinasset,jdbcType=DOUBLE}, #{notesrece,jdbcType=DOUBLE}, 
+      #{accorece,jdbcType=DOUBLE}, #{prep,jdbcType=DOUBLE}, #{premrece,jdbcType=DOUBLE}, 
+      #{interece,jdbcType=DOUBLE}, #{dividrece,jdbcType=DOUBLE}, #{otherrece,jdbcType=DOUBLE}, 
+      #{expotaxrebarece,jdbcType=DOUBLE}, #{subsrece,jdbcType=DOUBLE}, #{margrece,jdbcType=DOUBLE}, 
+      #{intelrece,jdbcType=DOUBLE}, #{inve,jdbcType=DOUBLE}, #{prepexpe,jdbcType=DOUBLE}, 
+      #{unseg,jdbcType=DOUBLE}, #{expinoncurrasset,jdbcType=DOUBLE}, #{othercurrasse,jdbcType=DOUBLE}, 
+      #{currassetitse,jdbcType=DOUBLE}, #{currasseform,jdbcType=DOUBLE}, #{totcurrasset,jdbcType=DOUBLE}, 
+      #{lendandloan,jdbcType=DOUBLE}, #{avaisellasse,jdbcType=DOUBLE}, #{holdinvedue,jdbcType=DOUBLE}, 
+      #{longrece,jdbcType=DOUBLE}, #{equiinve,jdbcType=DOUBLE}, #{otherlonginve,jdbcType=DOUBLE}, 
+      #{inveprop,jdbcType=DOUBLE}, #{fixedasseimmo,jdbcType=DOUBLE}, #{accudepr,jdbcType=DOUBLE}, 
+      #{fixedassenetw,jdbcType=DOUBLE}, #{fixedasseimpa,jdbcType=DOUBLE}, #{fixedassenet,jdbcType=DOUBLE}, 
+      #{consprog,jdbcType=DOUBLE}, #{engimate,jdbcType=DOUBLE}, #{fixedasseclea,jdbcType=DOUBLE}, 
+      #{prodasse,jdbcType=DOUBLE}, #{comasse,jdbcType=DOUBLE}, #{hydrasset,jdbcType=DOUBLE}, 
+      #{intaasset,jdbcType=DOUBLE}, #{deveexpe,jdbcType=DOUBLE}, #{goodwill,jdbcType=DOUBLE}, 
+      #{logprepexpe,jdbcType=DOUBLE}, #{tradshartrad,jdbcType=DOUBLE}, #{defetaxasset,jdbcType=DOUBLE}, 
+      #{othernoncasse,jdbcType=DOUBLE}, #{noncasseitse,jdbcType=DOUBLE}, #{noncasseform,jdbcType=DOUBLE}, 
+      #{totalnoncassets,jdbcType=DOUBLE}, #{totassetitse,jdbcType=DOUBLE}, #{totalasseform,jdbcType=DOUBLE}, 
+      #{totasset,jdbcType=DOUBLE}, #{shorttermborr,jdbcType=DOUBLE}, #{tradfinliab,jdbcType=DOUBLE}, 
+      #{notespaya,jdbcType=DOUBLE}, #{accopaya,jdbcType=DOUBLE}, #{advapaym,jdbcType=DOUBLE}, 
+      #{copeworkersal,jdbcType=DOUBLE}, #{taxespaya,jdbcType=DOUBLE}, #{intepaya,jdbcType=DOUBLE}, 
+      #{divipaya,jdbcType=DOUBLE}, #{otherfeepaya,jdbcType=DOUBLE}, #{margrequ,jdbcType=DOUBLE}, 
+      #{intelpay,jdbcType=DOUBLE}, #{otherpay,jdbcType=DOUBLE}, #{accrexpe,jdbcType=DOUBLE}, 
+      #{expecurrliab,jdbcType=DOUBLE}, #{copewithreinrece,jdbcType=DOUBLE}, #{inteticksett,jdbcType=DOUBLE}, 
+      #{dometicksett,jdbcType=DOUBLE}, #{defereve,jdbcType=DOUBLE}, #{shorttermbdspaya,jdbcType=DOUBLE}, 
+      #{duenoncliab,jdbcType=DOUBLE}, #{othercurreliabi,jdbcType=DOUBLE}, #{currliabitse,jdbcType=DOUBLE}, 
+      #{currliabform,jdbcType=DOUBLE}, #{totalcurrliab,jdbcType=DOUBLE}, #{longborr,jdbcType=DOUBLE}, 
+      #{bdspaya,jdbcType=DOUBLE}, #{longpaya,jdbcType=DOUBLE}, #{specpaya,jdbcType=DOUBLE}, 
+      #{expenoncliab,jdbcType=DOUBLE}, #{longdefeinco,jdbcType=DOUBLE}, #{defeincotaxliab,jdbcType=DOUBLE}, 
+      #{othernoncliabi,jdbcType=DOUBLE}, #{longliabitse,jdbcType=DOUBLE}, #{longliabform,jdbcType=DOUBLE}, 
+      #{totalnoncliab,jdbcType=DOUBLE}, #{totliabitse,jdbcType=DOUBLE}, #{totliabform,jdbcType=DOUBLE}, 
+      #{totliab,jdbcType=DOUBLE}, #{paidincapi,jdbcType=DOUBLE}, #{capisurp,jdbcType=DOUBLE}, 
+      #{treastk,jdbcType=DOUBLE}, #{specrese,jdbcType=DOUBLE}, #{rese,jdbcType=DOUBLE}, 
+      #{generiskrese,jdbcType=DOUBLE}, #{unreinveloss,jdbcType=DOUBLE}, #{undiprof,jdbcType=DOUBLE}, 
+      #{topaycashdivi,jdbcType=DOUBLE}, #{curtrandiff,jdbcType=DOUBLE}, #{sharrighitse,jdbcType=DOUBLE}, 
+      #{sharrightform,jdbcType=DOUBLE}, #{paresharrigh,jdbcType=DOUBLE}, #{minysharrigh,jdbcType=DOUBLE}, 
+      #{righaggritse,jdbcType=DOUBLE}, #{rightaggrform,jdbcType=DOUBLE}, #{righaggr,jdbcType=DOUBLE}, 
+      #{rightotitse,jdbcType=DOUBLE}, #{rightotform,jdbcType=DOUBLE}, #{totliabsharequi,jdbcType=DOUBLE}, 
+      #{settresedepo,jdbcType=DOUBLE}, #{plac,jdbcType=DOUBLE}, #{derifinaasset,jdbcType=DOUBLE}, 
+      #{reinrece,jdbcType=DOUBLE}, #{reincontrese,jdbcType=DOUBLE}, #{purcresaasset,jdbcType=DOUBLE}, 
+      #{cenbankborr,jdbcType=DOUBLE}, #{deposit,jdbcType=DOUBLE}, #{fdsborr,jdbcType=DOUBLE}, 
+      #{deriliab,jdbcType=DOUBLE}, #{sellrepasse,jdbcType=DOUBLE}, #{copepoun,jdbcType=DOUBLE}, 
+      #{insucontrese,jdbcType=DOUBLE}, #{actitradsecu,jdbcType=DOUBLE}, #{actiundesecu,jdbcType=DOUBLE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.finreport.model.BalSheet" >
+    insert into balance
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        stockcode,
+      </if>
+      <if test="compcode != null" >
+        compcode,
+      </if>
+      <if test="publishdate != null" >
+        publishdate,
+      </if>
+      <if test="reportdate != null" >
+        reportdate,
+      </if>
+      <if test="reporttype != null" >
+        reporttype,
+      </if>
+      <if test="quarter != null" >
+        quarter,
+      </if>
+      <if test="adjustdate != null" >
+        adjustdate,
+      </if>
+      <if test="accstacode != null" >
+        accstacode,
+      </if>
+      <if test="accstaname != null" >
+        accstaname,
+      </if>
+      <if test="curfds != null" >
+        curfds,
+      </if>
+      <if test="tradfinasset != null" >
+        tradfinasset,
+      </if>
+      <if test="notesrece != null" >
+        notesrece,
+      </if>
+      <if test="accorece != null" >
+        accorece,
+      </if>
+      <if test="prep != null" >
+        prep,
+      </if>
+      <if test="premrece != null" >
+        premrece,
+      </if>
+      <if test="interece != null" >
+        interece,
+      </if>
+      <if test="dividrece != null" >
+        dividrece,
+      </if>
+      <if test="otherrece != null" >
+        otherrece,
+      </if>
+      <if test="expotaxrebarece != null" >
+        expotaxrebarece,
+      </if>
+      <if test="subsrece != null" >
+        subsrece,
+      </if>
+      <if test="margrece != null" >
+        margrece,
+      </if>
+      <if test="intelrece != null" >
+        intelrece,
+      </if>
+      <if test="inve != null" >
+        inve,
+      </if>
+      <if test="prepexpe != null" >
+        prepexpe,
+      </if>
+      <if test="unseg != null" >
+        unseg,
+      </if>
+      <if test="expinoncurrasset != null" >
+        expinoncurrasset,
+      </if>
+      <if test="othercurrasse != null" >
+        othercurrasse,
+      </if>
+      <if test="currassetitse != null" >
+        currassetitse,
+      </if>
+      <if test="currasseform != null" >
+        currasseform,
+      </if>
+      <if test="totcurrasset != null" >
+        totcurrasset,
+      </if>
+      <if test="lendandloan != null" >
+        lendandloan,
+      </if>
+      <if test="avaisellasse != null" >
+        avaisellasse,
+      </if>
+      <if test="holdinvedue != null" >
+        holdinvedue,
+      </if>
+      <if test="longrece != null" >
+        longrece,
+      </if>
+      <if test="equiinve != null" >
+        equiinve,
+      </if>
+      <if test="otherlonginve != null" >
+        otherlonginve,
+      </if>
+      <if test="inveprop != null" >
+        inveprop,
+      </if>
+      <if test="fixedasseimmo != null" >
+        fixedasseimmo,
+      </if>
+      <if test="accudepr != null" >
+        accudepr,
+      </if>
+      <if test="fixedassenetw != null" >
+        fixedassenetw,
+      </if>
+      <if test="fixedasseimpa != null" >
+        fixedasseimpa,
+      </if>
+      <if test="fixedassenet != null" >
+        fixedassenet,
+      </if>
+      <if test="consprog != null" >
+        consprog,
+      </if>
+      <if test="engimate != null" >
+        engimate,
+      </if>
+      <if test="fixedasseclea != null" >
+        fixedasseclea,
+      </if>
+      <if test="prodasse != null" >
+        prodasse,
+      </if>
+      <if test="comasse != null" >
+        comasse,
+      </if>
+      <if test="hydrasset != null" >
+        hydrasset,
+      </if>
+      <if test="intaasset != null" >
+        intaasset,
+      </if>
+      <if test="deveexpe != null" >
+        deveexpe,
+      </if>
+      <if test="goodwill != null" >
+        goodwill,
+      </if>
+      <if test="logprepexpe != null" >
+        logprepexpe,
+      </if>
+      <if test="tradshartrad != null" >
+        tradshartrad,
+      </if>
+      <if test="defetaxasset != null" >
+        defetaxasset,
+      </if>
+      <if test="othernoncasse != null" >
+        othernoncasse,
+      </if>
+      <if test="noncasseitse != null" >
+        noncasseitse,
+      </if>
+      <if test="noncasseform != null" >
+        noncasseform,
+      </if>
+      <if test="totalnoncassets != null" >
+        totalnoncassets,
+      </if>
+      <if test="totassetitse != null" >
+        totassetitse,
+      </if>
+      <if test="totalasseform != null" >
+        totalasseform,
+      </if>
+      <if test="totasset != null" >
+        totasset,
+      </if>
+      <if test="shorttermborr != null" >
+        shorttermborr,
+      </if>
+      <if test="tradfinliab != null" >
+        tradfinliab,
+      </if>
+      <if test="notespaya != null" >
+        notespaya,
+      </if>
+      <if test="accopaya != null" >
+        accopaya,
+      </if>
+      <if test="advapaym != null" >
+        advapaym,
+      </if>
+      <if test="copeworkersal != null" >
+        copeworkersal,
+      </if>
+      <if test="taxespaya != null" >
+        taxespaya,
+      </if>
+      <if test="intepaya != null" >
+        intepaya,
+      </if>
+      <if test="divipaya != null" >
+        divipaya,
+      </if>
+      <if test="otherfeepaya != null" >
+        otherfeepaya,
+      </if>
+      <if test="margrequ != null" >
+        margrequ,
+      </if>
+      <if test="intelpay != null" >
+        intelpay,
+      </if>
+      <if test="otherpay != null" >
+        otherpay,
+      </if>
+      <if test="accrexpe != null" >
+        accrexpe,
+      </if>
+      <if test="expecurrliab != null" >
+        expecurrliab,
+      </if>
+      <if test="copewithreinrece != null" >
+        copewithreinrece,
+      </if>
+      <if test="inteticksett != null" >
+        inteticksett,
+      </if>
+      <if test="dometicksett != null" >
+        dometicksett,
+      </if>
+      <if test="defereve != null" >
+        defereve,
+      </if>
+      <if test="shorttermbdspaya != null" >
+        shorttermbdspaya,
+      </if>
+      <if test="duenoncliab != null" >
+        duenoncliab,
+      </if>
+      <if test="othercurreliabi != null" >
+        othercurreliabi,
+      </if>
+      <if test="currliabitse != null" >
+        currliabitse,
+      </if>
+      <if test="currliabform != null" >
+        currliabform,
+      </if>
+      <if test="totalcurrliab != null" >
+        totalcurrliab,
+      </if>
+      <if test="longborr != null" >
+        longborr,
+      </if>
+      <if test="bdspaya != null" >
+        bdspaya,
+      </if>
+      <if test="longpaya != null" >
+        longpaya,
+      </if>
+      <if test="specpaya != null" >
+        specpaya,
+      </if>
+      <if test="expenoncliab != null" >
+        expenoncliab,
+      </if>
+      <if test="longdefeinco != null" >
+        longdefeinco,
+      </if>
+      <if test="defeincotaxliab != null" >
+        defeincotaxliab,
+      </if>
+      <if test="othernoncliabi != null" >
+        othernoncliabi,
+      </if>
+      <if test="longliabitse != null" >
+        longliabitse,
+      </if>
+      <if test="longliabform != null" >
+        longliabform,
+      </if>
+      <if test="totalnoncliab != null" >
+        totalnoncliab,
+      </if>
+      <if test="totliabitse != null" >
+        totliabitse,
+      </if>
+      <if test="totliabform != null" >
+        totliabform,
+      </if>
+      <if test="totliab != null" >
+        totliab,
+      </if>
+      <if test="paidincapi != null" >
+        paidincapi,
+      </if>
+      <if test="capisurp != null" >
+        capisurp,
+      </if>
+      <if test="treastk != null" >
+        treastk,
+      </if>
+      <if test="specrese != null" >
+        specrese,
+      </if>
+      <if test="rese != null" >
+        rese,
+      </if>
+      <if test="generiskrese != null" >
+        generiskrese,
+      </if>
+      <if test="unreinveloss != null" >
+        unreinveloss,
+      </if>
+      <if test="undiprof != null" >
+        undiprof,
+      </if>
+      <if test="topaycashdivi != null" >
+        topaycashdivi,
+      </if>
+      <if test="curtrandiff != null" >
+        curtrandiff,
+      </if>
+      <if test="sharrighitse != null" >
+        sharrighitse,
+      </if>
+      <if test="sharrightform != null" >
+        sharrightform,
+      </if>
+      <if test="paresharrigh != null" >
+        paresharrigh,
+      </if>
+      <if test="minysharrigh != null" >
+        minysharrigh,
+      </if>
+      <if test="righaggritse != null" >
+        righaggritse,
+      </if>
+      <if test="rightaggrform != null" >
+        rightaggrform,
+      </if>
+      <if test="righaggr != null" >
+        righaggr,
+      </if>
+      <if test="rightotitse != null" >
+        rightotitse,
+      </if>
+      <if test="rightotform != null" >
+        rightotform,
+      </if>
+      <if test="totliabsharequi != null" >
+        totliabsharequi,
+      </if>
+      <if test="settresedepo != null" >
+        settresedepo,
+      </if>
+      <if test="plac != null" >
+        plac,
+      </if>
+      <if test="derifinaasset != null" >
+        derifinaasset,
+      </if>
+      <if test="reinrece != null" >
+        reinrece,
+      </if>
+      <if test="reincontrese != null" >
+        reincontrese,
+      </if>
+      <if test="purcresaasset != null" >
+        purcresaasset,
+      </if>
+      <if test="cenbankborr != null" >
+        cenbankborr,
+      </if>
+      <if test="deposit != null" >
+        deposit,
+      </if>
+      <if test="fdsborr != null" >
+        fdsborr,
+      </if>
+      <if test="deriliab != null" >
+        deriliab,
+      </if>
+      <if test="sellrepasse != null" >
+        sellrepasse,
+      </if>
+      <if test="copepoun != null" >
+        copepoun,
+      </if>
+      <if test="insucontrese != null" >
+        insucontrese,
+      </if>
+      <if test="actitradsecu != null" >
+        actitradsecu,
+      </if>
+      <if test="actiundesecu != null" >
+        actiundesecu,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        #{stockcode,jdbcType=CHAR},
+      </if>
+      <if test="compcode != null" >
+        #{compcode,jdbcType=INTEGER},
+      </if>
+      <if test="publishdate != null" >
+        #{publishdate,jdbcType=INTEGER},
+      </if>
+      <if test="reportdate != null" >
+        #{reportdate,jdbcType=INTEGER},
+      </if>
+      <if test="reporttype != null" >
+        #{reporttype,jdbcType=INTEGER},
+      </if>
+      <if test="quarter != null" >
+        #{quarter,jdbcType=VARCHAR},
+      </if>
+      <if test="adjustdate != null" >
+        #{adjustdate,jdbcType=INTEGER},
+      </if>
+      <if test="accstacode != null" >
+        #{accstacode,jdbcType=INTEGER},
+      </if>
+      <if test="accstaname != null" >
+        #{accstaname,jdbcType=VARCHAR},
+      </if>
+      <if test="curfds != null" >
+        #{curfds,jdbcType=DOUBLE},
+      </if>
+      <if test="tradfinasset != null" >
+        #{tradfinasset,jdbcType=DOUBLE},
+      </if>
+      <if test="notesrece != null" >
+        #{notesrece,jdbcType=DOUBLE},
+      </if>
+      <if test="accorece != null" >
+        #{accorece,jdbcType=DOUBLE},
+      </if>
+      <if test="prep != null" >
+        #{prep,jdbcType=DOUBLE},
+      </if>
+      <if test="premrece != null" >
+        #{premrece,jdbcType=DOUBLE},
+      </if>
+      <if test="interece != null" >
+        #{interece,jdbcType=DOUBLE},
+      </if>
+      <if test="dividrece != null" >
+        #{dividrece,jdbcType=DOUBLE},
+      </if>
+      <if test="otherrece != null" >
+        #{otherrece,jdbcType=DOUBLE},
+      </if>
+      <if test="expotaxrebarece != null" >
+        #{expotaxrebarece,jdbcType=DOUBLE},
+      </if>
+      <if test="subsrece != null" >
+        #{subsrece,jdbcType=DOUBLE},
+      </if>
+      <if test="margrece != null" >
+        #{margrece,jdbcType=DOUBLE},
+      </if>
+      <if test="intelrece != null" >
+        #{intelrece,jdbcType=DOUBLE},
+      </if>
+      <if test="inve != null" >
+        #{inve,jdbcType=DOUBLE},
+      </if>
+      <if test="prepexpe != null" >
+        #{prepexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="unseg != null" >
+        #{unseg,jdbcType=DOUBLE},
+      </if>
+      <if test="expinoncurrasset != null" >
+        #{expinoncurrasset,jdbcType=DOUBLE},
+      </if>
+      <if test="othercurrasse != null" >
+        #{othercurrasse,jdbcType=DOUBLE},
+      </if>
+      <if test="currassetitse != null" >
+        #{currassetitse,jdbcType=DOUBLE},
+      </if>
+      <if test="currasseform != null" >
+        #{currasseform,jdbcType=DOUBLE},
+      </if>
+      <if test="totcurrasset != null" >
+        #{totcurrasset,jdbcType=DOUBLE},
+      </if>
+      <if test="lendandloan != null" >
+        #{lendandloan,jdbcType=DOUBLE},
+      </if>
+      <if test="avaisellasse != null" >
+        #{avaisellasse,jdbcType=DOUBLE},
+      </if>
+      <if test="holdinvedue != null" >
+        #{holdinvedue,jdbcType=DOUBLE},
+      </if>
+      <if test="longrece != null" >
+        #{longrece,jdbcType=DOUBLE},
+      </if>
+      <if test="equiinve != null" >
+        #{equiinve,jdbcType=DOUBLE},
+      </if>
+      <if test="otherlonginve != null" >
+        #{otherlonginve,jdbcType=DOUBLE},
+      </if>
+      <if test="inveprop != null" >
+        #{inveprop,jdbcType=DOUBLE},
+      </if>
+      <if test="fixedasseimmo != null" >
+        #{fixedasseimmo,jdbcType=DOUBLE},
+      </if>
+      <if test="accudepr != null" >
+        #{accudepr,jdbcType=DOUBLE},
+      </if>
+      <if test="fixedassenetw != null" >
+        #{fixedassenetw,jdbcType=DOUBLE},
+      </if>
+      <if test="fixedasseimpa != null" >
+        #{fixedasseimpa,jdbcType=DOUBLE},
+      </if>
+      <if test="fixedassenet != null" >
+        #{fixedassenet,jdbcType=DOUBLE},
+      </if>
+      <if test="consprog != null" >
+        #{consprog,jdbcType=DOUBLE},
+      </if>
+      <if test="engimate != null" >
+        #{engimate,jdbcType=DOUBLE},
+      </if>
+      <if test="fixedasseclea != null" >
+        #{fixedasseclea,jdbcType=DOUBLE},
+      </if>
+      <if test="prodasse != null" >
+        #{prodasse,jdbcType=DOUBLE},
+      </if>
+      <if test="comasse != null" >
+        #{comasse,jdbcType=DOUBLE},
+      </if>
+      <if test="hydrasset != null" >
+        #{hydrasset,jdbcType=DOUBLE},
+      </if>
+      <if test="intaasset != null" >
+        #{intaasset,jdbcType=DOUBLE},
+      </if>
+      <if test="deveexpe != null" >
+        #{deveexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="goodwill != null" >
+        #{goodwill,jdbcType=DOUBLE},
+      </if>
+      <if test="logprepexpe != null" >
+        #{logprepexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="tradshartrad != null" >
+        #{tradshartrad,jdbcType=DOUBLE},
+      </if>
+      <if test="defetaxasset != null" >
+        #{defetaxasset,jdbcType=DOUBLE},
+      </if>
+      <if test="othernoncasse != null" >
+        #{othernoncasse,jdbcType=DOUBLE},
+      </if>
+      <if test="noncasseitse != null" >
+        #{noncasseitse,jdbcType=DOUBLE},
+      </if>
+      <if test="noncasseform != null" >
+        #{noncasseform,jdbcType=DOUBLE},
+      </if>
+      <if test="totalnoncassets != null" >
+        #{totalnoncassets,jdbcType=DOUBLE},
+      </if>
+      <if test="totassetitse != null" >
+        #{totassetitse,jdbcType=DOUBLE},
+      </if>
+      <if test="totalasseform != null" >
+        #{totalasseform,jdbcType=DOUBLE},
+      </if>
+      <if test="totasset != null" >
+        #{totasset,jdbcType=DOUBLE},
+      </if>
+      <if test="shorttermborr != null" >
+        #{shorttermborr,jdbcType=DOUBLE},
+      </if>
+      <if test="tradfinliab != null" >
+        #{tradfinliab,jdbcType=DOUBLE},
+      </if>
+      <if test="notespaya != null" >
+        #{notespaya,jdbcType=DOUBLE},
+      </if>
+      <if test="accopaya != null" >
+        #{accopaya,jdbcType=DOUBLE},
+      </if>
+      <if test="advapaym != null" >
+        #{advapaym,jdbcType=DOUBLE},
+      </if>
+      <if test="copeworkersal != null" >
+        #{copeworkersal,jdbcType=DOUBLE},
+      </if>
+      <if test="taxespaya != null" >
+        #{taxespaya,jdbcType=DOUBLE},
+      </if>
+      <if test="intepaya != null" >
+        #{intepaya,jdbcType=DOUBLE},
+      </if>
+      <if test="divipaya != null" >
+        #{divipaya,jdbcType=DOUBLE},
+      </if>
+      <if test="otherfeepaya != null" >
+        #{otherfeepaya,jdbcType=DOUBLE},
+      </if>
+      <if test="margrequ != null" >
+        #{margrequ,jdbcType=DOUBLE},
+      </if>
+      <if test="intelpay != null" >
+        #{intelpay,jdbcType=DOUBLE},
+      </if>
+      <if test="otherpay != null" >
+        #{otherpay,jdbcType=DOUBLE},
+      </if>
+      <if test="accrexpe != null" >
+        #{accrexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="expecurrliab != null" >
+        #{expecurrliab,jdbcType=DOUBLE},
+      </if>
+      <if test="copewithreinrece != null" >
+        #{copewithreinrece,jdbcType=DOUBLE},
+      </if>
+      <if test="inteticksett != null" >
+        #{inteticksett,jdbcType=DOUBLE},
+      </if>
+      <if test="dometicksett != null" >
+        #{dometicksett,jdbcType=DOUBLE},
+      </if>
+      <if test="defereve != null" >
+        #{defereve,jdbcType=DOUBLE},
+      </if>
+      <if test="shorttermbdspaya != null" >
+        #{shorttermbdspaya,jdbcType=DOUBLE},
+      </if>
+      <if test="duenoncliab != null" >
+        #{duenoncliab,jdbcType=DOUBLE},
+      </if>
+      <if test="othercurreliabi != null" >
+        #{othercurreliabi,jdbcType=DOUBLE},
+      </if>
+      <if test="currliabitse != null" >
+        #{currliabitse,jdbcType=DOUBLE},
+      </if>
+      <if test="currliabform != null" >
+        #{currliabform,jdbcType=DOUBLE},
+      </if>
+      <if test="totalcurrliab != null" >
+        #{totalcurrliab,jdbcType=DOUBLE},
+      </if>
+      <if test="longborr != null" >
+        #{longborr,jdbcType=DOUBLE},
+      </if>
+      <if test="bdspaya != null" >
+        #{bdspaya,jdbcType=DOUBLE},
+      </if>
+      <if test="longpaya != null" >
+        #{longpaya,jdbcType=DOUBLE},
+      </if>
+      <if test="specpaya != null" >
+        #{specpaya,jdbcType=DOUBLE},
+      </if>
+      <if test="expenoncliab != null" >
+        #{expenoncliab,jdbcType=DOUBLE},
+      </if>
+      <if test="longdefeinco != null" >
+        #{longdefeinco,jdbcType=DOUBLE},
+      </if>
+      <if test="defeincotaxliab != null" >
+        #{defeincotaxliab,jdbcType=DOUBLE},
+      </if>
+      <if test="othernoncliabi != null" >
+        #{othernoncliabi,jdbcType=DOUBLE},
+      </if>
+      <if test="longliabitse != null" >
+        #{longliabitse,jdbcType=DOUBLE},
+      </if>
+      <if test="longliabform != null" >
+        #{longliabform,jdbcType=DOUBLE},
+      </if>
+      <if test="totalnoncliab != null" >
+        #{totalnoncliab,jdbcType=DOUBLE},
+      </if>
+      <if test="totliabitse != null" >
+        #{totliabitse,jdbcType=DOUBLE},
+      </if>
+      <if test="totliabform != null" >
+        #{totliabform,jdbcType=DOUBLE},
+      </if>
+      <if test="totliab != null" >
+        #{totliab,jdbcType=DOUBLE},
+      </if>
+      <if test="paidincapi != null" >
+        #{paidincapi,jdbcType=DOUBLE},
+      </if>
+      <if test="capisurp != null" >
+        #{capisurp,jdbcType=DOUBLE},
+      </if>
+      <if test="treastk != null" >
+        #{treastk,jdbcType=DOUBLE},
+      </if>
+      <if test="specrese != null" >
+        #{specrese,jdbcType=DOUBLE},
+      </if>
+      <if test="rese != null" >
+        #{rese,jdbcType=DOUBLE},
+      </if>
+      <if test="generiskrese != null" >
+        #{generiskrese,jdbcType=DOUBLE},
+      </if>
+      <if test="unreinveloss != null" >
+        #{unreinveloss,jdbcType=DOUBLE},
+      </if>
+      <if test="undiprof != null" >
+        #{undiprof,jdbcType=DOUBLE},
+      </if>
+      <if test="topaycashdivi != null" >
+        #{topaycashdivi,jdbcType=DOUBLE},
+      </if>
+      <if test="curtrandiff != null" >
+        #{curtrandiff,jdbcType=DOUBLE},
+      </if>
+      <if test="sharrighitse != null" >
+        #{sharrighitse,jdbcType=DOUBLE},
+      </if>
+      <if test="sharrightform != null" >
+        #{sharrightform,jdbcType=DOUBLE},
+      </if>
+      <if test="paresharrigh != null" >
+        #{paresharrigh,jdbcType=DOUBLE},
+      </if>
+      <if test="minysharrigh != null" >
+        #{minysharrigh,jdbcType=DOUBLE},
+      </if>
+      <if test="righaggritse != null" >
+        #{righaggritse,jdbcType=DOUBLE},
+      </if>
+      <if test="rightaggrform != null" >
+        #{rightaggrform,jdbcType=DOUBLE},
+      </if>
+      <if test="righaggr != null" >
+        #{righaggr,jdbcType=DOUBLE},
+      </if>
+      <if test="rightotitse != null" >
+        #{rightotitse,jdbcType=DOUBLE},
+      </if>
+      <if test="rightotform != null" >
+        #{rightotform,jdbcType=DOUBLE},
+      </if>
+      <if test="totliabsharequi != null" >
+        #{totliabsharequi,jdbcType=DOUBLE},
+      </if>
+      <if test="settresedepo != null" >
+        #{settresedepo,jdbcType=DOUBLE},
+      </if>
+      <if test="plac != null" >
+        #{plac,jdbcType=DOUBLE},
+      </if>
+      <if test="derifinaasset != null" >
+        #{derifinaasset,jdbcType=DOUBLE},
+      </if>
+      <if test="reinrece != null" >
+        #{reinrece,jdbcType=DOUBLE},
+      </if>
+      <if test="reincontrese != null" >
+        #{reincontrese,jdbcType=DOUBLE},
+      </if>
+      <if test="purcresaasset != null" >
+        #{purcresaasset,jdbcType=DOUBLE},
+      </if>
+      <if test="cenbankborr != null" >
+        #{cenbankborr,jdbcType=DOUBLE},
+      </if>
+      <if test="deposit != null" >
+        #{deposit,jdbcType=DOUBLE},
+      </if>
+      <if test="fdsborr != null" >
+        #{fdsborr,jdbcType=DOUBLE},
+      </if>
+      <if test="deriliab != null" >
+        #{deriliab,jdbcType=DOUBLE},
+      </if>
+      <if test="sellrepasse != null" >
+        #{sellrepasse,jdbcType=DOUBLE},
+      </if>
+      <if test="copepoun != null" >
+        #{copepoun,jdbcType=DOUBLE},
+      </if>
+      <if test="insucontrese != null" >
+        #{insucontrese,jdbcType=DOUBLE},
+      </if>
+      <if test="actitradsecu != null" >
+        #{actitradsecu,jdbcType=DOUBLE},
+      </if>
+      <if test="actiundesecu != null" >
+        #{actiundesecu,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+</mapper>

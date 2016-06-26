@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.finreport.mapper.IncStatementMapper" >
+  <resultMap id="BaseResultMap" type="com.finreport.model.IncStatement" >
+    <id column="stockcode" property="stockcode" jdbcType="CHAR" />
+    <result column="compcode" property="compcode" jdbcType="INTEGER" />
+    <result column="publishdate" property="publishdate" jdbcType="INTEGER" />
+    <result column="begindate" property="begindate" jdbcType="INTEGER" />
+    <result column="enddate" property="enddate" jdbcType="INTEGER" />
+    <result column="reporttype" property="reporttype" jdbcType="INTEGER" />
+    <result column="quarter" property="quarter" jdbcType="VARCHAR" />
+    <result column="adjustdate" property="adjustdate" jdbcType="INTEGER" />
+    <result column="accstacode" property="accstacode" jdbcType="INTEGER" />
+    <result column="accstaname" property="accstaname" jdbcType="VARCHAR" />
+    <result column="biztotinco" property="biztotinco" jdbcType="DOUBLE" />
+    <result column="bizinco" property="bizinco" jdbcType="DOUBLE" />
+    <result column="inteinco" property="inteinco" jdbcType="DOUBLE" />
+    <result column="earnprem" property="earnprem" jdbcType="DOUBLE" />
+    <result column="pouninco" property="pouninco" jdbcType="DOUBLE" />
+    <result column="realsale" property="realsale" jdbcType="DOUBLE" />
+    <result column="otherbizinco" property="otherbizinco" jdbcType="DOUBLE" />
+    <result column="biztotincoitse" property="biztotincoitse" jdbcType="DOUBLE" />
+    <result column="biztotincoform" property="biztotincoform" jdbcType="DOUBLE" />
+    <result column="biztotcost" property="biztotcost" jdbcType="DOUBLE" />
+    <result column="bizcost" property="bizcost" jdbcType="DOUBLE" />
+    <result column="inteexpe" property="inteexpe" jdbcType="DOUBLE" />
+    <result column="pounexpe" property="pounexpe" jdbcType="DOUBLE" />
+    <result column="realsalecost" property="realsalecost" jdbcType="DOUBLE" />
+    <result column="deveexpe" property="deveexpe" jdbcType="DOUBLE" />
+    <result column="surrgold" property="surrgold" jdbcType="DOUBLE" />
+    <result column="compnetexpe" property="compnetexpe" jdbcType="DOUBLE" />
+    <result column="contress" property="contress" jdbcType="DOUBLE" />
+    <result column="polidiviexpe" property="polidiviexpe" jdbcType="DOUBLE" />
+    <result column="reinexpe" property="reinexpe" jdbcType="DOUBLE" />
+    <result column="otherbizcost" property="otherbizcost" jdbcType="DOUBLE" />
+    <result column="biztax" property="biztax" jdbcType="DOUBLE" />
+    <result column="salesexpe" property="salesexpe" jdbcType="DOUBLE" />
+    <result column="manaexpe" property="manaexpe" jdbcType="DOUBLE" />
+    <result column="finexpe" property="finexpe" jdbcType="DOUBLE" />
+    <result column="asseimpaloss" property="asseimpaloss" jdbcType="DOUBLE" />
+    <result column="biztotcostitse" property="biztotcostitse" jdbcType="DOUBLE" />
+    <result column="biztotcostform" property="biztotcostform" jdbcType="DOUBLE" />
+    <result column="valuechgloss" property="valuechgloss" jdbcType="DOUBLE" />
+    <result column="inveinco" property="inveinco" jdbcType="DOUBLE" />
+    <result column="assoinveprof" property="assoinveprof" jdbcType="DOUBLE" />
+    <result column="exchggain" property="exchggain" jdbcType="DOUBLE" />
+    <result column="futuloss" property="futuloss" jdbcType="DOUBLE" />
+    <result column="custinco" property="custinco" jdbcType="DOUBLE" />
+    <result column="subsidyincome" property="subsidyincome" jdbcType="DOUBLE" />
+    <result column="otherbizprof" property="otherbizprof" jdbcType="DOUBLE" />
+    <result column="bizprofitse" property="bizprofitse" jdbcType="DOUBLE" />
+    <result column="operprofform" property="operprofform" jdbcType="DOUBLE" />
+    <result column="perprofit" property="perprofit" jdbcType="DOUBLE" />
+    <result column="nonoreve" property="nonoreve" jdbcType="DOUBLE" />
+    <result column="nonoexpe" property="nonoexpe" jdbcType="DOUBLE" />
+    <result column="noncassetsdisl" property="noncassetsdisl" jdbcType="DOUBLE" />
+    <result column="proftotitse" property="proftotitse" jdbcType="DOUBLE" />
+    <result column="proftotform" property="proftotform" jdbcType="DOUBLE" />
+    <result column="totprofit" property="totprofit" jdbcType="DOUBLE" />
+    <result column="incotaxexpe" property="incotaxexpe" jdbcType="DOUBLE" />
+    <result column="unreinveloss" property="unreinveloss" jdbcType="DOUBLE" />
+    <result column="netpro1itse" property="netpro1itse" jdbcType="DOUBLE" />
+    <result column="netpro1form" property="netpro1form" jdbcType="DOUBLE" />
+    <result column="netprofit" property="netprofit" jdbcType="DOUBLE" />
+    <result column="parenetp" property="parenetp" jdbcType="DOUBLE" />
+    <result column="mergeformnetprof" property="mergeformnetprof" jdbcType="DOUBLE" />
+    <result column="minysharrigh" property="minysharrigh" jdbcType="DOUBLE" />
+    <result column="netpro2itse" property="netpro2itse" jdbcType="DOUBLE" />
+    <result column="netpro2form" property="netpro2form" jdbcType="DOUBLE" />
+    <result column="basiceps" property="basiceps" jdbcType="DOUBLE" />
+    <result column="dilutedeps" property="dilutedeps" jdbcType="DOUBLE" />
+    <result column="othercompinco" property="othercompinco" jdbcType="DOUBLE" />
+    <result column="parecompinco" property="parecompinco" jdbcType="DOUBLE" />
+    <result column="minysharinco" property="minysharinco" jdbcType="DOUBLE" />
+    <result column="compincoamt" property="compincoamt" jdbcType="DOUBLE" />
+    <result column="parecompincoamt" property="parecompincoamt" jdbcType="DOUBLE" />
+    <result column="minysharincoamt" property="minysharincoamt" jdbcType="DOUBLE" />
+    <result column="earlyundiprof" property="earlyundiprof" jdbcType="DOUBLE" />
+    <result column="undisprofredu" property="undisprofredu" jdbcType="DOUBLE" />
+    <result column="otherinto" property="otherinto" jdbcType="DOUBLE" />
+    <result column="otherdistprof" property="otherdistprof" jdbcType="DOUBLE" />
+    <result column="legalsurp" property="legalsurp" jdbcType="DOUBLE" />
+    <result column="welfare" property="welfare" jdbcType="DOUBLE" />
+    <result column="capitalreserve" property="capitalreserve" jdbcType="DOUBLE" />
+    <result column="staffaward" property="staffaward" jdbcType="DOUBLE" />
+    <result column="reservefund" property="reservefund" jdbcType="DOUBLE" />
+    <result column="developfund" property="developfund" jdbcType="DOUBLE" />
+    <result column="profreturninvest" property="profreturninvest" jdbcType="DOUBLE" />
+    <result column="supplycurcap" property="supplycurcap" jdbcType="DOUBLE" />
+    <result column="avaidistshareprof" property="avaidistshareprof" jdbcType="DOUBLE" />
+    <result column="preferredskdiv" property="preferredskdiv" jdbcType="DOUBLE" />
+    <result column="freesurplu" property="freesurplu" jdbcType="DOUBLE" />
+    <result column="dealwithdivi" property="dealwithdivi" jdbcType="DOUBLE" />
+    <result column="capitalizeddivi" property="capitalizeddivi" jdbcType="DOUBLE" />
+    <result column="undisprofit" property="undisprofit" jdbcType="DOUBLE" />
+    <result column="selldepartgain" property="selldepartgain" jdbcType="DOUBLE" />
+    <result column="natudisasterloss" property="natudisasterloss" jdbcType="DOUBLE" />
+    <result column="accpolicychg" property="accpolicychg" jdbcType="DOUBLE" />
+    <result column="accestimatechg" property="accestimatechg" jdbcType="DOUBLE" />
+    <result column="debtrestruloss" property="debtrestruloss" jdbcType="DOUBLE" />
+    <result column="othersupply" property="othersupply" jdbcType="DOUBLE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    stockcode, compcode, publishdate, begindate, enddate, reporttype, quarter, adjustdate, 
+    accstacode, accstaname, biztotinco, bizinco, inteinco, earnprem, pouninco, realsale, 
+    otherbizinco, biztotincoitse, biztotincoform, biztotcost, bizcost, inteexpe, pounexpe, 
+    realsalecost, deveexpe, surrgold, compnetexpe, contress, polidiviexpe, reinexpe, 
+    otherbizcost, biztax, salesexpe, manaexpe, finexpe, asseimpaloss, biztotcostitse, 
+    biztotcostform, valuechgloss, inveinco, assoinveprof, exchggain, futuloss, custinco, 
+    subsidyincome, otherbizprof, bizprofitse, operprofform, perprofit, nonoreve, nonoexpe, 
+    noncassetsdisl, proftotitse, proftotform, totprofit, incotaxexpe, unreinveloss, netpro1itse, 
+    netpro1form, netprofit, parenetp, mergeformnetprof, minysharrigh, netpro2itse, netpro2form, 
+    basiceps, dilutedeps, othercompinco, parecompinco, minysharinco, compincoamt, parecompincoamt, 
+    minysharincoamt, earlyundiprof, undisprofredu, otherinto, otherdistprof, legalsurp, 
+    welfare, capitalreserve, staffaward, reservefund, developfund, profreturninvest, 
+    supplycurcap, avaidistshareprof, preferredskdiv, freesurplu, dealwithdivi, capitalizeddivi, 
+    undisprofit, selldepartgain, natudisasterloss, accpolicychg, accestimatechg, debtrestruloss, 
+    othersupply
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from income
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from income
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.finreport.model.IncStatement" >
+    insert into income (stockcode, compcode, publishdate, 
+      begindate, enddate, reporttype, 
+      quarter, adjustdate, accstacode, 
+      accstaname, biztotinco, bizinco, 
+      inteinco, earnprem, pouninco, 
+      realsale, otherbizinco, biztotincoitse, 
+      biztotincoform, biztotcost, bizcost, 
+      inteexpe, pounexpe, realsalecost, 
+      deveexpe, surrgold, compnetexpe, 
+      contress, polidiviexpe, reinexpe, 
+      otherbizcost, biztax, salesexpe, 
+      manaexpe, finexpe, asseimpaloss, 
+      biztotcostitse, biztotcostform, valuechgloss, 
+      inveinco, assoinveprof, exchggain, 
+      futuloss, custinco, subsidyincome, 
+      otherbizprof, bizprofitse, operprofform, 
+      perprofit, nonoreve, nonoexpe, 
+      noncassetsdisl, proftotitse, proftotform, 
+      totprofit, incotaxexpe, unreinveloss, 
+      netpro1itse, netpro1form, netprofit, 
+      parenetp, mergeformnetprof, minysharrigh, 
+      netpro2itse, netpro2form, basiceps, 
+      dilutedeps, othercompinco, parecompinco, 
+      minysharinco, compincoamt, parecompincoamt, 
+      minysharincoamt, earlyundiprof, undisprofredu, 
+      otherinto, otherdistprof, legalsurp, 
+      welfare, capitalreserve, staffaward, 
+      reservefund, developfund, profreturninvest, 
+      supplycurcap, avaidistshareprof, preferredskdiv, 
+      freesurplu, dealwithdivi, capitalizeddivi, 
+      undisprofit, selldepartgain, natudisasterloss, 
+      accpolicychg, accestimatechg, debtrestruloss, 
+      othersupply)
+    values (#{stockcode,jdbcType=CHAR}, #{compcode,jdbcType=INTEGER}, #{publishdate,jdbcType=INTEGER}, 
+      #{begindate,jdbcType=INTEGER}, #{enddate,jdbcType=INTEGER}, #{reporttype,jdbcType=INTEGER}, 
+      #{quarter,jdbcType=VARCHAR}, #{adjustdate,jdbcType=INTEGER}, #{accstacode,jdbcType=INTEGER}, 
+      #{accstaname,jdbcType=VARCHAR}, #{biztotinco,jdbcType=DOUBLE}, #{bizinco,jdbcType=DOUBLE}, 
+      #{inteinco,jdbcType=DOUBLE}, #{earnprem,jdbcType=DOUBLE}, #{pouninco,jdbcType=DOUBLE}, 
+      #{realsale,jdbcType=DOUBLE}, #{otherbizinco,jdbcType=DOUBLE}, #{biztotincoitse,jdbcType=DOUBLE}, 
+      #{biztotincoform,jdbcType=DOUBLE}, #{biztotcost,jdbcType=DOUBLE}, #{bizcost,jdbcType=DOUBLE}, 
+      #{inteexpe,jdbcType=DOUBLE}, #{pounexpe,jdbcType=DOUBLE}, #{realsalecost,jdbcType=DOUBLE}, 
+      #{deveexpe,jdbcType=DOUBLE}, #{surrgold,jdbcType=DOUBLE}, #{compnetexpe,jdbcType=DOUBLE}, 
+      #{contress,jdbcType=DOUBLE}, #{polidiviexpe,jdbcType=DOUBLE}, #{reinexpe,jdbcType=DOUBLE}, 
+      #{otherbizcost,jdbcType=DOUBLE}, #{biztax,jdbcType=DOUBLE}, #{salesexpe,jdbcType=DOUBLE}, 
+      #{manaexpe,jdbcType=DOUBLE}, #{finexpe,jdbcType=DOUBLE}, #{asseimpaloss,jdbcType=DOUBLE}, 
+      #{biztotcostitse,jdbcType=DOUBLE}, #{biztotcostform,jdbcType=DOUBLE}, #{valuechgloss,jdbcType=DOUBLE}, 
+      #{inveinco,jdbcType=DOUBLE}, #{assoinveprof,jdbcType=DOUBLE}, #{exchggain,jdbcType=DOUBLE}, 
+      #{futuloss,jdbcType=DOUBLE}, #{custinco,jdbcType=DOUBLE}, #{subsidyincome,jdbcType=DOUBLE}, 
+      #{otherbizprof,jdbcType=DOUBLE}, #{bizprofitse,jdbcType=DOUBLE}, #{operprofform,jdbcType=DOUBLE}, 
+      #{perprofit,jdbcType=DOUBLE}, #{nonoreve,jdbcType=DOUBLE}, #{nonoexpe,jdbcType=DOUBLE}, 
+      #{noncassetsdisl,jdbcType=DOUBLE}, #{proftotitse,jdbcType=DOUBLE}, #{proftotform,jdbcType=DOUBLE}, 
+      #{totprofit,jdbcType=DOUBLE}, #{incotaxexpe,jdbcType=DOUBLE}, #{unreinveloss,jdbcType=DOUBLE}, 
+      #{netpro1itse,jdbcType=DOUBLE}, #{netpro1form,jdbcType=DOUBLE}, #{netprofit,jdbcType=DOUBLE}, 
+      #{parenetp,jdbcType=DOUBLE}, #{mergeformnetprof,jdbcType=DOUBLE}, #{minysharrigh,jdbcType=DOUBLE}, 
+      #{netpro2itse,jdbcType=DOUBLE}, #{netpro2form,jdbcType=DOUBLE}, #{basiceps,jdbcType=DOUBLE}, 
+      #{dilutedeps,jdbcType=DOUBLE}, #{othercompinco,jdbcType=DOUBLE}, #{parecompinco,jdbcType=DOUBLE}, 
+      #{minysharinco,jdbcType=DOUBLE}, #{compincoamt,jdbcType=DOUBLE}, #{parecompincoamt,jdbcType=DOUBLE}, 
+      #{minysharincoamt,jdbcType=DOUBLE}, #{earlyundiprof,jdbcType=DOUBLE}, #{undisprofredu,jdbcType=DOUBLE}, 
+      #{otherinto,jdbcType=DOUBLE}, #{otherdistprof,jdbcType=DOUBLE}, #{legalsurp,jdbcType=DOUBLE}, 
+      #{welfare,jdbcType=DOUBLE}, #{capitalreserve,jdbcType=DOUBLE}, #{staffaward,jdbcType=DOUBLE}, 
+      #{reservefund,jdbcType=DOUBLE}, #{developfund,jdbcType=DOUBLE}, #{profreturninvest,jdbcType=DOUBLE}, 
+      #{supplycurcap,jdbcType=DOUBLE}, #{avaidistshareprof,jdbcType=DOUBLE}, #{preferredskdiv,jdbcType=DOUBLE}, 
+      #{freesurplu,jdbcType=DOUBLE}, #{dealwithdivi,jdbcType=DOUBLE}, #{capitalizeddivi,jdbcType=DOUBLE}, 
+      #{undisprofit,jdbcType=DOUBLE}, #{selldepartgain,jdbcType=DOUBLE}, #{natudisasterloss,jdbcType=DOUBLE}, 
+      #{accpolicychg,jdbcType=DOUBLE}, #{accestimatechg,jdbcType=DOUBLE}, #{debtrestruloss,jdbcType=DOUBLE}, 
+      #{othersupply,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.finreport.model.IncStatement" >
+    insert into income
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        stockcode,
+      </if>
+      <if test="compcode != null" >
+        compcode,
+      </if>
+      <if test="publishdate != null" >
+        publishdate,
+      </if>
+      <if test="begindate != null" >
+        begindate,
+      </if>
+      <if test="enddate != null" >
+        enddate,
+      </if>
+      <if test="reporttype != null" >
+        reporttype,
+      </if>
+      <if test="quarter != null" >
+        quarter,
+      </if>
+      <if test="adjustdate != null" >
+        adjustdate,
+      </if>
+      <if test="accstacode != null" >
+        accstacode,
+      </if>
+      <if test="accstaname != null" >
+        accstaname,
+      </if>
+      <if test="biztotinco != null" >
+        biztotinco,
+      </if>
+      <if test="bizinco != null" >
+        bizinco,
+      </if>
+      <if test="inteinco != null" >
+        inteinco,
+      </if>
+      <if test="earnprem != null" >
+        earnprem,
+      </if>
+      <if test="pouninco != null" >
+        pouninco,
+      </if>
+      <if test="realsale != null" >
+        realsale,
+      </if>
+      <if test="otherbizinco != null" >
+        otherbizinco,
+      </if>
+      <if test="biztotincoitse != null" >
+        biztotincoitse,
+      </if>
+      <if test="biztotincoform != null" >
+        biztotincoform,
+      </if>
+      <if test="biztotcost != null" >
+        biztotcost,
+      </if>
+      <if test="bizcost != null" >
+        bizcost,
+      </if>
+      <if test="inteexpe != null" >
+        inteexpe,
+      </if>
+      <if test="pounexpe != null" >
+        pounexpe,
+      </if>
+      <if test="realsalecost != null" >
+        realsalecost,
+      </if>
+      <if test="deveexpe != null" >
+        deveexpe,
+      </if>
+      <if test="surrgold != null" >
+        surrgold,
+      </if>
+      <if test="compnetexpe != null" >
+        compnetexpe,
+      </if>
+      <if test="contress != null" >
+        contress,
+      </if>
+      <if test="polidiviexpe != null" >
+        polidiviexpe,
+      </if>
+      <if test="reinexpe != null" >
+        reinexpe,
+      </if>
+      <if test="otherbizcost != null" >
+        otherbizcost,
+      </if>
+      <if test="biztax != null" >
+        biztax,
+      </if>
+      <if test="salesexpe != null" >
+        salesexpe,
+      </if>
+      <if test="manaexpe != null" >
+        manaexpe,
+      </if>
+      <if test="finexpe != null" >
+        finexpe,
+      </if>
+      <if test="asseimpaloss != null" >
+        asseimpaloss,
+      </if>
+      <if test="biztotcostitse != null" >
+        biztotcostitse,
+      </if>
+      <if test="biztotcostform != null" >
+        biztotcostform,
+      </if>
+      <if test="valuechgloss != null" >
+        valuechgloss,
+      </if>
+      <if test="inveinco != null" >
+        inveinco,
+      </if>
+      <if test="assoinveprof != null" >
+        assoinveprof,
+      </if>
+      <if test="exchggain != null" >
+        exchggain,
+      </if>
+      <if test="futuloss != null" >
+        futuloss,
+      </if>
+      <if test="custinco != null" >
+        custinco,
+      </if>
+      <if test="subsidyincome != null" >
+        subsidyincome,
+      </if>
+      <if test="otherbizprof != null" >
+        otherbizprof,
+      </if>
+      <if test="bizprofitse != null" >
+        bizprofitse,
+      </if>
+      <if test="operprofform != null" >
+        operprofform,
+      </if>
+      <if test="perprofit != null" >
+        perprofit,
+      </if>
+      <if test="nonoreve != null" >
+        nonoreve,
+      </if>
+      <if test="nonoexpe != null" >
+        nonoexpe,
+      </if>
+      <if test="noncassetsdisl != null" >
+        noncassetsdisl,
+      </if>
+      <if test="proftotitse != null" >
+        proftotitse,
+      </if>
+      <if test="proftotform != null" >
+        proftotform,
+      </if>
+      <if test="totprofit != null" >
+        totprofit,
+      </if>
+      <if test="incotaxexpe != null" >
+        incotaxexpe,
+      </if>
+      <if test="unreinveloss != null" >
+        unreinveloss,
+      </if>
+      <if test="netpro1itse != null" >
+        netpro1itse,
+      </if>
+      <if test="netpro1form != null" >
+        netpro1form,
+      </if>
+      <if test="netprofit != null" >
+        netprofit,
+      </if>
+      <if test="parenetp != null" >
+        parenetp,
+      </if>
+      <if test="mergeformnetprof != null" >
+        mergeformnetprof,
+      </if>
+      <if test="minysharrigh != null" >
+        minysharrigh,
+      </if>
+      <if test="netpro2itse != null" >
+        netpro2itse,
+      </if>
+      <if test="netpro2form != null" >
+        netpro2form,
+      </if>
+      <if test="basiceps != null" >
+        basiceps,
+      </if>
+      <if test="dilutedeps != null" >
+        dilutedeps,
+      </if>
+      <if test="othercompinco != null" >
+        othercompinco,
+      </if>
+      <if test="parecompinco != null" >
+        parecompinco,
+      </if>
+      <if test="minysharinco != null" >
+        minysharinco,
+      </if>
+      <if test="compincoamt != null" >
+        compincoamt,
+      </if>
+      <if test="parecompincoamt != null" >
+        parecompincoamt,
+      </if>
+      <if test="minysharincoamt != null" >
+        minysharincoamt,
+      </if>
+      <if test="earlyundiprof != null" >
+        earlyundiprof,
+      </if>
+      <if test="undisprofredu != null" >
+        undisprofredu,
+      </if>
+      <if test="otherinto != null" >
+        otherinto,
+      </if>
+      <if test="otherdistprof != null" >
+        otherdistprof,
+      </if>
+      <if test="legalsurp != null" >
+        legalsurp,
+      </if>
+      <if test="welfare != null" >
+        welfare,
+      </if>
+      <if test="capitalreserve != null" >
+        capitalreserve,
+      </if>
+      <if test="staffaward != null" >
+        staffaward,
+      </if>
+      <if test="reservefund != null" >
+        reservefund,
+      </if>
+      <if test="developfund != null" >
+        developfund,
+      </if>
+      <if test="profreturninvest != null" >
+        profreturninvest,
+      </if>
+      <if test="supplycurcap != null" >
+        supplycurcap,
+      </if>
+      <if test="avaidistshareprof != null" >
+        avaidistshareprof,
+      </if>
+      <if test="preferredskdiv != null" >
+        preferredskdiv,
+      </if>
+      <if test="freesurplu != null" >
+        freesurplu,
+      </if>
+      <if test="dealwithdivi != null" >
+        dealwithdivi,
+      </if>
+      <if test="capitalizeddivi != null" >
+        capitalizeddivi,
+      </if>
+      <if test="undisprofit != null" >
+        undisprofit,
+      </if>
+      <if test="selldepartgain != null" >
+        selldepartgain,
+      </if>
+      <if test="natudisasterloss != null" >
+        natudisasterloss,
+      </if>
+      <if test="accpolicychg != null" >
+        accpolicychg,
+      </if>
+      <if test="accestimatechg != null" >
+        accestimatechg,
+      </if>
+      <if test="debtrestruloss != null" >
+        debtrestruloss,
+      </if>
+      <if test="othersupply != null" >
+        othersupply,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        #{stockcode,jdbcType=CHAR},
+      </if>
+      <if test="compcode != null" >
+        #{compcode,jdbcType=INTEGER},
+      </if>
+      <if test="publishdate != null" >
+        #{publishdate,jdbcType=INTEGER},
+      </if>
+      <if test="begindate != null" >
+        #{begindate,jdbcType=INTEGER},
+      </if>
+      <if test="enddate != null" >
+        #{enddate,jdbcType=INTEGER},
+      </if>
+      <if test="reporttype != null" >
+        #{reporttype,jdbcType=INTEGER},
+      </if>
+      <if test="quarter != null" >
+        #{quarter,jdbcType=VARCHAR},
+      </if>
+      <if test="adjustdate != null" >
+        #{adjustdate,jdbcType=INTEGER},
+      </if>
+      <if test="accstacode != null" >
+        #{accstacode,jdbcType=INTEGER},
+      </if>
+      <if test="accstaname != null" >
+        #{accstaname,jdbcType=VARCHAR},
+      </if>
+      <if test="biztotinco != null" >
+        #{biztotinco,jdbcType=DOUBLE},
+      </if>
+      <if test="bizinco != null" >
+        #{bizinco,jdbcType=DOUBLE},
+      </if>
+      <if test="inteinco != null" >
+        #{inteinco,jdbcType=DOUBLE},
+      </if>
+      <if test="earnprem != null" >
+        #{earnprem,jdbcType=DOUBLE},
+      </if>
+      <if test="pouninco != null" >
+        #{pouninco,jdbcType=DOUBLE},
+      </if>
+      <if test="realsale != null" >
+        #{realsale,jdbcType=DOUBLE},
+      </if>
+      <if test="otherbizinco != null" >
+        #{otherbizinco,jdbcType=DOUBLE},
+      </if>
+      <if test="biztotincoitse != null" >
+        #{biztotincoitse,jdbcType=DOUBLE},
+      </if>
+      <if test="biztotincoform != null" >
+        #{biztotincoform,jdbcType=DOUBLE},
+      </if>
+      <if test="biztotcost != null" >
+        #{biztotcost,jdbcType=DOUBLE},
+      </if>
+      <if test="bizcost != null" >
+        #{bizcost,jdbcType=DOUBLE},
+      </if>
+      <if test="inteexpe != null" >
+        #{inteexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="pounexpe != null" >
+        #{pounexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="realsalecost != null" >
+        #{realsalecost,jdbcType=DOUBLE},
+      </if>
+      <if test="deveexpe != null" >
+        #{deveexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="surrgold != null" >
+        #{surrgold,jdbcType=DOUBLE},
+      </if>
+      <if test="compnetexpe != null" >
+        #{compnetexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="contress != null" >
+        #{contress,jdbcType=DOUBLE},
+      </if>
+      <if test="polidiviexpe != null" >
+        #{polidiviexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="reinexpe != null" >
+        #{reinexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="otherbizcost != null" >
+        #{otherbizcost,jdbcType=DOUBLE},
+      </if>
+      <if test="biztax != null" >
+        #{biztax,jdbcType=DOUBLE},
+      </if>
+      <if test="salesexpe != null" >
+        #{salesexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="manaexpe != null" >
+        #{manaexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="finexpe != null" >
+        #{finexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="asseimpaloss != null" >
+        #{asseimpaloss,jdbcType=DOUBLE},
+      </if>
+      <if test="biztotcostitse != null" >
+        #{biztotcostitse,jdbcType=DOUBLE},
+      </if>
+      <if test="biztotcostform != null" >
+        #{biztotcostform,jdbcType=DOUBLE},
+      </if>
+      <if test="valuechgloss != null" >
+        #{valuechgloss,jdbcType=DOUBLE},
+      </if>
+      <if test="inveinco != null" >
+        #{inveinco,jdbcType=DOUBLE},
+      </if>
+      <if test="assoinveprof != null" >
+        #{assoinveprof,jdbcType=DOUBLE},
+      </if>
+      <if test="exchggain != null" >
+        #{exchggain,jdbcType=DOUBLE},
+      </if>
+      <if test="futuloss != null" >
+        #{futuloss,jdbcType=DOUBLE},
+      </if>
+      <if test="custinco != null" >
+        #{custinco,jdbcType=DOUBLE},
+      </if>
+      <if test="subsidyincome != null" >
+        #{subsidyincome,jdbcType=DOUBLE},
+      </if>
+      <if test="otherbizprof != null" >
+        #{otherbizprof,jdbcType=DOUBLE},
+      </if>
+      <if test="bizprofitse != null" >
+        #{bizprofitse,jdbcType=DOUBLE},
+      </if>
+      <if test="operprofform != null" >
+        #{operprofform,jdbcType=DOUBLE},
+      </if>
+      <if test="perprofit != null" >
+        #{perprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="nonoreve != null" >
+        #{nonoreve,jdbcType=DOUBLE},
+      </if>
+      <if test="nonoexpe != null" >
+        #{nonoexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="noncassetsdisl != null" >
+        #{noncassetsdisl,jdbcType=DOUBLE},
+      </if>
+      <if test="proftotitse != null" >
+        #{proftotitse,jdbcType=DOUBLE},
+      </if>
+      <if test="proftotform != null" >
+        #{proftotform,jdbcType=DOUBLE},
+      </if>
+      <if test="totprofit != null" >
+        #{totprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="incotaxexpe != null" >
+        #{incotaxexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="unreinveloss != null" >
+        #{unreinveloss,jdbcType=DOUBLE},
+      </if>
+      <if test="netpro1itse != null" >
+        #{netpro1itse,jdbcType=DOUBLE},
+      </if>
+      <if test="netpro1form != null" >
+        #{netpro1form,jdbcType=DOUBLE},
+      </if>
+      <if test="netprofit != null" >
+        #{netprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="parenetp != null" >
+        #{parenetp,jdbcType=DOUBLE},
+      </if>
+      <if test="mergeformnetprof != null" >
+        #{mergeformnetprof,jdbcType=DOUBLE},
+      </if>
+      <if test="minysharrigh != null" >
+        #{minysharrigh,jdbcType=DOUBLE},
+      </if>
+      <if test="netpro2itse != null" >
+        #{netpro2itse,jdbcType=DOUBLE},
+      </if>
+      <if test="netpro2form != null" >
+        #{netpro2form,jdbcType=DOUBLE},
+      </if>
+      <if test="basiceps != null" >
+        #{basiceps,jdbcType=DOUBLE},
+      </if>
+      <if test="dilutedeps != null" >
+        #{dilutedeps,jdbcType=DOUBLE},
+      </if>
+      <if test="othercompinco != null" >
+        #{othercompinco,jdbcType=DOUBLE},
+      </if>
+      <if test="parecompinco != null" >
+        #{parecompinco,jdbcType=DOUBLE},
+      </if>
+      <if test="minysharinco != null" >
+        #{minysharinco,jdbcType=DOUBLE},
+      </if>
+      <if test="compincoamt != null" >
+        #{compincoamt,jdbcType=DOUBLE},
+      </if>
+      <if test="parecompincoamt != null" >
+        #{parecompincoamt,jdbcType=DOUBLE},
+      </if>
+      <if test="minysharincoamt != null" >
+        #{minysharincoamt,jdbcType=DOUBLE},
+      </if>
+      <if test="earlyundiprof != null" >
+        #{earlyundiprof,jdbcType=DOUBLE},
+      </if>
+      <if test="undisprofredu != null" >
+        #{undisprofredu,jdbcType=DOUBLE},
+      </if>
+      <if test="otherinto != null" >
+        #{otherinto,jdbcType=DOUBLE},
+      </if>
+      <if test="otherdistprof != null" >
+        #{otherdistprof,jdbcType=DOUBLE},
+      </if>
+      <if test="legalsurp != null" >
+        #{legalsurp,jdbcType=DOUBLE},
+      </if>
+      <if test="welfare != null" >
+        #{welfare,jdbcType=DOUBLE},
+      </if>
+      <if test="capitalreserve != null" >
+        #{capitalreserve,jdbcType=DOUBLE},
+      </if>
+      <if test="staffaward != null" >
+        #{staffaward,jdbcType=DOUBLE},
+      </if>
+      <if test="reservefund != null" >
+        #{reservefund,jdbcType=DOUBLE},
+      </if>
+      <if test="developfund != null" >
+        #{developfund,jdbcType=DOUBLE},
+      </if>
+      <if test="profreturninvest != null" >
+        #{profreturninvest,jdbcType=DOUBLE},
+      </if>
+      <if test="supplycurcap != null" >
+        #{supplycurcap,jdbcType=DOUBLE},
+      </if>
+      <if test="avaidistshareprof != null" >
+        #{avaidistshareprof,jdbcType=DOUBLE},
+      </if>
+      <if test="preferredskdiv != null" >
+        #{preferredskdiv,jdbcType=DOUBLE},
+      </if>
+      <if test="freesurplu != null" >
+        #{freesurplu,jdbcType=DOUBLE},
+      </if>
+      <if test="dealwithdivi != null" >
+        #{dealwithdivi,jdbcType=DOUBLE},
+      </if>
+      <if test="capitalizeddivi != null" >
+        #{capitalizeddivi,jdbcType=DOUBLE},
+      </if>
+      <if test="undisprofit != null" >
+        #{undisprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="selldepartgain != null" >
+        #{selldepartgain,jdbcType=DOUBLE},
+      </if>
+      <if test="natudisasterloss != null" >
+        #{natudisasterloss,jdbcType=DOUBLE},
+      </if>
+      <if test="accpolicychg != null" >
+        #{accpolicychg,jdbcType=DOUBLE},
+      </if>
+      <if test="accestimatechg != null" >
+        #{accestimatechg,jdbcType=DOUBLE},
+      </if>
+      <if test="debtrestruloss != null" >
+        #{debtrestruloss,jdbcType=DOUBLE},
+      </if>
+      <if test="othersupply != null" >
+        #{othersupply,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+</mapper>

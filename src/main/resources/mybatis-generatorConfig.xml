@@ -12,7 +12,12 @@
     <sqlMapGenerator targetPackage="com.finreport.generator.mapper" targetProject="src/main/java" >
         <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
-    <!-- <javaClientGenerator targetPackage="???" targetProject="???" type="XMLMAPPER" /> -->
-    <table tableName="balance" domainObjectName="BalSheet" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" enableUpdateByPrimaryKey="false" selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false" modelType="flat"/>
+    <javaClientGenerator targetPackage="com.finreport.generator.mapper" targetProject="src/main/java" type="XMLMAPPER" />
+    <!-- <table tableName="balance" domainObjectName="BalSheet" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" enableUpdateByPrimaryKey="false" selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false" modelType="flat"/>
+    <table tableName="cash" domainObjectName="CFStatement" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" enableUpdateByPrimaryKey="false" selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false" modelType="flat"/>
+    <table tableName="finindex" domainObjectName="FinMainIndex" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" enableUpdateByPrimaryKey="false" selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false" modelType="flat"/>
+    <table tableName="income" domainObjectName="IncStatement" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" enableUpdateByPrimaryKey="false" selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false" modelType="flat"/> -->
+    <table tableName="stock" domainObjectName="Stock" enableSelectByExample="false" enableDeleteByExample="false"  enableUpdateByExample="false"  selectByExampleQueryId="false" modelType="flat"/>
+    
   </context>
 </generatorConfiguration>

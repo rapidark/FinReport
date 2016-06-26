@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.finreport.mapper.StockMapper" >
+  <resultMap id="BaseResultMap" type="com.finreport.model.Stock" >
+    <id column="code" property="code" jdbcType="CHAR" />
+    <result column="symbol" property="symbol" jdbcType="CHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="current" property="current" jdbcType="REAL" />
+    <result column="percent" property="percent" jdbcType="REAL" />
+    <result column="change" property="change" jdbcType="REAL" />
+    <result column="high" property="high" jdbcType="REAL" />
+    <result column="low" property="low" jdbcType="REAL" />
+    <result column="high52w" property="high52w" jdbcType="REAL" />
+    <result column="low52w" property="low52w" jdbcType="REAL" />
+    <result column="marketcapital" property="marketcapital" jdbcType="DOUBLE" />
+    <result column="amount" property="amount" jdbcType="DOUBLE" />
+    <result column="pettm" property="pettm" jdbcType="REAL" />
+    <result column="volume" property="volume" jdbcType="DOUBLE" />
+    <result column="hasexist" property="hasexist" jdbcType="BIT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    code, symbol, name, current, percent, change, high, low, high52w, low52w, marketcapital, 
+    amount, pettm, volume, hasexist
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from stock
+    where code = #{code,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from stock
+    where code = #{code,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.finreport.model.Stock" >
+    insert into stock (code, symbol, name, 
+      current, percent, change, high, 
+      low, high52w, low52w, marketcapital, 
+      amount, pettm, volume, hasexist
+      )
+    values (#{code,jdbcType=CHAR}, #{symbol,jdbcType=CHAR}, #{name,jdbcType=VARCHAR}, 
+      #{current,jdbcType=REAL}, #{percent,jdbcType=REAL}, #{change,jdbcType=REAL}, #{high,jdbcType=REAL}, 
+      #{low,jdbcType=REAL}, #{high52w,jdbcType=REAL}, #{low52w,jdbcType=REAL}, #{marketcapital,jdbcType=DOUBLE}, 
+      #{amount,jdbcType=DOUBLE}, #{pettm,jdbcType=REAL}, #{volume,jdbcType=DOUBLE}, #{hasexist,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.finreport.model.Stock" >
+    insert into stock
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="code != null" >
+        code,
+      </if>
+      <if test="symbol != null" >
+        symbol,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="current != null" >
+        current,
+      </if>
+      <if test="percent != null" >
+        percent,
+      </if>
+      <if test="change != null" >
+        change,
+      </if>
+      <if test="high != null" >
+        high,
+      </if>
+      <if test="low != null" >
+        low,
+      </if>
+      <if test="high52w != null" >
+        high52w,
+      </if>
+      <if test="low52w != null" >
+        low52w,
+      </if>
+      <if test="marketcapital != null" >
+        marketcapital,
+      </if>
+      <if test="amount != null" >
+        amount,
+      </if>
+      <if test="pettm != null" >
+        pettm,
+      </if>
+      <if test="volume != null" >
+        volume,
+      </if>
+      <if test="hasexist != null" >
+        hasexist,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="code != null" >
+        #{code,jdbcType=CHAR},
+      </if>
+      <if test="symbol != null" >
+        #{symbol,jdbcType=CHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="current != null" >
+        #{current,jdbcType=REAL},
+      </if>
+      <if test="percent != null" >
+        #{percent,jdbcType=REAL},
+      </if>
+      <if test="change != null" >
+        #{change,jdbcType=REAL},
+      </if>
+      <if test="high != null" >
+        #{high,jdbcType=REAL},
+      </if>
+      <if test="low != null" >
+        #{low,jdbcType=REAL},
+      </if>
+      <if test="high52w != null" >
+        #{high52w,jdbcType=REAL},
+      </if>
+      <if test="low52w != null" >
+        #{low52w,jdbcType=REAL},
+      </if>
+      <if test="marketcapital != null" >
+        #{marketcapital,jdbcType=DOUBLE},
+      </if>
+      <if test="amount != null" >
+        #{amount,jdbcType=DOUBLE},
+      </if>
+      <if test="pettm != null" >
+        #{pettm,jdbcType=REAL},
+      </if>
+      <if test="volume != null" >
+        #{volume,jdbcType=DOUBLE},
+      </if>
+      <if test="hasexist != null" >
+        #{hasexist,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.finreport.model.Stock" >
+    update stock
+    <set >
+      <if test="symbol != null" >
+        symbol = #{symbol,jdbcType=CHAR},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="current != null" >
+        current = #{current,jdbcType=REAL},
+      </if>
+      <if test="percent != null" >
+        percent = #{percent,jdbcType=REAL},
+      </if>
+      <if test="change != null" >
+        change = #{change,jdbcType=REAL},
+      </if>
+      <if test="high != null" >
+        high = #{high,jdbcType=REAL},
+      </if>
+      <if test="low != null" >
+        low = #{low,jdbcType=REAL},
+      </if>
+      <if test="high52w != null" >
+        high52w = #{high52w,jdbcType=REAL},
+      </if>
+      <if test="low52w != null" >
+        low52w = #{low52w,jdbcType=REAL},
+      </if>
+      <if test="marketcapital != null" >
+        marketcapital = #{marketcapital,jdbcType=DOUBLE},
+      </if>
+      <if test="amount != null" >
+        amount = #{amount,jdbcType=DOUBLE},
+      </if>
+      <if test="pettm != null" >
+        pettm = #{pettm,jdbcType=REAL},
+      </if>
+      <if test="volume != null" >
+        volume = #{volume,jdbcType=DOUBLE},
+      </if>
+      <if test="hasexist != null" >
+        hasexist = #{hasexist,jdbcType=BIT},
+      </if>
+    </set>
+    where code = #{code,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.finreport.model.Stock" >
+    update stock
+    set symbol = #{symbol,jdbcType=CHAR},
+      name = #{name,jdbcType=VARCHAR},
+      current = #{current,jdbcType=REAL},
+      percent = #{percent,jdbcType=REAL},
+      change = #{change,jdbcType=REAL},
+      high = #{high,jdbcType=REAL},
+      low = #{low,jdbcType=REAL},
+      high52w = #{high52w,jdbcType=REAL},
+      low52w = #{low52w,jdbcType=REAL},
+      marketcapital = #{marketcapital,jdbcType=DOUBLE},
+      amount = #{amount,jdbcType=DOUBLE},
+      pettm = #{pettm,jdbcType=REAL},
+      volume = #{volume,jdbcType=DOUBLE},
+      hasexist = #{hasexist,jdbcType=BIT}
+    where code = #{code,jdbcType=CHAR}
+  </update>
+</mapper>

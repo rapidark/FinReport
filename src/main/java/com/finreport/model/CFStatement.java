@@ -1,899 +1,1263 @@
 package com.finreport.model;
 
 public class CFStatement {
-	private float compcode;
-	private float publishdate;
-	private float begindate;
-	private float enddate;
-	private float reporttype;
-	private float adjustdate;
-	private float accstacode;
-	private String accstaname;
-	private float laborgetcash;
-	private float deponetr;
-	private float bankloannetincr;
-	private float fininstnetr;
-	private float inspremcash;
-	private float insnetc;
-	private float savinetr;
-	private float disptradnetincr;
-	private float charintecash;
-	private float fdsborrnetr;
-	private float repnetincr;
-	private float taxrefd;
-	private float receotherbizcash;
-	private float bizinflitse;
-	private float bizinflform;
-	private float bizcashinfl;
-	private float labopayc;
-	private float loansnetr;
-	private float tradepaymnetr;
-	private float paycompgold;
-	private float payintecash;
-	private float paydivicash;
-	private float payworkcash;
-	private float paytax;
-	private float payacticash;
-	private float bizoutfitse;
-	private float bizoutfform;
-	private float bizcashoutf;
-	private float biznetitse;
-	private float biznetform;
-	private float mananetr;
-	private float withinvgetcash;
-	private float inveretugetcash;
-	private float fixedassetnetc;
-	private float subsnetc;
-	private float receinvcash;
-	private float reducashpled;
-	private float invinflitse;
-	private float invinffrom;
-	private float invcashinfl;
-	private float acquassetcash;
-	private float invpayc;
-	private float loannetr;
-	private float subspaynetcash;
-	private float payinvecash;
-	private float incrcashpled;
-	private float invoutfitse;
-	private float invoutfform;
-	private float invcashoutf;
-	private float netinvitse;
-	private float netinvform;
-	private float invnetcashflow;
-	private float invrececash;
-	private float subsrececash;
-	private float recefromloan;
-	private float issbdrececash;
-	private float recefincash;
-	private float fininflitse;
-	private float fininflform;
-	private float fincashinfl;
-	private float debtpaycash;
-	private float diviprofpaycash;
-	private float subspaydivid;
-	private float finrelacash;
-	private float finoutfitse;
-	private float finoutfform;
-	private float fincashoutf;
-	private float finnetitse;
-	private float finnetform;
-	private float finnetcflow;
-	private float chgexchgchgs;
-	private float netcashitse;
-	private float netcashform;
-	private float cashnetr;
-	private float inicashbala;
-	private float cashfinalitse;
-	private float cashfinalform;
-	private float finalcashbala;
-	private float netprofit;
-	private float minysharrigh;
-	private float unreinveloss;
-	private float asseimpa;
-	private float assedepr;
-	private float realestadep;
-	private float intaasseamor;
-	private float longdefeexpenamor;
-	private float prepexpedecr;
-	private float accrexpeincr;
-	private float dispfixedassetloss;
-	private float fixedassescraloss;
-	private float valuechgloss;
-	private float defeincoincr;
-	private float estidebts;
-	private float finexpe;
-	private float inveloss;
-	private float defetaxassetdecr;
-	private float defetaxliabincr;
-	private float inveredu;
-	private float receredu;
-	private float payaincr;
-	private float unseparachg;
-	private float unfiparachg;
-	private float other;
-	private float biznetscheitse;
-	private float biznetscheform;
-	private float biznetcflow;
-	private float debtintocapi;
-	private float expiconvbd;
-	private float finfixedasset;
-	private float cashfinalbala;
-	private float cashopenbala;
-	private float equfinalbala;
-	private float equopenbala;
-	private float netcashscheitse;
-	private float netcashscheform;
-	private float cashneti;
-	public float getCompcode() {
-		return compcode;
-	}
-	public void setCompcode(float compcode) {
-		this.compcode = compcode;
-	}
-	public float getPublishdate() {
-		return publishdate;
-	}
-	public void setPublishdate(float publishdate) {
-		this.publishdate = publishdate;
-	}
-	public float getBegindate() {
-		return begindate;
-	}
-	public void setBegindate(float begindate) {
-		this.begindate = begindate;
-	}
-	public float getEnddate() {
-		return enddate;
-	}
-	public void setEnddate(float enddate) {
-		this.enddate = enddate;
-	}
-	public float getReporttype() {
-		return reporttype;
-	}
-	public void setReporttype(float reporttype) {
-		this.reporttype = reporttype;
-	}
-	public float getAdjustdate() {
-		return adjustdate;
-	}
-	public void setAdjustdate(float adjustdate) {
-		this.adjustdate = adjustdate;
-	}
-	public float getAccstacode() {
-		return accstacode;
-	}
-	public void setAccstacode(float accstacode) {
-		this.accstacode = accstacode;
-	}
-	public String getAccstaname() {
-		return accstaname;
-	}
-	public void setAccstaname(String accstaname) {
-		this.accstaname = accstaname;
-	}
-	public float getLaborgetcash() {
-		return laborgetcash;
-	}
-	public void setLaborgetcash(float laborgetcash) {
-		this.laborgetcash = laborgetcash;
-	}
-	public float getDeponetr() {
-		return deponetr;
-	}
-	public void setDeponetr(float deponetr) {
-		this.deponetr = deponetr;
-	}
-	public float getBankloannetincr() {
-		return bankloannetincr;
-	}
-	public void setBankloannetincr(float bankloannetincr) {
-		this.bankloannetincr = bankloannetincr;
-	}
-	public float getFininstnetr() {
-		return fininstnetr;
-	}
-	public void setFininstnetr(float fininstnetr) {
-		this.fininstnetr = fininstnetr;
-	}
-	public float getInspremcash() {
-		return inspremcash;
-	}
-	public void setInspremcash(float inspremcash) {
-		this.inspremcash = inspremcash;
-	}
-	public float getInsnetc() {
-		return insnetc;
-	}
-	public void setInsnetc(float insnetc) {
-		this.insnetc = insnetc;
-	}
-	public float getSavinetr() {
-		return savinetr;
-	}
-	public void setSavinetr(float savinetr) {
-		this.savinetr = savinetr;
-	}
-	public float getDisptradnetincr() {
-		return disptradnetincr;
-	}
-	public void setDisptradnetincr(float disptradnetincr) {
-		this.disptradnetincr = disptradnetincr;
-	}
-	public float getCharintecash() {
-		return charintecash;
-	}
-	public void setCharintecash(float charintecash) {
-		this.charintecash = charintecash;
-	}
-	public float getFdsborrnetr() {
-		return fdsborrnetr;
-	}
-	public void setFdsborrnetr(float fdsborrnetr) {
-		this.fdsborrnetr = fdsborrnetr;
-	}
-	public float getRepnetincr() {
-		return repnetincr;
-	}
-	public void setRepnetincr(float repnetincr) {
-		this.repnetincr = repnetincr;
-	}
-	public float getTaxrefd() {
-		return taxrefd;
-	}
-	public void setTaxrefd(float taxrefd) {
-		this.taxrefd = taxrefd;
-	}
-	public float getReceotherbizcash() {
-		return receotherbizcash;
-	}
-	public void setReceotherbizcash(float receotherbizcash) {
-		this.receotherbizcash = receotherbizcash;
-	}
-	public float getBizinflitse() {
-		return bizinflitse;
-	}
-	public void setBizinflitse(float bizinflitse) {
-		this.bizinflitse = bizinflitse;
-	}
-	public float getBizinflform() {
-		return bizinflform;
-	}
-	public void setBizinflform(float bizinflform) {
-		this.bizinflform = bizinflform;
-	}
-	public float getBizcashinfl() {
-		return bizcashinfl;
-	}
-	public void setBizcashinfl(float bizcashinfl) {
-		this.bizcashinfl = bizcashinfl;
-	}
-	public float getLabopayc() {
-		return labopayc;
-	}
-	public void setLabopayc(float labopayc) {
-		this.labopayc = labopayc;
-	}
-	public float getLoansnetr() {
-		return loansnetr;
-	}
-	public void setLoansnetr(float loansnetr) {
-		this.loansnetr = loansnetr;
-	}
-	public float getTradepaymnetr() {
-		return tradepaymnetr;
-	}
-	public void setTradepaymnetr(float tradepaymnetr) {
-		this.tradepaymnetr = tradepaymnetr;
-	}
-	public float getPaycompgold() {
-		return paycompgold;
-	}
-	public void setPaycompgold(float paycompgold) {
-		this.paycompgold = paycompgold;
-	}
-	public float getPayintecash() {
-		return payintecash;
-	}
-	public void setPayintecash(float payintecash) {
-		this.payintecash = payintecash;
-	}
-	public float getPaydivicash() {
-		return paydivicash;
-	}
-	public void setPaydivicash(float paydivicash) {
-		this.paydivicash = paydivicash;
-	}
-	public float getPayworkcash() {
-		return payworkcash;
-	}
-	public void setPayworkcash(float payworkcash) {
-		this.payworkcash = payworkcash;
-	}
-	public float getPaytax() {
-		return paytax;
-	}
-	public void setPaytax(float paytax) {
-		this.paytax = paytax;
-	}
-	public float getPayacticash() {
-		return payacticash;
-	}
-	public void setPayacticash(float payacticash) {
-		this.payacticash = payacticash;
-	}
-	public float getBizoutfitse() {
-		return bizoutfitse;
-	}
-	public void setBizoutfitse(float bizoutfitse) {
-		this.bizoutfitse = bizoutfitse;
-	}
-	public float getBizoutfform() {
-		return bizoutfform;
-	}
-	public void setBizoutfform(float bizoutfform) {
-		this.bizoutfform = bizoutfform;
-	}
-	public float getBizcashoutf() {
-		return bizcashoutf;
-	}
-	public void setBizcashoutf(float bizcashoutf) {
-		this.bizcashoutf = bizcashoutf;
-	}
-	public float getBiznetitse() {
-		return biznetitse;
-	}
-	public void setBiznetitse(float biznetitse) {
-		this.biznetitse = biznetitse;
-	}
-	public float getBiznetform() {
-		return biznetform;
-	}
-	public void setBiznetform(float biznetform) {
-		this.biznetform = biznetform;
-	}
-	public float getMananetr() {
-		return mananetr;
-	}
-	public void setMananetr(float mananetr) {
-		this.mananetr = mananetr;
-	}
-	public float getWithinvgetcash() {
-		return withinvgetcash;
-	}
-	public void setWithinvgetcash(float withinvgetcash) {
-		this.withinvgetcash = withinvgetcash;
-	}
-	public float getInveretugetcash() {
-		return inveretugetcash;
-	}
-	public void setInveretugetcash(float inveretugetcash) {
-		this.inveretugetcash = inveretugetcash;
-	}
-	public float getFixedassetnetc() {
-		return fixedassetnetc;
-	}
-	public void setFixedassetnetc(float fixedassetnetc) {
-		this.fixedassetnetc = fixedassetnetc;
-	}
-	public float getSubsnetc() {
-		return subsnetc;
-	}
-	public void setSubsnetc(float subsnetc) {
-		this.subsnetc = subsnetc;
-	}
-	public float getReceinvcash() {
-		return receinvcash;
-	}
-	public void setReceinvcash(float receinvcash) {
-		this.receinvcash = receinvcash;
-	}
-	public float getReducashpled() {
-		return reducashpled;
-	}
-	public void setReducashpled(float reducashpled) {
-		this.reducashpled = reducashpled;
-	}
-	public float getInvinflitse() {
-		return invinflitse;
-	}
-	public void setInvinflitse(float invinflitse) {
-		this.invinflitse = invinflitse;
-	}
-	public float getInvinffrom() {
-		return invinffrom;
-	}
-	public void setInvinffrom(float invinffrom) {
-		this.invinffrom = invinffrom;
-	}
-	public float getInvcashinfl() {
-		return invcashinfl;
-	}
-	public void setInvcashinfl(float invcashinfl) {
-		this.invcashinfl = invcashinfl;
-	}
-	public float getAcquassetcash() {
-		return acquassetcash;
-	}
-	public void setAcquassetcash(float acquassetcash) {
-		this.acquassetcash = acquassetcash;
-	}
-	public float getInvpayc() {
-		return invpayc;
-	}
-	public void setInvpayc(float invpayc) {
-		this.invpayc = invpayc;
-	}
-	public float getLoannetr() {
-		return loannetr;
-	}
-	public void setLoannetr(float loannetr) {
-		this.loannetr = loannetr;
-	}
-	public float getSubspaynetcash() {
-		return subspaynetcash;
-	}
-	public void setSubspaynetcash(float subspaynetcash) {
-		this.subspaynetcash = subspaynetcash;
-	}
-	public float getPayinvecash() {
-		return payinvecash;
-	}
-	public void setPayinvecash(float payinvecash) {
-		this.payinvecash = payinvecash;
-	}
-	public float getIncrcashpled() {
-		return incrcashpled;
-	}
-	public void setIncrcashpled(float incrcashpled) {
-		this.incrcashpled = incrcashpled;
-	}
-	public float getInvoutfitse() {
-		return invoutfitse;
-	}
-	public void setInvoutfitse(float invoutfitse) {
-		this.invoutfitse = invoutfitse;
-	}
-	public float getInvoutfform() {
-		return invoutfform;
-	}
-	public void setInvoutfform(float invoutfform) {
-		this.invoutfform = invoutfform;
-	}
-	public float getInvcashoutf() {
-		return invcashoutf;
-	}
-	public void setInvcashoutf(float invcashoutf) {
-		this.invcashoutf = invcashoutf;
-	}
-	public float getNetinvitse() {
-		return netinvitse;
-	}
-	public void setNetinvitse(float netinvitse) {
-		this.netinvitse = netinvitse;
-	}
-	public float getNetinvform() {
-		return netinvform;
-	}
-	public void setNetinvform(float netinvform) {
-		this.netinvform = netinvform;
-	}
-	public float getInvnetcashflow() {
-		return invnetcashflow;
-	}
-	public void setInvnetcashflow(float invnetcashflow) {
-		this.invnetcashflow = invnetcashflow;
-	}
-	public float getInvrececash() {
-		return invrececash;
-	}
-	public void setInvrececash(float invrececash) {
-		this.invrececash = invrececash;
-	}
-	public float getSubsrececash() {
-		return subsrececash;
-	}
-	public void setSubsrececash(float subsrececash) {
-		this.subsrececash = subsrececash;
-	}
-	public float getRecefromloan() {
-		return recefromloan;
-	}
-	public void setRecefromloan(float recefromloan) {
-		this.recefromloan = recefromloan;
-	}
-	public float getIssbdrececash() {
-		return issbdrececash;
-	}
-	public void setIssbdrececash(float issbdrececash) {
-		this.issbdrececash = issbdrececash;
-	}
-	public float getRecefincash() {
-		return recefincash;
-	}
-	public void setRecefincash(float recefincash) {
-		this.recefincash = recefincash;
-	}
-	public float getFininflitse() {
-		return fininflitse;
-	}
-	public void setFininflitse(float fininflitse) {
-		this.fininflitse = fininflitse;
-	}
-	public float getFininflform() {
-		return fininflform;
-	}
-	public void setFininflform(float fininflform) {
-		this.fininflform = fininflform;
-	}
-	public float getFincashinfl() {
-		return fincashinfl;
-	}
-	public void setFincashinfl(float fincashinfl) {
-		this.fincashinfl = fincashinfl;
-	}
-	public float getDebtpaycash() {
-		return debtpaycash;
-	}
-	public void setDebtpaycash(float debtpaycash) {
-		this.debtpaycash = debtpaycash;
-	}
-	public float getDiviprofpaycash() {
-		return diviprofpaycash;
-	}
-	public void setDiviprofpaycash(float diviprofpaycash) {
-		this.diviprofpaycash = diviprofpaycash;
-	}
-	public float getSubspaydivid() {
-		return subspaydivid;
-	}
-	public void setSubspaydivid(float subspaydivid) {
-		this.subspaydivid = subspaydivid;
-	}
-	public float getFinrelacash() {
-		return finrelacash;
-	}
-	public void setFinrelacash(float finrelacash) {
-		this.finrelacash = finrelacash;
-	}
-	public float getFinoutfitse() {
-		return finoutfitse;
-	}
-	public void setFinoutfitse(float finoutfitse) {
-		this.finoutfitse = finoutfitse;
-	}
-	public float getFinoutfform() {
-		return finoutfform;
-	}
-	public void setFinoutfform(float finoutfform) {
-		this.finoutfform = finoutfform;
-	}
-	public float getFincashoutf() {
-		return fincashoutf;
-	}
-	public void setFincashoutf(float fincashoutf) {
-		this.fincashoutf = fincashoutf;
-	}
-	public float getFinnetitse() {
-		return finnetitse;
-	}
-	public void setFinnetitse(float finnetitse) {
-		this.finnetitse = finnetitse;
-	}
-	public float getFinnetform() {
-		return finnetform;
-	}
-	public void setFinnetform(float finnetform) {
-		this.finnetform = finnetform;
-	}
-	public float getFinnetcflow() {
-		return finnetcflow;
-	}
-	public void setFinnetcflow(float finnetcflow) {
-		this.finnetcflow = finnetcflow;
-	}
-	public float getChgexchgchgs() {
-		return chgexchgchgs;
-	}
-	public void setChgexchgchgs(float chgexchgchgs) {
-		this.chgexchgchgs = chgexchgchgs;
-	}
-	public float getNetcashitse() {
-		return netcashitse;
-	}
-	public void setNetcashitse(float netcashitse) {
-		this.netcashitse = netcashitse;
-	}
-	public float getNetcashform() {
-		return netcashform;
-	}
-	public void setNetcashform(float netcashform) {
-		this.netcashform = netcashform;
-	}
-	public float getCashnetr() {
-		return cashnetr;
-	}
-	public void setCashnetr(float cashnetr) {
-		this.cashnetr = cashnetr;
-	}
-	public float getInicashbala() {
-		return inicashbala;
-	}
-	public void setInicashbala(float inicashbala) {
-		this.inicashbala = inicashbala;
-	}
-	public float getCashfinalitse() {
-		return cashfinalitse;
-	}
-	public void setCashfinalitse(float cashfinalitse) {
-		this.cashfinalitse = cashfinalitse;
-	}
-	public float getCashfinalform() {
-		return cashfinalform;
-	}
-	public void setCashfinalform(float cashfinalform) {
-		this.cashfinalform = cashfinalform;
-	}
-	public float getFinalcashbala() {
-		return finalcashbala;
-	}
-	public void setFinalcashbala(float finalcashbala) {
-		this.finalcashbala = finalcashbala;
-	}
-	public float getNetprofit() {
-		return netprofit;
-	}
-	public void setNetprofit(float netprofit) {
-		this.netprofit = netprofit;
-	}
-	public float getMinysharrigh() {
-		return minysharrigh;
-	}
-	public void setMinysharrigh(float minysharrigh) {
-		this.minysharrigh = minysharrigh;
-	}
-	public float getUnreinveloss() {
-		return unreinveloss;
-	}
-	public void setUnreinveloss(float unreinveloss) {
-		this.unreinveloss = unreinveloss;
-	}
-	public float getAsseimpa() {
-		return asseimpa;
-	}
-	public void setAsseimpa(float asseimpa) {
-		this.asseimpa = asseimpa;
-	}
-	public float getAssedepr() {
-		return assedepr;
-	}
-	public void setAssedepr(float assedepr) {
-		this.assedepr = assedepr;
-	}
-	public float getRealestadep() {
-		return realestadep;
-	}
-	public void setRealestadep(float realestadep) {
-		this.realestadep = realestadep;
-	}
-	public float getIntaasseamor() {
-		return intaasseamor;
-	}
-	public void setIntaasseamor(float intaasseamor) {
-		this.intaasseamor = intaasseamor;
-	}
-	public float getLongdefeexpenamor() {
-		return longdefeexpenamor;
-	}
-	public void setLongdefeexpenamor(float longdefeexpenamor) {
-		this.longdefeexpenamor = longdefeexpenamor;
-	}
-	public float getPrepexpedecr() {
-		return prepexpedecr;
-	}
-	public void setPrepexpedecr(float prepexpedecr) {
-		this.prepexpedecr = prepexpedecr;
-	}
-	public float getAccrexpeincr() {
-		return accrexpeincr;
-	}
-	public void setAccrexpeincr(float accrexpeincr) {
-		this.accrexpeincr = accrexpeincr;
-	}
-	public float getDispfixedassetloss() {
-		return dispfixedassetloss;
-	}
-	public void setDispfixedassetloss(float dispfixedassetloss) {
-		this.dispfixedassetloss = dispfixedassetloss;
-	}
-	public float getFixedassescraloss() {
-		return fixedassescraloss;
-	}
-	public void setFixedassescraloss(float fixedassescraloss) {
-		this.fixedassescraloss = fixedassescraloss;
-	}
-	public float getValuechgloss() {
-		return valuechgloss;
-	}
-	public void setValuechgloss(float valuechgloss) {
-		this.valuechgloss = valuechgloss;
-	}
-	public float getDefeincoincr() {
-		return defeincoincr;
-	}
-	public void setDefeincoincr(float defeincoincr) {
-		this.defeincoincr = defeincoincr;
-	}
-	public float getEstidebts() {
-		return estidebts;
-	}
-	public void setEstidebts(float estidebts) {
-		this.estidebts = estidebts;
-	}
-	public float getFinexpe() {
-		return finexpe;
-	}
-	public void setFinexpe(float finexpe) {
-		this.finexpe = finexpe;
-	}
-	public float getInveloss() {
-		return inveloss;
-	}
-	public void setInveloss(float inveloss) {
-		this.inveloss = inveloss;
-	}
-	public float getDefetaxassetdecr() {
-		return defetaxassetdecr;
-	}
-	public void setDefetaxassetdecr(float defetaxassetdecr) {
-		this.defetaxassetdecr = defetaxassetdecr;
-	}
-	public float getDefetaxliabincr() {
-		return defetaxliabincr;
-	}
-	public void setDefetaxliabincr(float defetaxliabincr) {
-		this.defetaxliabincr = defetaxliabincr;
-	}
-	public float getInveredu() {
-		return inveredu;
-	}
-	public void setInveredu(float inveredu) {
-		this.inveredu = inveredu;
-	}
-	public float getReceredu() {
-		return receredu;
-	}
-	public void setReceredu(float receredu) {
-		this.receredu = receredu;
-	}
-	public float getPayaincr() {
-		return payaincr;
-	}
-	public void setPayaincr(float payaincr) {
-		this.payaincr = payaincr;
-	}
-	public float getUnseparachg() {
-		return unseparachg;
-	}
-	public void setUnseparachg(float unseparachg) {
-		this.unseparachg = unseparachg;
-	}
-	public float getUnfiparachg() {
-		return unfiparachg;
-	}
-	public void setUnfiparachg(float unfiparachg) {
-		this.unfiparachg = unfiparachg;
-	}
-	public float getOther() {
-		return other;
-	}
-	public void setOther(float other) {
-		this.other = other;
-	}
-	public float getBiznetscheitse() {
-		return biznetscheitse;
-	}
-	public void setBiznetscheitse(float biznetscheitse) {
-		this.biznetscheitse = biznetscheitse;
-	}
-	public float getBiznetscheform() {
-		return biznetscheform;
-	}
-	public void setBiznetscheform(float biznetscheform) {
-		this.biznetscheform = biznetscheform;
-	}
-	public float getBiznetcflow() {
-		return biznetcflow;
-	}
-	public void setBiznetcflow(float biznetcflow) {
-		this.biznetcflow = biznetcflow;
-	}
-	public float getDebtintocapi() {
-		return debtintocapi;
-	}
-	public void setDebtintocapi(float debtintocapi) {
-		this.debtintocapi = debtintocapi;
-	}
-	public float getExpiconvbd() {
-		return expiconvbd;
-	}
-	public void setExpiconvbd(float expiconvbd) {
-		this.expiconvbd = expiconvbd;
-	}
-	public float getFinfixedasset() {
-		return finfixedasset;
-	}
-	public void setFinfixedasset(float finfixedasset) {
-		this.finfixedasset = finfixedasset;
-	}
-	public float getCashfinalbala() {
-		return cashfinalbala;
-	}
-	public void setCashfinalbala(float cashfinalbala) {
-		this.cashfinalbala = cashfinalbala;
-	}
-	public float getCashopenbala() {
-		return cashopenbala;
-	}
-	public void setCashopenbala(float cashopenbala) {
-		this.cashopenbala = cashopenbala;
-	}
-	public float getEqufinalbala() {
-		return equfinalbala;
-	}
-	public void setEqufinalbala(float equfinalbala) {
-		this.equfinalbala = equfinalbala;
-	}
-	public float getEquopenbala() {
-		return equopenbala;
-	}
-	public void setEquopenbala(float equopenbala) {
-		this.equopenbala = equopenbala;
-	}
-	public float getNetcashscheitse() {
-		return netcashscheitse;
-	}
-	public void setNetcashscheitse(float netcashscheitse) {
-		this.netcashscheitse = netcashscheitse;
-	}
-	public float getNetcashscheform() {
-		return netcashscheform;
-	}
-	public void setNetcashscheform(float netcashscheform) {
-		this.netcashscheform = netcashscheform;
-	}
-	public float getCashneti() {
-		return cashneti;
-	}
-	public void setCashneti(float cashneti) {
-		this.cashneti = cashneti;
-	}
-	@Override
-	public String toString() {
-		return "CFStatement [compcode=" + compcode + ", publishdate=" + publishdate + ", begindate=" + begindate + ", enddate=" + enddate + ", reporttype=" + reporttype + ", adjustdate=" + adjustdate
-				+ ", accstacode=" + accstacode + ", accstaname=" + accstaname + ", laborgetcash=" + laborgetcash + ", deponetr=" + deponetr + ", bankloannetincr=" + bankloannetincr + ", fininstnetr="
-				+ fininstnetr + ", inspremcash=" + inspremcash + ", insnetc=" + insnetc + ", savinetr=" + savinetr + ", disptradnetincr=" + disptradnetincr + ", charintecash=" + charintecash
-				+ ", fdsborrnetr=" + fdsborrnetr + ", repnetincr=" + repnetincr + ", taxrefd=" + taxrefd + ", receotherbizcash=" + receotherbizcash + ", bizinflitse=" + bizinflitse + ", bizinflform="
-				+ bizinflform + ", bizcashinfl=" + bizcashinfl + ", labopayc=" + labopayc + ", loansnetr=" + loansnetr + ", tradepaymnetr=" + tradepaymnetr + ", paycompgold=" + paycompgold
-				+ ", payintecash=" + payintecash + ", paydivicash=" + paydivicash + ", payworkcash=" + payworkcash + ", paytax=" + paytax + ", payacticash=" + payacticash + ", bizoutfitse="
-				+ bizoutfitse + ", bizoutfform=" + bizoutfform + ", bizcashoutf=" + bizcashoutf + ", biznetitse=" + biznetitse + ", biznetform=" + biznetform + ", mananetr=" + mananetr
-				+ ", withinvgetcash=" + withinvgetcash + ", inveretugetcash=" + inveretugetcash + ", fixedassetnetc=" + fixedassetnetc + ", subsnetc=" + subsnetc + ", receinvcash=" + receinvcash
-				+ ", reducashpled=" + reducashpled + ", invinflitse=" + invinflitse + ", invinffrom=" + invinffrom + ", invcashinfl=" + invcashinfl + ", acquassetcash=" + acquassetcash + ", invpayc="
-				+ invpayc + ", loannetr=" + loannetr + ", subspaynetcash=" + subspaynetcash + ", payinvecash=" + payinvecash + ", incrcashpled=" + incrcashpled + ", invoutfitse=" + invoutfitse
-				+ ", invoutfform=" + invoutfform + ", invcashoutf=" + invcashoutf + ", netinvitse=" + netinvitse + ", netinvform=" + netinvform + ", invnetcashflow=" + invnetcashflow
-				+ ", invrececash=" + invrececash + ", subsrececash=" + subsrececash + ", recefromloan=" + recefromloan + ", issbdrececash=" + issbdrececash + ", recefincash=" + recefincash
-				+ ", fininflitse=" + fininflitse + ", fininflform=" + fininflform + ", fincashinfl=" + fincashinfl + ", debtpaycash=" + debtpaycash + ", diviprofpaycash=" + diviprofpaycash
-				+ ", subspaydivid=" + subspaydivid + ", finrelacash=" + finrelacash + ", finoutfitse=" + finoutfitse + ", finoutfform=" + finoutfform + ", fincashoutf=" + fincashoutf
-				+ ", finnetitse=" + finnetitse + ", finnetform=" + finnetform + ", finnetcflow=" + finnetcflow + ", chgexchgchgs=" + chgexchgchgs + ", netcashitse=" + netcashitse + ", netcashform="
-				+ netcashform + ", cashnetr=" + cashnetr + ", inicashbala=" + inicashbala + ", cashfinalitse=" + cashfinalitse + ", cashfinalform=" + cashfinalform + ", finalcashbala="
-				+ finalcashbala + ", netprofit=" + netprofit + ", minysharrigh=" + minysharrigh + ", unreinveloss=" + unreinveloss + ", asseimpa=" + asseimpa + ", assedepr=" + assedepr
-				+ ", realestadep=" + realestadep + ", intaasseamor=" + intaasseamor + ", longdefeexpenamor=" + longdefeexpenamor + ", prepexpedecr=" + prepexpedecr + ", accrexpeincr=" + accrexpeincr
-				+ ", dispfixedassetloss=" + dispfixedassetloss + ", fixedassescraloss=" + fixedassescraloss + ", valuechgloss=" + valuechgloss + ", defeincoincr=" + defeincoincr + ", estidebts="
-				+ estidebts + ", finexpe=" + finexpe + ", inveloss=" + inveloss + ", defetaxassetdecr=" + defetaxassetdecr + ", defetaxliabincr=" + defetaxliabincr + ", inveredu=" + inveredu
-				+ ", receredu=" + receredu + ", payaincr=" + payaincr + ", unseparachg=" + unseparachg + ", unfiparachg=" + unfiparachg + ", other=" + other + ", biznetscheitse=" + biznetscheitse
-				+ ", biznetscheform=" + biznetscheform + ", biznetcflow=" + biznetcflow + ", debtintocapi=" + debtintocapi + ", expiconvbd=" + expiconvbd + ", finfixedasset=" + finfixedasset
-				+ ", cashfinalbala=" + cashfinalbala + ", cashopenbala=" + cashopenbala + ", equfinalbala=" + equfinalbala + ", equopenbala=" + equopenbala + ", netcashscheitse=" + netcashscheitse
-				+ ", netcashscheform=" + netcashscheform + ", cashneti=" + cashneti + "]";
-	}
+    private String stockcode;
+
+    private Integer compcode;
+
+    private Integer publishdate;
+
+    private Integer begindate;
+
+    private Integer enddate;
+
+    private Integer reporttype;
+
+    private String quarter;
+
+    private Integer adjustdate;
+
+    private Integer accstacode;
+
+    private String accstaname;
+
+    private Double laborgetcash;
+
+    private Double deponetr;
+
+    private Double bankloannetincr;
+
+    private Double fininstnetr;
+
+    private Double inspremcash;
+
+    private Double insnetc;
+
+    private Double savinetr;
+
+    private Double disptradnetincr;
+
+    private Double charintecash;
+
+    private Double fdsborrnetr;
+
+    private Double repnetincr;
+
+    private Double taxrefd;
+
+    private Double receotherbizcash;
+
+    private Double bizinflitse;
+
+    private Double bizinflform;
+
+    private Double bizcashinfl;
+
+    private Double labopayc;
+
+    private Double loansnetr;
+
+    private Double tradepaymnetr;
+
+    private Double paycompgold;
+
+    private Double payintecash;
+
+    private Double paydivicash;
+
+    private Double payworkcash;
+
+    private Double paytax;
+
+    private Double payacticash;
+
+    private Double bizoutfitse;
+
+    private Double bizoutfform;
+
+    private Double bizcashoutf;
+
+    private Double biznetitse;
+
+    private Double biznetform;
+
+    private Double mananetr;
+
+    private Double withinvgetcash;
+
+    private Double inveretugetcash;
+
+    private Double fixedassetnetc;
+
+    private Double subsnetc;
+
+    private Double receinvcash;
+
+    private Double reducashpled;
+
+    private Double invinflitse;
+
+    private Double invinffrom;
+
+    private Double invcashinfl;
+
+    private Double acquassetcash;
+
+    private Double invpayc;
+
+    private Double loannetr;
+
+    private Double subspaynetcash;
+
+    private Double payinvecash;
+
+    private Double incrcashpled;
+
+    private Double invoutfitse;
+
+    private Double invoutfform;
+
+    private Double invcashoutf;
+
+    private Double netinvitse;
+
+    private Double netinvform;
+
+    private Double invnetcashflow;
+
+    private Double invrececash;
+
+    private Double subsrececash;
+
+    private Double recefromloan;
+
+    private Double issbdrececash;
+
+    private Double recefincash;
+
+    private Double fininflitse;
+
+    private Double fininflform;
+
+    private Double fincashinfl;
+
+    private Double debtpaycash;
+
+    private Double diviprofpaycash;
+
+    private Double subspaydivid;
+
+    private Double finrelacash;
+
+    private Double finoutfitse;
+
+    private Double finoutfform;
+
+    private Double fincashoutf;
+
+    private Double finnetitse;
+
+    private Double finnetform;
+
+    private Double finnetcflow;
+
+    private Double chgexchgchgs;
+
+    private Double netcashitse;
+
+    private Double netcashform;
+
+    private Double cashnetr;
+
+    private Double inicashbala;
+
+    private Double cashfinalitse;
+
+    private Double cashfinalform;
+
+    private Double finalcashbala;
+
+    private Double netprofit;
+
+    private Double minysharrigh;
+
+    private Double unreinveloss;
+
+    private Double asseimpa;
+
+    private Double assedepr;
+
+    private Double realestadep;
+
+    private Double intaasseamor;
+
+    private Double longdefeexpenamor;
+
+    private Double prepexpedecr;
+
+    private Double accrexpeincr;
+
+    private Double dispfixedassetloss;
+
+    private Double fixedassescraloss;
+
+    private Double valuechgloss;
+
+    private Double defeincoincr;
+
+    private Double estidebts;
+
+    private Double finexpe;
+
+    private Double inveloss;
+
+    private Double defetaxassetdecr;
+
+    private Double defetaxliabincr;
+
+    private Double inveredu;
+
+    private Double receredu;
+
+    private Double payaincr;
+
+    private Double unseparachg;
+
+    private Double unfiparachg;
+
+    private Double other;
+
+    private Double biznetscheitse;
+
+    private Double biznetscheform;
+
+    private Double biznetcflow;
+
+    private Double debtintocapi;
+
+    private Double expiconvbd;
+
+    private Double finfixedasset;
+
+    private Double cashfinalbala;
+
+    private Double cashopenbala;
+
+    private Double equfinalbala;
+
+    private Double equopenbala;
+
+    private Double netcashscheitse;
+
+    private Double netcashscheform;
+
+    private Double cashneti;
+
+    public String getStockcode() {
+        return stockcode;
+    }
+
+    public void setStockcode(String stockcode) {
+        this.stockcode = stockcode;
+    }
+
+    public Integer getCompcode() {
+        return compcode;
+    }
+
+    public void setCompcode(Integer compcode) {
+        this.compcode = compcode;
+    }
+
+    public Integer getPublishdate() {
+        return publishdate;
+    }
+
+    public void setPublishdate(Integer publishdate) {
+        this.publishdate = publishdate;
+    }
+
+    public Integer getBegindate() {
+        return begindate;
+    }
+
+    public void setBegindate(Integer begindate) {
+        this.begindate = begindate;
+    }
+
+    public Integer getEnddate() {
+        return enddate;
+    }
+
+    public void setEnddate(Integer enddate) {
+        this.enddate = enddate;
+    }
+
+    public Integer getReporttype() {
+        return reporttype;
+    }
+
+    public void setReporttype(Integer reporttype) {
+        this.reporttype = reporttype;
+    }
+
+    public String getQuarter() {
+        return enddate.toString().substring(4, 6);
+    }
+
+    public void setQuarter(String quarter) {
+        this.quarter = quarter;
+    }
+
+    public Integer getAdjustdate() {
+        return adjustdate;
+    }
+
+    public void setAdjustdate(Integer adjustdate) {
+        this.adjustdate = adjustdate;
+    }
+
+    public Integer getAccstacode() {
+        return accstacode;
+    }
+
+    public void setAccstacode(Integer accstacode) {
+        this.accstacode = accstacode;
+    }
+
+    public String getAccstaname() {
+        return accstaname;
+    }
+
+    public void setAccstaname(String accstaname) {
+        this.accstaname = accstaname;
+    }
+
+    public Double getLaborgetcash() {
+        return laborgetcash;
+    }
+
+    public void setLaborgetcash(Double laborgetcash) {
+        this.laborgetcash = laborgetcash;
+    }
+
+    public Double getDeponetr() {
+        return deponetr;
+    }
+
+    public void setDeponetr(Double deponetr) {
+        this.deponetr = deponetr;
+    }
+
+    public Double getBankloannetincr() {
+        return bankloannetincr;
+    }
+
+    public void setBankloannetincr(Double bankloannetincr) {
+        this.bankloannetincr = bankloannetincr;
+    }
+
+    public Double getFininstnetr() {
+        return fininstnetr;
+    }
+
+    public void setFininstnetr(Double fininstnetr) {
+        this.fininstnetr = fininstnetr;
+    }
+
+    public Double getInspremcash() {
+        return inspremcash;
+    }
+
+    public void setInspremcash(Double inspremcash) {
+        this.inspremcash = inspremcash;
+    }
+
+    public Double getInsnetc() {
+        return insnetc;
+    }
+
+    public void setInsnetc(Double insnetc) {
+        this.insnetc = insnetc;
+    }
+
+    public Double getSavinetr() {
+        return savinetr;
+    }
+
+    public void setSavinetr(Double savinetr) {
+        this.savinetr = savinetr;
+    }
+
+    public Double getDisptradnetincr() {
+        return disptradnetincr;
+    }
+
+    public void setDisptradnetincr(Double disptradnetincr) {
+        this.disptradnetincr = disptradnetincr;
+    }
+
+    public Double getCharintecash() {
+        return charintecash;
+    }
+
+    public void setCharintecash(Double charintecash) {
+        this.charintecash = charintecash;
+    }
+
+    public Double getFdsborrnetr() {
+        return fdsborrnetr;
+    }
+
+    public void setFdsborrnetr(Double fdsborrnetr) {
+        this.fdsborrnetr = fdsborrnetr;
+    }
+
+    public Double getRepnetincr() {
+        return repnetincr;
+    }
+
+    public void setRepnetincr(Double repnetincr) {
+        this.repnetincr = repnetincr;
+    }
+
+    public Double getTaxrefd() {
+        return taxrefd;
+    }
+
+    public void setTaxrefd(Double taxrefd) {
+        this.taxrefd = taxrefd;
+    }
+
+    public Double getReceotherbizcash() {
+        return receotherbizcash;
+    }
+
+    public void setReceotherbizcash(Double receotherbizcash) {
+        this.receotherbizcash = receotherbizcash;
+    }
+
+    public Double getBizinflitse() {
+        return bizinflitse;
+    }
+
+    public void setBizinflitse(Double bizinflitse) {
+        this.bizinflitse = bizinflitse;
+    }
+
+    public Double getBizinflform() {
+        return bizinflform;
+    }
+
+    public void setBizinflform(Double bizinflform) {
+        this.bizinflform = bizinflform;
+    }
+
+    public Double getBizcashinfl() {
+        return bizcashinfl;
+    }
+
+    public void setBizcashinfl(Double bizcashinfl) {
+        this.bizcashinfl = bizcashinfl;
+    }
+
+    public Double getLabopayc() {
+        return labopayc;
+    }
+
+    public void setLabopayc(Double labopayc) {
+        this.labopayc = labopayc;
+    }
+
+    public Double getLoansnetr() {
+        return loansnetr;
+    }
+
+    public void setLoansnetr(Double loansnetr) {
+        this.loansnetr = loansnetr;
+    }
+
+    public Double getTradepaymnetr() {
+        return tradepaymnetr;
+    }
+
+    public void setTradepaymnetr(Double tradepaymnetr) {
+        this.tradepaymnetr = tradepaymnetr;
+    }
+
+    public Double getPaycompgold() {
+        return paycompgold;
+    }
+
+    public void setPaycompgold(Double paycompgold) {
+        this.paycompgold = paycompgold;
+    }
+
+    public Double getPayintecash() {
+        return payintecash;
+    }
+
+    public void setPayintecash(Double payintecash) {
+        this.payintecash = payintecash;
+    }
+
+    public Double getPaydivicash() {
+        return paydivicash;
+    }
+
+    public void setPaydivicash(Double paydivicash) {
+        this.paydivicash = paydivicash;
+    }
+
+    public Double getPayworkcash() {
+        return payworkcash;
+    }
+
+    public void setPayworkcash(Double payworkcash) {
+        this.payworkcash = payworkcash;
+    }
+
+    public Double getPaytax() {
+        return paytax;
+    }
+
+    public void setPaytax(Double paytax) {
+        this.paytax = paytax;
+    }
+
+    public Double getPayacticash() {
+        return payacticash;
+    }
+
+    public void setPayacticash(Double payacticash) {
+        this.payacticash = payacticash;
+    }
+
+    public Double getBizoutfitse() {
+        return bizoutfitse;
+    }
+
+    public void setBizoutfitse(Double bizoutfitse) {
+        this.bizoutfitse = bizoutfitse;
+    }
+
+    public Double getBizoutfform() {
+        return bizoutfform;
+    }
+
+    public void setBizoutfform(Double bizoutfform) {
+        this.bizoutfform = bizoutfform;
+    }
+
+    public Double getBizcashoutf() {
+        return bizcashoutf;
+    }
+
+    public void setBizcashoutf(Double bizcashoutf) {
+        this.bizcashoutf = bizcashoutf;
+    }
+
+    public Double getBiznetitse() {
+        return biznetitse;
+    }
+
+    public void setBiznetitse(Double biznetitse) {
+        this.biznetitse = biznetitse;
+    }
+
+    public Double getBiznetform() {
+        return biznetform;
+    }
+
+    public void setBiznetform(Double biznetform) {
+        this.biznetform = biznetform;
+    }
+
+    public Double getMananetr() {
+        return mananetr;
+    }
+
+    public void setMananetr(Double mananetr) {
+        this.mananetr = mananetr;
+    }
+
+    public Double getWithinvgetcash() {
+        return withinvgetcash;
+    }
+
+    public void setWithinvgetcash(Double withinvgetcash) {
+        this.withinvgetcash = withinvgetcash;
+    }
+
+    public Double getInveretugetcash() {
+        return inveretugetcash;
+    }
+
+    public void setInveretugetcash(Double inveretugetcash) {
+        this.inveretugetcash = inveretugetcash;
+    }
+
+    public Double getFixedassetnetc() {
+        return fixedassetnetc;
+    }
+
+    public void setFixedassetnetc(Double fixedassetnetc) {
+        this.fixedassetnetc = fixedassetnetc;
+    }
+
+    public Double getSubsnetc() {
+        return subsnetc;
+    }
+
+    public void setSubsnetc(Double subsnetc) {
+        this.subsnetc = subsnetc;
+    }
+
+    public Double getReceinvcash() {
+        return receinvcash;
+    }
+
+    public void setReceinvcash(Double receinvcash) {
+        this.receinvcash = receinvcash;
+    }
+
+    public Double getReducashpled() {
+        return reducashpled;
+    }
+
+    public void setReducashpled(Double reducashpled) {
+        this.reducashpled = reducashpled;
+    }
+
+    public Double getInvinflitse() {
+        return invinflitse;
+    }
+
+    public void setInvinflitse(Double invinflitse) {
+        this.invinflitse = invinflitse;
+    }
+
+    public Double getInvinffrom() {
+        return invinffrom;
+    }
+
+    public void setInvinffrom(Double invinffrom) {
+        this.invinffrom = invinffrom;
+    }
+
+    public Double getInvcashinfl() {
+        return invcashinfl;
+    }
+
+    public void setInvcashinfl(Double invcashinfl) {
+        this.invcashinfl = invcashinfl;
+    }
+
+    public Double getAcquassetcash() {
+        return acquassetcash;
+    }
+
+    public void setAcquassetcash(Double acquassetcash) {
+        this.acquassetcash = acquassetcash;
+    }
+
+    public Double getInvpayc() {
+        return invpayc;
+    }
+
+    public void setInvpayc(Double invpayc) {
+        this.invpayc = invpayc;
+    }
+
+    public Double getLoannetr() {
+        return loannetr;
+    }
+
+    public void setLoannetr(Double loannetr) {
+        this.loannetr = loannetr;
+    }
+
+    public Double getSubspaynetcash() {
+        return subspaynetcash;
+    }
+
+    public void setSubspaynetcash(Double subspaynetcash) {
+        this.subspaynetcash = subspaynetcash;
+    }
+
+    public Double getPayinvecash() {
+        return payinvecash;
+    }
+
+    public void setPayinvecash(Double payinvecash) {
+        this.payinvecash = payinvecash;
+    }
+
+    public Double getIncrcashpled() {
+        return incrcashpled;
+    }
+
+    public void setIncrcashpled(Double incrcashpled) {
+        this.incrcashpled = incrcashpled;
+    }
+
+    public Double getInvoutfitse() {
+        return invoutfitse;
+    }
+
+    public void setInvoutfitse(Double invoutfitse) {
+        this.invoutfitse = invoutfitse;
+    }
+
+    public Double getInvoutfform() {
+        return invoutfform;
+    }
+
+    public void setInvoutfform(Double invoutfform) {
+        this.invoutfform = invoutfform;
+    }
+
+    public Double getInvcashoutf() {
+        return invcashoutf;
+    }
+
+    public void setInvcashoutf(Double invcashoutf) {
+        this.invcashoutf = invcashoutf;
+    }
+
+    public Double getNetinvitse() {
+        return netinvitse;
+    }
+
+    public void setNetinvitse(Double netinvitse) {
+        this.netinvitse = netinvitse;
+    }
+
+    public Double getNetinvform() {
+        return netinvform;
+    }
+
+    public void setNetinvform(Double netinvform) {
+        this.netinvform = netinvform;
+    }
+
+    public Double getInvnetcashflow() {
+        return invnetcashflow;
+    }
+
+    public void setInvnetcashflow(Double invnetcashflow) {
+        this.invnetcashflow = invnetcashflow;
+    }
+
+    public Double getInvrececash() {
+        return invrececash;
+    }
+
+    public void setInvrececash(Double invrececash) {
+        this.invrececash = invrececash;
+    }
+
+    public Double getSubsrececash() {
+        return subsrececash;
+    }
+
+    public void setSubsrececash(Double subsrececash) {
+        this.subsrececash = subsrececash;
+    }
+
+    public Double getRecefromloan() {
+        return recefromloan;
+    }
+
+    public void setRecefromloan(Double recefromloan) {
+        this.recefromloan = recefromloan;
+    }
+
+    public Double getIssbdrececash() {
+        return issbdrececash;
+    }
+
+    public void setIssbdrececash(Double issbdrececash) {
+        this.issbdrececash = issbdrececash;
+    }
+
+    public Double getRecefincash() {
+        return recefincash;
+    }
+
+    public void setRecefincash(Double recefincash) {
+        this.recefincash = recefincash;
+    }
+
+    public Double getFininflitse() {
+        return fininflitse;
+    }
+
+    public void setFininflitse(Double fininflitse) {
+        this.fininflitse = fininflitse;
+    }
+
+    public Double getFininflform() {
+        return fininflform;
+    }
+
+    public void setFininflform(Double fininflform) {
+        this.fininflform = fininflform;
+    }
+
+    public Double getFincashinfl() {
+        return fincashinfl;
+    }
+
+    public void setFincashinfl(Double fincashinfl) {
+        this.fincashinfl = fincashinfl;
+    }
+
+    public Double getDebtpaycash() {
+        return debtpaycash;
+    }
+
+    public void setDebtpaycash(Double debtpaycash) {
+        this.debtpaycash = debtpaycash;
+    }
+
+    public Double getDiviprofpaycash() {
+        return diviprofpaycash;
+    }
+
+    public void setDiviprofpaycash(Double diviprofpaycash) {
+        this.diviprofpaycash = diviprofpaycash;
+    }
+
+    public Double getSubspaydivid() {
+        return subspaydivid;
+    }
+
+    public void setSubspaydivid(Double subspaydivid) {
+        this.subspaydivid = subspaydivid;
+    }
+
+    public Double getFinrelacash() {
+        return finrelacash;
+    }
+
+    public void setFinrelacash(Double finrelacash) {
+        this.finrelacash = finrelacash;
+    }
+
+    public Double getFinoutfitse() {
+        return finoutfitse;
+    }
+
+    public void setFinoutfitse(Double finoutfitse) {
+        this.finoutfitse = finoutfitse;
+    }
+
+    public Double getFinoutfform() {
+        return finoutfform;
+    }
+
+    public void setFinoutfform(Double finoutfform) {
+        this.finoutfform = finoutfform;
+    }
+
+    public Double getFincashoutf() {
+        return fincashoutf;
+    }
+
+    public void setFincashoutf(Double fincashoutf) {
+        this.fincashoutf = fincashoutf;
+    }
+
+    public Double getFinnetitse() {
+        return finnetitse;
+    }
+
+    public void setFinnetitse(Double finnetitse) {
+        this.finnetitse = finnetitse;
+    }
+
+    public Double getFinnetform() {
+        return finnetform;
+    }
+
+    public void setFinnetform(Double finnetform) {
+        this.finnetform = finnetform;
+    }
+
+    public Double getFinnetcflow() {
+        return finnetcflow;
+    }
+
+    public void setFinnetcflow(Double finnetcflow) {
+        this.finnetcflow = finnetcflow;
+    }
+
+    public Double getChgexchgchgs() {
+        return chgexchgchgs;
+    }
+
+    public void setChgexchgchgs(Double chgexchgchgs) {
+        this.chgexchgchgs = chgexchgchgs;
+    }
+
+    public Double getNetcashitse() {
+        return netcashitse;
+    }
+
+    public void setNetcashitse(Double netcashitse) {
+        this.netcashitse = netcashitse;
+    }
+
+    public Double getNetcashform() {
+        return netcashform;
+    }
+
+    public void setNetcashform(Double netcashform) {
+        this.netcashform = netcashform;
+    }
+
+    public Double getCashnetr() {
+        return cashnetr;
+    }
+
+    public void setCashnetr(Double cashnetr) {
+        this.cashnetr = cashnetr;
+    }
+
+    public Double getInicashbala() {
+        return inicashbala;
+    }
+
+    public void setInicashbala(Double inicashbala) {
+        this.inicashbala = inicashbala;
+    }
+
+    public Double getCashfinalitse() {
+        return cashfinalitse;
+    }
+
+    public void setCashfinalitse(Double cashfinalitse) {
+        this.cashfinalitse = cashfinalitse;
+    }
+
+    public Double getCashfinalform() {
+        return cashfinalform;
+    }
+
+    public void setCashfinalform(Double cashfinalform) {
+        this.cashfinalform = cashfinalform;
+    }
+
+    public Double getFinalcashbala() {
+        return finalcashbala;
+    }
+
+    public void setFinalcashbala(Double finalcashbala) {
+        this.finalcashbala = finalcashbala;
+    }
+
+    public Double getNetprofit() {
+        return netprofit;
+    }
+
+    public void setNetprofit(Double netprofit) {
+        this.netprofit = netprofit;
+    }
+
+    public Double getMinysharrigh() {
+        return minysharrigh;
+    }
+
+    public void setMinysharrigh(Double minysharrigh) {
+        this.minysharrigh = minysharrigh;
+    }
+
+    public Double getUnreinveloss() {
+        return unreinveloss;
+    }
+
+    public void setUnreinveloss(Double unreinveloss) {
+        this.unreinveloss = unreinveloss;
+    }
+
+    public Double getAsseimpa() {
+        return asseimpa;
+    }
+
+    public void setAsseimpa(Double asseimpa) {
+        this.asseimpa = asseimpa;
+    }
+
+    public Double getAssedepr() {
+        return assedepr;
+    }
+
+    public void setAssedepr(Double assedepr) {
+        this.assedepr = assedepr;
+    }
+
+    public Double getRealestadep() {
+        return realestadep;
+    }
+
+    public void setRealestadep(Double realestadep) {
+        this.realestadep = realestadep;
+    }
+
+    public Double getIntaasseamor() {
+        return intaasseamor;
+    }
+
+    public void setIntaasseamor(Double intaasseamor) {
+        this.intaasseamor = intaasseamor;
+    }
+
+    public Double getLongdefeexpenamor() {
+        return longdefeexpenamor;
+    }
+
+    public void setLongdefeexpenamor(Double longdefeexpenamor) {
+        this.longdefeexpenamor = longdefeexpenamor;
+    }
+
+    public Double getPrepexpedecr() {
+        return prepexpedecr;
+    }
+
+    public void setPrepexpedecr(Double prepexpedecr) {
+        this.prepexpedecr = prepexpedecr;
+    }
+
+    public Double getAccrexpeincr() {
+        return accrexpeincr;
+    }
+
+    public void setAccrexpeincr(Double accrexpeincr) {
+        this.accrexpeincr = accrexpeincr;
+    }
+
+    public Double getDispfixedassetloss() {
+        return dispfixedassetloss;
+    }
+
+    public void setDispfixedassetloss(Double dispfixedassetloss) {
+        this.dispfixedassetloss = dispfixedassetloss;
+    }
+
+    public Double getFixedassescraloss() {
+        return fixedassescraloss;
+    }
+
+    public void setFixedassescraloss(Double fixedassescraloss) {
+        this.fixedassescraloss = fixedassescraloss;
+    }
+
+    public Double getValuechgloss() {
+        return valuechgloss;
+    }
+
+    public void setValuechgloss(Double valuechgloss) {
+        this.valuechgloss = valuechgloss;
+    }
+
+    public Double getDefeincoincr() {
+        return defeincoincr;
+    }
+
+    public void setDefeincoincr(Double defeincoincr) {
+        this.defeincoincr = defeincoincr;
+    }
+
+    public Double getEstidebts() {
+        return estidebts;
+    }
+
+    public void setEstidebts(Double estidebts) {
+        this.estidebts = estidebts;
+    }
+
+    public Double getFinexpe() {
+        return finexpe;
+    }
+
+    public void setFinexpe(Double finexpe) {
+        this.finexpe = finexpe;
+    }
+
+    public Double getInveloss() {
+        return inveloss;
+    }
+
+    public void setInveloss(Double inveloss) {
+        this.inveloss = inveloss;
+    }
+
+    public Double getDefetaxassetdecr() {
+        return defetaxassetdecr;
+    }
+
+    public void setDefetaxassetdecr(Double defetaxassetdecr) {
+        this.defetaxassetdecr = defetaxassetdecr;
+    }
+
+    public Double getDefetaxliabincr() {
+        return defetaxliabincr;
+    }
+
+    public void setDefetaxliabincr(Double defetaxliabincr) {
+        this.defetaxliabincr = defetaxliabincr;
+    }
+
+    public Double getInveredu() {
+        return inveredu;
+    }
+
+    public void setInveredu(Double inveredu) {
+        this.inveredu = inveredu;
+    }
+
+    public Double getReceredu() {
+        return receredu;
+    }
+
+    public void setReceredu(Double receredu) {
+        this.receredu = receredu;
+    }
+
+    public Double getPayaincr() {
+        return payaincr;
+    }
+
+    public void setPayaincr(Double payaincr) {
+        this.payaincr = payaincr;
+    }
+
+    public Double getUnseparachg() {
+        return unseparachg;
+    }
+
+    public void setUnseparachg(Double unseparachg) {
+        this.unseparachg = unseparachg;
+    }
+
+    public Double getUnfiparachg() {
+        return unfiparachg;
+    }
+
+    public void setUnfiparachg(Double unfiparachg) {
+        this.unfiparachg = unfiparachg;
+    }
+
+    public Double getOther() {
+        return other;
+    }
+
+    public void setOther(Double other) {
+        this.other = other;
+    }
+
+    public Double getBiznetscheitse() {
+        return biznetscheitse;
+    }
+
+    public void setBiznetscheitse(Double biznetscheitse) {
+        this.biznetscheitse = biznetscheitse;
+    }
+
+    public Double getBiznetscheform() {
+        return biznetscheform;
+    }
+
+    public void setBiznetscheform(Double biznetscheform) {
+        this.biznetscheform = biznetscheform;
+    }
+
+    public Double getBiznetcflow() {
+        return biznetcflow;
+    }
+
+    public void setBiznetcflow(Double biznetcflow) {
+        this.biznetcflow = biznetcflow;
+    }
+
+    public Double getDebtintocapi() {
+        return debtintocapi;
+    }
+
+    public void setDebtintocapi(Double debtintocapi) {
+        this.debtintocapi = debtintocapi;
+    }
+
+    public Double getExpiconvbd() {
+        return expiconvbd;
+    }
+
+    public void setExpiconvbd(Double expiconvbd) {
+        this.expiconvbd = expiconvbd;
+    }
+
+    public Double getFinfixedasset() {
+        return finfixedasset;
+    }
+
+    public void setFinfixedasset(Double finfixedasset) {
+        this.finfixedasset = finfixedasset;
+    }
+
+    public Double getCashfinalbala() {
+        return cashfinalbala;
+    }
+
+    public void setCashfinalbala(Double cashfinalbala) {
+        this.cashfinalbala = cashfinalbala;
+    }
+
+    public Double getCashopenbala() {
+        return cashopenbala;
+    }
+
+    public void setCashopenbala(Double cashopenbala) {
+        this.cashopenbala = cashopenbala;
+    }
+
+    public Double getEqufinalbala() {
+        return equfinalbala;
+    }
+
+    public void setEqufinalbala(Double equfinalbala) {
+        this.equfinalbala = equfinalbala;
+    }
+
+    public Double getEquopenbala() {
+        return equopenbala;
+    }
+
+    public void setEquopenbala(Double equopenbala) {
+        this.equopenbala = equopenbala;
+    }
+
+    public Double getNetcashscheitse() {
+        return netcashscheitse;
+    }
+
+    public void setNetcashscheitse(Double netcashscheitse) {
+        this.netcashscheitse = netcashscheitse;
+    }
+
+    public Double getNetcashscheform() {
+        return netcashscheform;
+    }
+
+    public void setNetcashscheform(Double netcashscheform) {
+        this.netcashscheform = netcashscheform;
+    }
+
+    public Double getCashneti() {
+        return cashneti;
+    }
+
+    public void setCashneti(Double cashneti) {
+        this.cashneti = cashneti;
+    }
 }

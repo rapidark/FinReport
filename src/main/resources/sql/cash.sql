@@ -1,5 +1,6 @@
-CREATE TABLE `cash` (
-  `stockcode` int(11) NOT NULL,
+DROP TABLE IF EXISTS `finstatement`.`cash`;
+CREATE TABLE  `finstatement`.`cash` (
+  `stockcode` char(6) NOT NULL,
   `compcode` int(11) NOT NULL,
   `publishdate` int(11) NOT NULL,
   `begindate` int(11) NOT NULL,
@@ -125,6 +126,6 @@ CREATE TABLE `cash` (
   `netcashscheitse` double NOT NULL DEFAULT '0',
   `netcashscheform` double NOT NULL DEFAULT '0',
   `cashneti` double NOT NULL DEFAULT '0',
-  PRIMARY KEY (`stockcode`),
+  PRIMARY KEY (`stockcode`, `enddate`),
   KEY `date_type_index` (`compcode`,`enddate`,`quarter`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

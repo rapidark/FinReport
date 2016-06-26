@@ -1,694 +1,973 @@
 package com.finreport.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class IncStatement {
-	private float compcode;
-	private float publishdate;
-	private float begindate;
-	private float enddate;
-	private float reporttype;
-	private float adjustdate;
-	private float accstacode;
-	private String accstaname;
-	private float biztotinco;
-	private float bizinco;
-	private float inteinco;
-	private float earnprem;
-	private float pouninco;
-	private float realsale;
-	private float otherbizinco;
-	private float biztotincoitse;
-	private float biztotincoform;
-	private float biztotcost;
-	private float bizcost;
-	private float inteexpe;
-	private float pounexpe;
-	private float realsalecost;
-	private float deveexpe;
-	private float surrgold;
-	private float compnetexpe;
-	private float contress;
-	private float polidiviexpe;
-	private float reinexpe;
-	private float otherbizcost;
-	private float biztax;
-	private float salesexpe;
-	private float manaexpe;
-	private float finexpe;
-	private float asseimpaloss;
-	private float biztotcostitse;
-	private float biztotcostform;
-	private float valuechgloss;
-	private float inveinco;
-	private float assoinveprof;
-	private float exchggain;
-	private float futuloss;
-	private float custinco;
-	private float subsidyincome;
-	private float otherbizprof;
-	private float bizprofitse;
-	private float operprofform;
-	private float perprofit;
-	private float nonoreve;
-	private float nonoexpe;
-	private float noncassetsdisl;
-	private float proftotitse;
-	private float proftotform;
-	private float totprofit;
-	private float incotaxexpe;
-	private float unreinveloss;
-	private float netpro1itse;
-	private float netpro1form;
-	private float netprofit;
-	private float parenetp;
-	private float mergeformnetprof;
-	private float minysharrigh;
-	private float netpro2itse;
-	private float netpro2form;
-	private float basiceps;
-	private float dilutedeps;
-	private float othercompinco;
-	private float parecompinco;
-	private float minysharinco;
-	private float compincoamt;
-	private float parecompincoamt;
-	private float minysharincoamt;
-	private float earlyundiprof;
-	private float undisprofredu;
-	private float otherinto;
-	private float otherdistprof;
-	private float legalsurp;
-	private float welfare;
-	private float capitalreserve;
-	private float staffaward;
-	private float reservefund;
-	private float developfund;
-	private float profreturninvest;
-	private float supplycurcap;
-	private float avaidistshareprof;
-	private float preferredskdiv;
-	private float freesurplu;
-	private float dealwithdivi;
-	private float capitalizeddivi;
-	private float undisprofit;
-	private float selldepartgain;
-	private float natudisasterloss;
-	private float accpolicychg;
-	private float accestimatechg;
-	private float debtrestruloss;
-	private float othersupply;
-	public float getCompcode() {
-		return compcode;
-	}
-	public void setCompcode(float compcode) {
-		this.compcode = compcode;
-	}
-	public float getPublishdate() {
-		return publishdate;
-	}
-	public void setPublishdate(float publishdate) {
-		this.publishdate = publishdate;
-	}
-	public float getBegindate() {
-		return begindate;
-	}
-	public void setBegindate(float begindate) {
-		this.begindate = begindate;
-	}
-	public float getEnddate() {
-		return enddate;
-	}
-	public void setEnddate(float enddate) {
-		this.enddate = enddate;
-	}
-	public float getReporttype() {
-		return reporttype;
-	}
-	public void setReporttype(float reporttype) {
-		this.reporttype = reporttype;
-	}
-	public float getAdjustdate() {
-		return adjustdate;
-	}
-	public void setAdjustdate(float adjustdate) {
-		this.adjustdate = adjustdate;
-	}
-	public float getAccstacode() {
-		return accstacode;
-	}
-	public void setAccstacode(float accstacode) {
-		this.accstacode = accstacode;
-	}
-	public String getAccstaname() {
-		return accstaname;
-	}
-	public void setAccstaname(String accstaname) {
-		this.accstaname = accstaname;
-	}
-	public float getBiztotinco() {
-		return biztotinco;
-	}
-	public void setBiztotinco(float biztotinco) {
-		this.biztotinco = biztotinco;
-	}
-	public float getBizinco() {
-		return bizinco;
-	}
-	public void setBizinco(float bizinco) {
-		this.bizinco = bizinco;
-	}
-	public float getInteinco() {
-		return inteinco;
-	}
-	public void setInteinco(float inteinco) {
-		this.inteinco = inteinco;
-	}
-	public float getEarnprem() {
-		return earnprem;
-	}
-	public void setEarnprem(float earnprem) {
-		this.earnprem = earnprem;
-	}
-	public float getPouninco() {
-		return pouninco;
-	}
-	public void setPouninco(float pouninco) {
-		this.pouninco = pouninco;
-	}
-	public float getRealsale() {
-		return realsale;
-	}
-	public void setRealsale(float realsale) {
-		this.realsale = realsale;
-	}
-	public float getOtherbizinco() {
-		return otherbizinco;
-	}
-	public void setOtherbizinco(float otherbizinco) {
-		this.otherbizinco = otherbizinco;
-	}
-	public float getBiztotincoitse() {
-		return biztotincoitse;
-	}
-	public void setBiztotincoitse(float biztotincoitse) {
-		this.biztotincoitse = biztotincoitse;
-	}
-	public float getBiztotincoform() {
-		return biztotincoform;
-	}
-	public void setBiztotincoform(float biztotincoform) {
-		this.biztotincoform = biztotincoform;
-	}
-	public float getBiztotcost() {
-		return biztotcost;
-	}
-	public void setBiztotcost(float biztotcost) {
-		this.biztotcost = biztotcost;
-	}
-	public float getBizcost() {
-		return bizcost;
-	}
-	public void setBizcost(float bizcost) {
-		this.bizcost = bizcost;
-	}
-	public float getInteexpe() {
-		return inteexpe;
-	}
-	public void setInteexpe(float inteexpe) {
-		this.inteexpe = inteexpe;
-	}
-	public float getPounexpe() {
-		return pounexpe;
-	}
-	public void setPounexpe(float pounexpe) {
-		this.pounexpe = pounexpe;
-	}
-	public float getRealsalecost() {
-		return realsalecost;
-	}
-	public void setRealsalecost(float realsalecost) {
-		this.realsalecost = realsalecost;
-	}
-	public float getDeveexpe() {
-		return deveexpe;
-	}
-	public void setDeveexpe(float deveexpe) {
-		this.deveexpe = deveexpe;
-	}
-	public float getSurrgold() {
-		return surrgold;
-	}
-	public void setSurrgold(float surrgold) {
-		this.surrgold = surrgold;
-	}
-	public float getCompnetexpe() {
-		return compnetexpe;
-	}
-	public void setCompnetexpe(float compnetexpe) {
-		this.compnetexpe = compnetexpe;
-	}
-	public float getContress() {
-		return contress;
-	}
-	public void setContress(float contress) {
-		this.contress = contress;
-	}
-	public float getPolidiviexpe() {
-		return polidiviexpe;
-	}
-	public void setPolidiviexpe(float polidiviexpe) {
-		this.polidiviexpe = polidiviexpe;
-	}
-	public float getReinexpe() {
-		return reinexpe;
-	}
-	public void setReinexpe(float reinexpe) {
-		this.reinexpe = reinexpe;
-	}
-	public float getOtherbizcost() {
-		return otherbizcost;
-	}
-	public void setOtherbizcost(float otherbizcost) {
-		this.otherbizcost = otherbizcost;
-	}
-	public float getBiztax() {
-		return biztax;
-	}
-	public void setBiztax(float biztax) {
-		this.biztax = biztax;
-	}
-	public float getSalesexpe() {
-		return salesexpe;
-	}
-	public void setSalesexpe(float salesexpe) {
-		this.salesexpe = salesexpe;
-	}
-	public float getManaexpe() {
-		return manaexpe;
-	}
-	public void setManaexpe(float manaexpe) {
-		this.manaexpe = manaexpe;
-	}
-	public float getFinexpe() {
-		return finexpe;
-	}
-	public void setFinexpe(float finexpe) {
-		this.finexpe = finexpe;
-	}
-	public float getAsseimpaloss() {
-		return asseimpaloss;
-	}
-	public void setAsseimpaloss(float asseimpaloss) {
-		this.asseimpaloss = asseimpaloss;
-	}
-	public float getBiztotcostitse() {
-		return biztotcostitse;
-	}
-	public void setBiztotcostitse(float biztotcostitse) {
-		this.biztotcostitse = biztotcostitse;
-	}
-	public float getBiztotcostform() {
-		return biztotcostform;
-	}
-	public void setBiztotcostform(float biztotcostform) {
-		this.biztotcostform = biztotcostform;
-	}
-	public float getValuechgloss() {
-		return valuechgloss;
-	}
-	public void setValuechgloss(float valuechgloss) {
-		this.valuechgloss = valuechgloss;
-	}
-	public float getInveinco() {
-		return inveinco;
-	}
-	public void setInveinco(float inveinco) {
-		this.inveinco = inveinco;
-	}
-	public float getAssoinveprof() {
-		return assoinveprof;
-	}
-	public void setAssoinveprof(float assoinveprof) {
-		this.assoinveprof = assoinveprof;
-	}
-	public float getExchggain() {
-		return exchggain;
-	}
-	public void setExchggain(float exchggain) {
-		this.exchggain = exchggain;
-	}
-	public float getFutuloss() {
-		return futuloss;
-	}
-	public void setFutuloss(float futuloss) {
-		this.futuloss = futuloss;
-	}
-	public float getCustinco() {
-		return custinco;
-	}
-	public void setCustinco(float custinco) {
-		this.custinco = custinco;
-	}
-	public float getSubsidyincome() {
-		return subsidyincome;
-	}
-	public void setSubsidyincome(float subsidyincome) {
-		this.subsidyincome = subsidyincome;
-	}
-	public float getOtherbizprof() {
-		return otherbizprof;
-	}
-	public void setOtherbizprof(float otherbizprof) {
-		this.otherbizprof = otherbizprof;
-	}
-	public float getBizprofitse() {
-		return bizprofitse;
-	}
-	public void setBizprofitse(float bizprofitse) {
-		this.bizprofitse = bizprofitse;
-	}
-	public float getOperprofform() {
-		return operprofform;
-	}
-	public void setOperprofform(float operprofform) {
-		this.operprofform = operprofform;
-	}
-	public float getPerprofit() {
-		return perprofit;
-	}
-	public void setPerprofit(float perprofit) {
-		this.perprofit = perprofit;
-	}
-	public float getNonoreve() {
-		return nonoreve;
-	}
-	public void setNonoreve(float nonoreve) {
-		this.nonoreve = nonoreve;
-	}
-	public float getNonoexpe() {
-		return nonoexpe;
-	}
-	public void setNonoexpe(float nonoexpe) {
-		this.nonoexpe = nonoexpe;
-	}
-	public float getNoncassetsdisl() {
-		return noncassetsdisl;
-	}
-	public void setNoncassetsdisl(float noncassetsdisl) {
-		this.noncassetsdisl = noncassetsdisl;
-	}
-	public float getProftotitse() {
-		return proftotitse;
-	}
-	public void setProftotitse(float proftotitse) {
-		this.proftotitse = proftotitse;
-	}
-	public float getProftotform() {
-		return proftotform;
-	}
-	public void setProftotform(float proftotform) {
-		this.proftotform = proftotform;
-	}
-	public float getTotprofit() {
-		return totprofit;
-	}
-	public void setTotprofit(float totprofit) {
-		this.totprofit = totprofit;
-	}
-	public float getIncotaxexpe() {
-		return incotaxexpe;
-	}
-	public void setIncotaxexpe(float incotaxexpe) {
-		this.incotaxexpe = incotaxexpe;
-	}
-	public float getUnreinveloss() {
-		return unreinveloss;
-	}
-	public void setUnreinveloss(float unreinveloss) {
-		this.unreinveloss = unreinveloss;
-	}
-	public float getNetpro1itse() {
-		return netpro1itse;
-	}
-	public void setNetpro1itse(float netpro1itse) {
-		this.netpro1itse = netpro1itse;
-	}
-	public float getNetpro1form() {
-		return netpro1form;
-	}
-	public void setNetpro1form(float netpro1form) {
-		this.netpro1form = netpro1form;
-	}
-	public float getNetprofit() {
-		return netprofit;
-	}
-	public void setNetprofit(float netprofit) {
-		this.netprofit = netprofit;
-	}
-	public float getParenetp() {
-		return parenetp;
-	}
-	public void setParenetp(float parenetp) {
-		this.parenetp = parenetp;
-	}
-	public float getMergeformnetprof() {
-		return mergeformnetprof;
-	}
-	public void setMergeformnetprof(float mergeformnetprof) {
-		this.mergeformnetprof = mergeformnetprof;
-	}
-	public float getMinysharrigh() {
-		return minysharrigh;
-	}
-	public void setMinysharrigh(float minysharrigh) {
-		this.minysharrigh = minysharrigh;
-	}
-	public float getNetpro2itse() {
-		return netpro2itse;
-	}
-	public void setNetpro2itse(float netpro2itse) {
-		this.netpro2itse = netpro2itse;
-	}
-	public float getNetpro2form() {
-		return netpro2form;
-	}
-	public void setNetpro2form(float netpro2form) {
-		this.netpro2form = netpro2form;
-	}
-	public float getBasiceps() {
-		return basiceps;
-	}
-	public void setBasiceps(float basiceps) {
-		this.basiceps = basiceps;
-	}
-	public float getDilutedeps() {
-		return dilutedeps;
-	}
-	public void setDilutedeps(float dilutedeps) {
-		this.dilutedeps = dilutedeps;
-	}
-	public float getOthercompinco() {
-		return othercompinco;
-	}
-	public void setOthercompinco(float othercompinco) {
-		this.othercompinco = othercompinco;
-	}
-	public float getParecompinco() {
-		return parecompinco;
-	}
-	public void setParecompinco(float parecompinco) {
-		this.parecompinco = parecompinco;
-	}
-	public float getMinysharinco() {
-		return minysharinco;
-	}
-	public void setMinysharinco(float minysharinco) {
-		this.minysharinco = minysharinco;
-	}
-	public float getCompincoamt() {
-		return compincoamt;
-	}
-	public void setCompincoamt(float compincoamt) {
-		this.compincoamt = compincoamt;
-	}
-	public float getParecompincoamt() {
-		return parecompincoamt;
-	}
-	public void setParecompincoamt(float parecompincoamt) {
-		this.parecompincoamt = parecompincoamt;
-	}
-	public float getMinysharincoamt() {
-		return minysharincoamt;
-	}
-	public void setMinysharincoamt(float minysharincoamt) {
-		this.minysharincoamt = minysharincoamt;
-	}
-	public float getEarlyundiprof() {
-		return earlyundiprof;
-	}
-	public void setEarlyundiprof(float earlyundiprof) {
-		this.earlyundiprof = earlyundiprof;
-	}
-	public float getUndisprofredu() {
-		return undisprofredu;
-	}
-	public void setUndisprofredu(float undisprofredu) {
-		this.undisprofredu = undisprofredu;
-	}
-	public float getOtherinto() {
-		return otherinto;
-	}
-	public void setOtherinto(float otherinto) {
-		this.otherinto = otherinto;
-	}
-	public float getOtherdistprof() {
-		return otherdistprof;
-	}
-	public void setOtherdistprof(float otherdistprof) {
-		this.otherdistprof = otherdistprof;
-	}
-	public float getLegalsurp() {
-		return legalsurp;
-	}
-	public void setLegalsurp(float legalsurp) {
-		this.legalsurp = legalsurp;
-	}
-	public float getWelfare() {
-		return welfare;
-	}
-	public void setWelfare(float welfare) {
-		this.welfare = welfare;
-	}
-	public float getCapitalreserve() {
-		return capitalreserve;
-	}
-	public void setCapitalreserve(float capitalreserve) {
-		this.capitalreserve = capitalreserve;
-	}
-	public float getStaffaward() {
-		return staffaward;
-	}
-	public void setStaffaward(float staffaward) {
-		this.staffaward = staffaward;
-	}
-	public float getReservefund() {
-		return reservefund;
-	}
-	public void setReservefund(float reservefund) {
-		this.reservefund = reservefund;
-	}
-	public float getDevelopfund() {
-		return developfund;
-	}
-	public void setDevelopfund(float developfund) {
-		this.developfund = developfund;
-	}
-	public float getProfreturninvest() {
-		return profreturninvest;
-	}
-	public void setProfreturninvest(float profreturninvest) {
-		this.profreturninvest = profreturninvest;
-	}
-	public float getSupplycurcap() {
-		return supplycurcap;
-	}
-	public void setSupplycurcap(float supplycurcap) {
-		this.supplycurcap = supplycurcap;
-	}
-	public float getAvaidistshareprof() {
-		return avaidistshareprof;
-	}
-	public void setAvaidistshareprof(float avaidistshareprof) {
-		this.avaidistshareprof = avaidistshareprof;
-	}
-	public float getPreferredskdiv() {
-		return preferredskdiv;
-	}
-	public void setPreferredskdiv(float preferredskdiv) {
-		this.preferredskdiv = preferredskdiv;
-	}
-	public float getFreesurplu() {
-		return freesurplu;
-	}
-	public void setFreesurplu(float freesurplu) {
-		this.freesurplu = freesurplu;
-	}
-	public float getDealwithdivi() {
-		return dealwithdivi;
-	}
-	public void setDealwithdivi(float dealwithdivi) {
-		this.dealwithdivi = dealwithdivi;
-	}
-	public float getCapitalizeddivi() {
-		return capitalizeddivi;
-	}
-	public void setCapitalizeddivi(float capitalizeddivi) {
-		this.capitalizeddivi = capitalizeddivi;
-	}
-	public float getUndisprofit() {
-		return undisprofit;
-	}
-	public void setUndisprofit(float undisprofit) {
-		this.undisprofit = undisprofit;
-	}
-	public float getSelldepartgain() {
-		return selldepartgain;
-	}
-	public void setSelldepartgain(float selldepartgain) {
-		this.selldepartgain = selldepartgain;
-	}
-	public float getNatudisasterloss() {
-		return natudisasterloss;
-	}
-	public void setNatudisasterloss(float natudisasterloss) {
-		this.natudisasterloss = natudisasterloss;
-	}
-	public float getAccpolicychg() {
-		return accpolicychg;
-	}
-	public void setAccpolicychg(float accpolicychg) {
-		this.accpolicychg = accpolicychg;
-	}
-	public float getAccestimatechg() {
-		return accestimatechg;
-	}
-	public void setAccestimatechg(float accestimatechg) {
-		this.accestimatechg = accestimatechg;
-	}
-	public float getDebtrestruloss() {
-		return debtrestruloss;
-	}
-	public void setDebtrestruloss(float debtrestruloss) {
-		this.debtrestruloss = debtrestruloss;
-	}
-	public float getOthersupply() {
-		return othersupply;
-	}
-	public void setOthersupply(float othersupply) {
-		this.othersupply = othersupply;
-	}
-	
-	@Override
-	public String toString() {
-		return "IncStatement [compcode=" + compcode + ", publishdate=" + publishdate + ", begindate=" + begindate + ", enddate=" + enddate + ", reporttype=" + reporttype + ", adjustdate="
-				+ adjustdate + ", accstacode=" + accstacode + ", accstaname=" + accstaname + ", biztotinco=" + biztotinco + ", bizinco=" + bizinco + ", inteinco=" + inteinco + ", earnprem="
-				+ earnprem + ", pouninco=" + pouninco + ", realsale=" + realsale + ", otherbizinco=" + otherbizinco + ", biztotincoitse=" + biztotincoitse + ", biztotincoform=" + biztotincoform
-				+ ", biztotcost=" + biztotcost + ", bizcost=" + bizcost + ", inteexpe=" + inteexpe + ", pounexpe=" + pounexpe + ", realsalecost=" + realsalecost + ", deveexpe=" + deveexpe
-				+ ", surrgold=" + surrgold + ", compnetexpe=" + compnetexpe + ", contress=" + contress + ", polidiviexpe=" + polidiviexpe + ", reinexpe=" + reinexpe + ", otherbizcost=" + otherbizcost
-				+ ", biztax=" + biztax + ", salesexpe=" + salesexpe + ", manaexpe=" + manaexpe + ", finexpe=" + finexpe + ", asseimpaloss=" + asseimpaloss + ", biztotcostitse=" + biztotcostitse
-				+ ", biztotcostform=" + biztotcostform + ", valuechgloss=" + valuechgloss + ", inveinco=" + inveinco + ", assoinveprof=" + assoinveprof + ", exchggain=" + exchggain + ", futuloss="
-				+ futuloss + ", custinco=" + custinco + ", subsidyincome=" + subsidyincome + ", otherbizprof=" + otherbizprof + ", bizprofitse=" + bizprofitse + ", operprofform=" + operprofform
-				+ ", perprofit=" + perprofit + ", nonoreve=" + nonoreve + ", nonoexpe=" + nonoexpe + ", noncassetsdisl=" + noncassetsdisl + ", proftotitse=" + proftotitse + ", proftotform="
-				+ proftotform + ", totprofit=" + totprofit + ", incotaxexpe=" + incotaxexpe + ", unreinveloss=" + unreinveloss + ", netpro1itse=" + netpro1itse + ", netpro1form=" + netpro1form
-				+ ", netprofit=" + netprofit + ", parenetp=" + parenetp + ", mergeformnetprof=" + mergeformnetprof + ", minysharrigh=" + minysharrigh + ", netpro2itse=" + netpro2itse
-				+ ", netpro2form=" + netpro2form + ", basiceps=" + basiceps + ", dilutedeps=" + dilutedeps + ", othercompinco=" + othercompinco + ", parecompinco=" + parecompinco + ", minysharinco="
-				+ minysharinco + ", compincoamt=" + compincoamt + ", parecompincoamt=" + parecompincoamt + ", minysharincoamt=" + minysharincoamt + ", earlyundiprof=" + earlyundiprof
-				+ ", undisprofredu=" + undisprofredu + ", otherinto=" + otherinto + ", otherdistprof=" + otherdistprof + ", legalsurp=" + legalsurp + ", welfare=" + welfare + ", capitalreserve="
-				+ capitalreserve + ", staffaward=" + staffaward + ", reservefund=" + reservefund + ", developfund=" + developfund + ", profreturninvest=" + profreturninvest + ", supplycurcap="
-				+ supplycurcap + ", avaidistshareprof=" + avaidistshareprof + ", preferredskdiv=" + preferredskdiv + ", freesurplu=" + freesurplu + ", dealwithdivi=" + dealwithdivi
-				+ ", capitalizeddivi=" + capitalizeddivi + ", undisprofit=" + undisprofit + ", selldepartgain=" + selldepartgain + ", natudisasterloss=" + natudisasterloss + ", accpolicychg="
-				+ accpolicychg + ", accestimatechg=" + accestimatechg + ", debtrestruloss=" + debtrestruloss + ", othersupply=" + othersupply + "]";
-	}
+    private String stockcode;
+
+    private Integer compcode;
+
+    private Integer publishdate;
+
+    private Integer begindate;
+
+    private Integer enddate;
+
+    private Integer reporttype;
+
+    private String quarter;
+
+    private Integer adjustdate;
+
+    private Integer accstacode;
+
+    private String accstaname;
+
+    private Double biztotinco;
+
+    private Double bizinco;
+
+    private Double inteinco;
+
+    private Double earnprem;
+
+    private Double pouninco;
+
+    private Double realsale;
+
+    private Double otherbizinco;
+
+    private Double biztotincoitse;
+
+    private Double biztotincoform;
+
+    private Double biztotcost;
+
+    private Double bizcost;
+
+    private Double inteexpe;
+
+    private Double pounexpe;
+
+    private Double realsalecost;
+
+    private Double deveexpe;
+
+    private Double surrgold;
+
+    private Double compnetexpe;
+
+    private Double contress;
+
+    private Double polidiviexpe;
+
+    private Double reinexpe;
+
+    private Double otherbizcost;
+
+    private Double biztax;
+
+    private Double salesexpe;
+
+    private Double manaexpe;
+
+    private Double finexpe;
+
+    private Double asseimpaloss;
+
+    private Double biztotcostitse;
+
+    private Double biztotcostform;
+
+    private Double valuechgloss;
+
+    private Double inveinco;
+
+    private Double assoinveprof;
+
+    private Double exchggain;
+
+    private Double futuloss;
+
+    private Double custinco;
+
+    private Double subsidyincome;
+
+    private Double otherbizprof;
+
+    private Double bizprofitse;
+
+    private Double operprofform;
+
+    private Double perprofit;
+
+    private Double nonoreve;
+
+    private Double nonoexpe;
+
+    private Double noncassetsdisl;
+
+    private Double proftotitse;
+
+    private Double proftotform;
+
+    private Double totprofit;
+
+    private Double incotaxexpe;
+
+    private Double unreinveloss;
+
+    private Double netpro1itse;
+
+    private Double netpro1form;
+
+    private Double netprofit;
+
+    private Double parenetp;
+
+    private Double mergeformnetprof;
+
+    private Double minysharrigh;
+
+    private Double netpro2itse;
+
+    private Double netpro2form;
+
+    private Double basiceps;
+
+    private Double dilutedeps;
+
+    private Double othercompinco;
+
+    private Double parecompinco;
+
+    private Double minysharinco;
+
+    private Double compincoamt;
+
+    private Double parecompincoamt;
+
+    private Double minysharincoamt;
+
+    private Double earlyundiprof;
+
+    private Double undisprofredu;
+
+    private Double otherinto;
+
+    private Double otherdistprof;
+
+    private Double legalsurp;
+
+    private Double welfare;
+
+    private Double capitalreserve;
+
+    private Double staffaward;
+
+    private Double reservefund;
+
+    private Double developfund;
+
+    private Double profreturninvest;
+
+    private Double supplycurcap;
+
+    private Double avaidistshareprof;
+
+    private Double preferredskdiv;
+
+    private Double freesurplu;
+
+    private Double dealwithdivi;
+
+    private Double capitalizeddivi;
+
+    private Double undisprofit;
+
+    private Double selldepartgain;
+
+    private Double natudisasterloss;
+
+    private Double accpolicychg;
+
+    private Double accestimatechg;
+
+    private Double debtrestruloss;
+
+    private Double othersupply;
+
+    public String getStockcode() {
+        return stockcode;
+    }
+
+    public void setStockcode(String stockcode) {
+        this.stockcode = stockcode;
+    }
+
+    public Integer getCompcode() {
+        return compcode;
+    }
+
+    public void setCompcode(Integer compcode) {
+        this.compcode = compcode;
+    }
+
+    public Integer getPublishdate() {
+        return publishdate;
+    }
+
+    public void setPublishdate(Integer publishdate) {
+        this.publishdate = publishdate;
+    }
+
+    public Integer getBegindate() {
+        return begindate;
+    }
+
+    public void setBegindate(Integer begindate) {
+        this.begindate = begindate;
+    }
+
+    public Integer getEnddate() {
+        return enddate;
+    }
+
+    public void setEnddate(Integer enddate) {
+        this.enddate = enddate;
+    }
+
+    public Integer getReporttype() {
+        return reporttype;
+    }
+
+    public void setReporttype(Integer reporttype) {
+        this.reporttype = reporttype;
+    }
+
+    public String getQuarter() {
+        return enddate.toString().substring(4, 6);
+    }
+
+    public void setQuarter(String quarter) {
+        this.quarter = quarter;
+    }
+
+    public Integer getAdjustdate() {
+        return adjustdate;
+    }
+
+    public void setAdjustdate(Integer adjustdate) {
+        this.adjustdate = adjustdate;
+    }
+
+    public Integer getAccstacode() {
+        return accstacode;
+    }
+
+    public void setAccstacode(Integer accstacode) {
+        this.accstacode = accstacode;
+    }
+
+    public String getAccstaname() {
+        return accstaname;
+    }
+
+    public void setAccstaname(String accstaname) {
+        this.accstaname = accstaname;
+    }
+
+    public Double getBiztotinco() {
+        return biztotinco;
+    }
+
+    public void setBiztotinco(Double biztotinco) {
+        this.biztotinco = biztotinco;
+    }
+
+    public Double getBizinco() {
+        return bizinco;
+    }
+
+    public void setBizinco(Double bizinco) {
+        this.bizinco = bizinco;
+    }
+
+    public Double getInteinco() {
+        return inteinco;
+    }
+
+    public void setInteinco(Double inteinco) {
+        this.inteinco = inteinco;
+    }
+
+    public Double getEarnprem() {
+        return earnprem;
+    }
+
+    public void setEarnprem(Double earnprem) {
+        this.earnprem = earnprem;
+    }
+
+    public Double getPouninco() {
+        return pouninco;
+    }
+
+    public void setPouninco(Double pouninco) {
+        this.pouninco = pouninco;
+    }
+
+    public Double getRealsale() {
+        return realsale;
+    }
+
+    public void setRealsale(Double realsale) {
+        this.realsale = realsale;
+    }
+
+    public Double getOtherbizinco() {
+        return otherbizinco;
+    }
+
+    public void setOtherbizinco(Double otherbizinco) {
+        this.otherbizinco = otherbizinco;
+    }
+
+    public Double getBiztotincoitse() {
+        return biztotincoitse;
+    }
+
+    public void setBiztotincoitse(Double biztotincoitse) {
+        this.biztotincoitse = biztotincoitse;
+    }
+
+    public Double getBiztotincoform() {
+        return biztotincoform;
+    }
+
+    public void setBiztotincoform(Double biztotincoform) {
+        this.biztotincoform = biztotincoform;
+    }
+
+    public Double getBiztotcost() {
+        return biztotcost;
+    }
+
+    public void setBiztotcost(Double biztotcost) {
+        this.biztotcost = biztotcost;
+    }
+
+    public Double getBizcost() {
+        return bizcost;
+    }
+
+    public void setBizcost(Double bizcost) {
+        this.bizcost = bizcost;
+    }
+
+    public Double getInteexpe() {
+        return inteexpe;
+    }
+
+    public void setInteexpe(Double inteexpe) {
+        this.inteexpe = inteexpe;
+    }
+
+    public Double getPounexpe() {
+        return pounexpe;
+    }
+
+    public void setPounexpe(Double pounexpe) {
+        this.pounexpe = pounexpe;
+    }
+
+    public Double getRealsalecost() {
+        return realsalecost;
+    }
+
+    public void setRealsalecost(Double realsalecost) {
+        this.realsalecost = realsalecost;
+    }
+
+    public Double getDeveexpe() {
+        return deveexpe;
+    }
+
+    public void setDeveexpe(Double deveexpe) {
+        this.deveexpe = deveexpe;
+    }
+
+    public Double getSurrgold() {
+        return surrgold;
+    }
+
+    public void setSurrgold(Double surrgold) {
+        this.surrgold = surrgold;
+    }
+
+    public Double getCompnetexpe() {
+        return compnetexpe;
+    }
+
+    public void setCompnetexpe(Double compnetexpe) {
+        this.compnetexpe = compnetexpe;
+    }
+
+    public Double getContress() {
+        return contress;
+    }
+
+    public void setContress(Double contress) {
+        this.contress = contress;
+    }
+
+    public Double getPolidiviexpe() {
+        return polidiviexpe;
+    }
+
+    public void setPolidiviexpe(Double polidiviexpe) {
+        this.polidiviexpe = polidiviexpe;
+    }
+
+    public Double getReinexpe() {
+        return reinexpe;
+    }
+
+    public void setReinexpe(Double reinexpe) {
+        this.reinexpe = reinexpe;
+    }
+
+    public Double getOtherbizcost() {
+        return otherbizcost;
+    }
+
+    public void setOtherbizcost(Double otherbizcost) {
+        this.otherbizcost = otherbizcost;
+    }
+
+    public Double getBiztax() {
+        return biztax;
+    }
+
+    public void setBiztax(Double biztax) {
+        this.biztax = biztax;
+    }
+
+    public Double getSalesexpe() {
+        return salesexpe;
+    }
+
+    public void setSalesexpe(Double salesexpe) {
+        this.salesexpe = salesexpe;
+    }
+
+    public Double getManaexpe() {
+        return manaexpe;
+    }
+
+    public void setManaexpe(Double manaexpe) {
+        this.manaexpe = manaexpe;
+    }
+
+    public Double getFinexpe() {
+        return finexpe;
+    }
+
+    public void setFinexpe(Double finexpe) {
+        this.finexpe = finexpe;
+    }
+
+    public Double getAsseimpaloss() {
+        return asseimpaloss;
+    }
+
+    public void setAsseimpaloss(Double asseimpaloss) {
+        this.asseimpaloss = asseimpaloss;
+    }
+
+    public Double getBiztotcostitse() {
+        return biztotcostitse;
+    }
+
+    public void setBiztotcostitse(Double biztotcostitse) {
+        this.biztotcostitse = biztotcostitse;
+    }
+
+    public Double getBiztotcostform() {
+        return biztotcostform;
+    }
+
+    public void setBiztotcostform(Double biztotcostform) {
+        this.biztotcostform = biztotcostform;
+    }
+
+    public Double getValuechgloss() {
+        return valuechgloss;
+    }
+
+    public void setValuechgloss(Double valuechgloss) {
+        this.valuechgloss = valuechgloss;
+    }
+
+    public Double getInveinco() {
+        return inveinco;
+    }
+
+    public void setInveinco(Double inveinco) {
+        this.inveinco = inveinco;
+    }
+
+    public Double getAssoinveprof() {
+        return assoinveprof;
+    }
+
+    public void setAssoinveprof(Double assoinveprof) {
+        this.assoinveprof = assoinveprof;
+    }
+
+    public Double getExchggain() {
+        return exchggain;
+    }
+
+    public void setExchggain(Double exchggain) {
+        this.exchggain = exchggain;
+    }
+
+    public Double getFutuloss() {
+        return futuloss;
+    }
+
+    public void setFutuloss(Double futuloss) {
+        this.futuloss = futuloss;
+    }
+
+    public Double getCustinco() {
+        return custinco;
+    }
+
+    public void setCustinco(Double custinco) {
+        this.custinco = custinco;
+    }
+
+    public Double getSubsidyincome() {
+        return subsidyincome;
+    }
+
+    public void setSubsidyincome(Double subsidyincome) {
+        this.subsidyincome = subsidyincome;
+    }
+
+    public Double getOtherbizprof() {
+        return otherbizprof;
+    }
+
+    public void setOtherbizprof(Double otherbizprof) {
+        this.otherbizprof = otherbizprof;
+    }
+
+    public Double getBizprofitse() {
+        return bizprofitse;
+    }
+
+    public void setBizprofitse(Double bizprofitse) {
+        this.bizprofitse = bizprofitse;
+    }
+
+    public Double getOperprofform() {
+        return operprofform;
+    }
+
+    public void setOperprofform(Double operprofform) {
+        this.operprofform = operprofform;
+    }
+
+    public Double getPerprofit() {
+        return perprofit;
+    }
+
+    public void setPerprofit(Double perprofit) {
+        this.perprofit = perprofit;
+    }
+
+    public Double getNonoreve() {
+        return nonoreve;
+    }
+
+    public void setNonoreve(Double nonoreve) {
+        this.nonoreve = nonoreve;
+    }
+
+    public Double getNonoexpe() {
+        return nonoexpe;
+    }
+
+    public void setNonoexpe(Double nonoexpe) {
+        this.nonoexpe = nonoexpe;
+    }
+
+    public Double getNoncassetsdisl() {
+        return noncassetsdisl;
+    }
+
+    public void setNoncassetsdisl(Double noncassetsdisl) {
+        this.noncassetsdisl = noncassetsdisl;
+    }
+
+    public Double getProftotitse() {
+        return proftotitse;
+    }
+
+    public void setProftotitse(Double proftotitse) {
+        this.proftotitse = proftotitse;
+    }
+
+    public Double getProftotform() {
+        return proftotform;
+    }
+
+    public void setProftotform(Double proftotform) {
+        this.proftotform = proftotform;
+    }
+
+    public Double getTotprofit() {
+        return totprofit;
+    }
+
+    public void setTotprofit(Double totprofit) {
+        this.totprofit = totprofit;
+    }
+
+    public Double getIncotaxexpe() {
+        return incotaxexpe;
+    }
+
+    public void setIncotaxexpe(Double incotaxexpe) {
+        this.incotaxexpe = incotaxexpe;
+    }
+
+    public Double getUnreinveloss() {
+        return unreinveloss;
+    }
+
+    public void setUnreinveloss(Double unreinveloss) {
+        this.unreinveloss = unreinveloss;
+    }
+
+    public Double getNetpro1itse() {
+        return netpro1itse;
+    }
+
+    public void setNetpro1itse(Double netpro1itse) {
+        this.netpro1itse = netpro1itse;
+    }
+
+    public Double getNetpro1form() {
+        return netpro1form;
+    }
+
+    public void setNetpro1form(Double netpro1form) {
+        this.netpro1form = netpro1form;
+    }
+
+    public Double getNetprofit() {
+        return netprofit;
+    }
+
+    public void setNetprofit(Double netprofit) {
+        this.netprofit = netprofit;
+    }
+
+    public Double getParenetp() {
+        return parenetp;
+    }
+
+    public void setParenetp(Double parenetp) {
+        this.parenetp = parenetp;
+    }
+
+    public Double getMergeformnetprof() {
+        return mergeformnetprof;
+    }
+
+    public void setMergeformnetprof(Double mergeformnetprof) {
+        this.mergeformnetprof = mergeformnetprof;
+    }
+
+    public Double getMinysharrigh() {
+        return minysharrigh;
+    }
+
+    public void setMinysharrigh(Double minysharrigh) {
+        this.minysharrigh = minysharrigh;
+    }
+
+    public Double getNetpro2itse() {
+        return netpro2itse;
+    }
+
+    public void setNetpro2itse(Double netpro2itse) {
+        this.netpro2itse = netpro2itse;
+    }
+
+    public Double getNetpro2form() {
+        return netpro2form;
+    }
+
+    public void setNetpro2form(Double netpro2form) {
+        this.netpro2form = netpro2form;
+    }
+
+    public Double getBasiceps() {
+        return basiceps;
+    }
+
+    public void setBasiceps(Double basiceps) {
+        this.basiceps = basiceps;
+    }
+
+    public Double getDilutedeps() {
+        return dilutedeps;
+    }
+
+    public void setDilutedeps(Double dilutedeps) {
+        this.dilutedeps = dilutedeps;
+    }
+
+    public Double getOthercompinco() {
+        return othercompinco;
+    }
+
+    public void setOthercompinco(Double othercompinco) {
+        this.othercompinco = othercompinco;
+    }
+
+    public Double getParecompinco() {
+        return parecompinco;
+    }
+
+    public void setParecompinco(Double parecompinco) {
+        this.parecompinco = parecompinco;
+    }
+
+    public Double getMinysharinco() {
+        return minysharinco;
+    }
+
+    public void setMinysharinco(Double minysharinco) {
+        this.minysharinco = minysharinco;
+    }
+
+    public Double getCompincoamt() {
+        return compincoamt;
+    }
+
+    public void setCompincoamt(Double compincoamt) {
+        this.compincoamt = compincoamt;
+    }
+
+    public Double getParecompincoamt() {
+        return parecompincoamt;
+    }
+
+    public void setParecompincoamt(Double parecompincoamt) {
+        this.parecompincoamt = parecompincoamt;
+    }
+
+    public Double getMinysharincoamt() {
+        return minysharincoamt;
+    }
+
+    public void setMinysharincoamt(Double minysharincoamt) {
+        this.minysharincoamt = minysharincoamt;
+    }
+
+    public Double getEarlyundiprof() {
+        return earlyundiprof;
+    }
+
+    public void setEarlyundiprof(Double earlyundiprof) {
+        this.earlyundiprof = earlyundiprof;
+    }
+
+    public Double getUndisprofredu() {
+        return undisprofredu;
+    }
+
+    public void setUndisprofredu(Double undisprofredu) {
+        this.undisprofredu = undisprofredu;
+    }
+
+    public Double getOtherinto() {
+        return otherinto;
+    }
+
+    public void setOtherinto(Double otherinto) {
+        this.otherinto = otherinto;
+    }
+
+    public Double getOtherdistprof() {
+        return otherdistprof;
+    }
+
+    public void setOtherdistprof(Double otherdistprof) {
+        this.otherdistprof = otherdistprof;
+    }
+
+    public Double getLegalsurp() {
+        return legalsurp;
+    }
+
+    public void setLegalsurp(Double legalsurp) {
+        this.legalsurp = legalsurp;
+    }
+
+    public Double getWelfare() {
+        return welfare;
+    }
+
+    public void setWelfare(Double welfare) {
+        this.welfare = welfare;
+    }
+
+    public Double getCapitalreserve() {
+        return capitalreserve;
+    }
+
+    public void setCapitalreserve(Double capitalreserve) {
+        this.capitalreserve = capitalreserve;
+    }
+
+    public Double getStaffaward() {
+        return staffaward;
+    }
+
+    public void setStaffaward(Double staffaward) {
+        this.staffaward = staffaward;
+    }
+
+    public Double getReservefund() {
+        return reservefund;
+    }
+
+    public void setReservefund(Double reservefund) {
+        this.reservefund = reservefund;
+    }
+
+    public Double getDevelopfund() {
+        return developfund;
+    }
+
+    public void setDevelopfund(Double developfund) {
+        this.developfund = developfund;
+    }
+
+    public Double getProfreturninvest() {
+        return profreturninvest;
+    }
+
+    public void setProfreturninvest(Double profreturninvest) {
+        this.profreturninvest = profreturninvest;
+    }
+
+    public Double getSupplycurcap() {
+        return supplycurcap;
+    }
+
+    public void setSupplycurcap(Double supplycurcap) {
+        this.supplycurcap = supplycurcap;
+    }
+
+    public Double getAvaidistshareprof() {
+        return avaidistshareprof;
+    }
+
+    public void setAvaidistshareprof(Double avaidistshareprof) {
+        this.avaidistshareprof = avaidistshareprof;
+    }
+
+    public Double getPreferredskdiv() {
+        return preferredskdiv;
+    }
+
+    public void setPreferredskdiv(Double preferredskdiv) {
+        this.preferredskdiv = preferredskdiv;
+    }
+
+    public Double getFreesurplu() {
+        return freesurplu;
+    }
+
+    public void setFreesurplu(Double freesurplu) {
+        this.freesurplu = freesurplu;
+    }
+
+    public Double getDealwithdivi() {
+        return dealwithdivi;
+    }
+
+    public void setDealwithdivi(Double dealwithdivi) {
+        this.dealwithdivi = dealwithdivi;
+    }
+
+    public Double getCapitalizeddivi() {
+        return capitalizeddivi;
+    }
+
+    public void setCapitalizeddivi(Double capitalizeddivi) {
+        this.capitalizeddivi = capitalizeddivi;
+    }
+
+    public Double getUndisprofit() {
+        return undisprofit;
+    }
+
+    public void setUndisprofit(Double undisprofit) {
+        this.undisprofit = undisprofit;
+    }
+
+    public Double getSelldepartgain() {
+        return selldepartgain;
+    }
+
+    public void setSelldepartgain(Double selldepartgain) {
+        this.selldepartgain = selldepartgain;
+    }
+
+    public Double getNatudisasterloss() {
+        return natudisasterloss;
+    }
+
+    public void setNatudisasterloss(Double natudisasterloss) {
+        this.natudisasterloss = natudisasterloss;
+    }
+
+    public Double getAccpolicychg() {
+        return accpolicychg;
+    }
+
+    public void setAccpolicychg(Double accpolicychg) {
+        this.accpolicychg = accpolicychg;
+    }
+
+    public Double getAccestimatechg() {
+        return accestimatechg;
+    }
+
+    public void setAccestimatechg(Double accestimatechg) {
+        this.accestimatechg = accestimatechg;
+    }
+
+    public Double getDebtrestruloss() {
+        return debtrestruloss;
+    }
+
+    public void setDebtrestruloss(Double debtrestruloss) {
+        this.debtrestruloss = debtrestruloss;
+    }
+
+    public Double getOthersupply() {
+        return othersupply;
+    }
+
+    public void setOthersupply(Double othersupply) {
+        this.othersupply = othersupply;
+    }
 }

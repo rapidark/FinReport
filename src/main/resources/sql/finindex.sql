@@ -1,5 +1,8 @@
-CREATE TABLE `finindex` (
-  `stockcode` int(11) NOT NULL,
+SELECT * FROM finstatement.finindex f;
+
+DROP TABLE IF EXISTS `finstatement`.`finindex`;
+CREATE TABLE  `finstatement`.`finindex` (
+  `stockcode` char(6) NOT NULL,
   `compcode` int(11) NOT NULL,
   `reportdate` int(11) NOT NULL,
   `quarter` varchar(4) NOT NULL,
@@ -31,6 +34,6 @@ CREATE TABLE `finindex` (
   `cashequfinbal` double NOT NULL DEFAULT '0',
   `symbol` double NOT NULL DEFAULT '0',
   `name` double NOT NULL DEFAULT '0',
-  PRIMARY KEY (`stockcode`),
+  PRIMARY KEY (`stockcode`, `reportdate`),
   KEY `date_type_index` (`compcode`,`reportdate`,`quarter`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

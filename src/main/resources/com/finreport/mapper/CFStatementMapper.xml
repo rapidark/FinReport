@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.finreport.mapper.CFStatementMapper" >
+  <resultMap id="BaseResultMap" type="com.finreport.model.CFStatement" >
+    <id column="stockcode" property="stockcode" jdbcType="CHAR" />
+    <result column="compcode" property="compcode" jdbcType="INTEGER" />
+    <result column="publishdate" property="publishdate" jdbcType="INTEGER" />
+    <result column="begindate" property="begindate" jdbcType="INTEGER" />
+    <result column="enddate" property="enddate" jdbcType="INTEGER" />
+    <result column="reporttype" property="reporttype" jdbcType="INTEGER" />
+    <result column="quarter" property="quarter" jdbcType="VARCHAR" />
+    <result column="adjustdate" property="adjustdate" jdbcType="INTEGER" />
+    <result column="accstacode" property="accstacode" jdbcType="INTEGER" />
+    <result column="accstaname" property="accstaname" jdbcType="VARCHAR" />
+    <result column="laborgetcash" property="laborgetcash" jdbcType="DOUBLE" />
+    <result column="deponetr" property="deponetr" jdbcType="DOUBLE" />
+    <result column="bankloannetincr" property="bankloannetincr" jdbcType="DOUBLE" />
+    <result column="fininstnetr" property="fininstnetr" jdbcType="DOUBLE" />
+    <result column="inspremcash" property="inspremcash" jdbcType="DOUBLE" />
+    <result column="insnetc" property="insnetc" jdbcType="DOUBLE" />
+    <result column="savinetr" property="savinetr" jdbcType="DOUBLE" />
+    <result column="disptradnetincr" property="disptradnetincr" jdbcType="DOUBLE" />
+    <result column="charintecash" property="charintecash" jdbcType="DOUBLE" />
+    <result column="fdsborrnetr" property="fdsborrnetr" jdbcType="DOUBLE" />
+    <result column="repnetincr" property="repnetincr" jdbcType="DOUBLE" />
+    <result column="taxrefd" property="taxrefd" jdbcType="DOUBLE" />
+    <result column="receotherbizcash" property="receotherbizcash" jdbcType="DOUBLE" />
+    <result column="bizinflitse" property="bizinflitse" jdbcType="DOUBLE" />
+    <result column="bizinflform" property="bizinflform" jdbcType="DOUBLE" />
+    <result column="bizcashinfl" property="bizcashinfl" jdbcType="DOUBLE" />
+    <result column="labopayc" property="labopayc" jdbcType="DOUBLE" />
+    <result column="loansnetr" property="loansnetr" jdbcType="DOUBLE" />
+    <result column="tradepaymnetr" property="tradepaymnetr" jdbcType="DOUBLE" />
+    <result column="paycompgold" property="paycompgold" jdbcType="DOUBLE" />
+    <result column="payintecash" property="payintecash" jdbcType="DOUBLE" />
+    <result column="paydivicash" property="paydivicash" jdbcType="DOUBLE" />
+    <result column="payworkcash" property="payworkcash" jdbcType="DOUBLE" />
+    <result column="paytax" property="paytax" jdbcType="DOUBLE" />
+    <result column="payacticash" property="payacticash" jdbcType="DOUBLE" />
+    <result column="bizoutfitse" property="bizoutfitse" jdbcType="DOUBLE" />
+    <result column="bizoutfform" property="bizoutfform" jdbcType="DOUBLE" />
+    <result column="bizcashoutf" property="bizcashoutf" jdbcType="DOUBLE" />
+    <result column="biznetitse" property="biznetitse" jdbcType="DOUBLE" />
+    <result column="biznetform" property="biznetform" jdbcType="DOUBLE" />
+    <result column="mananetr" property="mananetr" jdbcType="DOUBLE" />
+    <result column="withinvgetcash" property="withinvgetcash" jdbcType="DOUBLE" />
+    <result column="inveretugetcash" property="inveretugetcash" jdbcType="DOUBLE" />
+    <result column="fixedassetnetc" property="fixedassetnetc" jdbcType="DOUBLE" />
+    <result column="subsnetc" property="subsnetc" jdbcType="DOUBLE" />
+    <result column="receinvcash" property="receinvcash" jdbcType="DOUBLE" />
+    <result column="reducashpled" property="reducashpled" jdbcType="DOUBLE" />
+    <result column="invinflitse" property="invinflitse" jdbcType="DOUBLE" />
+    <result column="invinffrom" property="invinffrom" jdbcType="DOUBLE" />
+    <result column="invcashinfl" property="invcashinfl" jdbcType="DOUBLE" />
+    <result column="acquassetcash" property="acquassetcash" jdbcType="DOUBLE" />
+    <result column="invpayc" property="invpayc" jdbcType="DOUBLE" />
+    <result column="loannetr" property="loannetr" jdbcType="DOUBLE" />
+    <result column="subspaynetcash" property="subspaynetcash" jdbcType="DOUBLE" />
+    <result column="payinvecash" property="payinvecash" jdbcType="DOUBLE" />
+    <result column="incrcashpled" property="incrcashpled" jdbcType="DOUBLE" />
+    <result column="invoutfitse" property="invoutfitse" jdbcType="DOUBLE" />
+    <result column="invoutfform" property="invoutfform" jdbcType="DOUBLE" />
+    <result column="invcashoutf" property="invcashoutf" jdbcType="DOUBLE" />
+    <result column="netinvitse" property="netinvitse" jdbcType="DOUBLE" />
+    <result column="netinvform" property="netinvform" jdbcType="DOUBLE" />
+    <result column="invnetcashflow" property="invnetcashflow" jdbcType="DOUBLE" />
+    <result column="invrececash" property="invrececash" jdbcType="DOUBLE" />
+    <result column="subsrececash" property="subsrececash" jdbcType="DOUBLE" />
+    <result column="recefromloan" property="recefromloan" jdbcType="DOUBLE" />
+    <result column="issbdrececash" property="issbdrececash" jdbcType="DOUBLE" />
+    <result column="recefincash" property="recefincash" jdbcType="DOUBLE" />
+    <result column="fininflitse" property="fininflitse" jdbcType="DOUBLE" />
+    <result column="fininflform" property="fininflform" jdbcType="DOUBLE" />
+    <result column="fincashinfl" property="fincashinfl" jdbcType="DOUBLE" />
+    <result column="debtpaycash" property="debtpaycash" jdbcType="DOUBLE" />
+    <result column="diviprofpaycash" property="diviprofpaycash" jdbcType="DOUBLE" />
+    <result column="subspaydivid" property="subspaydivid" jdbcType="DOUBLE" />
+    <result column="finrelacash" property="finrelacash" jdbcType="DOUBLE" />
+    <result column="finoutfitse" property="finoutfitse" jdbcType="DOUBLE" />
+    <result column="finoutfform" property="finoutfform" jdbcType="DOUBLE" />
+    <result column="fincashoutf" property="fincashoutf" jdbcType="DOUBLE" />
+    <result column="finnetitse" property="finnetitse" jdbcType="DOUBLE" />
+    <result column="finnetform" property="finnetform" jdbcType="DOUBLE" />
+    <result column="finnetcflow" property="finnetcflow" jdbcType="DOUBLE" />
+    <result column="chgexchgchgs" property="chgexchgchgs" jdbcType="DOUBLE" />
+    <result column="netcashitse" property="netcashitse" jdbcType="DOUBLE" />
+    <result column="netcashform" property="netcashform" jdbcType="DOUBLE" />
+    <result column="cashnetr" property="cashnetr" jdbcType="DOUBLE" />
+    <result column="inicashbala" property="inicashbala" jdbcType="DOUBLE" />
+    <result column="cashfinalitse" property="cashfinalitse" jdbcType="DOUBLE" />
+    <result column="cashfinalform" property="cashfinalform" jdbcType="DOUBLE" />
+    <result column="finalcashbala" property="finalcashbala" jdbcType="DOUBLE" />
+    <result column="netprofit" property="netprofit" jdbcType="DOUBLE" />
+    <result column="minysharrigh" property="minysharrigh" jdbcType="DOUBLE" />
+    <result column="unreinveloss" property="unreinveloss" jdbcType="DOUBLE" />
+    <result column="asseimpa" property="asseimpa" jdbcType="DOUBLE" />
+    <result column="assedepr" property="assedepr" jdbcType="DOUBLE" />
+    <result column="realestadep" property="realestadep" jdbcType="DOUBLE" />
+    <result column="intaasseamor" property="intaasseamor" jdbcType="DOUBLE" />
+    <result column="longdefeexpenamor" property="longdefeexpenamor" jdbcType="DOUBLE" />
+    <result column="prepexpedecr" property="prepexpedecr" jdbcType="DOUBLE" />
+    <result column="accrexpeincr" property="accrexpeincr" jdbcType="DOUBLE" />
+    <result column="dispfixedassetloss" property="dispfixedassetloss" jdbcType="DOUBLE" />
+    <result column="fixedassescraloss" property="fixedassescraloss" jdbcType="DOUBLE" />
+    <result column="valuechgloss" property="valuechgloss" jdbcType="DOUBLE" />
+    <result column="defeincoincr" property="defeincoincr" jdbcType="DOUBLE" />
+    <result column="estidebts" property="estidebts" jdbcType="DOUBLE" />
+    <result column="finexpe" property="finexpe" jdbcType="DOUBLE" />
+    <result column="inveloss" property="inveloss" jdbcType="DOUBLE" />
+    <result column="defetaxassetdecr" property="defetaxassetdecr" jdbcType="DOUBLE" />
+    <result column="defetaxliabincr" property="defetaxliabincr" jdbcType="DOUBLE" />
+    <result column="inveredu" property="inveredu" jdbcType="DOUBLE" />
+    <result column="receredu" property="receredu" jdbcType="DOUBLE" />
+    <result column="payaincr" property="payaincr" jdbcType="DOUBLE" />
+    <result column="unseparachg" property="unseparachg" jdbcType="DOUBLE" />
+    <result column="unfiparachg" property="unfiparachg" jdbcType="DOUBLE" />
+    <result column="other" property="other" jdbcType="DOUBLE" />
+    <result column="biznetscheitse" property="biznetscheitse" jdbcType="DOUBLE" />
+    <result column="biznetscheform" property="biznetscheform" jdbcType="DOUBLE" />
+    <result column="biznetcflow" property="biznetcflow" jdbcType="DOUBLE" />
+    <result column="debtintocapi" property="debtintocapi" jdbcType="DOUBLE" />
+    <result column="expiconvbd" property="expiconvbd" jdbcType="DOUBLE" />
+    <result column="finfixedasset" property="finfixedasset" jdbcType="DOUBLE" />
+    <result column="cashfinalbala" property="cashfinalbala" jdbcType="DOUBLE" />
+    <result column="cashopenbala" property="cashopenbala" jdbcType="DOUBLE" />
+    <result column="equfinalbala" property="equfinalbala" jdbcType="DOUBLE" />
+    <result column="equopenbala" property="equopenbala" jdbcType="DOUBLE" />
+    <result column="netcashscheitse" property="netcashscheitse" jdbcType="DOUBLE" />
+    <result column="netcashscheform" property="netcashscheform" jdbcType="DOUBLE" />
+    <result column="cashneti" property="cashneti" jdbcType="DOUBLE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    stockcode, compcode, publishdate, begindate, enddate, reporttype, quarter, adjustdate, 
+    accstacode, accstaname, laborgetcash, deponetr, bankloannetincr, fininstnetr, inspremcash, 
+    insnetc, savinetr, disptradnetincr, charintecash, fdsborrnetr, repnetincr, taxrefd, 
+    receotherbizcash, bizinflitse, bizinflform, bizcashinfl, labopayc, loansnetr, tradepaymnetr, 
+    paycompgold, payintecash, paydivicash, payworkcash, paytax, payacticash, bizoutfitse, 
+    bizoutfform, bizcashoutf, biznetitse, biznetform, mananetr, withinvgetcash, inveretugetcash, 
+    fixedassetnetc, subsnetc, receinvcash, reducashpled, invinflitse, invinffrom, invcashinfl, 
+    acquassetcash, invpayc, loannetr, subspaynetcash, payinvecash, incrcashpled, invoutfitse, 
+    invoutfform, invcashoutf, netinvitse, netinvform, invnetcashflow, invrececash, subsrececash, 
+    recefromloan, issbdrececash, recefincash, fininflitse, fininflform, fincashinfl, 
+    debtpaycash, diviprofpaycash, subspaydivid, finrelacash, finoutfitse, finoutfform, 
+    fincashoutf, finnetitse, finnetform, finnetcflow, chgexchgchgs, netcashitse, netcashform, 
+    cashnetr, inicashbala, cashfinalitse, cashfinalform, finalcashbala, netprofit, minysharrigh, 
+    unreinveloss, asseimpa, assedepr, realestadep, intaasseamor, longdefeexpenamor, prepexpedecr, 
+    accrexpeincr, dispfixedassetloss, fixedassescraloss, valuechgloss, defeincoincr, 
+    estidebts, finexpe, inveloss, defetaxassetdecr, defetaxliabincr, inveredu, receredu, 
+    payaincr, unseparachg, unfiparachg, other, biznetscheitse, biznetscheform, biznetcflow, 
+    debtintocapi, expiconvbd, finfixedasset, cashfinalbala, cashopenbala, equfinalbala, 
+    equopenbala, netcashscheitse, netcashscheform, cashneti
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from cash
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from cash
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.finreport.model.CFStatement" >
+    insert into cash (stockcode, compcode, publishdate, 
+      begindate, enddate, reporttype, 
+      quarter, adjustdate, accstacode, 
+      accstaname, laborgetcash, deponetr, 
+      bankloannetincr, fininstnetr, inspremcash, 
+      insnetc, savinetr, disptradnetincr, 
+      charintecash, fdsborrnetr, repnetincr, 
+      taxrefd, receotherbizcash, bizinflitse, 
+      bizinflform, bizcashinfl, labopayc, 
+      loansnetr, tradepaymnetr, paycompgold, 
+      payintecash, paydivicash, payworkcash, 
+      paytax, payacticash, bizoutfitse, 
+      bizoutfform, bizcashoutf, biznetitse, 
+      biznetform, mananetr, withinvgetcash, 
+      inveretugetcash, fixedassetnetc, subsnetc, 
+      receinvcash, reducashpled, invinflitse, 
+      invinffrom, invcashinfl, acquassetcash, 
+      invpayc, loannetr, subspaynetcash, 
+      payinvecash, incrcashpled, invoutfitse, 
+      invoutfform, invcashoutf, netinvitse, 
+      netinvform, invnetcashflow, invrececash, 
+      subsrececash, recefromloan, issbdrececash, 
+      recefincash, fininflitse, fininflform, 
+      fincashinfl, debtpaycash, diviprofpaycash, 
+      subspaydivid, finrelacash, finoutfitse, 
+      finoutfform, fincashoutf, finnetitse, 
+      finnetform, finnetcflow, chgexchgchgs, 
+      netcashitse, netcashform, cashnetr, 
+      inicashbala, cashfinalitse, cashfinalform, 
+      finalcashbala, netprofit, minysharrigh, 
+      unreinveloss, asseimpa, assedepr, 
+      realestadep, intaasseamor, longdefeexpenamor, 
+      prepexpedecr, accrexpeincr, dispfixedassetloss, 
+      fixedassescraloss, valuechgloss, defeincoincr, 
+      estidebts, finexpe, inveloss, 
+      defetaxassetdecr, defetaxliabincr, inveredu, 
+      receredu, payaincr, unseparachg, 
+      unfiparachg, other, biznetscheitse, 
+      biznetscheform, biznetcflow, debtintocapi, 
+      expiconvbd, finfixedasset, cashfinalbala, 
+      cashopenbala, equfinalbala, equopenbala, 
+      netcashscheitse, netcashscheform, cashneti
+      )
+    values (#{stockcode,jdbcType=CHAR}, #{compcode,jdbcType=INTEGER}, #{publishdate,jdbcType=INTEGER}, 
+      #{begindate,jdbcType=INTEGER}, #{enddate,jdbcType=INTEGER}, #{reporttype,jdbcType=INTEGER}, 
+      #{quarter,jdbcType=VARCHAR}, #{adjustdate,jdbcType=INTEGER}, #{accstacode,jdbcType=INTEGER}, 
+      #{accstaname,jdbcType=VARCHAR}, #{laborgetcash,jdbcType=DOUBLE}, #{deponetr,jdbcType=DOUBLE}, 
+      #{bankloannetincr,jdbcType=DOUBLE}, #{fininstnetr,jdbcType=DOUBLE}, #{inspremcash,jdbcType=DOUBLE}, 
+      #{insnetc,jdbcType=DOUBLE}, #{savinetr,jdbcType=DOUBLE}, #{disptradnetincr,jdbcType=DOUBLE}, 
+      #{charintecash,jdbcType=DOUBLE}, #{fdsborrnetr,jdbcType=DOUBLE}, #{repnetincr,jdbcType=DOUBLE}, 
+      #{taxrefd,jdbcType=DOUBLE}, #{receotherbizcash,jdbcType=DOUBLE}, #{bizinflitse,jdbcType=DOUBLE}, 
+      #{bizinflform,jdbcType=DOUBLE}, #{bizcashinfl,jdbcType=DOUBLE}, #{labopayc,jdbcType=DOUBLE}, 
+      #{loansnetr,jdbcType=DOUBLE}, #{tradepaymnetr,jdbcType=DOUBLE}, #{paycompgold,jdbcType=DOUBLE}, 
+      #{payintecash,jdbcType=DOUBLE}, #{paydivicash,jdbcType=DOUBLE}, #{payworkcash,jdbcType=DOUBLE}, 
+      #{paytax,jdbcType=DOUBLE}, #{payacticash,jdbcType=DOUBLE}, #{bizoutfitse,jdbcType=DOUBLE}, 
+      #{bizoutfform,jdbcType=DOUBLE}, #{bizcashoutf,jdbcType=DOUBLE}, #{biznetitse,jdbcType=DOUBLE}, 
+      #{biznetform,jdbcType=DOUBLE}, #{mananetr,jdbcType=DOUBLE}, #{withinvgetcash,jdbcType=DOUBLE}, 
+      #{inveretugetcash,jdbcType=DOUBLE}, #{fixedassetnetc,jdbcType=DOUBLE}, #{subsnetc,jdbcType=DOUBLE}, 
+      #{receinvcash,jdbcType=DOUBLE}, #{reducashpled,jdbcType=DOUBLE}, #{invinflitse,jdbcType=DOUBLE}, 
+      #{invinffrom,jdbcType=DOUBLE}, #{invcashinfl,jdbcType=DOUBLE}, #{acquassetcash,jdbcType=DOUBLE}, 
+      #{invpayc,jdbcType=DOUBLE}, #{loannetr,jdbcType=DOUBLE}, #{subspaynetcash,jdbcType=DOUBLE}, 
+      #{payinvecash,jdbcType=DOUBLE}, #{incrcashpled,jdbcType=DOUBLE}, #{invoutfitse,jdbcType=DOUBLE}, 
+      #{invoutfform,jdbcType=DOUBLE}, #{invcashoutf,jdbcType=DOUBLE}, #{netinvitse,jdbcType=DOUBLE}, 
+      #{netinvform,jdbcType=DOUBLE}, #{invnetcashflow,jdbcType=DOUBLE}, #{invrececash,jdbcType=DOUBLE}, 
+      #{subsrececash,jdbcType=DOUBLE}, #{recefromloan,jdbcType=DOUBLE}, #{issbdrececash,jdbcType=DOUBLE}, 
+      #{recefincash,jdbcType=DOUBLE}, #{fininflitse,jdbcType=DOUBLE}, #{fininflform,jdbcType=DOUBLE}, 
+      #{fincashinfl,jdbcType=DOUBLE}, #{debtpaycash,jdbcType=DOUBLE}, #{diviprofpaycash,jdbcType=DOUBLE}, 
+      #{subspaydivid,jdbcType=DOUBLE}, #{finrelacash,jdbcType=DOUBLE}, #{finoutfitse,jdbcType=DOUBLE}, 
+      #{finoutfform,jdbcType=DOUBLE}, #{fincashoutf,jdbcType=DOUBLE}, #{finnetitse,jdbcType=DOUBLE}, 
+      #{finnetform,jdbcType=DOUBLE}, #{finnetcflow,jdbcType=DOUBLE}, #{chgexchgchgs,jdbcType=DOUBLE}, 
+      #{netcashitse,jdbcType=DOUBLE}, #{netcashform,jdbcType=DOUBLE}, #{cashnetr,jdbcType=DOUBLE}, 
+      #{inicashbala,jdbcType=DOUBLE}, #{cashfinalitse,jdbcType=DOUBLE}, #{cashfinalform,jdbcType=DOUBLE}, 
+      #{finalcashbala,jdbcType=DOUBLE}, #{netprofit,jdbcType=DOUBLE}, #{minysharrigh,jdbcType=DOUBLE}, 
+      #{unreinveloss,jdbcType=DOUBLE}, #{asseimpa,jdbcType=DOUBLE}, #{assedepr,jdbcType=DOUBLE}, 
+      #{realestadep,jdbcType=DOUBLE}, #{intaasseamor,jdbcType=DOUBLE}, #{longdefeexpenamor,jdbcType=DOUBLE}, 
+      #{prepexpedecr,jdbcType=DOUBLE}, #{accrexpeincr,jdbcType=DOUBLE}, #{dispfixedassetloss,jdbcType=DOUBLE}, 
+      #{fixedassescraloss,jdbcType=DOUBLE}, #{valuechgloss,jdbcType=DOUBLE}, #{defeincoincr,jdbcType=DOUBLE}, 
+      #{estidebts,jdbcType=DOUBLE}, #{finexpe,jdbcType=DOUBLE}, #{inveloss,jdbcType=DOUBLE}, 
+      #{defetaxassetdecr,jdbcType=DOUBLE}, #{defetaxliabincr,jdbcType=DOUBLE}, #{inveredu,jdbcType=DOUBLE}, 
+      #{receredu,jdbcType=DOUBLE}, #{payaincr,jdbcType=DOUBLE}, #{unseparachg,jdbcType=DOUBLE}, 
+      #{unfiparachg,jdbcType=DOUBLE}, #{other,jdbcType=DOUBLE}, #{biznetscheitse,jdbcType=DOUBLE}, 
+      #{biznetscheform,jdbcType=DOUBLE}, #{biznetcflow,jdbcType=DOUBLE}, #{debtintocapi,jdbcType=DOUBLE}, 
+      #{expiconvbd,jdbcType=DOUBLE}, #{finfixedasset,jdbcType=DOUBLE}, #{cashfinalbala,jdbcType=DOUBLE}, 
+      #{cashopenbala,jdbcType=DOUBLE}, #{equfinalbala,jdbcType=DOUBLE}, #{equopenbala,jdbcType=DOUBLE}, 
+      #{netcashscheitse,jdbcType=DOUBLE}, #{netcashscheform,jdbcType=DOUBLE}, #{cashneti,jdbcType=DOUBLE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.finreport.model.CFStatement" >
+    insert into cash
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        stockcode,
+      </if>
+      <if test="compcode != null" >
+        compcode,
+      </if>
+      <if test="publishdate != null" >
+        publishdate,
+      </if>
+      <if test="begindate != null" >
+        begindate,
+      </if>
+      <if test="enddate != null" >
+        enddate,
+      </if>
+      <if test="reporttype != null" >
+        reporttype,
+      </if>
+      <if test="quarter != null" >
+        quarter,
+      </if>
+      <if test="adjustdate != null" >
+        adjustdate,
+      </if>
+      <if test="accstacode != null" >
+        accstacode,
+      </if>
+      <if test="accstaname != null" >
+        accstaname,
+      </if>
+      <if test="laborgetcash != null" >
+        laborgetcash,
+      </if>
+      <if test="deponetr != null" >
+        deponetr,
+      </if>
+      <if test="bankloannetincr != null" >
+        bankloannetincr,
+      </if>
+      <if test="fininstnetr != null" >
+        fininstnetr,
+      </if>
+      <if test="inspremcash != null" >
+        inspremcash,
+      </if>
+      <if test="insnetc != null" >
+        insnetc,
+      </if>
+      <if test="savinetr != null" >
+        savinetr,
+      </if>
+      <if test="disptradnetincr != null" >
+        disptradnetincr,
+      </if>
+      <if test="charintecash != null" >
+        charintecash,
+      </if>
+      <if test="fdsborrnetr != null" >
+        fdsborrnetr,
+      </if>
+      <if test="repnetincr != null" >
+        repnetincr,
+      </if>
+      <if test="taxrefd != null" >
+        taxrefd,
+      </if>
+      <if test="receotherbizcash != null" >
+        receotherbizcash,
+      </if>
+      <if test="bizinflitse != null" >
+        bizinflitse,
+      </if>
+      <if test="bizinflform != null" >
+        bizinflform,
+      </if>
+      <if test="bizcashinfl != null" >
+        bizcashinfl,
+      </if>
+      <if test="labopayc != null" >
+        labopayc,
+      </if>
+      <if test="loansnetr != null" >
+        loansnetr,
+      </if>
+      <if test="tradepaymnetr != null" >
+        tradepaymnetr,
+      </if>
+      <if test="paycompgold != null" >
+        paycompgold,
+      </if>
+      <if test="payintecash != null" >
+        payintecash,
+      </if>
+      <if test="paydivicash != null" >
+        paydivicash,
+      </if>
+      <if test="payworkcash != null" >
+        payworkcash,
+      </if>
+      <if test="paytax != null" >
+        paytax,
+      </if>
+      <if test="payacticash != null" >
+        payacticash,
+      </if>
+      <if test="bizoutfitse != null" >
+        bizoutfitse,
+      </if>
+      <if test="bizoutfform != null" >
+        bizoutfform,
+      </if>
+      <if test="bizcashoutf != null" >
+        bizcashoutf,
+      </if>
+      <if test="biznetitse != null" >
+        biznetitse,
+      </if>
+      <if test="biznetform != null" >
+        biznetform,
+      </if>
+      <if test="mananetr != null" >
+        mananetr,
+      </if>
+      <if test="withinvgetcash != null" >
+        withinvgetcash,
+      </if>
+      <if test="inveretugetcash != null" >
+        inveretugetcash,
+      </if>
+      <if test="fixedassetnetc != null" >
+        fixedassetnetc,
+      </if>
+      <if test="subsnetc != null" >
+        subsnetc,
+      </if>
+      <if test="receinvcash != null" >
+        receinvcash,
+      </if>
+      <if test="reducashpled != null" >
+        reducashpled,
+      </if>
+      <if test="invinflitse != null" >
+        invinflitse,
+      </if>
+      <if test="invinffrom != null" >
+        invinffrom,
+      </if>
+      <if test="invcashinfl != null" >
+        invcashinfl,
+      </if>
+      <if test="acquassetcash != null" >
+        acquassetcash,
+      </if>
+      <if test="invpayc != null" >
+        invpayc,
+      </if>
+      <if test="loannetr != null" >
+        loannetr,
+      </if>
+      <if test="subspaynetcash != null" >
+        subspaynetcash,
+      </if>
+      <if test="payinvecash != null" >
+        payinvecash,
+      </if>
+      <if test="incrcashpled != null" >
+        incrcashpled,
+      </if>
+      <if test="invoutfitse != null" >
+        invoutfitse,
+      </if>
+      <if test="invoutfform != null" >
+        invoutfform,
+      </if>
+      <if test="invcashoutf != null" >
+        invcashoutf,
+      </if>
+      <if test="netinvitse != null" >
+        netinvitse,
+      </if>
+      <if test="netinvform != null" >
+        netinvform,
+      </if>
+      <if test="invnetcashflow != null" >
+        invnetcashflow,
+      </if>
+      <if test="invrececash != null" >
+        invrececash,
+      </if>
+      <if test="subsrececash != null" >
+        subsrececash,
+      </if>
+      <if test="recefromloan != null" >
+        recefromloan,
+      </if>
+      <if test="issbdrececash != null" >
+        issbdrececash,
+      </if>
+      <if test="recefincash != null" >
+        recefincash,
+      </if>
+      <if test="fininflitse != null" >
+        fininflitse,
+      </if>
+      <if test="fininflform != null" >
+        fininflform,
+      </if>
+      <if test="fincashinfl != null" >
+        fincashinfl,
+      </if>
+      <if test="debtpaycash != null" >
+        debtpaycash,
+      </if>
+      <if test="diviprofpaycash != null" >
+        diviprofpaycash,
+      </if>
+      <if test="subspaydivid != null" >
+        subspaydivid,
+      </if>
+      <if test="finrelacash != null" >
+        finrelacash,
+      </if>
+      <if test="finoutfitse != null" >
+        finoutfitse,
+      </if>
+      <if test="finoutfform != null" >
+        finoutfform,
+      </if>
+      <if test="fincashoutf != null" >
+        fincashoutf,
+      </if>
+      <if test="finnetitse != null" >
+        finnetitse,
+      </if>
+      <if test="finnetform != null" >
+        finnetform,
+      </if>
+      <if test="finnetcflow != null" >
+        finnetcflow,
+      </if>
+      <if test="chgexchgchgs != null" >
+        chgexchgchgs,
+      </if>
+      <if test="netcashitse != null" >
+        netcashitse,
+      </if>
+      <if test="netcashform != null" >
+        netcashform,
+      </if>
+      <if test="cashnetr != null" >
+        cashnetr,
+      </if>
+      <if test="inicashbala != null" >
+        inicashbala,
+      </if>
+      <if test="cashfinalitse != null" >
+        cashfinalitse,
+      </if>
+      <if test="cashfinalform != null" >
+        cashfinalform,
+      </if>
+      <if test="finalcashbala != null" >
+        finalcashbala,
+      </if>
+      <if test="netprofit != null" >
+        netprofit,
+      </if>
+      <if test="minysharrigh != null" >
+        minysharrigh,
+      </if>
+      <if test="unreinveloss != null" >
+        unreinveloss,
+      </if>
+      <if test="asseimpa != null" >
+        asseimpa,
+      </if>
+      <if test="assedepr != null" >
+        assedepr,
+      </if>
+      <if test="realestadep != null" >
+        realestadep,
+      </if>
+      <if test="intaasseamor != null" >
+        intaasseamor,
+      </if>
+      <if test="longdefeexpenamor != null" >
+        longdefeexpenamor,
+      </if>
+      <if test="prepexpedecr != null" >
+        prepexpedecr,
+      </if>
+      <if test="accrexpeincr != null" >
+        accrexpeincr,
+      </if>
+      <if test="dispfixedassetloss != null" >
+        dispfixedassetloss,
+      </if>
+      <if test="fixedassescraloss != null" >
+        fixedassescraloss,
+      </if>
+      <if test="valuechgloss != null" >
+        valuechgloss,
+      </if>
+      <if test="defeincoincr != null" >
+        defeincoincr,
+      </if>
+      <if test="estidebts != null" >
+        estidebts,
+      </if>
+      <if test="finexpe != null" >
+        finexpe,
+      </if>
+      <if test="inveloss != null" >
+        inveloss,
+      </if>
+      <if test="defetaxassetdecr != null" >
+        defetaxassetdecr,
+      </if>
+      <if test="defetaxliabincr != null" >
+        defetaxliabincr,
+      </if>
+      <if test="inveredu != null" >
+        inveredu,
+      </if>
+      <if test="receredu != null" >
+        receredu,
+      </if>
+      <if test="payaincr != null" >
+        payaincr,
+      </if>
+      <if test="unseparachg != null" >
+        unseparachg,
+      </if>
+      <if test="unfiparachg != null" >
+        unfiparachg,
+      </if>
+      <if test="other != null" >
+        other,
+      </if>
+      <if test="biznetscheitse != null" >
+        biznetscheitse,
+      </if>
+      <if test="biznetscheform != null" >
+        biznetscheform,
+      </if>
+      <if test="biznetcflow != null" >
+        biznetcflow,
+      </if>
+      <if test="debtintocapi != null" >
+        debtintocapi,
+      </if>
+      <if test="expiconvbd != null" >
+        expiconvbd,
+      </if>
+      <if test="finfixedasset != null" >
+        finfixedasset,
+      </if>
+      <if test="cashfinalbala != null" >
+        cashfinalbala,
+      </if>
+      <if test="cashopenbala != null" >
+        cashopenbala,
+      </if>
+      <if test="equfinalbala != null" >
+        equfinalbala,
+      </if>
+      <if test="equopenbala != null" >
+        equopenbala,
+      </if>
+      <if test="netcashscheitse != null" >
+        netcashscheitse,
+      </if>
+      <if test="netcashscheform != null" >
+        netcashscheform,
+      </if>
+      <if test="cashneti != null" >
+        cashneti,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        #{stockcode,jdbcType=CHAR},
+      </if>
+      <if test="compcode != null" >
+        #{compcode,jdbcType=INTEGER},
+      </if>
+      <if test="publishdate != null" >
+        #{publishdate,jdbcType=INTEGER},
+      </if>
+      <if test="begindate != null" >
+        #{begindate,jdbcType=INTEGER},
+      </if>
+      <if test="enddate != null" >
+        #{enddate,jdbcType=INTEGER},
+      </if>
+      <if test="reporttype != null" >
+        #{reporttype,jdbcType=INTEGER},
+      </if>
+      <if test="quarter != null" >
+        #{quarter,jdbcType=VARCHAR},
+      </if>
+      <if test="adjustdate != null" >
+        #{adjustdate,jdbcType=INTEGER},
+      </if>
+      <if test="accstacode != null" >
+        #{accstacode,jdbcType=INTEGER},
+      </if>
+      <if test="accstaname != null" >
+        #{accstaname,jdbcType=VARCHAR},
+      </if>
+      <if test="laborgetcash != null" >
+        #{laborgetcash,jdbcType=DOUBLE},
+      </if>
+      <if test="deponetr != null" >
+        #{deponetr,jdbcType=DOUBLE},
+      </if>
+      <if test="bankloannetincr != null" >
+        #{bankloannetincr,jdbcType=DOUBLE},
+      </if>
+      <if test="fininstnetr != null" >
+        #{fininstnetr,jdbcType=DOUBLE},
+      </if>
+      <if test="inspremcash != null" >
+        #{inspremcash,jdbcType=DOUBLE},
+      </if>
+      <if test="insnetc != null" >
+        #{insnetc,jdbcType=DOUBLE},
+      </if>
+      <if test="savinetr != null" >
+        #{savinetr,jdbcType=DOUBLE},
+      </if>
+      <if test="disptradnetincr != null" >
+        #{disptradnetincr,jdbcType=DOUBLE},
+      </if>
+      <if test="charintecash != null" >
+        #{charintecash,jdbcType=DOUBLE},
+      </if>
+      <if test="fdsborrnetr != null" >
+        #{fdsborrnetr,jdbcType=DOUBLE},
+      </if>
+      <if test="repnetincr != null" >
+        #{repnetincr,jdbcType=DOUBLE},
+      </if>
+      <if test="taxrefd != null" >
+        #{taxrefd,jdbcType=DOUBLE},
+      </if>
+      <if test="receotherbizcash != null" >
+        #{receotherbizcash,jdbcType=DOUBLE},
+      </if>
+      <if test="bizinflitse != null" >
+        #{bizinflitse,jdbcType=DOUBLE},
+      </if>
+      <if test="bizinflform != null" >
+        #{bizinflform,jdbcType=DOUBLE},
+      </if>
+      <if test="bizcashinfl != null" >
+        #{bizcashinfl,jdbcType=DOUBLE},
+      </if>
+      <if test="labopayc != null" >
+        #{labopayc,jdbcType=DOUBLE},
+      </if>
+      <if test="loansnetr != null" >
+        #{loansnetr,jdbcType=DOUBLE},
+      </if>
+      <if test="tradepaymnetr != null" >
+        #{tradepaymnetr,jdbcType=DOUBLE},
+      </if>
+      <if test="paycompgold != null" >
+        #{paycompgold,jdbcType=DOUBLE},
+      </if>
+      <if test="payintecash != null" >
+        #{payintecash,jdbcType=DOUBLE},
+      </if>
+      <if test="paydivicash != null" >
+        #{paydivicash,jdbcType=DOUBLE},
+      </if>
+      <if test="payworkcash != null" >
+        #{payworkcash,jdbcType=DOUBLE},
+      </if>
+      <if test="paytax != null" >
+        #{paytax,jdbcType=DOUBLE},
+      </if>
+      <if test="payacticash != null" >
+        #{payacticash,jdbcType=DOUBLE},
+      </if>
+      <if test="bizoutfitse != null" >
+        #{bizoutfitse,jdbcType=DOUBLE},
+      </if>
+      <if test="bizoutfform != null" >
+        #{bizoutfform,jdbcType=DOUBLE},
+      </if>
+      <if test="bizcashoutf != null" >
+        #{bizcashoutf,jdbcType=DOUBLE},
+      </if>
+      <if test="biznetitse != null" >
+        #{biznetitse,jdbcType=DOUBLE},
+      </if>
+      <if test="biznetform != null" >
+        #{biznetform,jdbcType=DOUBLE},
+      </if>
+      <if test="mananetr != null" >
+        #{mananetr,jdbcType=DOUBLE},
+      </if>
+      <if test="withinvgetcash != null" >
+        #{withinvgetcash,jdbcType=DOUBLE},
+      </if>
+      <if test="inveretugetcash != null" >
+        #{inveretugetcash,jdbcType=DOUBLE},
+      </if>
+      <if test="fixedassetnetc != null" >
+        #{fixedassetnetc,jdbcType=DOUBLE},
+      </if>
+      <if test="subsnetc != null" >
+        #{subsnetc,jdbcType=DOUBLE},
+      </if>
+      <if test="receinvcash != null" >
+        #{receinvcash,jdbcType=DOUBLE},
+      </if>
+      <if test="reducashpled != null" >
+        #{reducashpled,jdbcType=DOUBLE},
+      </if>
+      <if test="invinflitse != null" >
+        #{invinflitse,jdbcType=DOUBLE},
+      </if>
+      <if test="invinffrom != null" >
+        #{invinffrom,jdbcType=DOUBLE},
+      </if>
+      <if test="invcashinfl != null" >
+        #{invcashinfl,jdbcType=DOUBLE},
+      </if>
+      <if test="acquassetcash != null" >
+        #{acquassetcash,jdbcType=DOUBLE},
+      </if>
+      <if test="invpayc != null" >
+        #{invpayc,jdbcType=DOUBLE},
+      </if>
+      <if test="loannetr != null" >
+        #{loannetr,jdbcType=DOUBLE},
+      </if>
+      <if test="subspaynetcash != null" >
+        #{subspaynetcash,jdbcType=DOUBLE},
+      </if>
+      <if test="payinvecash != null" >
+        #{payinvecash,jdbcType=DOUBLE},
+      </if>
+      <if test="incrcashpled != null" >
+        #{incrcashpled,jdbcType=DOUBLE},
+      </if>
+      <if test="invoutfitse != null" >
+        #{invoutfitse,jdbcType=DOUBLE},
+      </if>
+      <if test="invoutfform != null" >
+        #{invoutfform,jdbcType=DOUBLE},
+      </if>
+      <if test="invcashoutf != null" >
+        #{invcashoutf,jdbcType=DOUBLE},
+      </if>
+      <if test="netinvitse != null" >
+        #{netinvitse,jdbcType=DOUBLE},
+      </if>
+      <if test="netinvform != null" >
+        #{netinvform,jdbcType=DOUBLE},
+      </if>
+      <if test="invnetcashflow != null" >
+        #{invnetcashflow,jdbcType=DOUBLE},
+      </if>
+      <if test="invrececash != null" >
+        #{invrececash,jdbcType=DOUBLE},
+      </if>
+      <if test="subsrececash != null" >
+        #{subsrececash,jdbcType=DOUBLE},
+      </if>
+      <if test="recefromloan != null" >
+        #{recefromloan,jdbcType=DOUBLE},
+      </if>
+      <if test="issbdrececash != null" >
+        #{issbdrececash,jdbcType=DOUBLE},
+      </if>
+      <if test="recefincash != null" >
+        #{recefincash,jdbcType=DOUBLE},
+      </if>
+      <if test="fininflitse != null" >
+        #{fininflitse,jdbcType=DOUBLE},
+      </if>
+      <if test="fininflform != null" >
+        #{fininflform,jdbcType=DOUBLE},
+      </if>
+      <if test="fincashinfl != null" >
+        #{fincashinfl,jdbcType=DOUBLE},
+      </if>
+      <if test="debtpaycash != null" >
+        #{debtpaycash,jdbcType=DOUBLE},
+      </if>
+      <if test="diviprofpaycash != null" >
+        #{diviprofpaycash,jdbcType=DOUBLE},
+      </if>
+      <if test="subspaydivid != null" >
+        #{subspaydivid,jdbcType=DOUBLE},
+      </if>
+      <if test="finrelacash != null" >
+        #{finrelacash,jdbcType=DOUBLE},
+      </if>
+      <if test="finoutfitse != null" >
+        #{finoutfitse,jdbcType=DOUBLE},
+      </if>
+      <if test="finoutfform != null" >
+        #{finoutfform,jdbcType=DOUBLE},
+      </if>
+      <if test="fincashoutf != null" >
+        #{fincashoutf,jdbcType=DOUBLE},
+      </if>
+      <if test="finnetitse != null" >
+        #{finnetitse,jdbcType=DOUBLE},
+      </if>
+      <if test="finnetform != null" >
+        #{finnetform,jdbcType=DOUBLE},
+      </if>
+      <if test="finnetcflow != null" >
+        #{finnetcflow,jdbcType=DOUBLE},
+      </if>
+      <if test="chgexchgchgs != null" >
+        #{chgexchgchgs,jdbcType=DOUBLE},
+      </if>
+      <if test="netcashitse != null" >
+        #{netcashitse,jdbcType=DOUBLE},
+      </if>
+      <if test="netcashform != null" >
+        #{netcashform,jdbcType=DOUBLE},
+      </if>
+      <if test="cashnetr != null" >
+        #{cashnetr,jdbcType=DOUBLE},
+      </if>
+      <if test="inicashbala != null" >
+        #{inicashbala,jdbcType=DOUBLE},
+      </if>
+      <if test="cashfinalitse != null" >
+        #{cashfinalitse,jdbcType=DOUBLE},
+      </if>
+      <if test="cashfinalform != null" >
+        #{cashfinalform,jdbcType=DOUBLE},
+      </if>
+      <if test="finalcashbala != null" >
+        #{finalcashbala,jdbcType=DOUBLE},
+      </if>
+      <if test="netprofit != null" >
+        #{netprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="minysharrigh != null" >
+        #{minysharrigh,jdbcType=DOUBLE},
+      </if>
+      <if test="unreinveloss != null" >
+        #{unreinveloss,jdbcType=DOUBLE},
+      </if>
+      <if test="asseimpa != null" >
+        #{asseimpa,jdbcType=DOUBLE},
+      </if>
+      <if test="assedepr != null" >
+        #{assedepr,jdbcType=DOUBLE},
+      </if>
+      <if test="realestadep != null" >
+        #{realestadep,jdbcType=DOUBLE},
+      </if>
+      <if test="intaasseamor != null" >
+        #{intaasseamor,jdbcType=DOUBLE},
+      </if>
+      <if test="longdefeexpenamor != null" >
+        #{longdefeexpenamor,jdbcType=DOUBLE},
+      </if>
+      <if test="prepexpedecr != null" >
+        #{prepexpedecr,jdbcType=DOUBLE},
+      </if>
+      <if test="accrexpeincr != null" >
+        #{accrexpeincr,jdbcType=DOUBLE},
+      </if>
+      <if test="dispfixedassetloss != null" >
+        #{dispfixedassetloss,jdbcType=DOUBLE},
+      </if>
+      <if test="fixedassescraloss != null" >
+        #{fixedassescraloss,jdbcType=DOUBLE},
+      </if>
+      <if test="valuechgloss != null" >
+        #{valuechgloss,jdbcType=DOUBLE},
+      </if>
+      <if test="defeincoincr != null" >
+        #{defeincoincr,jdbcType=DOUBLE},
+      </if>
+      <if test="estidebts != null" >
+        #{estidebts,jdbcType=DOUBLE},
+      </if>
+      <if test="finexpe != null" >
+        #{finexpe,jdbcType=DOUBLE},
+      </if>
+      <if test="inveloss != null" >
+        #{inveloss,jdbcType=DOUBLE},
+      </if>
+      <if test="defetaxassetdecr != null" >
+        #{defetaxassetdecr,jdbcType=DOUBLE},
+      </if>
+      <if test="defetaxliabincr != null" >
+        #{defetaxliabincr,jdbcType=DOUBLE},
+      </if>
+      <if test="inveredu != null" >
+        #{inveredu,jdbcType=DOUBLE},
+      </if>
+      <if test="receredu != null" >
+        #{receredu,jdbcType=DOUBLE},
+      </if>
+      <if test="payaincr != null" >
+        #{payaincr,jdbcType=DOUBLE},
+      </if>
+      <if test="unseparachg != null" >
+        #{unseparachg,jdbcType=DOUBLE},
+      </if>
+      <if test="unfiparachg != null" >
+        #{unfiparachg,jdbcType=DOUBLE},
+      </if>
+      <if test="other != null" >
+        #{other,jdbcType=DOUBLE},
+      </if>
+      <if test="biznetscheitse != null" >
+        #{biznetscheitse,jdbcType=DOUBLE},
+      </if>
+      <if test="biznetscheform != null" >
+        #{biznetscheform,jdbcType=DOUBLE},
+      </if>
+      <if test="biznetcflow != null" >
+        #{biznetcflow,jdbcType=DOUBLE},
+      </if>
+      <if test="debtintocapi != null" >
+        #{debtintocapi,jdbcType=DOUBLE},
+      </if>
+      <if test="expiconvbd != null" >
+        #{expiconvbd,jdbcType=DOUBLE},
+      </if>
+      <if test="finfixedasset != null" >
+        #{finfixedasset,jdbcType=DOUBLE},
+      </if>
+      <if test="cashfinalbala != null" >
+        #{cashfinalbala,jdbcType=DOUBLE},
+      </if>
+      <if test="cashopenbala != null" >
+        #{cashopenbala,jdbcType=DOUBLE},
+      </if>
+      <if test="equfinalbala != null" >
+        #{equfinalbala,jdbcType=DOUBLE},
+      </if>
+      <if test="equopenbala != null" >
+        #{equopenbala,jdbcType=DOUBLE},
+      </if>
+      <if test="netcashscheitse != null" >
+        #{netcashscheitse,jdbcType=DOUBLE},
+      </if>
+      <if test="netcashscheform != null" >
+        #{netcashscheform,jdbcType=DOUBLE},
+      </if>
+      <if test="cashneti != null" >
+        #{cashneti,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+</mapper>

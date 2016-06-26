@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.finreport.mapper.FinMainIndexMapper" >
+  <resultMap id="BaseResultMap" type="com.finreport.model.FinMainIndex" >
+    <id column="stockcode" property="stockcode" jdbcType="CHAR" />
+    <result column="compcode" property="compcode" jdbcType="INTEGER" />
+    <result column="reportdate" property="reportdate" jdbcType="INTEGER" />
+    <result column="quarter" property="quarter" jdbcType="VARCHAR" />
+    <result column="basiceps" property="basiceps" jdbcType="DOUBLE" />
+    <result column="epsdiluted" property="epsdiluted" jdbcType="DOUBLE" />
+    <result column="epsweighted" property="epsweighted" jdbcType="DOUBLE" />
+    <result column="naps" property="naps" jdbcType="DOUBLE" />
+    <result column="opercashpershare" property="opercashpershare" jdbcType="DOUBLE" />
+    <result column="peropecashpershare" property="peropecashpershare" jdbcType="DOUBLE" />
+    <result column="netassgrowrate" property="netassgrowrate" jdbcType="DOUBLE" />
+    <result column="dilutedroe" property="dilutedroe" jdbcType="DOUBLE" />
+    <result column="weightedroe" property="weightedroe" jdbcType="DOUBLE" />
+    <result column="mainbusincgrowrate" property="mainbusincgrowrate" jdbcType="DOUBLE" />
+    <result column="netincgrowrate" property="netincgrowrate" jdbcType="DOUBLE" />
+    <result column="totassgrowrate" property="totassgrowrate" jdbcType="DOUBLE" />
+    <result column="salegrossprofitrto" property="salegrossprofitrto" jdbcType="DOUBLE" />
+    <result column="mainbusiincome" property="mainbusiincome" jdbcType="DOUBLE" />
+    <result column="mainbusiprofit" property="mainbusiprofit" jdbcType="DOUBLE" />
+    <result column="totprofit" property="totprofit" jdbcType="DOUBLE" />
+    <result column="netprofit" property="netprofit" jdbcType="DOUBLE" />
+    <result column="totalassets" property="totalassets" jdbcType="DOUBLE" />
+    <result column="totalliab" property="totalliab" jdbcType="DOUBLE" />
+    <result column="totsharequi" property="totsharequi" jdbcType="DOUBLE" />
+    <result column="operrevenue" property="operrevenue" jdbcType="DOUBLE" />
+    <result column="invnetcashflow" property="invnetcashflow" jdbcType="DOUBLE" />
+    <result column="finnetcflow" property="finnetcflow" jdbcType="DOUBLE" />
+    <result column="chgexchgchgs" property="chgexchgchgs" jdbcType="DOUBLE" />
+    <result column="cashnetr" property="cashnetr" jdbcType="DOUBLE" />
+    <result column="cashequfinbal" property="cashequfinbal" jdbcType="DOUBLE" />
+    <result column="symbol" property="symbol" jdbcType="DOUBLE" />
+    <result column="name" property="name" jdbcType="DOUBLE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    stockcode, compcode, reportdate, quarter, basiceps, epsdiluted, epsweighted, naps, 
+    opercashpershare, peropecashpershare, netassgrowrate, dilutedroe, weightedroe, mainbusincgrowrate, 
+    netincgrowrate, totassgrowrate, salegrossprofitrto, mainbusiincome, mainbusiprofit, 
+    totprofit, netprofit, totalassets, totalliab, totsharequi, operrevenue, invnetcashflow, 
+    finnetcflow, chgexchgchgs, cashnetr, cashequfinbal, symbol, name
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from finindex
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from finindex
+    where stockcode = #{stockcode,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.finreport.model.FinMainIndex" >
+    insert into finindex (stockcode, compcode, reportdate, 
+      quarter, basiceps, epsdiluted, 
+      epsweighted, naps, opercashpershare, 
+      peropecashpershare, netassgrowrate, dilutedroe, 
+      weightedroe, mainbusincgrowrate, netincgrowrate, 
+      totassgrowrate, salegrossprofitrto, mainbusiincome, 
+      mainbusiprofit, totprofit, netprofit, 
+      totalassets, totalliab, totsharequi, 
+      operrevenue, invnetcashflow, finnetcflow, 
+      chgexchgchgs, cashnetr, cashequfinbal, 
+      symbol, name)
+    values (#{stockcode,jdbcType=CHAR}, #{compcode,jdbcType=INTEGER}, #{reportdate,jdbcType=INTEGER}, 
+      #{quarter,jdbcType=VARCHAR}, #{basiceps,jdbcType=DOUBLE}, #{epsdiluted,jdbcType=DOUBLE}, 
+      #{epsweighted,jdbcType=DOUBLE}, #{naps,jdbcType=DOUBLE}, #{opercashpershare,jdbcType=DOUBLE}, 
+      #{peropecashpershare,jdbcType=DOUBLE}, #{netassgrowrate,jdbcType=DOUBLE}, #{dilutedroe,jdbcType=DOUBLE}, 
+      #{weightedroe,jdbcType=DOUBLE}, #{mainbusincgrowrate,jdbcType=DOUBLE}, #{netincgrowrate,jdbcType=DOUBLE}, 
+      #{totassgrowrate,jdbcType=DOUBLE}, #{salegrossprofitrto,jdbcType=DOUBLE}, #{mainbusiincome,jdbcType=DOUBLE}, 
+      #{mainbusiprofit,jdbcType=DOUBLE}, #{totprofit,jdbcType=DOUBLE}, #{netprofit,jdbcType=DOUBLE}, 
+      #{totalassets,jdbcType=DOUBLE}, #{totalliab,jdbcType=DOUBLE}, #{totsharequi,jdbcType=DOUBLE}, 
+      #{operrevenue,jdbcType=DOUBLE}, #{invnetcashflow,jdbcType=DOUBLE}, #{finnetcflow,jdbcType=DOUBLE}, 
+      #{chgexchgchgs,jdbcType=DOUBLE}, #{cashnetr,jdbcType=DOUBLE}, #{cashequfinbal,jdbcType=DOUBLE}, 
+      #{symbol,jdbcType=DOUBLE}, #{name,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.finreport.model.FinMainIndex" >
+    insert into finindex
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        stockcode,
+      </if>
+      <if test="compcode != null" >
+        compcode,
+      </if>
+      <if test="reportdate != null" >
+        reportdate,
+      </if>
+      <if test="quarter != null" >
+        quarter,
+      </if>
+      <if test="basiceps != null" >
+        basiceps,
+      </if>
+      <if test="epsdiluted != null" >
+        epsdiluted,
+      </if>
+      <if test="epsweighted != null" >
+        epsweighted,
+      </if>
+      <if test="naps != null" >
+        naps,
+      </if>
+      <if test="opercashpershare != null" >
+        opercashpershare,
+      </if>
+      <if test="peropecashpershare != null" >
+        peropecashpershare,
+      </if>
+      <if test="netassgrowrate != null" >
+        netassgrowrate,
+      </if>
+      <if test="dilutedroe != null" >
+        dilutedroe,
+      </if>
+      <if test="weightedroe != null" >
+        weightedroe,
+      </if>
+      <if test="mainbusincgrowrate != null" >
+        mainbusincgrowrate,
+      </if>
+      <if test="netincgrowrate != null" >
+        netincgrowrate,
+      </if>
+      <if test="totassgrowrate != null" >
+        totassgrowrate,
+      </if>
+      <if test="salegrossprofitrto != null" >
+        salegrossprofitrto,
+      </if>
+      <if test="mainbusiincome != null" >
+        mainbusiincome,
+      </if>
+      <if test="mainbusiprofit != null" >
+        mainbusiprofit,
+      </if>
+      <if test="totprofit != null" >
+        totprofit,
+      </if>
+      <if test="netprofit != null" >
+        netprofit,
+      </if>
+      <if test="totalassets != null" >
+        totalassets,
+      </if>
+      <if test="totalliab != null" >
+        totalliab,
+      </if>
+      <if test="totsharequi != null" >
+        totsharequi,
+      </if>
+      <if test="operrevenue != null" >
+        operrevenue,
+      </if>
+      <if test="invnetcashflow != null" >
+        invnetcashflow,
+      </if>
+      <if test="finnetcflow != null" >
+        finnetcflow,
+      </if>
+      <if test="chgexchgchgs != null" >
+        chgexchgchgs,
+      </if>
+      <if test="cashnetr != null" >
+        cashnetr,
+      </if>
+      <if test="cashequfinbal != null" >
+        cashequfinbal,
+      </if>
+      <if test="symbol != null" >
+        symbol,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="stockcode != null" >
+        #{stockcode,jdbcType=CHAR},
+      </if>
+      <if test="compcode != null" >
+        #{compcode,jdbcType=INTEGER},
+      </if>
+      <if test="reportdate != null" >
+        #{reportdate,jdbcType=INTEGER},
+      </if>
+      <if test="quarter != null" >
+        #{quarter,jdbcType=VARCHAR},
+      </if>
+      <if test="basiceps != null" >
+        #{basiceps,jdbcType=DOUBLE},
+      </if>
+      <if test="epsdiluted != null" >
+        #{epsdiluted,jdbcType=DOUBLE},
+      </if>
+      <if test="epsweighted != null" >
+        #{epsweighted,jdbcType=DOUBLE},
+      </if>
+      <if test="naps != null" >
+        #{naps,jdbcType=DOUBLE},
+      </if>
+      <if test="opercashpershare != null" >
+        #{opercashpershare,jdbcType=DOUBLE},
+      </if>
+      <if test="peropecashpershare != null" >
+        #{peropecashpershare,jdbcType=DOUBLE},
+      </if>
+      <if test="netassgrowrate != null" >
+        #{netassgrowrate,jdbcType=DOUBLE},
+      </if>
+      <if test="dilutedroe != null" >
+        #{dilutedroe,jdbcType=DOUBLE},
+      </if>
+      <if test="weightedroe != null" >
+        #{weightedroe,jdbcType=DOUBLE},
+      </if>
+      <if test="mainbusincgrowrate != null" >
+        #{mainbusincgrowrate,jdbcType=DOUBLE},
+      </if>
+      <if test="netincgrowrate != null" >
+        #{netincgrowrate,jdbcType=DOUBLE},
+      </if>
+      <if test="totassgrowrate != null" >
+        #{totassgrowrate,jdbcType=DOUBLE},
+      </if>
+      <if test="salegrossprofitrto != null" >
+        #{salegrossprofitrto,jdbcType=DOUBLE},
+      </if>
+      <if test="mainbusiincome != null" >
+        #{mainbusiincome,jdbcType=DOUBLE},
+      </if>
+      <if test="mainbusiprofit != null" >
+        #{mainbusiprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="totprofit != null" >
+        #{totprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="netprofit != null" >
+        #{netprofit,jdbcType=DOUBLE},
+      </if>
+      <if test="totalassets != null" >
+        #{totalassets,jdbcType=DOUBLE},
+      </if>
+      <if test="totalliab != null" >
+        #{totalliab,jdbcType=DOUBLE},
+      </if>
+      <if test="totsharequi != null" >
+        #{totsharequi,jdbcType=DOUBLE},
+      </if>
+      <if test="operrevenue != null" >
+        #{operrevenue,jdbcType=DOUBLE},
+      </if>
+      <if test="invnetcashflow != null" >
+        #{invnetcashflow,jdbcType=DOUBLE},
+      </if>
+      <if test="finnetcflow != null" >
+        #{finnetcflow,jdbcType=DOUBLE},
+      </if>
+      <if test="chgexchgchgs != null" >
+        #{chgexchgchgs,jdbcType=DOUBLE},
+      </if>
+      <if test="cashnetr != null" >
+        #{cashnetr,jdbcType=DOUBLE},
+      </if>
+      <if test="cashequfinbal != null" >
+        #{cashequfinbal,jdbcType=DOUBLE},
+      </if>
+      <if test="symbol != null" >
+        #{symbol,jdbcType=DOUBLE},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+</mapper>
