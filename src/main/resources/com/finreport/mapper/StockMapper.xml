@@ -34,7 +34,7 @@
   </delete>
   <insert id="insert" parameterType="com.finreport.model.Stock" >
     insert into stock (code, symbol, name, 
-      current, percent, change, high, 
+      current, percent, `change`, high, 
       low, high52w, low52w, marketcapital, 
       amount, pettm, volume, hasexist
       )
@@ -63,7 +63,7 @@
         percent,
       </if>
       <if test="change != null" >
-        change,
+        `change`,
       </if>
       <if test="high != null" >
         high,
@@ -157,7 +157,7 @@
         percent = #{percent,jdbcType=REAL},
       </if>
       <if test="change != null" >
-        change = #{change,jdbcType=REAL},
+        `change` = #{change,jdbcType=REAL},
       </if>
       <if test="high != null" >
         high = #{high,jdbcType=REAL},
@@ -195,7 +195,7 @@
       name = #{name,jdbcType=VARCHAR},
       current = #{current,jdbcType=REAL},
       percent = #{percent,jdbcType=REAL},
-      change = #{change,jdbcType=REAL},
+      `change` = #{change,jdbcType=REAL},
       high = #{high,jdbcType=REAL},
       low = #{low,jdbcType=REAL},
       high52w = #{high52w,jdbcType=REAL},
@@ -207,4 +207,8 @@
       hasexist = #{hasexist,jdbcType=BIT}
     where code = #{code,jdbcType=CHAR}
   </update>
+   <select id="countBySymbol" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select count(*) from stock
+    where symbol = #{symbol, jdbcType=CHAR}
+  </select>
 </mapper>
