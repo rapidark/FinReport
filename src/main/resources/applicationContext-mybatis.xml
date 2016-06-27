@@ -48,6 +48,10 @@
         <constructor-arg ref="sqlSessionFactory"/>
     </bean>
 
+    <bean id="sqlBatchSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+     <constructor-arg index="0" ref="sqlSessionFactory" />
+     <constructor-arg index="1" value="BATCH" />
+    </bean>
     <!-- <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
           p:dataSource-ref="dataSource"/>
