@@ -30,4 +30,6 @@ public interface FinStatementDao {
 	public void batchAddCFStatement(List<CFStatement> cfStatements);
 	
 	public void batchAddFinMainIndex(List<FinMainIndex> finIndexs);
+	
+	public void batchAddFinancialReport(List<BalSheet> balSheets, List<IncStatement> incStatements, List<CFStatement> cfStatements, List<FinMainIndex> finIndexs);
 }

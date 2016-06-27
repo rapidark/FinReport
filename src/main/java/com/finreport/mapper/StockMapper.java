@@ -16,4 +16,6 @@ public interface StockMapper {
     int updateByPrimaryKey(Stock record);
     
     int countBySymbol(String symbol);
+    
+    int countByCode(String code);
 }

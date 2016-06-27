@@ -48,11 +48,11 @@ public class ScheduledTasks {
 	@Scheduled(fixedRate = 24*60*60*1000)
 	public void getFinancialReport() throws InterruptedException {
 		SimpleClientHttpRequestFactory clientHttpRequestFactory = new SimpleClientHttpRequestFactory();
-		Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 9999));
-		clientHttpRequestFactory.setProxy(proxy);
-		
-		RestTemplate restTemplate = new RestTemplate(clientHttpRequestFactory);
-//		RestTemplate restTemplate = new RestTemplate();
+//		Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 9999));
+//		clientHttpRequestFactory.setProxy(proxy);
+//		
+//		RestTemplate restTemplate = new RestTemplate(clientHttpRequestFactory);
+		RestTemplate restTemplate = new RestTemplate();
 		try {
 			ClientHttpRequest request = restTemplate.getRequestFactory().createRequest(new URI("http://www.xueqiu.com"), HttpMethod.GET);
 			ClientHttpResponse response = request.execute();
@@ -121,40 +121,90 @@ public class ScheduledTasks {
 	
 	private void getFinancialReportBySymbol(Stock stock, RestTemplate restTemplate,String token) throws InterruptedException {
 		String symbol = stock.getSymbol();
-		if(finStatementDao.isStockExist(symbol)) {
+		if(finStatementDao.isStockExist(stock.getCode())) {
 			return;
 		}
 		finStatementDao.addStock(stock);
 		logger.info("---------------------insert into stock table stock code:" + stock.getCode() + " success---------");
 		IncStatementList incStatementList = restTemplate.getForObject("http://xueqiu.com/stock/f10/incstatement.json?symbol=" + symbol + "&page=1&size=1000&access_token=" + token, IncStatementList.class);
 		
-		for (IncStatement incStatement : incStatementList.getList()) {
+		List<String> incStatementKey = new ArrayList<String>();
+		for (int i = 0; i < incStatementList.getList().size(); i++) {
+			IncStatement incStatement = incStatementList.getList().get(i);
+			String key= incStatement.getStockcode() + " " + incStatement.getEnddate();
+			// void duplicate key.
+			if(incStatementKey.contains(key)) {
+				incStatementList.getList().remove(i);
+				i--;
+				continue;
+			}
+			incStatementKey.add(key);
 			incStatement.setStockcode(stock.getCode());
 		}
 		
-		finStatementDao.batchAddIncStatement(incStatementList.getList());
-		logger.info("---------------------insert into income table stock code:" + stock.getCode() + " record count:" + incStatementList.getList().size() + " success---------");
+		
 		
 		BalSheetList balSheetList = restTemplate.getForObject("http://xueqiu.com/stock/f10/balsheet.json?symbol=" + symbol + "&page=1&size=1000&access_token=" + token, BalSheetList.class);
-		for (BalSheet balSheet : balSheetList.getList()) {
+		
+		List<String> balSheetKey = new ArrayList<String>();
+		for (int i = 0; i < balSheetList.getList().size(); i++) {
+			BalSheet balSheet = balSheetList.getList().get(i);
+			String key= balSheet.getStockcode() + " " + balSheet.getReportdate();
+			// void duplicate key.
+			if(balSheetKey.contains(key)) {
+				balSheetList.getList().remove(i);
+				i--;
+				continue;
+			}
+			balSheetKey.add(key);
 			balSheet.setStockcode(stock.getCode());
 		}
 		
-		finStatementDao.batchAddBalStatement(balSheetList.getList());
-		logger.info("---------------------insert into balance table stock code:" + stock.getCode() + " record count:" + balSheetList.getList().size() + " success---------");
+//		finStatementDao.batchAddBalStatement(balSheetList.getList());
 		
 		CFStatementList cfStatementList = restTemplate.getForObject("http://xueqiu.com/stock/f10/cfstatement.json?symbol=" + symbol + "&page=1&size=1000&access_token=" + token, CFStatementList.class);
-		for (CFStatement cFStatement : cfStatementList.getList()) {
-			cFStatement.setStockcode(stock.getCode());
+//		for (CFStatement cFStatement : cfStatementList.getList()) {
+//			cFStatement.setStockcode(stock.getCode());
+//		}
+		List<String> cfStatementKey = new ArrayList<String>();
+		for (int i = 0; i < cfStatementList.getList().size(); i++) {
+			CFStatement cfStatement = cfStatementList.getList().get(i);
+			String key= cfStatement.getStockcode() + " " + cfStatement.getEnddate();
+			// void duplicate key.
+			if(cfStatementKey.contains(key)) {
+				cfStatementList.getList().remove(i);
+				i--;
+				continue;
+			}
+			cfStatementKey.add(key);
+			cfStatement.setStockcode(stock.getCode());
 		}
-		finStatementDao.batchAddCFStatement(cfStatementList.getList());
-		logger.info("---------------------insert into cash table stock code:" + stock.getCode() + " record count:" + cfStatementList.getList().size() + " success---------");
+//		finStatementDao.batchAddCFStatement(cfStatementList.getList());
+		
 		
 		FinMainIndexList finMainIndexList = restTemplate.getForObject("http://xueqiu.com/stock/f10/finmainindex.json?symbol=" + symbol + "&page=1&size=1000&access_token=" + token, FinMainIndexList.class);
-		for (FinMainIndex finMainIndex : finMainIndexList.getList()) {
-			finMainIndex.setStockcode(stock.getCode());
+//		for (FinMainIndex finMainIndex : finMainIndexList.getList()) {
+//			finMainIndex.setStockcode(stock.getCode());
+//		}
+		List<String> finMainIndexKey = new ArrayList<String>();
+		for (int i = 0; i < finMainIndexList.getList().size(); i++) {
+			FinMainIndex finMainIndex = finMainIndexList.getList().get(i);
+			String key= finMainIndex.getStockcode() + " " + finMainIndex.getReportdate();
+			// void duplicate key.
+			if(finMainIndexKey.contains(key)) {
+				finMainIndexList.getList().remove(i);
+				i--;
+				continue;
+			}
+			finMainIndexKey.add(key);
+			finMainIndexList.getList().get(i).setStockcode(stock.getCode());
 		}
-		finStatementDao.batchAddFinMainIndex(finMainIndexList.getList());
+//		finStatementDao.batchAddFinMainIndex(finMainIndexList.getList());
+		
+		finStatementDao.batchAddFinancialReport(balSheetList.getList(), incStatementList.getList(), cfStatementList.getList(), finMainIndexList.getList());
+		logger.info("---------------------insert into income table stock code:" + stock.getCode() + " record count:" + incStatementList.getList().size() + " success---------");
+		logger.info("---------------------insert into balance table stock code:" + stock.getCode() + " record count:" + balSheetList.getList().size() + " success---------");
+		logger.info("---------------------insert into cash table stock code:" + stock.getCode() + " record count:" + cfStatementList.getList().size() + " success---------");
 		logger.info("---------------------insert into financial index table stock code:" + stock.getCode() + " record count:" + finMainIndexList.getList().size() + " success---------");
 		Thread.currentThread().sleep(100L);
 	}

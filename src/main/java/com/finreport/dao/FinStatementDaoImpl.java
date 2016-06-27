@@ -69,8 +69,34 @@ public class FinStatementDaoImpl implements FinStatementDao {
 		return result > 0;
 	}
 	
-	public Boolean isStockExist(String symbol) {
-		return stockMapper.countBySymbol(symbol) > 0;
+	public Boolean isStockExist(String code) {
+		return stockMapper.countByCode(code) > 0;
+	}
+	
+	public void batchAddFinancialReport(List<BalSheet> balSheets, List<IncStatement> incStatements, List<CFStatement> cfStatements, List<FinMainIndex> finIndexs) {
+		SqlSession sqlSession = sqlBatchSessionTemplate.getSqlSessionFactory().openSession();
+		
+		BalSheetMapper balSheetMapper = sqlSession.getMapper(BalSheetMapper.class);
+		for (BalSheet balSheet : balSheets) {
+			balSheetMapper.insertSelective(balSheet);
+		}
+		
+		IncStatementMapper incStatementMapper = sqlSession.getMapper(IncStatementMapper.class);
+		for (IncStatement incStatement : incStatements) {
+			incStatementMapper.insertSelective(incStatement);
+		}
+		
+		CFStatementMapper cfStatementMapper = sqlSession.getMapper(CFStatementMapper.class);
+		for (CFStatement cfStatement : cfStatements) {
+			cfStatementMapper.insertSelective(cfStatement);
+		}
+		
+		FinMainIndexMapper finMainIndexMapper = sqlSession.getMapper(FinMainIndexMapper.class);
+		for (FinMainIndex item : finIndexs) {
+			finMainIndexMapper.insertSelective(item);
+		}
+		
+		sqlSession.commit();
 	}
 	
 	public void batchAddBalStatement(List<BalSheet> balSheets) {

@@ -211,4 +211,8 @@
     select count(*) from stock
     where symbol = #{symbol, jdbcType=CHAR}
   </select>
+  <select id="countByCode" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select count(*) from stock
+    where code = #{code, jdbcType=CHAR}
+  </select>
 </mapper>
