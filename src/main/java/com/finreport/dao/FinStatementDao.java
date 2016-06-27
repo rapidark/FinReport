@@ -1,5 +1,7 @@
 package com.finreport.dao;
 
+import java.util.List;
+
 import com.finreport.model.BalSheet;
 import com.finreport.model.CFStatement;
 import com.finreport.model.FinMainIndex;
@@ -18,4 +20,14 @@ public interface FinStatementDao {
 	public Boolean addIncStatement(IncStatement incStatement);
 	
 	public Boolean addStock(Stock stock);
+	
+	public Boolean isStockExist(String symbol);
+	
+	public void batchAddBalStatement(List<BalSheet> balSheets);
+	
+	public void batchAddIncStatement(List<IncStatement> incStatements);
+	
+	public void batchAddCFStatement(List<CFStatement> cfStatements);
+	
+	public void batchAddFinMainIndex(List<FinMainIndex> finIndexs);
 }
