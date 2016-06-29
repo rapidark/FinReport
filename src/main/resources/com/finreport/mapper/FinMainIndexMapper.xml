@@ -3,8 +3,8 @@
 <mapper namespace="com.finreport.mapper.FinMainIndexMapper" >
   <resultMap id="BaseResultMap" type="com.finreport.model.FinMainIndex" >
     <id column="stockcode" property="stockcode" jdbcType="CHAR" />
+    <id column="reportdate" property="reportdate" jdbcType="INTEGER" />
     <result column="compcode" property="compcode" jdbcType="INTEGER" />
-    <result column="reportdate" property="reportdate" jdbcType="INTEGER" />
     <result column="quarter" property="quarter" jdbcType="VARCHAR" />
     <result column="basiceps" property="basiceps" jdbcType="DOUBLE" />
     <result column="epsdiluted" property="epsdiluted" jdbcType="DOUBLE" />
@@ -36,24 +36,26 @@
     <result column="name" property="name" jdbcType="DOUBLE" />
   </resultMap>
   <sql id="Base_Column_List" >
-    stockcode, compcode, reportdate, quarter, basiceps, epsdiluted, epsweighted, naps, 
+    stockcode, reportdate, compcode, quarter, basiceps, epsdiluted, epsweighted, naps, 
     opercashpershare, peropecashpershare, netassgrowrate, dilutedroe, weightedroe, mainbusincgrowrate, 
     netincgrowrate, totassgrowrate, salegrossprofitrto, mainbusiincome, mainbusiprofit, 
     totprofit, netprofit, totalassets, totalliab, totsharequi, operrevenue, invnetcashflow, 
     finnetcflow, chgexchgchgs, cashnetr, cashequfinbal, symbol, name
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
     select 'false' as QUERYID,
     <include refid="Base_Column_List" />
     from finindex
     where stockcode = #{stockcode,jdbcType=CHAR}
+      and reportdate = #{reportdate,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+  <delete id="deleteByPrimaryKey" parameterType="map" >
     delete from finindex
     where stockcode = #{stockcode,jdbcType=CHAR}
+      and reportdate = #{reportdate,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.finreport.model.FinMainIndex" >
-    insert into finindex (stockcode, compcode, reportdate, 
+    insert into finindex (stockcode, reportdate, compcode, 
       quarter, basiceps, epsdiluted, 
       epsweighted, naps, opercashpershare, 
       peropecashpershare, netassgrowrate, dilutedroe, 
@@ -64,7 +66,7 @@
       operrevenue, invnetcashflow, finnetcflow, 
       chgexchgchgs, cashnetr, cashequfinbal, 
       symbol, name)
-    values (#{stockcode,jdbcType=CHAR}, #{compcode,jdbcType=INTEGER}, #{reportdate,jdbcType=INTEGER}, 
+    values (#{stockcode,jdbcType=CHAR}, #{reportdate,jdbcType=INTEGER}, #{compcode,jdbcType=INTEGER}, 
       #{quarter,jdbcType=VARCHAR}, #{basiceps,jdbcType=DOUBLE}, #{epsdiluted,jdbcType=DOUBLE}, 
       #{epsweighted,jdbcType=DOUBLE}, #{naps,jdbcType=DOUBLE}, #{opercashpershare,jdbcType=DOUBLE}, 
       #{peropecashpershare,jdbcType=DOUBLE}, #{netassgrowrate,jdbcType=DOUBLE}, #{dilutedroe,jdbcType=DOUBLE}, 
@@ -82,11 +84,11 @@
       <if test="stockcode != null" >
         stockcode,
       </if>
-      <if test="compcode != null" >
-        compcode,
-      </if>
       <if test="reportdate != null" >
         reportdate,
+      </if>
+      <if test="compcode != null" >
+        compcode,
       </if>
       <if test="quarter != null" >
         quarter,
@@ -180,11 +182,11 @@
       <if test="stockcode != null" >
         #{stockcode,jdbcType=CHAR},
       </if>
-      <if test="compcode != null" >
-        #{compcode,jdbcType=INTEGER},
-      </if>
       <if test="reportdate != null" >
         #{reportdate,jdbcType=INTEGER},
+      </if>
+      <if test="compcode != null" >
+        #{compcode,jdbcType=INTEGER},
       </if>
       <if test="quarter != null" >
         #{quarter,jdbcType=VARCHAR},
