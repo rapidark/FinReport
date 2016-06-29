@@ -1,11 +1,10 @@
-package com.finreport.generator.mapper;
+package com.finreport.mapper;
 
-import com.finreport.generator.model.Stock;
-import com.finreport.generator.model.StockExample;
+import java.util.List;
+
+import com.finreport.model.Stock;
 
 public interface StockMapper {
-    int countByExample(StockExample example);
-
     int deleteByPrimaryKey(String code);
 
     int insert(Stock record);
@@ -17,4 +16,10 @@ public interface StockMapper {
     int updateByPrimaryKeySelective(Stock record);
 
     int updateByPrimaryKey(Stock record);
+    
+    int countBySymbol(String symbol);
+    
+    int countByCode(String code);
+    
+    List<String> getNonFinancialStock();
 }
