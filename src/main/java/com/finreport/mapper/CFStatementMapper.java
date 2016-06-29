@@ -15,5 +15,5 @@ public interface CFStatementMapper {
 	CFStatement selectByPrimaryKey(@Param("stockcode") String stockcode, @Param("enddate") Integer enddate);
 
 	@Select("SELECT COUNT(*) from cash where stockcode = #{stockcode} and enddate=#{enddate}")
-	int countByPrimaryKey(String stockcode, Integer enddate);
+	int countByPrimaryKey(@Param("stockcode") String stockcode,@Param("enddate") Integer enddate);
 }

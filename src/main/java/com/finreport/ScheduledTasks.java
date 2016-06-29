@@ -17,13 +17,11 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.ClientHttpRequest;
 import org.springframework.http.client.ClientHttpResponse;
-import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import com.finreport.dao.FinStatementDao;
 import com.finreport.model.BalSheet;
 import com.finreport.model.BalSheetList;
 import com.finreport.model.CFStatement;
@@ -34,6 +32,7 @@ import com.finreport.model.IncStatement;
 import com.finreport.model.IncStatementList;
 import com.finreport.model.Stock;
 import com.finreport.model.StockList;
+import com.finreport.service.FinStatementService;
 
 @Component
 public class ScheduledTasks {
@@ -48,7 +47,7 @@ public class ScheduledTasks {
 	private final static int pageSize = 90;
 
 	@Autowired
-	FinStatementDao finStatementDao;
+	FinStatementService finStatementService;
 
 	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
 	public void updateFinancialReportTask() throws InterruptedException {
@@ -62,13 +61,14 @@ public class ScheduledTasks {
 			StockList stockList = restTemplate.getForObject(new URI("http://xueqiu.com/stock/cata/stocklist.json?page=1&size=1&order=desc&orderby=percent&type=11%2C12&access_token=" + token), StockList.class);
 			int totalPage = stockList.getCount().getCount() / pageSize + (stockList.getCount().getCount() % pageSize == 0 ? 0 : 1);
 			logger.info("---------------------pagesize: " + pageSize + " count: " + stockList.getStocks().size());
-
+			
+			updateFinancialReport(restTemplate, token, insuranceIndustry, bankIndustry, 1, totalPage, pageSize);
 		} catch (Exception e) {
 
 		}
 	}
 
-	// @Scheduled(fixedRate = 24*60*60*1000)
+//	@Scheduled(fixedRate = 24*60*60*1000)
 	public void createFinancialReportTask() {
 		try {
 			RestTemplate restTemplate = createRestTemplate();
@@ -82,7 +82,7 @@ public class ScheduledTasks {
 			logger.info("---------------------pagesize: " + pageSize + " count: " + stockList.getStocks().size());
 			insertFinancialReport(restTemplate, token, insuranceIndustry, bankIndustry, 1, totalPage, pageSize);
 
-			List<String> checkList = finStatementDao.getNonfinancialReport();
+			List<String> checkList = finStatementService.getNonfinancialReport();
 			for (String symbol : checkList) {
 				IncStatementList incStatementList = restTemplate.getForObject("http://xueqiu.com/stock/f10/incstatement.json?symbol=" + symbol + "&page=1&size=1000&access_token=" + token, IncStatementList.class);
 
@@ -98,12 +98,12 @@ public class ScheduledTasks {
 	}
 
 	private RestTemplate createRestTemplate() {
-		SimpleClientHttpRequestFactory clientHttpRequestFactory = new SimpleClientHttpRequestFactory();
-		Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 9999));
-		clientHttpRequestFactory.setProxy(proxy);
-
-		RestTemplate restTemplate = new RestTemplate(clientHttpRequestFactory);
-		// RestTemplate restTemplate = new RestTemplate();
+//		SimpleClientHttpRequestFactory clientHttpRequestFactory = new SimpleClientHttpRequestFactory();
+//		Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 9999));
+//		clientHttpRequestFactory.setProxy(proxy);
+//
+//		RestTemplate restTemplate = new RestTemplate(clientHttpRequestFactory);
+		RestTemplate restTemplate = new RestTemplate();
 		return restTemplate;
 	}
 
@@ -188,10 +188,10 @@ public class ScheduledTasks {
 	private void insertFinancialReportBySymbol(Stock stock, RestTemplate restTemplate, String token, int attempt) {
 		try {
 			String symbol = stock.getSymbol();
-			if (finStatementDao.isStockExist(stock.getCode())) {
+			if (finStatementService.isStockExist(stock.getCode())) {
 				return;
 			}
-			finStatementDao.addStock(stock);
+			finStatementService.addStock(stock);
 			logger.info("---------------------insert into stock table stock code:" + stock.getCode() + " success---------");
 			IncStatementList incStatementList = restTemplate.getForObject("http://xueqiu.com/stock/f10/incstatement.json?symbol=" + symbol + "&page=1&size=1000&access_token=" + token, IncStatementList.class);
 
@@ -250,6 +250,10 @@ public class ScheduledTasks {
 			FinMainIndexList finMainIndexList = restTemplate.getForObject("http://xueqiu.com/stock/f10/finmainindex.json?symbol=" + symbol + "&page=1&size=1000&access_token=" + token, FinMainIndexList.class);
 
 			List<String> finMainIndexKey = new ArrayList<String>();
+			if(stock.getCode() == "300102") {
+				int i = 0;
+				
+			}
 			if (finMainIndexList.getList() != null) {
 				for (int i = 0; i < finMainIndexList.getList().size(); i++) {
 					FinMainIndex finMainIndex = finMainIndexList.getList().get(i);
@@ -265,7 +269,7 @@ public class ScheduledTasks {
 				}
 			}
 
-			finStatementDao.batchAddFinancialReport(balSheetList.getList(), incStatementList.getList(), cfStatementList.getList(), finMainIndexList.getList());
+			finStatementService.batchAddFinancialReport(balSheetList.getList(), incStatementList.getList(), cfStatementList.getList(), finMainIndexList.getList());
 
 			logger.debug("---------------------insert into income table stock code:" + stock.getCode() + " record count:" + (incStatementList.getList() != null ? incStatementList.getList().size() : 0) + " success---------");
 			logger.debug("---------------------insert into balance table stock code:" + stock.getCode() + " record count:" + (balSheetList.getList() != null ? balSheetList.getList().size() : 0) + " success---------");
@@ -274,7 +278,7 @@ public class ScheduledTasks {
 		} catch (Exception e) {
 			logger.error(e.getMessage(), e);
 			if (attempt > 0) {
-				finStatementDao.deleteStock(stock.getCode());
+				finStatementService.deleteStock(stock.getCode());
 				insertFinancialReportBySymbol(stock, restTemplate, token, --attempt);
 			} else {
 				// throw e;
@@ -286,11 +290,11 @@ public class ScheduledTasks {
 	private void updateFinancialReportBySymbol(Stock stock, RestTemplate restTemplate, String token, int attempt) {
 		try {
 			String symbol = stock.getSymbol();
-			if (!finStatementDao.isStockExist(stock.getCode())) {
+			if (!finStatementService.isStockExist(stock.getCode())) {
 				logger.info("---------------------insert into stock table stock code:" + stock.getCode() + " success---------");
-				finStatementDao.addStock(stock);
+				finStatementService.addStock(stock);
 			} else {
-				finStatementDao.updateStock(stock);
+				finStatementService.updateStock(stock);
 			}
 
 			IncStatementList incStatementList = restTemplate.getForObject("http://xueqiu.com/stock/f10/incstatement.json?symbol=" + symbol + "&page=1&size=1&access_token=" + token, IncStatementList.class);
@@ -298,8 +302,8 @@ public class ScheduledTasks {
 			if (incStatementList.getList() != null && incStatementList.getList().size() > 0) {
 				incStatementList.getList().get(0).setStockcode(stock.getCode());
 				
-				if (!finStatementDao.isIncStatementExist(stock.getCode(), incStatementList.getList().get(0).getEnddate())) {
-					finStatementDao.addIncStatement(incStatementList.getList().get(0));
+				if (!finStatementService.isIncStatementExist(stock.getCode(), incStatementList.getList().get(0).getEnddate())) {
+					finStatementService.addIncStatement(incStatementList.getList().get(0));
 					logger.debug("---------------------insert into income table stock code:" + stock.getCode() + " report date:" + incStatementList.getList().get(0).getEnddate() + " success---------");
 				}
 			}
@@ -309,8 +313,8 @@ public class ScheduledTasks {
 			if (balSheetList.getList() != null && balSheetList.getList().size() > 0) {
 				balSheetList.getList().get(0).setStockcode(stock.getCode());
 				
-				if (!finStatementDao.isBalanceStatementExist(stock.getCode(), balSheetList.getList().get(0).getReportdate())) {
-					finStatementDao.addBalanceStatement(balSheetList.getList().get(0));
+				if (!finStatementService.isBalanceStatementExist(stock.getCode(), balSheetList.getList().get(0).getReportdate())) {
+					finStatementService.addBalanceStatement(balSheetList.getList().get(0));
 					logger.debug("---------------------insert into balance table stock code:" + stock.getCode() + " report date:" + balSheetList.getList().get(0).getReportdate() + " success---------");
 				}
 			}
@@ -320,8 +324,8 @@ public class ScheduledTasks {
 			if (cfStatementList.getList() != null && cfStatementList.getList().size() > 0) {
 				cfStatementList.getList().get(0).setStockcode(stock.getCode());
 				
-				if (!finStatementDao.isCFStatementExist(stock.getCode(), cfStatementList.getList().get(0).getEnddate())) {
-					finStatementDao.addCFStatement(cfStatementList.getList().get(0));
+				if (!finStatementService.isCFStatementExist(stock.getCode(), cfStatementList.getList().get(0).getEnddate())) {
+					finStatementService.addCFStatement(cfStatementList.getList().get(0));
 					logger.debug("---------------------insert into cash table stock code:" + stock.getCode() + " report date:" + cfStatementList.getList().get(0).getEnddate() + " success---------");
 				}
 			}
@@ -331,15 +335,15 @@ public class ScheduledTasks {
 			if (finMainIndexList.getList() != null && finMainIndexList.getList().size() > 0) {
 				finMainIndexList.getList().get(0).setStockcode(stock.getCode());
 				
-				if (!finStatementDao.isFinMainIndexExist(stock.getCode(), finMainIndexList.getList().get(0).getReportdate())) {
-					finStatementDao.addFinMainIndex(finMainIndexList.getList().get(0));
+				if (!finStatementService.isFinMainIndexExist(stock.getCode(), finMainIndexList.getList().get(0).getReportdate())) {
+					finStatementService.addFinMainIndex(finMainIndexList.getList().get(0));
 					logger.debug("---------------------insert into financial index table stock code:" + stock.getCode() + " report date:" + finMainIndexList.getList().get(0).getReportdate() + " success---------");
 				}
 			}
 		} catch (Exception e) {
 			logger.error(e.getMessage(), e);
 			if (attempt > 0) {
-				finStatementDao.deleteStock(stock.getCode());
+				finStatementService.deleteStock(stock.getCode());
 				insertFinancialReportBySymbol(stock, restTemplate, token, --attempt);
 			} else {
 				// throw e;

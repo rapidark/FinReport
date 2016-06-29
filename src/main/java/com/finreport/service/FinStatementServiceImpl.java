@@ -1,4 +1,4 @@
-package com.finreport.dao;
+package com.finreport.service;
 
 import java.util.List;
 
@@ -21,7 +21,7 @@ import com.finreport.model.Stock;
 
 @Component
 @Transactional
-public class FinStatementDaoImpl implements FinStatementDao {
+public class FinStatementServiceImpl implements FinStatementService {
 	@Autowired
 	private BalSheetMapper balSheetMapper;
 	

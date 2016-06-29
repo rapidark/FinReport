@@ -15,5 +15,5 @@ public interface BalSheetMapper {
 	BalSheet selectByPrimaryKey(@Param("stockcode") String stockcode, @Param("reportdate") Integer reportdate);
 
 	@Select("SELECT COUNT(*) from balance where stockcode = #{stockcode} and reportdate=#{reportdate}")
-	int countByPrimaryKey(String stockcode, Integer reportdate);
+	int countByPrimaryKey(@Param("stockcode") String stockcode,@Param("reportdate") Integer reportdate);
 }

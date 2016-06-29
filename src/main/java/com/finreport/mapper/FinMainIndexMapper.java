@@ -14,6 +14,6 @@ public interface FinMainIndexMapper {
 
 	FinMainIndex selectByPrimaryKey(@Param("stockcode") String stockcode, @Param("reportdate") Integer reportdate);
 
-	@Select("SELECT COUNT(*) from finindex where stockcode = #{stockcode} and enddate=#{reportdate}")
-	int countByPrimaryKey(String stockcode, Integer reportdate);
+	@Select("SELECT COUNT(*) from finindex where stockcode = #{stockcode} and reportdate=#{reportdate}")
+	int countByPrimaryKey(@Param("stockcode") String stockcode, @Param("reportdate") Integer reportdate);
 }
