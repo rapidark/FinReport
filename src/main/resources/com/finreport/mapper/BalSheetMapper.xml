@@ -3,9 +3,9 @@
 <mapper namespace="com.finreport.mapper.BalSheetMapper" >
   <resultMap id="BaseResultMap" type="com.finreport.model.BalSheet" >
     <id column="stockcode" property="stockcode" jdbcType="CHAR" />
+    <id column="reportdate" property="reportdate" jdbcType="INTEGER" />
     <result column="compcode" property="compcode" jdbcType="INTEGER" />
     <result column="publishdate" property="publishdate" jdbcType="INTEGER" />
-    <result column="reportdate" property="reportdate" jdbcType="INTEGER" />
     <result column="reporttype" property="reporttype" jdbcType="INTEGER" />
     <result column="quarter" property="quarter" jdbcType="VARCHAR" />
     <result column="adjustdate" property="adjustdate" jdbcType="INTEGER" />
@@ -139,7 +139,7 @@
     <result column="actiundesecu" property="actiundesecu" jdbcType="DOUBLE" />
   </resultMap>
   <sql id="Base_Column_List" >
-    stockcode, compcode, publishdate, reportdate, reporttype, quarter, adjustdate, accstacode, 
+    stockcode, reportdate, compcode, publishdate, reporttype, quarter, adjustdate, accstacode, 
     accstaname, curfds, tradfinasset, notesrece, accorece, prep, premrece, interece, 
     dividrece, otherrece, expotaxrebarece, subsrece, margrece, intelrece, inve, prepexpe, 
     unseg, expinoncurrasset, othercurrasse, currassetitse, currasseform, totcurrasset, 
@@ -159,19 +159,21 @@
     settresedepo, plac, derifinaasset, reinrece, reincontrese, purcresaasset, cenbankborr, 
     deposit, fdsborr, deriliab, sellrepasse, copepoun, insucontrese, actitradsecu, actiundesecu
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
     select 'false' as QUERYID,
     <include refid="Base_Column_List" />
     from balance
     where stockcode = #{stockcode,jdbcType=CHAR}
+      and reportdate = #{reportdate,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+  <delete id="deleteByPrimaryKey" parameterType="map" >
     delete from balance
     where stockcode = #{stockcode,jdbcType=CHAR}
+      and reportdate = #{reportdate,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.finreport.model.BalSheet" >
-    insert into balance (stockcode, compcode, publishdate, 
-      reportdate, reporttype, quarter, 
+    insert into balance (stockcode, reportdate, compcode, 
+      publishdate, reporttype, quarter, 
       adjustdate, accstacode, accstaname, 
       curfds, tradfinasset, notesrece, 
       accorece, prep, premrece, 
@@ -216,8 +218,8 @@
       deriliab, sellrepasse, copepoun, 
       insucontrese, actitradsecu, actiundesecu
       )
-    values (#{stockcode,jdbcType=CHAR}, #{compcode,jdbcType=INTEGER}, #{publishdate,jdbcType=INTEGER}, 
-      #{reportdate,jdbcType=INTEGER}, #{reporttype,jdbcType=INTEGER}, #{quarter,jdbcType=VARCHAR}, 
+    values (#{stockcode,jdbcType=CHAR}, #{reportdate,jdbcType=INTEGER}, #{compcode,jdbcType=INTEGER}, 
+      #{publishdate,jdbcType=INTEGER}, #{reporttype,jdbcType=INTEGER}, #{quarter,jdbcType=VARCHAR}, 
       #{adjustdate,jdbcType=INTEGER}, #{accstacode,jdbcType=INTEGER}, #{accstaname,jdbcType=VARCHAR}, 
       #{curfds,jdbcType=DOUBLE}, #{tradfinasset,jdbcType=DOUBLE}, #{notesrece,jdbcType=DOUBLE}, 
       #{accorece,jdbcType=DOUBLE}, #{prep,jdbcType=DOUBLE}, #{premrece,jdbcType=DOUBLE}, 
@@ -269,14 +271,14 @@
       <if test="stockcode != null" >
         stockcode,
       </if>
+      <if test="reportdate != null" >
+        reportdate,
+      </if>
       <if test="compcode != null" >
         compcode,
       </if>
       <if test="publishdate != null" >
         publishdate,
-      </if>
-      <if test="reportdate != null" >
-        reportdate,
       </if>
       <if test="reporttype != null" >
         reporttype,
@@ -676,14 +678,14 @@
       <if test="stockcode != null" >
         #{stockcode,jdbcType=CHAR},
       </if>
+      <if test="reportdate != null" >
+        #{reportdate,jdbcType=INTEGER},
+      </if>
       <if test="compcode != null" >
         #{compcode,jdbcType=INTEGER},
       </if>
       <if test="publishdate != null" >
         #{publishdate,jdbcType=INTEGER},
-      </if>
-      <if test="reportdate != null" >
-        #{reportdate,jdbcType=INTEGER},
       </if>
       <if test="reporttype != null" >
         #{reporttype,jdbcType=INTEGER},
