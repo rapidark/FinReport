@@ -13,13 +13,25 @@ public interface FinStatementDao {
 	
 	public Boolean addBalanceStatement(BalSheet balSheet);
 	
+	public boolean isBalanceStatementExist(String stockcode, Integer reportDate);
+	
 	public Boolean addCFStatement(CFStatement cfStatement);
+	
+	public boolean isCFStatementExist(String stockcode, Integer reportDate);
 	
 	public Boolean addFinMainIndex(FinMainIndex finMainIndex);
 	
+	public boolean isFinMainIndexExist(String stockcode, Integer reportDate);
+	
 	public Boolean addIncStatement(IncStatement incStatement);
 	
+	public boolean isIncStatementExist(String stockcode, Integer reportDate);
+	
 	public Boolean addStock(Stock stock);
+	
+	public Boolean updateStock(Stock stock) ;
+	
+	public void deleteStock(String code);
 	
 	public Boolean isStockExist(String symbol);
 	
@@ -32,4 +44,6 @@ public interface FinStatementDao {
 	public void batchAddFinMainIndex(List<FinMainIndex> finIndexs);
 	
 	public void batchAddFinancialReport(List<BalSheet> balSheets, List<IncStatement> incStatements, List<CFStatement> cfStatements, List<FinMainIndex> finIndexs);
+	
+	public List<String> getNonfinancialReport();
 }
