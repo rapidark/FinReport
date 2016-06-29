@@ -3,10 +3,10 @@
 <mapper namespace="com.finreport.mapper.CFStatementMapper" >
   <resultMap id="BaseResultMap" type="com.finreport.model.CFStatement" >
     <id column="stockcode" property="stockcode" jdbcType="CHAR" />
+    <id column="enddate" property="enddate" jdbcType="INTEGER" />
     <result column="compcode" property="compcode" jdbcType="INTEGER" />
     <result column="publishdate" property="publishdate" jdbcType="INTEGER" />
     <result column="begindate" property="begindate" jdbcType="INTEGER" />
-    <result column="enddate" property="enddate" jdbcType="INTEGER" />
     <result column="reporttype" property="reporttype" jdbcType="INTEGER" />
     <result column="quarter" property="quarter" jdbcType="VARCHAR" />
     <result column="adjustdate" property="adjustdate" jdbcType="INTEGER" />
@@ -130,7 +130,7 @@
     <result column="cashneti" property="cashneti" jdbcType="DOUBLE" />
   </resultMap>
   <sql id="Base_Column_List" >
-    stockcode, compcode, publishdate, begindate, enddate, reporttype, quarter, adjustdate, 
+    stockcode, enddate, compcode, publishdate, begindate, reporttype, quarter, adjustdate, 
     accstacode, accstaname, laborgetcash, deponetr, bankloannetincr, fininstnetr, inspremcash, 
     insnetc, savinetr, disptradnetincr, charintecash, fdsborrnetr, repnetincr, taxrefd, 
     receotherbizcash, bizinflitse, bizinflform, bizcashinfl, labopayc, loansnetr, tradepaymnetr, 
@@ -150,19 +150,21 @@
     debtintocapi, expiconvbd, finfixedasset, cashfinalbala, cashopenbala, equfinalbala, 
     equopenbala, netcashscheitse, netcashscheform, cashneti
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
     select 'false' as QUERYID,
     <include refid="Base_Column_List" />
     from cash
     where stockcode = #{stockcode,jdbcType=CHAR}
+      and enddate = #{enddate,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+  <delete id="deleteByPrimaryKey" parameterType="map" >
     delete from cash
     where stockcode = #{stockcode,jdbcType=CHAR}
+      and enddate = #{enddate,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.finreport.model.CFStatement" >
-    insert into cash (stockcode, compcode, publishdate, 
-      begindate, enddate, reporttype, 
+    insert into cash (stockcode, enddate, compcode, 
+      publishdate, begindate, reporttype, 
       quarter, adjustdate, accstacode, 
       accstaname, laborgetcash, deponetr, 
       bankloannetincr, fininstnetr, inspremcash, 
@@ -204,8 +206,8 @@
       cashopenbala, equfinalbala, equopenbala, 
       netcashscheitse, netcashscheform, cashneti
       )
-    values (#{stockcode,jdbcType=CHAR}, #{compcode,jdbcType=INTEGER}, #{publishdate,jdbcType=INTEGER}, 
-      #{begindate,jdbcType=INTEGER}, #{enddate,jdbcType=INTEGER}, #{reporttype,jdbcType=INTEGER}, 
+    values (#{stockcode,jdbcType=CHAR}, #{enddate,jdbcType=INTEGER}, #{compcode,jdbcType=INTEGER}, 
+      #{publishdate,jdbcType=INTEGER}, #{begindate,jdbcType=INTEGER}, #{reporttype,jdbcType=INTEGER}, 
       #{quarter,jdbcType=VARCHAR}, #{adjustdate,jdbcType=INTEGER}, #{accstacode,jdbcType=INTEGER}, 
       #{accstaname,jdbcType=VARCHAR}, #{laborgetcash,jdbcType=DOUBLE}, #{deponetr,jdbcType=DOUBLE}, 
       #{bankloannetincr,jdbcType=DOUBLE}, #{fininstnetr,jdbcType=DOUBLE}, #{inspremcash,jdbcType=DOUBLE}, 
@@ -254,6 +256,9 @@
       <if test="stockcode != null" >
         stockcode,
       </if>
+      <if test="enddate != null" >
+        enddate,
+      </if>
       <if test="compcode != null" >
         compcode,
       </if>
@@ -262,9 +267,6 @@
       </if>
       <if test="begindate != null" >
         begindate,
-      </if>
-      <if test="enddate != null" >
-        enddate,
       </if>
       <if test="reporttype != null" >
         reporttype,
@@ -634,6 +636,9 @@
       <if test="stockcode != null" >
         #{stockcode,jdbcType=CHAR},
       </if>
+      <if test="enddate != null" >
+        #{enddate,jdbcType=INTEGER},
+      </if>
       <if test="compcode != null" >
         #{compcode,jdbcType=INTEGER},
       </if>
@@ -642,9 +647,6 @@
       </if>
       <if test="begindate != null" >
         #{begindate,jdbcType=INTEGER},
-      </if>
-      <if test="enddate != null" >
-        #{enddate,jdbcType=INTEGER},
       </if>
       <if test="reporttype != null" >
         #{reporttype,jdbcType=INTEGER},
