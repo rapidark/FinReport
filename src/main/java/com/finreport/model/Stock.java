@@ -150,4 +150,11 @@ public class Stock {
     public void setHasexist(Boolean hasexist) {
         this.hasexist = hasexist;
     }
+
+	@Override
+	public String toString() {
+		return "Stock [code=" + code + ", symbol=" + symbol + ", name=" + name + ", current=" + current + ", percent=" + percent + ", change=" + change + ", high=" + high + ", low=" + low
+				+ ", high52w=" + high52w + ", low52w=" + low52w + ", marketcapital=" + marketcapital + ", amount=" + amount + ", pettm=" + pettm + ", volume=" + volume + ", hasexist=" + hasexist
+				+ "]";
+	}
 }
