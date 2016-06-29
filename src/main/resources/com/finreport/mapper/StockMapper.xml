@@ -215,4 +215,7 @@
     select count(*) from stock
     where code = #{code, jdbcType=CHAR}
   </select>
+  <select id="getNonFinancialStock" resultType="java.lang.String">
+       select symbol from stock where code not in (select stockcode from income)
+  </select>
 </mapper>
