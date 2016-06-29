@@ -40,13 +40,17 @@ public class FinStatementDaoImpl implements FinStatementDao {
 	@Autowired 
 	SqlSessionTemplate sqlBatchSessionTemplate;
 	
-	public BalSheet getBalanceByStockCode(String stockcode) {
-		return balSheetMapper.selectByPrimaryKey(stockcode);
-	}
+//	public BalSheet getBalanceByStockCode(String stockcode) {
+//		return balSheetMapper.selectByPrimaryKey(stockcode);
+//	}
 	
 	public Boolean addBalanceStatement(BalSheet balSheet) {
 		int result = balSheetMapper.insertSelective(balSheet);
 		return result > 0;
+	}
+	
+	public boolean isBalanceStatementExist(String stockcode, Integer reportDate){
+		return balSheetMapper.countByPrimaryKey(stockcode, reportDate) > 0;
 	}
 	
 	public Boolean addCFStatement(CFStatement cfStatement) {
@@ -54,9 +58,17 @@ public class FinStatementDaoImpl implements FinStatementDao {
 		return result > 0;
 	}
 	
+	public boolean isCFStatementExist(String stockcode, Integer reportDate){
+		return cfStatementMapper.countByPrimaryKey(stockcode, reportDate) > 0;
+	}
+	
 	public Boolean addFinMainIndex(FinMainIndex finMainIndex) {
 		int result = finMainIndexMapper.insertSelective(finMainIndex);
 		return result > 0;
+	}
+	
+	public boolean isFinMainIndexExist(String stockcode, Integer reportDate){
+		return finMainIndexMapper.countByPrimaryKey(stockcode, reportDate) > 0;
 	}
 	
 	public Boolean addIncStatement(IncStatement incStatement) {
@@ -64,11 +76,25 @@ public class FinStatementDaoImpl implements FinStatementDao {
 		return result > 0;
 	}
 	
+	public boolean isIncStatementExist(String stockcode, Integer reportDate){
+		return incStatementMapper.countByPrimaryKey(stockcode, reportDate) > 0;
+	}
+	
 	public Boolean addStock(Stock stock) {
 		int result = stockMapper.insertSelective(stock);
 		return result > 0;
 	}
 	
+	public Boolean updateStock(Stock stock) {
+		int result = stockMapper.updateByPrimaryKeySelective(stock);
+		return result > 0;
+	}
+	
+	@Override
+	public void deleteStock(String code) {
+		stockMapper.deleteByPrimaryKey(code);
+	}
+
 	public Boolean isStockExist(String code) {
 		return stockMapper.countByCode(code) > 0;
 	}
@@ -77,24 +103,34 @@ public class FinStatementDaoImpl implements FinStatementDao {
 		SqlSession sqlSession = sqlBatchSessionTemplate.getSqlSessionFactory().openSession();
 		
 		BalSheetMapper balSheetMapper = sqlSession.getMapper(BalSheetMapper.class);
-		for (BalSheet balSheet : balSheets) {
-			balSheetMapper.insertSelective(balSheet);
+		if (balSheets != null) {
+			for (BalSheet balSheet : balSheets) {
+				balSheetMapper.insertSelective(balSheet);
+			}
 		}
 		
 		IncStatementMapper incStatementMapper = sqlSession.getMapper(IncStatementMapper.class);
-		for (IncStatement incStatement : incStatements) {
-			incStatementMapper.insertSelective(incStatement);
+		if(incStatements != null) {
+			for (IncStatement incStatement : incStatements) {
+				incStatementMapper.insertSelective(incStatement);
+			}
 		}
 		
 		CFStatementMapper cfStatementMapper = sqlSession.getMapper(CFStatementMapper.class);
-		for (CFStatement cfStatement : cfStatements) {
-			cfStatementMapper.insertSelective(cfStatement);
+		if (cfStatements != null) {
+			for (CFStatement cfStatement : cfStatements) {
+				cfStatementMapper.insertSelective(cfStatement);
+			}
 		}
 		
+		
 		FinMainIndexMapper finMainIndexMapper = sqlSession.getMapper(FinMainIndexMapper.class);
-		for (FinMainIndex item : finIndexs) {
-			finMainIndexMapper.insertSelective(item);
+		if(finIndexs != null) {
+			for (FinMainIndex item : finIndexs) {
+				finMainIndexMapper.insertSelective(item);
+			}
 		}
+		
 		
 		sqlSession.commit();
 	}
@@ -140,5 +176,10 @@ public class FinStatementDaoImpl implements FinStatementDao {
 		}
 		
 		sqlSession.commit();
+	}
+
+	@Override
+	public List<String> getNonfinancialReport() {
+		return stockMapper.getNonFinancialStock();
 	}
 }
