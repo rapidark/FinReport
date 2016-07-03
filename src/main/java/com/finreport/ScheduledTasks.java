@@ -6,6 +6,7 @@ import java.net.Proxy;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,6 +31,7 @@ import com.finreport.model.FinMainIndex;
 import com.finreport.model.FinMainIndexList;
 import com.finreport.model.IncStatement;
 import com.finreport.model.IncStatementList;
+import com.finreport.model.ReducedFinStat;
 import com.finreport.model.Stock;
 import com.finreport.model.StockList;
 import com.finreport.service.FinStatementService;
@@ -48,9 +50,21 @@ public class ScheduledTasks {
 
 	@Autowired
 	FinStatementService finStatementService;
-
-	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
+	
+//	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
+//	public void test() {
+//		List<ReducedFinStat> list = new ArrayList<ReducedFinStat>();
+//		ReducedFinStat reducedFinStat = new ReducedFinStat();
+//		reducedFinStat.setTable("finindex");
+//		reducedFinStat.setColumns(Arrays.asList(new String[]{"mainbusincgrowrate", "netincgrowrate", "mainbusiincome","netprofit"}));
+//		list.add(reducedFinStat);
+//		
+//		finStatementService.getSpecificFinStatement(new String[]{"002440", "002353"}, list, "12");
+//	}
+//	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
 	public void updateFinancialReportTask() throws InterruptedException {
+		
+		List<BalSheet> balSheets = finStatementService.getBalSheetByStockCodeAndQuarter(new String[]{"000998","002041","002772","300087"}, "12");
 		try {
 			RestTemplate restTemplate = createRestTemplate();
 			String token = getToken(restTemplate);

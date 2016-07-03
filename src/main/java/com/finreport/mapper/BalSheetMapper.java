@@ -1,5 +1,8 @@
 package com.finreport.mapper;
 
+import java.util.HashMap;
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -15,5 +18,9 @@ public interface BalSheetMapper {
 	BalSheet selectByPrimaryKey(@Param("stockcode") String stockcode, @Param("reportdate") Integer reportdate);
 
 	@Select("SELECT COUNT(*) from balance where stockcode = #{stockcode} and reportdate=#{reportdate}")
-	int countByPrimaryKey(@Param("stockcode") String stockcode,@Param("reportdate") Integer reportdate);
+	int countByPrimaryKey(@Param("stockcode") String stockcode, @Param("reportdate") Integer reportdate);
+	
+	List<BalSheet> selectByStockcodeAndQuater(@Param("stockcode") String[] stockcode, @Param("reportdate") Integer reportdate, @Param("quarter") String quarter);
+	
+	HashMap<String, List<String>> selectSpecificColumnByStockcodeAndQuater(@Param("columns")List<String> columns, @Param("stockcode") String[] stockcode,  @Param("reportdate") Integer reportdate, @Param("quarter") String quarter);
 }

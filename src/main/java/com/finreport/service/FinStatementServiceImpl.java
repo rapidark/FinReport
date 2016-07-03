@@ -1,5 +1,7 @@
 package com.finreport.service;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -7,6 +9,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.finreport.mapper.BalSheetMapper;
 import com.finreport.mapper.CFStatementMapper;
@@ -17,11 +20,20 @@ import com.finreport.model.BalSheet;
 import com.finreport.model.CFStatement;
 import com.finreport.model.FinMainIndex;
 import com.finreport.model.IncStatement;
+import com.finreport.model.ReducedFinStat;
 import com.finreport.model.Stock;
 
 @Component
 @Transactional
 public class FinStatementServiceImpl implements FinStatementService {
+	
+	public static final Integer beginYear = Integer.parseInt((Calendar.getInstance().get(Calendar.YEAR) + "0101"));
+	
+	public static final String cash = "cash";
+	public static final String balance = "balance";
+	public static final String income = "income";
+	public static final String finindex = "finindex";
+	
 	@Autowired
 	private BalSheetMapper balSheetMapper;
 	
@@ -181,5 +193,44 @@ public class FinStatementServiceImpl implements FinStatementService {
 	@Override
 	public List<String> getNonfinancialReport() {
 		return stockMapper.getNonFinancialStock();
+	}
+
+	@Override
+	public List<BalSheet> getBalSheetByStockCodeAndQuarter(String[] stockcode, String quarter) {
+		return balSheetMapper.selectByStockcodeAndQuater(stockcode, beginYear, quarter);
+	}
+
+	@Override
+	public List<CFStatement> getCFStatementByStockCodeAndQuarter(String[] stockcode, String quarter) {
+		return cfStatementMapper.selectByStockcodeAndQuater(stockcode, beginYear, quarter);
+	}
+
+	@Override
+	public List<FinMainIndex> getFinMainIndexByStockCodeAndQuarter(String[] stockcode, String quarter) {
+		return finMainIndexMapper.selectByStockcodeAndQuater(stockcode, beginYear, quarter);
+	}
+
+	@Override
+	public List<IncStatement> getIncStatementByStockCodeAndQuarter(String[] stockcode, String quarter) {
+		return incStatementMapper.selectByStockcodeAndQuater(stockcode, beginYear, quarter);
+	}
+	
+	@Override
+	public List<ReducedFinStat> getSpecificFinStatement(String[] codes, List<ReducedFinStat> reducedFinStats, String quarter) {
+		for (ReducedFinStat reducedFinStat : reducedFinStats) {
+			if(reducedFinStat.getTable().equals(cash)) {
+				cfStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+			} else if (reducedFinStat.getTable().equals(balance)) {
+				balSheetMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+			} else if (reducedFinStat.getTable().equals(income)) {
+				incStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+			} else if(reducedFinStat.getTable().equals(finindex)) {
+				finMainIndexMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+			} else {
+				// to do nothing.
+			}
+		}
+		
+		return null;
 	}
 }

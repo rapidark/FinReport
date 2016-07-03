@@ -1013,4 +1013,23 @@
       </if>
     </trim>
   </insert>
+  <select id="selectByStockcodeAndQuater" resultType="com.finreport.model.CFStatement">
+   select * from cash where stockcode in
+   <foreach collection="stockcode" index="index" item="code" open="(" separator="," close=")">
+     #{code}
+   </foreach>
+   and (`quarter` = #{quarter} or enddate > #{enddate})
+  </select>
+  
+  <select id="selectSpecificColumnByStockcodeAndQuater" resultType="hashmap">
+   select
+   <foreach collection="columns" item="column" separator=",">
+    #{column}
+   </foreach>
+   from cash where stockcode in
+   <foreach collection="stockcode" index="index" item="code" open="(" separator="," close=")">
+     #{code}
+   </foreach>
+   and (`quarter` = #{quarter} or enddate > #{enddate})
+  </select>
 </mapper>
