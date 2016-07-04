@@ -2,6 +2,7 @@ package com.finreport.mapper;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -22,5 +23,5 @@ public interface BalSheetMapper {
 	
 	List<BalSheet> selectByStockcodeAndQuater(@Param("stockcode") String[] stockcode, @Param("reportdate") Integer reportdate, @Param("quarter") String quarter);
 	
-	HashMap<String, List<String>> selectSpecificColumnByStockcodeAndQuater(@Param("columns")List<String> columns, @Param("stockcode") String[] stockcode,  @Param("reportdate") Integer reportdate, @Param("quarter") String quarter);
+	List<Map<String, Object>> selectSpecificColumnByStockcodeAndQuater(@Param("columns")List<String> columns, @Param("stockcode") String[] stockcode,  @Param("reportdate") Integer reportdate, @Param("quarter") String quarter);
 }

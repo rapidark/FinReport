@@ -287,7 +287,7 @@
   
   <select id="selectSpecificColumnByStockcodeAndQuater" resultType="hashmap">
    select 
-   <foreach collection="columns" item="column" separator=",">#{column}</foreach>
+   <foreach collection="columns" item="column" separator=",">${column}</foreach>
     from finindex where stockcode in
    <foreach collection="stockcode" index="index" item="code" open="(" separator="," close=")">
      #{code}

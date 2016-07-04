@@ -219,18 +219,18 @@ public class FinStatementServiceImpl implements FinStatementService {
 	public List<ReducedFinStat> getSpecificFinStatement(String[] codes, List<ReducedFinStat> reducedFinStats, String quarter) {
 		for (ReducedFinStat reducedFinStat : reducedFinStats) {
 			if(reducedFinStat.getTable().equals(cash)) {
-				cfStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+				reducedFinStat.setData(cfStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
 			} else if (reducedFinStat.getTable().equals(balance)) {
-				balSheetMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+				reducedFinStat.setData(balSheetMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
 			} else if (reducedFinStat.getTable().equals(income)) {
-				incStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+				reducedFinStat.setData(incStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
 			} else if(reducedFinStat.getTable().equals(finindex)) {
-				finMainIndexMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter);
+				reducedFinStat.setData(finMainIndexMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
 			} else {
 				// to do nothing.
 			}
 		}
 		
-		return null;
+		return reducedFinStats;
 	}
 }

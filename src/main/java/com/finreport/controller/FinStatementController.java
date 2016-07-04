@@ -51,9 +51,8 @@ public class FinStatementController {
 		return finStatementService.getFinMainIndexByStockCodeAndQuarter(codes, annualReport);
 	}
 	
-	@RequestMapping(value="/getSpecificFinStatement")
+	@RequestMapping(value="/getSpecificFinStatement", method = RequestMethod.POST)
 	public List<ReducedFinStat> getSpecificFinStatement(@RequestBody ReducedFinStatCriteria criteria) {
-		finStatementService.getSpecificFinStatement(criteria.getCodes(), criteria.getFinStats(), annualReport);
-		return null;
+		return finStatementService.getSpecificFinStatement(criteria.getCodes(), criteria.getFinStats(), annualReport);
 	}
 }

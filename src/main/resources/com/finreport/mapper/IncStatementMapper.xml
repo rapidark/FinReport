@@ -797,7 +797,7 @@
   <select id="selectSpecificColumnByStockcodeAndQuater" resultType="hashmap">
    select 
    <foreach collection="columns" item="column" separator=",">
-    #{column}
+    ${column}
    </foreach>
     from income where stockcode in
    <foreach collection="stockcode" index="index" item="code" open="(" separator="," close=")">
