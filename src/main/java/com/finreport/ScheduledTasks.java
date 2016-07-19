@@ -51,20 +51,9 @@ public class ScheduledTasks {
 	@Autowired
 	FinStatementService finStatementService;
 	
-//	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
-//	public void test() {
-//		List<ReducedFinStat> list = new ArrayList<ReducedFinStat>();
-//		ReducedFinStat reducedFinStat = new ReducedFinStat();
-//		reducedFinStat.setTable("finindex");
-//		reducedFinStat.setColumns(Arrays.asList(new String[]{"mainbusincgrowrate", "netincgrowrate", "mainbusiincome","netprofit"}));
-//		list.add(reducedFinStat);
-//		
-//		finStatementService.getSpecificFinStatement(new String[]{"002440", "002353"}, list, "12");
-//	}
-//	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
+	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
 	public void updateFinancialReportTask() throws InterruptedException {
 		
-		List<BalSheet> balSheets = finStatementService.getBalSheetByStockCodeAndQuarter(new String[]{"000998","002041","002772","300087"}, "12");
 		try {
 			RestTemplate restTemplate = createRestTemplate();
 			String token = getToken(restTemplate);
@@ -82,7 +71,6 @@ public class ScheduledTasks {
 		}
 	}
 
-//	@Scheduled(fixedRate = 24*60*60*1000)
 	public void createFinancialReportTask() {
 		try {
 			RestTemplate restTemplate = createRestTemplate();

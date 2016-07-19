@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.finreport.ScheduledTasks;
 import com.finreport.model.BalSheet;
 import com.finreport.model.CFStatement;
 import com.finreport.model.FinMainIndex;
@@ -26,6 +27,9 @@ public class FinStatementController {
 	
 	@Autowired
 	FinStatementService finStatementService;
+	
+	@Autowired
+	ScheduledTasks scheduledTasks;
 	
 	@RequestMapping(value = "/cash", method = RequestMethod.GET)
 	public List<CFStatement> getCashStatement(@RequestParam(value = "code") String code) {
@@ -54,5 +58,10 @@ public class FinStatementController {
 	@RequestMapping(value="/getSpecificFinStatement", method = RequestMethod.POST)
 	public List<ReducedFinStat> getSpecificFinStatement(@RequestBody ReducedFinStatCriteria criteria) {
 		return finStatementService.getSpecificFinStatement(criteria.getCodes(), criteria.getFinStats(), annualReport);
+	}
+	
+	@RequestMapping(value = "/createfinstatement", method= RequestMethod.GET)
+	public void createFinancialReportTask() {
+		scheduledTasks.createFinancialReportTask();
 	}
 }
