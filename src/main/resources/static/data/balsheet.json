@@ -1,0 +1,4492 @@
+[
+  {
+    "table": "cash",
+    "columns": [
+      "finexpe",
+      "netprofit"
+    ],
+    "data": [
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "000998"
+      },
+      {
+        "enddate": 20041231,
+        "finexpe": 2411830.77,
+        "netprofit": 8.538621496E7,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20051231,
+        "finexpe": 1433639.94,
+        "netprofit": 8.605844468E7,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20061231,
+        "finexpe": 411730.12,
+        "netprofit": 2.146106849E7,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 930825.0,
+        "netprofit": 4.14249395E7,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 1134681.08,
+        "netprofit": 6.157856664E7,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": -929577.34,
+        "netprofit": 1.8446219459E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 188398.06,
+        "netprofit": 3.8452474746E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": -732058.42,
+        "netprofit": 4.1275482005E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 589128.11,
+        "netprofit": 4.2376365558E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 254919.59,
+        "netprofit": 5.6498897674E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 20285.52,
+        "netprofit": 5.3550041735E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 78466.15,
+        "netprofit": 5.3495994182E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 2546031.93,
+        "netprofit": 6.398845759E7,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 3481302.05,
+        "netprofit": 5.470125501E7,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 1.077475821E7,
+        "netprofit": 9.080674912E7,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 1.764155013E7,
+        "netprofit": 1.150070216E8,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 510555.73,
+        "netprofit": 1.433319707E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 548966.0,
+        "netprofit": 2.456639231E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": 637341.25,
+        "netprofit": 3.41420702E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 546649.68,
+        "netprofit": 3.491068334E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 173583.16,
+        "netprofit": 2.65128394E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 837214.27,
+        "netprofit": 3.559016238E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 2975031.91,
+        "netprofit": 2.480965549E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 1850589.25,
+        "netprofit": 2.417296884E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 838682.56,
+        "netprofit": 4.287352472E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 3321267.61,
+        "netprofit": 9939465.68,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 4619097.34,
+        "netprofit": 1.146335343E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": 3309776.18,
+        "netprofit": 2.035021712E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 4895224.79,
+        "netprofit": 4.220351503E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 631908.7,
+        "netprofit": 5.884958337E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 2210838.22,
+        "netprofit": 4489947.68,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 1.067216645E7,
+        "netprofit": -1.6727368936E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 2.010801511E7,
+        "netprofit": -2.9933510773E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 1.944208562E7,
+        "netprofit": 1.514277214E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 4030056.73,
+        "netprofit": 8441552.54,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 2979592.43,
+        "netprofit": 2.139671546E7,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": 26292.04,
+        "netprofit": 4.428539641E7,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 2140730.55,
+        "netprofit": 6.283952979E7,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 610344.92,
+        "netprofit": 6.123242988E7,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 1432493.25,
+        "netprofit": 6.816287477E7,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 1244777.78,
+        "netprofit": 3.506596721E7,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 3642614.22,
+        "netprofit": -1.1595273995E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 2558501.52,
+        "netprofit": 156688.74,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 19981231,
+        "finexpe": -1765877.27,
+        "netprofit": 7.326192774E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 19991231,
+        "finexpe": 2271883.33,
+        "netprofit": 1.1395530677E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20001231,
+        "finexpe": 8356251.46,
+        "netprofit": 1.166644022E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20011231,
+        "finexpe": 7321633.58,
+        "netprofit": 8.944443186E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20021231,
+        "finexpe": 9857090.5,
+        "netprofit": 8.006162478E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20031231,
+        "finexpe": 3.480635513E7,
+        "netprofit": 9.30545949E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20041231,
+        "finexpe": 3.012427462E7,
+        "netprofit": 4.96666419E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20051231,
+        "finexpe": 1.756826722E7,
+        "netprofit": 1.053815064E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20061231,
+        "finexpe": 4.233726805E7,
+        "netprofit": 2.15961538E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 6.233333947E7,
+        "netprofit": 6.215176548E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 5.465862094E7,
+        "netprofit": 4.801994415E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": 3.350960689E7,
+        "netprofit": 1.1893089788E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 4.117199969E7,
+        "netprofit": 1.2596257395E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 4.968063269E7,
+        "netprofit": 1.1678360023E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 5.701181592E7,
+        "netprofit": 4.5791745086E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 5.879674368E7,
+        "netprofit": 3.7972954746E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 8.23989666E7,
+        "netprofit": 2.0978023741E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 1.1141354882E8,
+        "netprofit": 1.2279611961E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20001231,
+        "finexpe": 1.149801968E7,
+        "netprofit": 2.027003563E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20011231,
+        "finexpe": 9691656.08,
+        "netprofit": 6104923.45,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20021231,
+        "finexpe": 1.867221077E7,
+        "netprofit": -8.027495183E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20031231,
+        "finexpe": 7187772.61,
+        "netprofit": -1.1382912971E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20041231,
+        "finexpe": 4954446.96,
+        "netprofit": 3455385.21,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20051231,
+        "finexpe": 7836450.47,
+        "netprofit": -1.11041495E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20061231,
+        "finexpe": 7098274.72,
+        "netprofit": 1.405805073E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 1.041836505E7,
+        "netprofit": -5.757307511E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 8880625.62,
+        "netprofit": -2.336747954E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": 8087358.46,
+        "netprofit": -2.768059926E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 6192547.47,
+        "netprofit": 5.758593005E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 300648.0,
+        "netprofit": 2.127282959E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 551228.38,
+        "netprofit": 5.074401686E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 5319375.85,
+        "netprofit": 8.502273527E7,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 8675065.73,
+        "netprofit": 1.5386941849E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 9516836.04,
+        "netprofit": 1.3692105827E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20021231,
+        "finexpe": 1.573296509E7,
+        "netprofit": 3.411518793E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20031231,
+        "finexpe": 1.637952756E7,
+        "netprofit": 3.209979891E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20041231,
+        "finexpe": 2.209229697E7,
+        "netprofit": 3.024938362E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20051231,
+        "finexpe": 2.866220316E7,
+        "netprofit": -1.2063951866E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20061231,
+        "finexpe": 3.053759732E7,
+        "netprofit": 1.343827662E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 5.292001238E7,
+        "netprofit": -1.65246988E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 6.556745407E7,
+        "netprofit": 6.599282514E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": 5.826367157E7,
+        "netprofit": 1.41293341E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 6.088774375E7,
+        "netprofit": 2.3704357066E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 8.654788038E7,
+        "netprofit": 1.3542624614E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 1.2058927748E8,
+        "netprofit": -4.326497023E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 1.0636427353E8,
+        "netprofit": 1.1447899385E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 1.0165330393E8,
+        "netprofit": -2.5565038695E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 1.0288404018E8,
+        "netprofit": 5.613375605E7,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 19981231,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 19991231,
+        "finexpe": 1.813351056E7,
+        "netprofit": 6.487875917E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20001231,
+        "finexpe": 1.259911184E7,
+        "netprofit": 8.905946334E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20011231,
+        "finexpe": 1.15307692E7,
+        "netprofit": 4410875.27,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20021231,
+        "finexpe": 1.42112562E7,
+        "netprofit": 3.096395656E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20031231,
+        "finexpe": 7871353.66,
+        "netprofit": 7.607413645E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20041231,
+        "finexpe": 1.415408637E7,
+        "netprofit": 1.03975703E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20051231,
+        "finexpe": 1.466958962E7,
+        "netprofit": 5.566944574E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20061231,
+        "finexpe": 2.147589383E7,
+        "netprofit": 2.733867933E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20071231,
+        "finexpe": 3.010788065E7,
+        "netprofit": 4.155220485E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20081231,
+        "finexpe": 6.15242202E7,
+        "netprofit": -1.4529378716E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20091231,
+        "finexpe": 8.510839143E7,
+        "netprofit": 8.940368799E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20101231,
+        "finexpe": 6.337930239E7,
+        "netprofit": 3.006107088E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20111231,
+        "finexpe": 9.564099743E7,
+        "netprofit": -8.1414474306E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20121231,
+        "finexpe": 8.645482845E7,
+        "netprofit": 2.442855865E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20131231,
+        "finexpe": 4.656367762E7,
+        "netprofit": -1.574447647E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20141231,
+        "finexpe": 4.862748815E7,
+        "netprofit": -4845048.22,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20151231,
+        "finexpe": 5.968881269E7,
+        "netprofit": -1.390087696E7,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20160331,
+        "finexpe": 0.0,
+        "netprofit": 0.0,
+        "stockcode": "600359"
+      }
+    ]
+  },
+  {
+    "table": "balance",
+    "columns": [
+      "totcurrasset",
+      "totalcurrliab",
+      "inve",
+      "accorece",
+      "fixedassenet"
+    ],
+    "data": [
+      {
+        "fixedassenet": 7.916748542E8,
+        "inve": 1.08540005725E9,
+        "reportdate": 20160331,
+        "totalcurrliab": 9.3478608976E8,
+        "totcurrasset": 4.65047622015E9,
+        "stockcode": "000998",
+        "accorece": 3.7026289579E8
+      },
+      {
+        "fixedassenet": 3.652865639E7,
+        "inve": 1.1222483342E8,
+        "reportdate": 20021231,
+        "totalcurrliab": 1.3186047389E8,
+        "totcurrasset": 2.103685218E8,
+        "stockcode": "002041",
+        "accorece": 7353124.43
+      },
+      {
+        "fixedassenet": 8.087694635E7,
+        "inve": 1.50892052E8,
+        "reportdate": 20031231,
+        "totalcurrliab": 1.6477517813E8,
+        "totcurrasset": 2.6505655194E8,
+        "stockcode": "002041",
+        "accorece": 1.48961587E7
+      },
+      {
+        "fixedassenet": 1.3903901946E8,
+        "inve": 2.0109213555E8,
+        "reportdate": 20041231,
+        "totalcurrliab": 1.8433447584E8,
+        "totcurrasset": 3.0934726452E8,
+        "stockcode": "002041",
+        "accorece": 1.767759868E7
+      },
+      {
+        "fixedassenet": 1.4892511776E8,
+        "inve": 2.1211626483E8,
+        "reportdate": 20051231,
+        "totalcurrliab": 9.824458947E7,
+        "totcurrasset": 5.7712816468E8,
+        "stockcode": "002041",
+        "accorece": 3.138643633E7
+      },
+      {
+        "fixedassenet": 1.9214820887E8,
+        "inve": 2.7532102949E8,
+        "reportdate": 20061231,
+        "totalcurrliab": 1.7516193311E8,
+        "totcurrasset": 5.9321335839E8,
+        "stockcode": "002041",
+        "accorece": 1.666856515E7
+      },
+      {
+        "fixedassenet": 2.5617522886E8,
+        "inve": 3.1069787531E8,
+        "reportdate": 20071231,
+        "totalcurrliab": 2.4420122531E8,
+        "totcurrasset": 6.7353873461E8,
+        "stockcode": "002041",
+        "accorece": 1.302481518E7
+      },
+      {
+        "fixedassenet": 3.1098048504E8,
+        "inve": 2.5331720776E8,
+        "reportdate": 20081231,
+        "totalcurrliab": 3.2673568063E8,
+        "totcurrasset": 7.773139316E8,
+        "stockcode": "002041",
+        "accorece": 5838495.84
+      },
+      {
+        "fixedassenet": 3.5348390356E8,
+        "inve": 2.1880042107E8,
+        "reportdate": 20091231,
+        "totalcurrliab": 6.0726359292E8,
+        "totcurrasset": 1.16767241086E9,
+        "stockcode": "002041",
+        "accorece": 3523704.85
+      },
+      {
+        "fixedassenet": 3.6726638238E8,
+        "inve": 2.5339676205E8,
+        "reportdate": 20101231,
+        "totalcurrliab": 6.3282805359E8,
+        "totcurrasset": 1.53321297715E9,
+        "stockcode": "002041",
+        "accorece": 5499338.77
+      },
+      {
+        "fixedassenet": 3.7943798319E8,
+        "inve": 3.9471453205E8,
+        "reportdate": 20111231,
+        "totalcurrliab": 5.6435558651E8,
+        "totcurrasset": 1.8216956963E9,
+        "stockcode": "002041",
+        "accorece": 1.1527174882E8
+      },
+      {
+        "fixedassenet": 5.6551160491E8,
+        "inve": 6.3188847438E8,
+        "reportdate": 20121231,
+        "totalcurrliab": 7.8082832933E8,
+        "totcurrasset": 2.30466557165E9,
+        "stockcode": "002041",
+        "accorece": 6.756298921E7
+      },
+      {
+        "fixedassenet": 5.5076441609E8,
+        "inve": 6.9496620991E8,
+        "reportdate": 20131231,
+        "totalcurrliab": 8.4527912313E8,
+        "totcurrasset": 2.86635880612E9,
+        "stockcode": "002041",
+        "accorece": 7.369811272E7
+      },
+      {
+        "fixedassenet": 5.6316533141E8,
+        "inve": 6.8406459282E8,
+        "reportdate": 20141231,
+        "totalcurrliab": 9.4935950466E8,
+        "totcurrasset": 3.29793441841E9,
+        "stockcode": "002041",
+        "accorece": 6.249296362E7
+      },
+      {
+        "fixedassenet": 5.5952209927E8,
+        "inve": 5.6077761596E8,
+        "reportdate": 20151231,
+        "totalcurrliab": 9.0150169923E8,
+        "totcurrasset": 3.53270236601E9,
+        "stockcode": "002041",
+        "accorece": 8.501440781E7
+      },
+      {
+        "fixedassenet": 5.5191819445E8,
+        "inve": 4.0089322651E8,
+        "reportdate": 20160331,
+        "totalcurrliab": 7.5122621225E8,
+        "totcurrasset": 3.50409329063E9,
+        "stockcode": "002041",
+        "accorece": 2.0009418993E8
+      },
+      {
+        "fixedassenet": 1.8060901678E8,
+        "inve": 1.435645951E7,
+        "reportdate": 20111231,
+        "totalcurrliab": 5.138526789E7,
+        "totcurrasset": 7.758878103E7,
+        "stockcode": "002772",
+        "accorece": 5772527.75
+      },
+      {
+        "fixedassenet": 2.6270540846E8,
+        "inve": 2.320124496E7,
+        "reportdate": 20121231,
+        "totalcurrliab": 5.436863902E7,
+        "totcurrasset": 1.2548005112E8,
+        "stockcode": "002772",
+        "accorece": 6738972.25
+      },
+      {
+        "fixedassenet": 3.4826676629E8,
+        "inve": 3.250613857E7,
+        "reportdate": 20131231,
+        "totalcurrliab": 5.794635519E7,
+        "totcurrasset": 2.0908789293E8,
+        "stockcode": "002772",
+        "accorece": 1.30067967E7
+      },
+      {
+        "fixedassenet": 4.3615990238E8,
+        "inve": 4.170360573E7,
+        "reportdate": 20141231,
+        "totalcurrliab": 1.1983956035E8,
+        "totcurrasset": 3.3186433937E8,
+        "stockcode": "002772",
+        "accorece": 5240185.58
+      },
+      {
+        "fixedassenet": 5.632599728E8,
+        "inve": 4.897271014E7,
+        "reportdate": 20151231,
+        "totalcurrliab": 2.7690695281E8,
+        "totcurrasset": 5.3136402989E8,
+        "stockcode": "002772",
+        "accorece": 4541164.21
+      },
+      {
+        "fixedassenet": 5.5224209513E8,
+        "inve": 4.716380915E7,
+        "reportdate": 20160331,
+        "totalcurrliab": 3.4420171572E8,
+        "totcurrasset": 5.9583120139E8,
+        "stockcode": "002772",
+        "accorece": 8031664.58
+      },
+      {
+        "fixedassenet": 1.034701885E7,
+        "inve": 3.093531764E7,
+        "reportdate": 20071231,
+        "totalcurrliab": 4.120312673E7,
+        "totcurrasset": 5.940332952E7,
+        "stockcode": "300087",
+        "accorece": 2719718.88
+      },
+      {
+        "fixedassenet": 1.274371835E7,
+        "inve": 5.319629743E7,
+        "reportdate": 20081231,
+        "totalcurrliab": 7.153179824E7,
+        "totcurrasset": 1.0736855142E8,
+        "stockcode": "300087",
+        "accorece": 4057997.6
+      },
+      {
+        "fixedassenet": 1.295720703E7,
+        "inve": 7.344369156E7,
+        "reportdate": 20091231,
+        "totalcurrliab": 1.0600163037E8,
+        "totcurrasset": 1.6549080457E8,
+        "stockcode": "300087",
+        "accorece": 1.617678904E7
+      },
+      {
+        "fixedassenet": 2.644420574E7,
+        "inve": 1.2183998947E8,
+        "reportdate": 20101231,
+        "totalcurrliab": 5.533703716E7,
+        "totcurrasset": 5.6067530131E8,
+        "stockcode": "300087",
+        "accorece": 1.407000857E7
+      },
+      {
+        "fixedassenet": 4.320513538E7,
+        "inve": 3.1396323472E8,
+        "reportdate": 20111231,
+        "totalcurrliab": 2.3971514922E8,
+        "totcurrasset": 7.4926085411E8,
+        "stockcode": "300087",
+        "accorece": 2.009533536E7
+      },
+      {
+        "fixedassenet": 6.047374717E7,
+        "inve": 3.9403339239E8,
+        "reportdate": 20121231,
+        "totalcurrliab": 3.0586290457E8,
+        "totcurrasset": 8.0886560695E8,
+        "stockcode": "300087",
+        "accorece": 3.402294577E7
+      },
+      {
+        "fixedassenet": 1.232398717E8,
+        "inve": 3.7915358352E8,
+        "reportdate": 20131231,
+        "totalcurrliab": 2.6341431409E8,
+        "totcurrasset": 7.3585525551E8,
+        "stockcode": "300087",
+        "accorece": 3.822338666E7
+      },
+      {
+        "fixedassenet": 1.7880811704E8,
+        "inve": 3.6634887318E8,
+        "reportdate": 20141231,
+        "totalcurrliab": 3.0814362171E8,
+        "totcurrasset": 7.3804961148E8,
+        "stockcode": "300087",
+        "accorece": 3.488587609E7
+      },
+      {
+        "fixedassenet": 2.2288612809E8,
+        "inve": 3.5142298253E8,
+        "reportdate": 20151231,
+        "totalcurrliab": 2.9740550941E8,
+        "totcurrasset": 7.3917002796E8,
+        "stockcode": "300087",
+        "accorece": 4.099617032E7
+      },
+      {
+        "fixedassenet": 2.1918820086E8,
+        "inve": 3.3119722219E8,
+        "reportdate": 20160331,
+        "totalcurrliab": 2.9487326979E8,
+        "totcurrasset": 7.5191267515E8,
+        "stockcode": "300087",
+        "accorece": 4.195950167E7
+      },
+      {
+        "fixedassenet": 6.310955316E7,
+        "inve": 6825811.95,
+        "reportdate": 20071231,
+        "totalcurrliab": 4.786801631E7,
+        "totcurrasset": 3.089465147E7,
+        "stockcode": "300143",
+        "accorece": 1966737.87
+      },
+      {
+        "fixedassenet": 1.0214015234E8,
+        "inve": 7872164.72,
+        "reportdate": 20081231,
+        "totalcurrliab": 6.535849822E7,
+        "totcurrasset": 2.920284832E7,
+        "stockcode": "300143",
+        "accorece": 1.301204585E7
+      },
+      {
+        "fixedassenet": 1.4830252665E8,
+        "inve": 1.293762076E7,
+        "reportdate": 20091231,
+        "totalcurrliab": 6.608386186E7,
+        "totcurrasset": 4.441624006E7,
+        "stockcode": "300143",
+        "accorece": 7513556.95
+      },
+      {
+        "fixedassenet": 1.8125211838E8,
+        "inve": 1.883762666E7,
+        "reportdate": 20101231,
+        "totalcurrliab": 4.524460508E7,
+        "totcurrasset": 6.0103696254E8,
+        "stockcode": "300143",
+        "accorece": 6823574.12
+      },
+      {
+        "fixedassenet": 2.1257610385E8,
+        "inve": 2.065732392E7,
+        "reportdate": 20111231,
+        "totalcurrliab": 2.664447286E7,
+        "totcurrasset": 3.8936455421E8,
+        "stockcode": "300143",
+        "accorece": 1.09264251E7
+      },
+      {
+        "fixedassenet": 4.4224806171E8,
+        "inve": 3.069655805E7,
+        "reportdate": 20121231,
+        "totalcurrliab": 1.3601073097E8,
+        "totcurrasset": 1.4098054956E8,
+        "stockcode": "300143",
+        "accorece": 2.321838991E7
+      },
+      {
+        "fixedassenet": 5.1351856905E8,
+        "inve": 2.859441348E7,
+        "reportdate": 20131231,
+        "totalcurrliab": 2.4090390823E8,
+        "totcurrasset": 9.23758445E7,
+        "stockcode": "300143",
+        "accorece": 1.226173686E7
+      },
+      {
+        "fixedassenet": 4.4750231602E8,
+        "inve": 3.191006445E7,
+        "reportdate": 20141231,
+        "totalcurrliab": 3.0712345672E8,
+        "totcurrasset": 1.1709396399E8,
+        "stockcode": "300143",
+        "accorece": 1.890824585E7
+      },
+      {
+        "fixedassenet": 4.0407142457E8,
+        "inve": 3.585801745E7,
+        "reportdate": 20151231,
+        "totalcurrliab": 2.8222915911E8,
+        "totcurrasset": 3.0058751504E8,
+        "stockcode": "300143",
+        "accorece": 4.873422928E7
+      },
+      {
+        "fixedassenet": 3.9787372688E8,
+        "inve": 3.742639566E7,
+        "reportdate": 20160331,
+        "totalcurrliab": 2.5165317504E8,
+        "totcurrasset": 2.8895445391E8,
+        "stockcode": "300143",
+        "accorece": 5.869507538E7
+      },
+      {
+        "fixedassenet": 2.616442495E7,
+        "inve": 8.933270293E7,
+        "reportdate": 20071231,
+        "totalcurrliab": 1.2605999254E8,
+        "totcurrasset": 1.5208829554E8,
+        "stockcode": "300189",
+        "accorece": 3.102273825E7
+      },
+      {
+        "fixedassenet": 2.738342172E7,
+        "inve": 7.684891867E7,
+        "reportdate": 20081231,
+        "totalcurrliab": 5.231354787E7,
+        "totcurrasset": 2.5146436088E8,
+        "stockcode": "300189",
+        "accorece": 2.947019112E7
+      },
+      {
+        "fixedassenet": 2.975248494E7,
+        "inve": 1.168657561E8,
+        "reportdate": 20091231,
+        "totalcurrliab": 1.1524714406E8,
+        "totcurrasset": 3.6520764781E8,
+        "stockcode": "300189",
+        "accorece": 4.590993583E7
+      },
+      {
+        "fixedassenet": 3.21314057E7,
+        "inve": 1.4847151922E8,
+        "reportdate": 20101231,
+        "totalcurrliab": 8.995965504E7,
+        "totcurrasset": 3.7044728815E8,
+        "stockcode": "300189",
+        "accorece": 3.698664335E7
+      },
+      {
+        "fixedassenet": 3.2077278E7,
+        "inve": 1.8129642114E8,
+        "reportdate": 20111231,
+        "totalcurrliab": 4.708769922E7,
+        "totcurrasset": 1.1905797651E9,
+        "stockcode": "300189",
+        "accorece": 4.832658502E7
+      },
+      {
+        "fixedassenet": 8.903758326E7,
+        "inve": 3.3503385243E8,
+        "reportdate": 20121231,
+        "totalcurrliab": 1.3048095006E8,
+        "totcurrasset": 1.2392230025E9,
+        "stockcode": "300189",
+        "accorece": 8.128441709E7
+      },
+      {
+        "fixedassenet": 1.664104951E8,
+        "inve": 4.1497022587E8,
+        "reportdate": 20131231,
+        "totalcurrliab": 1.7004920795E8,
+        "totcurrasset": 9.9934867415E8,
+        "stockcode": "300189",
+        "accorece": 1.0118681935E8
+      },
+      {
+        "fixedassenet": 2.9312677131E8,
+        "inve": 3.7013670416E8,
+        "reportdate": 20141231,
+        "totalcurrliab": 1.6643334063E8,
+        "totcurrasset": 8.2300711568E8,
+        "stockcode": "300189",
+        "accorece": 7.578067656E7
+      },
+      {
+        "fixedassenet": 3.2454585765E8,
+        "inve": 2.905995869E8,
+        "reportdate": 20151231,
+        "totalcurrliab": 1.4380881254E8,
+        "totcurrasset": 1.43490740898E9,
+        "stockcode": "300189",
+        "accorece": 1.0509477226E8
+      },
+      {
+        "fixedassenet": 3.1919365058E8,
+        "inve": 2.7936781549E8,
+        "reportdate": 20160331,
+        "totalcurrliab": 1.2513210922E8,
+        "totcurrasset": 1.40727836297E9,
+        "stockcode": "300189",
+        "accorece": 1.2835054432E8
+      },
+      {
+        "fixedassenet": 1.169473528E7,
+        "inve": 5535877.17,
+        "reportdate": 19941231,
+        "totalcurrliab": 5.115007872E7,
+        "totcurrasset": 5.214274805E7,
+        "stockcode": "600108",
+        "accorece": 3.249152005E7
+      },
+      {
+        "fixedassenet": 4.009499494E7,
+        "inve": 2.662750676E7,
+        "reportdate": 19951231,
+        "totalcurrliab": 8.523467878E7,
+        "totcurrasset": 9.847117841E7,
+        "stockcode": "600108",
+        "accorece": 4.763715292E7
+      },
+      {
+        "fixedassenet": 4.587696819E7,
+        "inve": 3.489122961E7,
+        "reportdate": 19961231,
+        "totalcurrliab": 1.0898071392E8,
+        "totcurrasset": 1.5692090084E8,
+        "stockcode": "600108",
+        "accorece": 8.663653183E7
+      },
+      {
+        "fixedassenet": 3.380146633E7,
+        "inve": 2.590148901E7,
+        "reportdate": 19971231,
+        "totalcurrliab": 1.373477699E8,
+        "totcurrasset": 5.4226167814E8,
+        "stockcode": "600108",
+        "accorece": 6.12407396E7
+      },
+      {
+        "fixedassenet": 2.1353126183E8,
+        "inve": 6.027260615E7,
+        "reportdate": 19981231,
+        "totalcurrliab": 3.5533761651E8,
+        "totcurrasset": 6.0706400852E8,
+        "stockcode": "600108",
+        "accorece": 8.72808285E7
+      },
+      {
+        "fixedassenet": 4.7036260998E8,
+        "inve": 7.492192408E7,
+        "reportdate": 19991231,
+        "totalcurrliab": 6.015566268E8,
+        "totcurrasset": 8.4674480944E8,
+        "stockcode": "600108",
+        "accorece": 1.4897539419E8
+      },
+      {
+        "fixedassenet": 4.1222568271E8,
+        "inve": 1.0927236366E8,
+        "reportdate": 20001231,
+        "totalcurrliab": 4.665255074E8,
+        "totcurrasset": 7.6785454805E8,
+        "stockcode": "600108",
+        "accorece": 1.8103145071E8
+      },
+      {
+        "fixedassenet": 4.3402449022E8,
+        "inve": 5.549743978E7,
+        "reportdate": 20011231,
+        "totalcurrliab": 4.4194107962E8,
+        "totcurrasset": 7.3793885983E8,
+        "stockcode": "600108",
+        "accorece": 1.9739427278E8
+      },
+      {
+        "fixedassenet": 7.7661499886E8,
+        "inve": 1.8882991716E8,
+        "reportdate": 20021231,
+        "totalcurrliab": 7.4135323678E8,
+        "totcurrasset": 1.07579620281E9,
+        "stockcode": "600108",
+        "accorece": 1.6698457245E8
+      },
+      {
+        "fixedassenet": 8.1579124931E8,
+        "inve": 1.9072481587E8,
+        "reportdate": 20031231,
+        "totalcurrliab": 6.9579817045E8,
+        "totcurrasset": 1.01981293258E9,
+        "stockcode": "600108",
+        "accorece": 1.5960357277E8
+      },
+      {
+        "fixedassenet": 7.9536462389E8,
+        "inve": 1.6809981279E8,
+        "reportdate": 20041231,
+        "totalcurrliab": 5.681134406E8,
+        "totcurrasset": 8.0124238667E8,
+        "stockcode": "600108",
+        "accorece": 7.302107689E7
+      },
+      {
+        "fixedassenet": 1.07345101246E9,
+        "inve": 2.8145840208E8,
+        "reportdate": 20051231,
+        "totalcurrliab": 1.17498281794E9,
+        "totcurrasset": 1.02530084228E9,
+        "stockcode": "600108",
+        "accorece": 9.012019519E7
+      },
+      {
+        "fixedassenet": 8.3935374344E8,
+        "inve": 2.6774821485E8,
+        "reportdate": 20061231,
+        "totalcurrliab": 1.38191327732E9,
+        "totcurrasset": 8.1135754491E8,
+        "stockcode": "600108",
+        "accorece": 1.4135255566E8
+      },
+      {
+        "fixedassenet": 8.3383608861E8,
+        "inve": 3.9870563576E8,
+        "reportdate": 20071231,
+        "totalcurrliab": 1.28704675453E9,
+        "totcurrasset": 1.05374449931E9,
+        "stockcode": "600108",
+        "accorece": 2.2140334888E8
+      },
+      {
+        "fixedassenet": 8.0540059353E8,
+        "inve": 4.0017474064E8,
+        "reportdate": 20081231,
+        "totalcurrliab": 1.18167778135E9,
+        "totcurrasset": 1.04858663563E9,
+        "stockcode": "600108",
+        "accorece": 2.457390179E8
+      },
+      {
+        "fixedassenet": 8.7207919732E8,
+        "inve": 5.0318599088E8,
+        "reportdate": 20091231,
+        "totalcurrliab": 1.78578137866E9,
+        "totcurrasset": 1.71334506088E9,
+        "stockcode": "600108",
+        "accorece": 3.9413045663E8
+      },
+      {
+        "fixedassenet": 5.0279536372E8,
+        "inve": 3.2019285463E8,
+        "reportdate": 20101231,
+        "totalcurrliab": 1.50510315189E9,
+        "totcurrasset": 1.28750135204E9,
+        "stockcode": "600108",
+        "accorece": 2.6901433321E8
+      },
+      {
+        "fixedassenet": 5.5863203134E8,
+        "inve": 4.2121135178E8,
+        "reportdate": 20111231,
+        "totalcurrliab": 1.18449144031E9,
+        "totcurrasset": 1.4504331657E9,
+        "stockcode": "600108",
+        "accorece": 3.4788563546E8
+      },
+      {
+        "fixedassenet": 5.881397214E8,
+        "inve": 4.7643515868E8,
+        "reportdate": 20121231,
+        "totalcurrliab": 1.26779779847E9,
+        "totcurrasset": 2.87092644539E9,
+        "stockcode": "600108",
+        "accorece": 4.8722931434E8
+      },
+      {
+        "fixedassenet": 8.1877543978E8,
+        "inve": 6.6733607062E8,
+        "reportdate": 20131231,
+        "totalcurrliab": 1.62628368092E9,
+        "totcurrasset": 2.76688301477E9,
+        "stockcode": "600108",
+        "accorece": 4.6331160256E8
+      },
+      {
+        "fixedassenet": 1.40347494204E9,
+        "inve": 8.5412995217E8,
+        "reportdate": 20141231,
+        "totalcurrliab": 1.34652245139E9,
+        "totcurrasset": 3.15352739129E9,
+        "stockcode": "600108",
+        "accorece": 6.0781157463E8
+      },
+      {
+        "fixedassenet": 1.43299513136E9,
+        "inve": 8.3526049739E8,
+        "reportdate": 20151231,
+        "totalcurrliab": 1.4446073416E9,
+        "totcurrasset": 3.26245837682E9,
+        "stockcode": "600108",
+        "accorece": 7.1632183785E8
+      },
+      {
+        "fixedassenet": 1.41245595196E9,
+        "inve": 7.8700957782E8,
+        "reportdate": 20160331,
+        "totalcurrliab": 1.3906484008E9,
+        "totcurrasset": 3.29359675021E9,
+        "stockcode": "600108",
+        "accorece": 7.5872942254E8
+      },
+      {
+        "fixedassenet": 6.618687209E7,
+        "inve": 9.962828885E7,
+        "reportdate": 19971231,
+        "totalcurrliab": 3.1301264956E8,
+        "totcurrasset": 3.8892084812E8,
+        "stockcode": "600313",
+        "accorece": 4.632108163E7
+      },
+      {
+        "fixedassenet": 1.1372224166E8,
+        "inve": 9.049563882E7,
+        "reportdate": 19981231,
+        "totalcurrliab": 4.2335308826E8,
+        "totcurrasset": 5.0432909211E8,
+        "stockcode": "600313",
+        "accorece": 7.904136305E7
+      },
+      {
+        "fixedassenet": 1.4016739312E8,
+        "inve": 1.6912083111E8,
+        "reportdate": 19991231,
+        "totalcurrliab": 5.1004281438E8,
+        "totcurrasset": 6.0260588353E8,
+        "stockcode": "600313",
+        "accorece": 8.171076659E7
+      },
+      {
+        "fixedassenet": 1.4661734905E8,
+        "inve": 1.3826844237E8,
+        "reportdate": 20001231,
+        "totalcurrliab": 5.6904752822E8,
+        "totcurrasset": 1.1518003216E9,
+        "stockcode": "600313",
+        "accorece": 5.836421012E7
+      },
+      {
+        "fixedassenet": 1.5287564699E8,
+        "inve": 2.0828441219E8,
+        "reportdate": 20011231,
+        "totalcurrliab": 5.9255851403E8,
+        "totcurrasset": 1.17140406887E9,
+        "stockcode": "600313",
+        "accorece": 5.690496872E7
+      },
+      {
+        "fixedassenet": 1.4585389418E8,
+        "inve": 1.5587532428E8,
+        "reportdate": 20021231,
+        "totalcurrliab": 5.6498999569E8,
+        "totcurrasset": 1.02701447345E9,
+        "stockcode": "600313",
+        "accorece": 5.13695158E7
+      },
+      {
+        "fixedassenet": 1.1703306085E8,
+        "inve": 1.283252103E8,
+        "reportdate": 20031231,
+        "totalcurrliab": 4.7667170442E8,
+        "totcurrasset": 8.3176917714E8,
+        "stockcode": "600313",
+        "accorece": 2.491918197E7
+      },
+      {
+        "fixedassenet": 1.0847409477E8,
+        "inve": 1.4085699345E8,
+        "reportdate": 20041231,
+        "totalcurrliab": 4.1177597146E8,
+        "totcurrasset": 8.2498770426E8,
+        "stockcode": "600313",
+        "accorece": 1.676096073E7
+      },
+      {
+        "fixedassenet": 1.0146668603E8,
+        "inve": 1.1932009208E8,
+        "reportdate": 20051231,
+        "totalcurrliab": 2.638144569E8,
+        "totcurrasset": 6.603599327E8,
+        "stockcode": "600313",
+        "accorece": 1.501087087E7
+      },
+      {
+        "fixedassenet": 9.67482479E7,
+        "inve": 1.5675124701E8,
+        "reportdate": 20061231,
+        "totalcurrliab": 1.8355106991E8,
+        "totcurrasset": 6.2165226775E8,
+        "stockcode": "600313",
+        "accorece": 1.380416912E7
+      },
+      {
+        "fixedassenet": 8.912921865E7,
+        "inve": 1.12295445E8,
+        "reportdate": 20071231,
+        "totalcurrliab": 2.0316672258E8,
+        "totcurrasset": 5.8381737509E8,
+        "stockcode": "600313",
+        "accorece": 1.351391006E7
+      },
+      {
+        "fixedassenet": 8.426474501E7,
+        "inve": 1.2529907399E8,
+        "reportdate": 20081231,
+        "totalcurrliab": 1.9983442122E8,
+        "totcurrasset": 5.6648298716E8,
+        "stockcode": "600313",
+        "accorece": 1.154482664E7
+      },
+      {
+        "fixedassenet": 3.513887768E7,
+        "inve": 2.217699581E7,
+        "reportdate": 20091231,
+        "totalcurrliab": 1.329107464E8,
+        "totcurrasset": 5.1980430376E8,
+        "stockcode": "600313",
+        "accorece": 3460162.76
+      },
+      {
+        "fixedassenet": 3.193573495E7,
+        "inve": 3687924.05,
+        "reportdate": 20101231,
+        "totalcurrliab": 6.558815835E7,
+        "totcurrasset": 4.7918082162E8,
+        "stockcode": "600313",
+        "accorece": 911283.13
+      },
+      {
+        "fixedassenet": 5.390430963E7,
+        "inve": 5.503956167E7,
+        "reportdate": 20111231,
+        "totalcurrliab": 1.5516143718E8,
+        "totcurrasset": 5.4740801968E8,
+        "stockcode": "600313",
+        "accorece": 3.571897127E7
+      },
+      {
+        "fixedassenet": 7.263045083E7,
+        "inve": 1.7272220402E8,
+        "reportdate": 20121231,
+        "totalcurrliab": 4.6113614408E8,
+        "totcurrasset": 1.35110218706E9,
+        "stockcode": "600313",
+        "accorece": 1.0098232846E8
+      },
+      {
+        "fixedassenet": 1.5265291766E8,
+        "inve": 2.1826422847E8,
+        "reportdate": 20131231,
+        "totalcurrliab": 4.0806083325E8,
+        "totcurrasset": 1.29725626505E9,
+        "stockcode": "600313",
+        "accorece": 1.981656493E8
+      },
+      {
+        "fixedassenet": 2.3906252291E8,
+        "inve": 3.2960207479E8,
+        "reportdate": 20141231,
+        "totalcurrliab": 4.4906202368E8,
+        "totcurrasset": 1.53418526996E9,
+        "stockcode": "600313",
+        "accorece": 2.3338068282E8
+      },
+      {
+        "fixedassenet": 7.3854076538E8,
+        "inve": 3.9553497735E8,
+        "reportdate": 20151231,
+        "totalcurrliab": 1.04074224178E9,
+        "totcurrasset": 2.12427136858E9,
+        "stockcode": "600313",
+        "accorece": 4.1015242745E8
+      },
+      {
+        "fixedassenet": 7.2879613906E8,
+        "inve": 3.9149515116E8,
+        "reportdate": 20160331,
+        "totalcurrliab": 1.17402513573E9,
+        "totcurrasset": 2.30459077773E9,
+        "stockcode": "600313",
+        "accorece": 4.2867749228E8
+      },
+      {
+        "fixedassenet": 7.630734548E7,
+        "inve": 1.7832382832E8,
+        "reportdate": 20001231,
+        "totalcurrliab": 3.9253479708E8,
+        "totcurrasset": 4.3598353326E8,
+        "stockcode": "600354",
+        "accorece": 1.4357612746E8
+      },
+      {
+        "fixedassenet": 8.784695096E7,
+        "inve": 2.7649660029E8,
+        "reportdate": 20011231,
+        "totalcurrliab": 4.0507941223E8,
+        "totcurrasset": 4.65196357E8,
+        "stockcode": "600354",
+        "accorece": 1.1461330923E8
+      },
+      {
+        "fixedassenet": 1.2847503567E8,
+        "inve": 1.5198222168E8,
+        "reportdate": 20021231,
+        "totalcurrliab": 3.4560579256E8,
+        "totcurrasset": 4.2431226328E8,
+        "stockcode": "600354",
+        "accorece": 1.5371571351E8
+      },
+      {
+        "fixedassenet": 1.5300067987E8,
+        "inve": 3.9587704984E8,
+        "reportdate": 20031231,
+        "totalcurrliab": 5.7985756235E8,
+        "totcurrasset": 6.5736237959E8,
+        "stockcode": "600354",
+        "accorece": 1.3927593642E8
+      },
+      {
+        "fixedassenet": 1.7686947172E8,
+        "inve": 5.1245237936E8,
+        "reportdate": 20041231,
+        "totalcurrliab": 7.0128010434E8,
+        "totcurrasset": 1.13095752448E9,
+        "stockcode": "600354",
+        "accorece": 2.7693406281E8
+      },
+      {
+        "fixedassenet": 2.1049818133E8,
+        "inve": 5.3121494291E8,
+        "reportdate": 20051231,
+        "totalcurrliab": 6.8424586294E8,
+        "totcurrasset": 9.759715694E8,
+        "stockcode": "600354",
+        "accorece": 1.9798754297E8
+      },
+      {
+        "fixedassenet": 2.5657425974E8,
+        "inve": 5.4254742339E8,
+        "reportdate": 20061231,
+        "totalcurrliab": 1.04021823316E9,
+        "totcurrasset": 1.14348301109E9,
+        "stockcode": "600354",
+        "accorece": 2.1474276696E8
+      },
+      {
+        "fixedassenet": 3.2626779286E8,
+        "inve": 6.1050140062E8,
+        "reportdate": 20071231,
+        "totalcurrliab": 1.15172769538E9,
+        "totcurrasset": 1.21183044351E9,
+        "stockcode": "600354",
+        "accorece": 2.5473540115E8
+      },
+      {
+        "fixedassenet": 3.5685480708E8,
+        "inve": 5.9287005858E8,
+        "reportdate": 20081231,
+        "totalcurrliab": 1.49693674778E9,
+        "totcurrasset": 1.59102221562E9,
+        "stockcode": "600354",
+        "accorece": 2.9149922795E8
+      },
+      {
+        "fixedassenet": 4.9012751197E8,
+        "inve": 5.5713918894E8,
+        "reportdate": 20091231,
+        "totalcurrliab": 1.65820373471E9,
+        "totcurrasset": 1.77288815808E9,
+        "stockcode": "600354",
+        "accorece": 2.7958947521E8
+      },
+      {
+        "fixedassenet": 6.4297011888E8,
+        "inve": 7.6896279046E8,
+        "reportdate": 20101231,
+        "totalcurrliab": 2.23771878237E9,
+        "totcurrasset": 2.39502064827E9,
+        "stockcode": "600354",
+        "accorece": 2.8805175861E8
+      },
+      {
+        "fixedassenet": 7.5138413995E8,
+        "inve": 1.17598729293E9,
+        "reportdate": 20111231,
+        "totalcurrliab": 2.07449984417E9,
+        "totcurrasset": 2.93698871612E9,
+        "stockcode": "600354",
+        "accorece": 3.8115076721E8
+      },
+      {
+        "fixedassenet": 8.9737232755E8,
+        "inve": 1.17541073659E9,
+        "reportdate": 20121231,
+        "totalcurrliab": 2.80123224028E9,
+        "totcurrasset": 3.31358008484E9,
+        "stockcode": "600354",
+        "accorece": 2.8709223389E8
+      },
+      {
+        "fixedassenet": 8.3016991314E8,
+        "inve": 9.4632771904E8,
+        "reportdate": 20131231,
+        "totalcurrliab": 2.45301579617E9,
+        "totcurrasset": 2.92511959795E9,
+        "stockcode": "600354",
+        "accorece": 4.5324057475E8
+      },
+      {
+        "fixedassenet": 7.3480442693E8,
+        "inve": 8.1323905551E8,
+        "reportdate": 20141231,
+        "totalcurrliab": 2.40367630184E9,
+        "totcurrasset": 2.61079599834E9,
+        "stockcode": "600354",
+        "accorece": 2.8910105705E8
+      },
+      {
+        "fixedassenet": 6.9433023846E8,
+        "inve": 5.5638411219E8,
+        "reportdate": 20151231,
+        "totalcurrliab": 1.50164623939E9,
+        "totcurrasset": 2.30846724549E9,
+        "stockcode": "600354",
+        "accorece": 2.8907152265E8
+      },
+      {
+        "fixedassenet": 6.7547860857E8,
+        "inve": 5.3609638575E8,
+        "reportdate": 20160331,
+        "totalcurrliab": 1.183506012E9,
+        "totcurrasset": 1.94006982719E9,
+        "stockcode": "600354",
+        "accorece": 2.6915555448E8
+      },
+      {
+        "fixedassenet": 8.549804949E7,
+        "inve": 2.5406361303E8,
+        "reportdate": 19961231,
+        "totalcurrliab": 3.5207121982E8,
+        "totcurrasset": 4.5502064099E8,
+        "stockcode": "600359",
+        "accorece": 7.754838794E7
+      },
+      {
+        "fixedassenet": 1.3232865658E8,
+        "inve": 2.5153897133E8,
+        "reportdate": 19971231,
+        "totalcurrliab": 3.707557232E8,
+        "totcurrasset": 4.4832093657E8,
+        "stockcode": "600359",
+        "accorece": 5.872567352E7
+      },
+      {
+        "fixedassenet": 1.6204757859E8,
+        "inve": 3.265842977E8,
+        "reportdate": 19981231,
+        "totalcurrliab": 4.9935147779E8,
+        "totcurrasset": 6.2433762546E8,
+        "stockcode": "600359",
+        "accorece": 7.359897991E7
+      },
+      {
+        "fixedassenet": 2.1575920967E8,
+        "inve": 2.818042646E8,
+        "reportdate": 19991231,
+        "totalcurrliab": 5.4322916393E8,
+        "totcurrasset": 6.7364085143E8,
+        "stockcode": "600359",
+        "accorece": 8.216407676E7
+      },
+      {
+        "fixedassenet": 2.6441345869E8,
+        "inve": 2.2074740201E8,
+        "reportdate": 20001231,
+        "totalcurrliab": 5.598096208E8,
+        "totcurrasset": 6.2220544638E8,
+        "stockcode": "600359",
+        "accorece": 2.485971032E7
+      },
+      {
+        "fixedassenet": 3.3539404333E8,
+        "inve": 3.1770167563E8,
+        "reportdate": 20011231,
+        "totalcurrliab": 7.5427148222E8,
+        "totcurrasset": 9.6547360718E8,
+        "stockcode": "600359",
+        "accorece": 1.4429895254E8
+      },
+      {
+        "fixedassenet": 3.617142674E8,
+        "inve": 2.9951846378E8,
+        "reportdate": 20021231,
+        "totalcurrliab": 7.0632221158E8,
+        "totcurrasset": 8.7778279927E8,
+        "stockcode": "600359",
+        "accorece": 6.662572375E7
+      },
+      {
+        "fixedassenet": 4.3164877075E8,
+        "inve": 5.0331495748E8,
+        "reportdate": 20031231,
+        "totalcurrliab": 1.04628420564E9,
+        "totcurrasset": 1.29513983307E9,
+        "stockcode": "600359",
+        "accorece": 3.538828226E7
+      },
+      {
+        "fixedassenet": 5.3065279155E8,
+        "inve": 6.8762500339E8,
+        "reportdate": 20041231,
+        "totalcurrliab": 1.07100579603E9,
+        "totcurrasset": 1.34778768462E9,
+        "stockcode": "600359",
+        "accorece": 1.64469453E8
+      },
+      {
+        "fixedassenet": 6.2018533241E8,
+        "inve": 5.1681941398E8,
+        "reportdate": 20051231,
+        "totalcurrliab": 1.02001812258E9,
+        "totcurrasset": 1.21391381793E9,
+        "stockcode": "600359",
+        "accorece": 1.5240840211E8
+      },
+      {
+        "fixedassenet": 5.6194662141E8,
+        "inve": 5.0363386934E8,
+        "reportdate": 20061231,
+        "totalcurrliab": 9.8314139725E8,
+        "totcurrasset": 1.16843357388E9,
+        "stockcode": "600359",
+        "accorece": 1.2069808305E8
+      },
+      {
+        "fixedassenet": 6.4147637657E8,
+        "inve": 7.1900028913E8,
+        "reportdate": 20071231,
+        "totalcurrliab": 1.40714275869E9,
+        "totcurrasset": 1.61928992211E9,
+        "stockcode": "600359",
+        "accorece": 1.9054168019E8
+      },
+      {
+        "fixedassenet": 7.6912576875E8,
+        "inve": 1.00838353434E9,
+        "reportdate": 20081231,
+        "totalcurrliab": 1.65416537519E9,
+        "totcurrasset": 1.57934838417E9,
+        "stockcode": "600359",
+        "accorece": 1.0144660322E8
+      },
+      {
+        "fixedassenet": 7.5972664257E8,
+        "inve": 7.4370733691E8,
+        "reportdate": 20091231,
+        "totalcurrliab": 1.43728973387E9,
+        "totcurrasset": 1.76120324788E9,
+        "stockcode": "600359",
+        "accorece": 9.612724704E7
+      },
+      {
+        "fixedassenet": 8.5282184279E8,
+        "inve": 1.05348900823E9,
+        "reportdate": 20101231,
+        "totalcurrliab": 2.27748744626E9,
+        "totcurrasset": 2.49101136184E9,
+        "stockcode": "600359",
+        "accorece": 2.3052933619E8
+      },
+      {
+        "fixedassenet": 8.3958698563E8,
+        "inve": 8.1298001846E8,
+        "reportdate": 20111231,
+        "totalcurrliab": 2.82699699323E9,
+        "totcurrasset": 1.96624450924E9,
+        "stockcode": "600359",
+        "accorece": 2.1387016106E8
+      },
+      {
+        "fixedassenet": 6.3392996814E8,
+        "inve": 4.1995391774E8,
+        "reportdate": 20121231,
+        "totalcurrliab": 1.29744778417E9,
+        "totcurrasset": 9.9004534346E8,
+        "stockcode": "600359",
+        "accorece": 2.599982441E7
+      },
+      {
+        "fixedassenet": 6.7885193013E8,
+        "inve": 4.502686918E8,
+        "reportdate": 20131231,
+        "totalcurrliab": 1.28845645628E9,
+        "totcurrasset": 1.00444286449E9,
+        "stockcode": "600359",
+        "accorece": 9.583644107E7
+      },
+      {
+        "fixedassenet": 6.6716883779E8,
+        "inve": 5.0113675811E8,
+        "reportdate": 20141231,
+        "totalcurrliab": 1.27161697512E9,
+        "totcurrasset": 1.50371118589E9,
+        "stockcode": "600359",
+        "accorece": 5.564694991E7
+      },
+      {
+        "fixedassenet": 6.5576850074E8,
+        "inve": 4.551087567E8,
+        "reportdate": 20151231,
+        "totalcurrliab": 1.62749216575E9,
+        "totcurrasset": 1.21233184313E9,
+        "stockcode": "600359",
+        "accorece": 8.991159258E7
+      },
+      {
+        "fixedassenet": 9.2478063624E8,
+        "inve": 4.6418836321E8,
+        "reportdate": 20160331,
+        "totalcurrliab": 1.66792632797E9,
+        "totcurrasset": 1.39104920385E9,
+        "stockcode": "600359",
+        "accorece": 1.2456621437E8
+      }
+    ]
+  },
+  {
+    "table": "income",
+    "columns": [
+      "bizinco",
+      "manaexpe",
+      "salesexpe",
+      "bizcost"
+    ],
+    "data": [
+      {
+        "enddate": 20160331,
+        "bizcost": 4.0361642779E8,
+        "manaexpe": 3.9286382E7,
+        "salesexpe": 4.549798201E7,
+        "bizinco": 6.5660709432E8,
+        "stockcode": "000998"
+      },
+      {
+        "enddate": 20021231,
+        "bizcost": 8.297955157E7,
+        "manaexpe": 2.453400172E7,
+        "salesexpe": 1.213564808E7,
+        "bizinco": 1.8665517845E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20031231,
+        "bizcost": 1.3479726055E8,
+        "manaexpe": 2.8738228E7,
+        "salesexpe": 2.585878956E7,
+        "bizinco": 2.729852158E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20041231,
+        "bizcost": 1.4294996495E8,
+        "manaexpe": 3.909000248E7,
+        "salesexpe": 3.113457513E7,
+        "bizinco": 2.9727040713E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20051231,
+        "bizcost": 2.2318015225E8,
+        "manaexpe": 4.830579644E7,
+        "salesexpe": 5.468128179E7,
+        "bizinco": 4.1351416087E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20061231,
+        "bizcost": 1.7269457308E8,
+        "manaexpe": 4.558614856E7,
+        "salesexpe": 4.807453225E7,
+        "bizinco": 2.8457847456E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 1.5465913707E8,
+        "manaexpe": 3.587359251E7,
+        "salesexpe": 5.41161035E7,
+        "bizinco": 3.0091826747E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 1.9183464283E8,
+        "manaexpe": 5.499633772E7,
+        "salesexpe": 7.324720599E7,
+        "bizinco": 4.1693446239E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 2.4826665054E8,
+        "manaexpe": 6.006488116E7,
+        "salesexpe": 9.091108469E7,
+        "bizinco": 5.791172958E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 3.2149986969E8,
+        "manaexpe": 1.4425248893E8,
+        "salesexpe": 7.826643099E7,
+        "bizinco": 9.3780351731E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 4.8259244749E8,
+        "manaexpe": 1.6175576226E8,
+        "salesexpe": 1.0619839588E8,
+        "bizinco": 1.15298883318E9,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 4.7603519885E8,
+        "manaexpe": 1.5956599995E8,
+        "salesexpe": 1.2892042213E8,
+        "bizinco": 1.17080674928E9,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 6.1524209176E8,
+        "manaexpe": 2.0207402873E8,
+        "salesexpe": 1.3078667919E8,
+        "bizinco": 1.50537509666E9,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 6.2231896546E8,
+        "manaexpe": 1.9576954757E8,
+        "salesexpe": 1.6361276869E8,
+        "bizinco": 1.48008148448E9,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 7.1806307881E8,
+        "manaexpe": 1.8952587633E8,
+        "salesexpe": 1.3770718892E8,
+        "bizinco": 1.53077333498E9,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 2.3799032821E8,
+        "manaexpe": 5.009661508E7,
+        "salesexpe": 2.500274582E7,
+        "bizinco": 4.5820164488E8,
+        "stockcode": "002041"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 5.542538321E7,
+        "manaexpe": 2.235567742E7,
+        "salesexpe": 7499748.98,
+        "bizinco": 1.312682722E8,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 9.970173939E7,
+        "manaexpe": 1.193446465E7,
+        "salesexpe": 1.672966914E7,
+        "bizinco": 1.9040169446E8,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 1.7270655111E8,
+        "manaexpe": 1.386941728E7,
+        "salesexpe": 2.477322241E7,
+        "bizinco": 2.639406033E8,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 2.3780438337E8,
+        "manaexpe": 2.126401204E7,
+        "salesexpe": 3.374628758E7,
+        "bizinco": 3.8349727838E8,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 2.8205991607E8,
+        "manaexpe": 4.131034873E7,
+        "salesexpe": 4.332768598E7,
+        "bizinco": 4.7952022022E8,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 8.139073602E7,
+        "manaexpe": 5428097.0,
+        "salesexpe": 1.057319185E7,
+        "bizinco": 1.8267675305E8,
+        "stockcode": "002772"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 4.930641553E7,
+        "manaexpe": 7305178.39,
+        "salesexpe": 1.437866677E7,
+        "bizinco": 8.774696925E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 6.822718848E7,
+        "manaexpe": 9675964.25,
+        "salesexpe": 1.760749374E7,
+        "bizinco": 1.2226018378E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 9.347928564E7,
+        "manaexpe": 1.38895933E7,
+        "salesexpe": 2.201796699E7,
+        "bizinco": 1.6362362279E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 1.0730365948E8,
+        "manaexpe": 2.344446674E7,
+        "salesexpe": 2.295144787E7,
+        "bizinco": 1.8024897302E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 1.8457088141E8,
+        "manaexpe": 3.680442486E7,
+        "salesexpe": 3.893944256E7,
+        "bizinco": 2.7908934267E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 2.6203587671E8,
+        "manaexpe": 5.289037261E7,
+        "salesexpe": 6.243767742E7,
+        "bizinco": 4.0674848916E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 3.0412062623E8,
+        "manaexpe": 5.545003379E7,
+        "salesexpe": 6.800969286E7,
+        "bizinco": 4.6606671675E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 3.1019555954E8,
+        "manaexpe": 6.518292105E7,
+        "salesexpe": 7.527663239E7,
+        "bizinco": 4.6902277713E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 3.7552391784E8,
+        "manaexpe": 1.0409734215E8,
+        "salesexpe": 8.48636926E7,
+        "bizinco": 6.0744802624E8,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 5.784109788E7,
+        "manaexpe": 2.060441317E7,
+        "salesexpe": 1.491789919E7,
+        "bizinco": 9.478153041E7,
+        "stockcode": "300087"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 4.166443626E7,
+        "manaexpe": 5615575.09,
+        "salesexpe": 3038789.04,
+        "bizinco": 6.050720316E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 4.721560422E7,
+        "manaexpe": 8777230.58,
+        "salesexpe": 3759391.79,
+        "bizinco": 7.389062227E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 5.693103346E7,
+        "manaexpe": 1.158394039E7,
+        "salesexpe": 6455016.63,
+        "bizinco": 9.577112735E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 9.317858429E7,
+        "manaexpe": 2.116659628E7,
+        "salesexpe": 1.230978338E7,
+        "bizinco": 1.6793153722E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 1.2833034399E8,
+        "manaexpe": 2.700116802E7,
+        "salesexpe": 1.895857615E7,
+        "bizinco": 2.0756940792E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 1.829756227E8,
+        "manaexpe": 3.716331076E7,
+        "salesexpe": 2.787437781E7,
+        "bizinco": 2.4782823065E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 2.3354713514E8,
+        "manaexpe": 5.548931735E7,
+        "salesexpe": 4.128373576E7,
+        "bizinco": 2.5483754423E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 2.6395737519E8,
+        "manaexpe": 6.264771024E7,
+        "salesexpe": 3.302277118E7,
+        "bizinco": 3.0784253493E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 1.9274149038E8,
+        "manaexpe": 4.337373988E7,
+        "salesexpe": 2.541958923E7,
+        "bizinco": 2.8013723437E8,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 4.59159856E7,
+        "manaexpe": 1.501145282E7,
+        "salesexpe": 6878088.19,
+        "bizinco": 8.099238768E7,
+        "stockcode": "300143"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 1.1253643613E8,
+        "manaexpe": 8280978.79,
+        "salesexpe": 1.06046754E7,
+        "bizinco": 1.4951926523E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 1.3631488084E8,
+        "manaexpe": 9296512.26,
+        "salesexpe": 1.30331904E7,
+        "bizinco": 1.8312001484E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 2.0580930033E8,
+        "manaexpe": 1.248074626E7,
+        "salesexpe": 2.108286056E7,
+        "bizinco": 2.8458216835E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 2.7963593124E8,
+        "manaexpe": 1.650736448E7,
+        "salesexpe": 3.342537813E7,
+        "bizinco": 3.9503204698E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 3.0061378817E8,
+        "manaexpe": 2.799021767E7,
+        "salesexpe": 4.009793093E7,
+        "bizinco": 4.2760310081E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 2.9319111593E8,
+        "manaexpe": 4.160425101E7,
+        "salesexpe": 4.585340619E7,
+        "bizinco": 4.3151843357E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 3.2296046362E8,
+        "manaexpe": 5.641526307E7,
+        "salesexpe": 5.713439803E7,
+        "bizinco": 4.5436578109E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 2.9624627316E8,
+        "manaexpe": 7.221838899E7,
+        "salesexpe": 6.586426904E7,
+        "bizinco": 3.5566002268E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 2.5188843774E8,
+        "manaexpe": 5.954994406E7,
+        "salesexpe": 6.077065856E7,
+        "bizinco": 3.3274541202E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 7.990458378E7,
+        "manaexpe": 1.54366925E7,
+        "salesexpe": 1.660146942E7,
+        "bizinco": 1.0129375758E8,
+        "stockcode": "300189"
+      },
+      {
+        "enddate": 19941231,
+        "bizcost": 4.115804738E7,
+        "manaexpe": 3199340.42,
+        "salesexpe": 5920108.85,
+        "bizinco": 9.153982868E7,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 19951231,
+        "bizcost": 5.772934708E7,
+        "manaexpe": 4105751.41,
+        "salesexpe": 7546900.91,
+        "bizinco": 1.2254367447E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 19961231,
+        "bizcost": 7.262667118E7,
+        "manaexpe": 4447530.63,
+        "salesexpe": 8403738.67,
+        "bizinco": 1.4643351732E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 19971231,
+        "bizcost": 1.3726306284E8,
+        "manaexpe": 4053322.32,
+        "salesexpe": 1.813608238E7,
+        "bizinco": 2.216381053E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 19981231,
+        "bizcost": 1.5671397778E8,
+        "manaexpe": 5608047.15,
+        "salesexpe": 9477794.67,
+        "bizinco": 2.3396947254E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 19991231,
+        "bizcost": 4.7396875604E8,
+        "manaexpe": 1.763107593E7,
+        "salesexpe": 2.132794703E7,
+        "bizinco": 6.1440613163E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20001231,
+        "bizcost": 5.2611061212E8,
+        "manaexpe": 3.396442782E7,
+        "salesexpe": 1.712809023E7,
+        "bizinco": 6.900912043E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20011231,
+        "bizcost": 5.3759793838E8,
+        "manaexpe": 2.301701861E7,
+        "salesexpe": 2.146348922E7,
+        "bizinco": 6.4276779421E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20021231,
+        "bizcost": 6.7500022148E8,
+        "manaexpe": 3.838686999E7,
+        "salesexpe": 2.027672847E7,
+        "bizinco": 8.3222954208E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20031231,
+        "bizcost": 8.679931595E8,
+        "manaexpe": 2.330994661E7,
+        "salesexpe": 2.247858738E7,
+        "bizinco": 1.03356346566E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20041231,
+        "bizcost": 5.3319690479E8,
+        "manaexpe": 3.606774868E7,
+        "salesexpe": 6103247.58,
+        "bizinco": 6.6926901426E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20051231,
+        "bizcost": 7.6902886516E8,
+        "manaexpe": 5.52364058E7,
+        "salesexpe": 2.304578211E7,
+        "bizinco": 9.1247493114E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20061231,
+        "bizcost": 8.6487690387E8,
+        "manaexpe": 6.467150566E7,
+        "salesexpe": 2.322436783E7,
+        "bizinco": 1.0152798365E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 9.4669128368E8,
+        "manaexpe": 5.597214585E7,
+        "salesexpe": 2.805226355E7,
+        "bizinco": 1.16139862936E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 1.07802538946E9,
+        "manaexpe": 5.638258458E7,
+        "salesexpe": 3.289839275E7,
+        "bizinco": 1.24990753121E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 1.13743034508E9,
+        "manaexpe": 1.0505656953E8,
+        "salesexpe": 2.332759837E7,
+        "bizinco": 1.40248024254E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 1.1548742356E9,
+        "manaexpe": 1.1673766428E8,
+        "salesexpe": 2.576673471E7,
+        "bizinco": 1.41053396787E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 1.08643454668E9,
+        "manaexpe": 1.1609166097E8,
+        "salesexpe": 1.748896718E7,
+        "bizinco": 1.47021517148E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 1.67250408506E9,
+        "manaexpe": 1.306718827E8,
+        "salesexpe": 2.768755397E7,
+        "bizinco": 2.24605739598E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 1.77252285927E9,
+        "manaexpe": 1.4682583508E8,
+        "salesexpe": 3.277480863E7,
+        "bizinco": 2.33683717769E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 1.74684303051E9,
+        "manaexpe": 1.8012539011E8,
+        "salesexpe": 3.976500042E7,
+        "bizinco": 2.24484882055E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 1.68697180592E9,
+        "manaexpe": 2.1312417161E8,
+        "salesexpe": 5.621529845E7,
+        "bizinco": 2.19111759357E9,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 3.0414591694E8,
+        "manaexpe": 4.379770876E7,
+        "salesexpe": 9215216.43,
+        "bizinco": 3.9884426564E8,
+        "stockcode": "600108"
+      },
+      {
+        "enddate": 19971231,
+        "bizcost": 8.8819138506E8,
+        "manaexpe": 1.829746932E7,
+        "salesexpe": 1.634010286E7,
+        "bizinco": 9.7594699148E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 19981231,
+        "bizcost": 1.18810646989E9,
+        "manaexpe": 2.255568726E7,
+        "salesexpe": 2.266517299E7,
+        "bizinco": 1.29307511416E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 19991231,
+        "bizcost": 1.27652013958E9,
+        "manaexpe": 2.309788886E7,
+        "salesexpe": 2.292772868E7,
+        "bizinco": 1.36726746385E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20001231,
+        "bizcost": 1.57615344963E9,
+        "manaexpe": 2.655829929E7,
+        "salesexpe": 2.914129917E7,
+        "bizinco": 1.66689907928E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20011231,
+        "bizcost": 1.77604043962E9,
+        "manaexpe": 5.498295472E7,
+        "salesexpe": 3.245672547E7,
+        "bizinco": 1.87123555102E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20021231,
+        "bizcost": 1.58899639448E9,
+        "manaexpe": 7.026889945E7,
+        "salesexpe": 6.306704973E7,
+        "bizinco": 1.69852568513E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20031231,
+        "bizcost": 1.34693396846E9,
+        "manaexpe": 1.270905959E8,
+        "salesexpe": 3.591004002E7,
+        "bizinco": 1.42608243696E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20041231,
+        "bizcost": 1.21998282407E9,
+        "manaexpe": 4.004553299E7,
+        "salesexpe": 4.443669332E7,
+        "bizinco": 1.32560699335E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20051231,
+        "bizcost": 1.26313492381E9,
+        "manaexpe": 4.507160756E7,
+        "salesexpe": 4.310586991E7,
+        "bizinco": 1.31675488581E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20061231,
+        "bizcost": 8.4128754055E8,
+        "manaexpe": 3.790381325E7,
+        "salesexpe": 2.853307299E7,
+        "bizinco": 9.0170691333E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 4.684059035E8,
+        "manaexpe": 4.637682089E7,
+        "salesexpe": 2.884160785E7,
+        "bizinco": 5.2468946202E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 4.4462777354E8,
+        "manaexpe": 4.570289141E7,
+        "salesexpe": 2.438598981E7,
+        "bizinco": 5.0610016067E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 5.0289383398E8,
+        "manaexpe": 2.834107453E7,
+        "salesexpe": 9112346.67,
+        "bizinco": 5.1960649771E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 5.2261291071E8,
+        "manaexpe": 2.882299909E7,
+        "salesexpe": 5526466.28,
+        "bizinco": 5.2534875058E8,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 1.20210116138E9,
+        "manaexpe": 2.828717135E7,
+        "salesexpe": 1.148263692E7,
+        "bizinco": 1.25438580424E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 2.69005894456E9,
+        "manaexpe": 3.895890788E7,
+        "salesexpe": 2.466283421E7,
+        "bizinco": 2.78378287123E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 2.34625821463E9,
+        "manaexpe": 6.407279366E7,
+        "salesexpe": 5.113691274E7,
+        "bizinco": 2.52914876593E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 2.83808962374E9,
+        "manaexpe": 9.174201184E7,
+        "salesexpe": 6.14926414E7,
+        "bizinco": 3.05035959557E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 3.49847200663E9,
+        "manaexpe": 1.1476023443E8,
+        "salesexpe": 7.051348305E7,
+        "bizinco": 3.77297794858E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 1.10089065855E9,
+        "manaexpe": 2.967992974E7,
+        "salesexpe": 1.407515966E7,
+        "bizinco": 1.1472188232E9,
+        "stockcode": "600313"
+      },
+      {
+        "enddate": 20001231,
+        "bizcost": 3.1508097078E8,
+        "manaexpe": 2.397653099E7,
+        "salesexpe": 2.876471607E7,
+        "bizinco": 3.9815668098E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20011231,
+        "bizcost": 2.3287005865E8,
+        "manaexpe": 2.684240739E7,
+        "salesexpe": 2.602255608E7,
+        "bizinco": 3.2079100256E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20021231,
+        "bizcost": 4.347745788E8,
+        "manaexpe": 3.89597069E7,
+        "salesexpe": 3.578743949E7,
+        "bizinco": 5.5550880018E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20031231,
+        "bizcost": 3.3821933489E8,
+        "manaexpe": 3.883178544E7,
+        "salesexpe": 3.197733468E7,
+        "bizinco": 4.4899896782E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20041231,
+        "bizcost": 5.9886368376E8,
+        "manaexpe": 5.961407257E7,
+        "salesexpe": 4.282522036E7,
+        "bizinco": 7.4621477732E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20051231,
+        "bizcost": 6.7635755149E8,
+        "manaexpe": 9.868614567E7,
+        "salesexpe": 8.981161074E7,
+        "bizinco": 7.7486169534E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20061231,
+        "bizcost": 6.942046481E8,
+        "manaexpe": 6.440027614E7,
+        "salesexpe": 7.925532003E7,
+        "bizinco": 8.9481959134E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 6.1056172141E8,
+        "manaexpe": 6.242782157E7,
+        "salesexpe": 5.669079254E7,
+        "bizinco": 7.5256350485E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 8.2266245899E8,
+        "manaexpe": 6.62517859E7,
+        "salesexpe": 8.501498589E7,
+        "bizinco": 1.10998032603E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 1.06493030399E9,
+        "manaexpe": 9.339765024E7,
+        "salesexpe": 1.3556639695E8,
+        "bizinco": 1.51269663535E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 9.475974953E8,
+        "manaexpe": 1.1922769132E8,
+        "salesexpe": 1.6946835032E8,
+        "bizinco": 1.58935645617E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 1.19901616928E9,
+        "manaexpe": 1.1656943063E8,
+        "salesexpe": 1.8396603433E8,
+        "bizinco": 1.81677820696E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 1.48149360518E9,
+        "manaexpe": 1.5903427647E8,
+        "salesexpe": 2.0521354306E8,
+        "bizinco": 1.97443681157E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 1.23570449652E9,
+        "manaexpe": 1.6650217862E8,
+        "salesexpe": 2.1359535204E8,
+        "bizinco": 1.8748117566E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 8.1995720657E8,
+        "manaexpe": 1.7971069426E8,
+        "salesexpe": 1.9434662159E8,
+        "bizinco": 1.25586045479E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 9.143993531E8,
+        "manaexpe": 1.8096793634E8,
+        "salesexpe": 1.8268151325E8,
+        "bizinco": 1.30402666604E9,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 8.416383556E7,
+        "manaexpe": 2.93426697E7,
+        "salesexpe": 2.247440668E7,
+        "bizinco": 1.0669886058E8,
+        "stockcode": "600354"
+      },
+      {
+        "enddate": 19961231,
+        "bizcost": 2.630354182E8,
+        "manaexpe": 1.0990099873E8,
+        "salesexpe": 3907152.74,
+        "bizinco": 4.7334504181E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 19971231,
+        "bizcost": 2.7235213092E8,
+        "manaexpe": 1.342288468E8,
+        "salesexpe": 3258703.95,
+        "bizinco": 5.224266219E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 19981231,
+        "bizcost": 3.4059933547E8,
+        "manaexpe": 1.164948392E8,
+        "salesexpe": 1103443.97,
+        "bizinco": 6.0877735345E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 19991231,
+        "bizcost": 4.5302232776E8,
+        "manaexpe": 8.57287518E7,
+        "salesexpe": 2704094.78,
+        "bizinco": 6.3261673101E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20001231,
+        "bizcost": 4.8528100755E8,
+        "manaexpe": 1.0868663491E8,
+        "salesexpe": 1652721.09,
+        "bizinco": 6.8566467947E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20011231,
+        "bizcost": 4.332930445E8,
+        "manaexpe": 1.0161161687E8,
+        "salesexpe": 3031629.25,
+        "bizinco": 5.376710976E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20021231,
+        "bizcost": 4.8903565013E8,
+        "manaexpe": 1.2530097461E8,
+        "salesexpe": 7373529.25,
+        "bizinco": 6.6229726067E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20031231,
+        "bizcost": 6.4277696016E8,
+        "manaexpe": 1.3524450621E8,
+        "salesexpe": 1.134297327E7,
+        "bizinco": 8.883581891E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20041231,
+        "bizcost": 7.5133922715E8,
+        "manaexpe": 1.3484631715E8,
+        "salesexpe": 1.545336154E7,
+        "bizinco": 1.02359116224E9,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20051231,
+        "bizcost": 7.4014505321E8,
+        "manaexpe": 1.2418048388E8,
+        "salesexpe": 2.214768423E7,
+        "bizinco": 9.5646622598E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20061231,
+        "bizcost": 7.4656339476E8,
+        "manaexpe": 8.840847863E7,
+        "salesexpe": 2.38351588E7,
+        "bizinco": 9.3738863858E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20071231,
+        "bizcost": 7.5262891574E8,
+        "manaexpe": 8.193926385E7,
+        "salesexpe": 3.05609885E7,
+        "bizinco": 9.7538316431E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20081231,
+        "bizcost": 8.932685E8,
+        "manaexpe": 1.0482098863E8,
+        "salesexpe": 4.82216843E7,
+        "bizinco": 1.0517124528E9,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20091231,
+        "bizcost": 1.75936274549E9,
+        "manaexpe": 1.282736126E8,
+        "salesexpe": 3.157298564E7,
+        "bizinco": 2.03923663241E9,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20101231,
+        "bizcost": 1.66004349101E9,
+        "manaexpe": 1.099175711E8,
+        "salesexpe": 2.564281101E7,
+        "bizinco": 1.93209495695E9,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20111231,
+        "bizcost": 1.4586932399E9,
+        "manaexpe": 1.6767846381E8,
+        "salesexpe": 2.920781167E7,
+        "bizinco": 1.62990591766E9,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20121231,
+        "bizcost": 8.6313917818E8,
+        "manaexpe": 1.3037960458E8,
+        "salesexpe": 3.446350707E7,
+        "bizinco": 9.8041088232E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20131231,
+        "bizcost": 7.186173715E8,
+        "manaexpe": 9.561928522E7,
+        "salesexpe": 2.682244283E7,
+        "bizinco": 8.6809478181E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20141231,
+        "bizcost": 5.4230798883E8,
+        "manaexpe": 1.0067504771E8,
+        "salesexpe": 2.96002021E7,
+        "bizinco": 6.6772970618E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20151231,
+        "bizcost": 4.7991315206E8,
+        "manaexpe": 1.2037195074E8,
+        "salesexpe": 2.752248381E7,
+        "bizinco": 6.3126859204E8,
+        "stockcode": "600359"
+      },
+      {
+        "enddate": 20160331,
+        "bizcost": 1.6271637299E8,
+        "manaexpe": 2.473949097E7,
+        "salesexpe": 8561644.18,
+        "bizinco": 2.1203351545E8,
+        "stockcode": "600359"
+      }
+    ]
+  },
+  {
+    "table": "finindex",
+    "columns": [
+      "mainbusincgrowrate",
+      "salegrossprofitrto",
+      "netincgrowrate",
+      "totalliab",
+      "totalassets",
+      "weightedroe",
+      "operrevenue"
+    ],
+    "data": [
+      {
+        "mainbusincgrowrate": 14.9968,
+        "salegrossprofitrto": 38.53,
+        "totalliab": 1.46127311287E9,
+        "operrevenue": -8.854005341E7,
+        "reportdate": 20160331,
+        "totalassets": 7.13318941353E9,
+        "weightedroe": 3.5,
+        "stockcode": "000998",
+        "netincgrowrate": 6.3049
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.3322047389E8,
+        "operrevenue": 0.0,
+        "reportdate": 20021231,
+        "totalassets": 2.6728747599E8,
+        "weightedroe": 64.09,
+        "stockcode": "002041",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.6692217813E8,
+        "operrevenue": 0.0,
+        "reportdate": 20031231,
+        "totalassets": 3.8986430476E8,
+        "weightedroe": 50.96,
+        "stockcode": "002041",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.886072199E8,
+        "operrevenue": 5.695149201E7,
+        "reportdate": 20041231,
+        "totalassets": 4.6781756808E8,
+        "weightedroe": 37.78,
+        "stockcode": "002041",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.0133872248E8,
+        "operrevenue": 5.607770327E7,
+        "reportdate": 20051231,
+        "totalassets": 7.9237392688E8,
+        "weightedroe": 16.53,
+        "stockcode": "002041",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.7526193311E8,
+        "operrevenue": 5.787233751E7,
+        "reportdate": 20061231,
+        "totalassets": 8.7232528538E8,
+        "weightedroe": 0.86,
+        "stockcode": "002041",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 10.3444,
+        "salegrossprofitrto": 47.652,
+        "totalliab": 2.6985191697E8,
+        "operrevenue": 1.0667437004E8,
+        "reportdate": 20071231,
+        "totalassets": 1.00574416895E9,
+        "weightedroe": 1.15,
+        "stockcode": "002041",
+        "netincgrowrate": 32.5775
+      },
+      {
+        "mainbusincgrowrate": 32.7747,
+        "salegrossprofitrto": 53.9893,
+        "totalliab": 3.3466068378E8,
+        "operrevenue": 2.4380711408E8,
+        "reportdate": 20081231,
+        "totalassets": 1.1321315024E9,
+        "weightedroe": 0.39,
+        "stockcode": "002041",
+        "netincgrowrate": -65.6261
+      },
+      {
+        "mainbusincgrowrate": 38.8989,
+        "salegrossprofitrto": 57.1302,
+        "totalliab": 6.1364969631E8,
+        "operrevenue": 5.1218003369E8,
+        "reportdate": 20091231,
+        "totalassets": 1.56550702312E9,
+        "weightedroe": 13.05,
+        "stockcode": "002041",
+        "netincgrowrate": 3476.9834
+      },
+      {
+        "mainbusincgrowrate": 61.9367,
+        "salegrossprofitrto": 65.7178,
+        "totalliab": 6.514407328E8,
+        "operrevenue": 4.062225852E8,
+        "reportdate": 20101231,
+        "totalassets": 1.95262280707E9,
+        "weightedroe": 24.74,
+        "stockcode": "002041",
+        "netincgrowrate": 124.2857
+      },
+      {
+        "mainbusincgrowrate": 22.9457,
+        "salegrossprofitrto": 58.1442,
+        "totalliab": 5.9418521761E8,
+        "operrevenue": 1.2025774084E8,
+        "reportdate": 20111231,
+        "totalassets": 2.28762211193E9,
+        "weightedroe": 22.57,
+        "stockcode": "002041",
+        "netincgrowrate": 11.2459
+      },
+      {
+        "mainbusincgrowrate": 1.5454,
+        "salegrossprofitrto": 59.3413,
+        "totalliab": 8.4516997119E8,
+        "operrevenue": 5.2410548057E8,
+        "reportdate": 20121231,
+        "totalassets": 2.94187052109E9,
+        "weightedroe": 20.81,
+        "stockcode": "002041",
+        "netincgrowrate": 11.0009
+      },
+      {
+        "mainbusincgrowrate": 28.5759,
+        "salegrossprofitrto": 59.1303,
+        "totalliab": 9.0208271373E8,
+        "operrevenue": 6.2759645501E8,
+        "reportdate": 20131231,
+        "totalassets": 3.49500724037E9,
+        "weightedroe": 22.49,
+        "stockcode": "002041",
+        "netincgrowrate": 31.0006
+      },
+      {
+        "mainbusincgrowrate": -1.6802,
+        "salegrossprofitrto": 57.9537,
+        "totalliab": 1.04601309949E9,
+        "operrevenue": 7.365668351E8,
+        "reportdate": 20141231,
+        "totalassets": 3.94933468829E9,
+        "weightedroe": 20.84,
+        "stockcode": "002041",
+        "netincgrowrate": 12.6438
+      },
+      {
+        "mainbusincgrowrate": 3.4249,
+        "salegrossprofitrto": 53.0915,
+        "totalliab": 9.9593064471E8,
+        "operrevenue": 5.6385740992E8,
+        "reportdate": 20151231,
+        "totalassets": 4.22444132719E9,
+        "weightedroe": 18.3,
+        "stockcode": "002041",
+        "netincgrowrate": -3.1507
+      },
+      {
+        "mainbusincgrowrate": 64.2209,
+        "salegrossprofitrto": 48.0599,
+        "totalliab": 8.5132948776E8,
+        "operrevenue": 3.745190116E7,
+        "reportdate": 20160331,
+        "totalassets": 4.18647340228E9,
+        "weightedroe": 5.43,
+        "stockcode": "002041",
+        "netincgrowrate": 45.1041
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 57.792,
+        "totalliab": 1.1372683442E8,
+        "operrevenue": 9.301221901E7,
+        "reportdate": 20111231,
+        "totalassets": 2.9521725413E8,
+        "weightedroe": 68.39,
+        "stockcode": "002772",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 44.9962,
+        "salegrossprofitrto": 47.6361,
+        "totalliab": 2.0841195355E8,
+        "operrevenue": 9.455557576E7,
+        "reportdate": 20121231,
+        "totalassets": 5.5970755199E8,
+        "weightedroe": 22.78,
+        "stockcode": "002772",
+        "netincgrowrate": 46.8506
+      },
+      {
+        "mainbusincgrowrate": 38.623,
+        "salegrossprofitrto": 34.5661,
+        "totalliab": 3.9055158203E8,
+        "operrevenue": 9.302860101E7,
+        "reportdate": 20131231,
+        "totalassets": 7.9779843548E8,
+        "weightedroe": 14.51,
+        "stockcode": "002772",
+        "netincgrowrate": -14.4414
+      },
+      {
+        "mainbusincgrowrate": 45.2968,
+        "salegrossprofitrto": 37.9906,
+        "totalliab": 5.6308655298E8,
+        "operrevenue": 1.703100811E8,
+        "reportdate": 20141231,
+        "totalassets": 1.06114015555E9,
+        "weightedroe": 20.08,
+        "stockcode": "002772",
+        "netincgrowrate": 65.9906
+      },
+      {
+        "mainbusincgrowrate": 25.0388,
+        "salegrossprofitrto": 41.1787,
+        "totalliab": 6.4480448893E8,
+        "operrevenue": 2.0943110919E8,
+        "reportdate": 20151231,
+        "totalassets": 1.68272856622E9,
+        "weightedroe": 14.93,
+        "stockcode": "002772",
+        "netincgrowrate": 25.859
+      },
+      {
+        "mainbusincgrowrate": 41.07,
+        "salegrossprofitrto": 55.4455,
+        "totalliab": 6.9094795292E8,
+        "operrevenue": 9.49455972E7,
+        "reportdate": 20160331,
+        "totalassets": 1.79640583985E9,
+        "weightedroe": 8.04,
+        "stockcode": "002772",
+        "netincgrowrate": 85.096
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 43.8084,
+        "totalliab": 4.121745513E7,
+        "operrevenue": 2.874521216E7,
+        "reportdate": 20071231,
+        "totalassets": 7.286607813E7,
+        "weightedroe": 59.52,
+        "stockcode": "300087",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 39.3327,
+        "salegrossprofitrto": 44.1951,
+        "totalliab": 7.153179824E7,
+        "operrevenue": 3.070966821E7,
+        "reportdate": 20081231,
+        "totalassets": 1.2774681355E8,
+        "weightedroe": 56.34,
+        "stockcode": "300087",
+        "netincgrowrate": 71.0058
+      },
+      {
+        "mainbusincgrowrate": 33.8323,
+        "salegrossprofitrto": 42.8693,
+        "totalliab": 1.0600163037E8,
+        "operrevenue": 1.027255366E7,
+        "reportdate": 20091231,
+        "totalassets": 1.9425871588E8,
+        "weightedroe": 48.32,
+        "stockcode": "300087",
+        "netincgrowrate": 38.0389
+      },
+      {
+        "mainbusincgrowrate": 10.1951,
+        "salegrossprofitrto": 40.4541,
+        "totalliab": 5.533572322E7,
+        "operrevenue": -2.450455375E7,
+        "reportdate": 20101231,
+        "totalassets": 6.1922555703E8,
+        "weightedroe": 9.2,
+        "stockcode": "300087",
+        "netincgrowrate": -3.2549
+      },
+      {
+        "mainbusincgrowrate": 54.7871,
+        "salegrossprofitrto": 33.8667,
+        "totalliab": 2.4364014922E8,
+        "operrevenue": -7.588314196E7,
+        "reportdate": 20111231,
+        "totalassets": 8.8784743362E8,
+        "weightedroe": 3.89,
+        "stockcode": "300087",
+        "netincgrowrate": -34.2056
+      },
+      {
+        "mainbusincgrowrate": 45.7413,
+        "salegrossprofitrto": 35.5779,
+        "totalliab": 3.1795890457E8,
+        "operrevenue": 5.046340767E7,
+        "reportdate": 20121231,
+        "totalassets": 1.00208826023E9,
+        "weightedroe": 3.99,
+        "stockcode": "300087",
+        "netincgrowrate": 4.407
+      },
+      {
+        "mainbusincgrowrate": 14.5835,
+        "salegrossprofitrto": 34.7474,
+        "totalliab": 2.7954146606E8,
+        "operrevenue": 1.029589835E7,
+        "reportdate": 20131231,
+        "totalassets": 1.00241285498E9,
+        "weightedroe": 1.35,
+        "stockcode": "300087",
+        "netincgrowrate": -65.5916
+      },
+      {
+        "mainbusincgrowrate": 0.6343,
+        "salegrossprofitrto": 33.8634,
+        "totalliab": 3.1970072836E8,
+        "operrevenue": 9.723518436E7,
+        "reportdate": 20141231,
+        "totalassets": 1.04831508611E9,
+        "weightedroe": 0.91,
+        "stockcode": "300087",
+        "netincgrowrate": -32.4063
+      },
+      {
+        "mainbusincgrowrate": 29.5135,
+        "salegrossprofitrto": 38.1801,
+        "totalliab": 3.2181493587E8,
+        "operrevenue": 9.890573112E7,
+        "reportdate": 20151231,
+        "totalassets": 1.10779621838E9,
+        "weightedroe": 3.78,
+        "stockcode": "300087",
+        "netincgrowrate": 323.2864
+      },
+      {
+        "mainbusincgrowrate": 6.0154,
+        "salegrossprofitrto": 38.9743,
+        "totalliab": 3.2684964949E8,
+        "operrevenue": -2434395.87,
+        "reportdate": 20160331,
+        "totalassets": 1.11718024256E9,
+        "weightedroe": 0.31,
+        "stockcode": "300087",
+        "netincgrowrate": 25.4134
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 31.1414,
+        "totalliab": 6.534062605E7,
+        "operrevenue": 3.346990856E7,
+        "reportdate": 20071231,
+        "totalassets": 1.4023109229E8,
+        "weightedroe": 16.71,
+        "stockcode": "300143",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 22.1187,
+        "salegrossprofitrto": 36.1007,
+        "totalliab": 8.271518937E7,
+        "operrevenue": 2.545340561E7,
+        "reportdate": 20081231,
+        "totalassets": 1.6426900904E8,
+        "weightedroe": 14.81,
+        "stockcode": "300143",
+        "netincgrowrate": 15.3317
+      },
+      {
+        "mainbusincgrowrate": 29.612,
+        "salegrossprofitrto": 40.5551,
+        "totalliab": 1.0773384292E8,
+        "operrevenue": 2.87618769E7,
+        "reportdate": 20091231,
+        "totalassets": 2.2463787971E8,
+        "weightedroe": 20.14,
+        "stockcode": "300143",
+        "netincgrowrate": 77.5241
+      },
+      {
+        "mainbusincgrowrate": 75.3467,
+        "salegrossprofitrto": 44.5139,
+        "totalliab": 1.2432175504E8,
+        "operrevenue": 6.15147823E7,
+        "reportdate": 20101231,
+        "totalassets": 8.5131680686E8,
+        "weightedroe": 22.77,
+        "stockcode": "300143",
+        "netincgrowrate": 107.3861
+      },
+      {
+        "mainbusincgrowrate": 23.6036,
+        "salegrossprofitrto": 38.1747,
+        "totalliab": 4.44189949E7,
+        "operrevenue": 9.131589109E7,
+        "reportdate": 20111231,
+        "totalassets": 8.3026363009E8,
+        "weightedroe": 7.78,
+        "stockcode": "300143",
+        "netincgrowrate": 39.4424
+      },
+      {
+        "mainbusincgrowrate": 19.3954,
+        "salegrossprofitrto": 26.1684,
+        "totalliab": 1.8907809499E8,
+        "operrevenue": 2.705974238E7,
+        "reportdate": 20121231,
+        "totalassets": 9.9985447476E8,
+        "weightedroe": 0.85,
+        "stockcode": "300143",
+        "netincgrowrate": -88.9646
+      },
+      {
+        "mainbusincgrowrate": 2.8283,
+        "salegrossprofitrto": 8.3545,
+        "totalliab": 3.9099542662E8,
+        "operrevenue": 1.360081241E7,
+        "reportdate": 20131231,
+        "totalassets": 1.03429645281E9,
+        "weightedroe": -23.95,
+        "stockcode": "300143",
+        "netincgrowrate": -2612.3503
+      },
+      {
+        "mainbusincgrowrate": 20.7995,
+        "salegrossprofitrto": 14.2557,
+        "totalliab": 4.6003290899E8,
+        "operrevenue": 2.124817412E7,
+        "reportdate": 20141231,
+        "totalassets": 8.0399882745E8,
+        "weightedroe": -64.73,
+        "stockcode": "300143",
+        "netincgrowrate": -79.7475
+      },
+      {
+        "mainbusincgrowrate": -8.9998,
+        "salegrossprofitrto": 31.1975,
+        "totalliab": 3.6474947558E8,
+        "operrevenue": 5.237261364E7,
+        "reportdate": 20151231,
+        "totalassets": 1.84885923818E9,
+        "weightedroe": 3.39,
+        "stockcode": "300143",
+        "netincgrowrate": 103.6064
+      },
+      {
+        "mainbusincgrowrate": 14.2642,
+        "salegrossprofitrto": 43.3083,
+        "totalliab": 3.3324686788E8,
+        "operrevenue": -3958210.04,
+        "reportdate": 20160331,
+        "totalassets": 1.82654847957E9,
+        "weightedroe": 0.56,
+        "stockcode": "300143",
+        "netincgrowrate": 549.168
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 24.7345,
+        "totalliab": 1.2605999254E8,
+        "operrevenue": 4198762.15,
+        "reportdate": 20071231,
+        "totalassets": 1.8715229001E8,
+        "weightedroe": 16.12,
+        "stockcode": "300189",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 22.4725,
+        "salegrossprofitrto": 25.5598,
+        "totalliab": 5.231354787E7,
+        "operrevenue": 3.27719591E7,
+        "reportdate": 20081231,
+        "totalassets": 2.8616741408E8,
+        "weightedroe": 31.8,
+        "stockcode": "300189",
+        "netincgrowrate": 153.469
+      },
+      {
+        "mainbusincgrowrate": 55.4075,
+        "salegrossprofitrto": 27.6802,
+        "totalliab": 1.1574714406E8,
+        "operrevenue": 4667799.52,
+        "reportdate": 20091231,
+        "totalassets": 4.1085329579E8,
+        "weightedroe": 17.59,
+        "stockcode": "300189",
+        "netincgrowrate": 106.9729
+      },
+      {
+        "mainbusincgrowrate": 38.8112,
+        "salegrossprofitrto": 29.2118,
+        "totalliab": 8.995965504E7,
+        "operrevenue": 1.528762843E7,
+        "reportdate": 20101231,
+        "totalassets": 4.4842573656E8,
+        "weightedroe": 19.56,
+        "stockcode": "300189",
+        "netincgrowrate": 38.9997
+      },
+      {
+        "mainbusincgrowrate": 8.2452,
+        "salegrossprofitrto": 29.6979,
+        "totalliab": 4.708769922E7,
+        "operrevenue": 5359668.71,
+        "reportdate": 20111231,
+        "totalassets": 1.33870124419E9,
+        "weightedroe": 5.74,
+        "stockcode": "300189",
+        "netincgrowrate": -4.0362
+      },
+      {
+        "mainbusincgrowrate": 0.9156,
+        "salegrossprofitrto": 32.0559,
+        "totalliab": 1.5115344826E8,
+        "operrevenue": -3.286101501E7,
+        "reportdate": 20121231,
+        "totalassets": 1.58670836017E9,
+        "weightedroe": 4.59,
+        "stockcode": "300189",
+        "netincgrowrate": 0.8275
+      },
+      {
+        "mainbusincgrowrate": 5.2946,
+        "salegrossprofitrto": 28.9206,
+        "totalliab": 2.1851484951E8,
+        "operrevenue": 1.355209127E7,
+        "reportdate": 20131231,
+        "totalassets": 1.68358649305E9,
+        "weightedroe": 2.88,
+        "stockcode": "300189",
+        "netincgrowrate": -35.499
+      },
+      {
+        "mainbusincgrowrate": -21.7239,
+        "salegrossprofitrto": 16.7052,
+        "totalliab": 2.4135775006E8,
+        "operrevenue": 4.523996377E7,
+        "reportdate": 20141231,
+        "totalassets": 1.58382860268E9,
+        "weightedroe": -6.83,
+        "stockcode": "300189",
+        "netincgrowrate": -330.3052
+      },
+      {
+        "mainbusincgrowrate": -6.4428,
+        "salegrossprofitrto": 24.3,
+        "totalliab": 2.2925371214E8,
+        "operrevenue": 7.656924053E7,
+        "reportdate": 20151231,
+        "totalassets": 2.28150667548E9,
+        "weightedroe": 0.5859,
+        "stockcode": "300189",
+        "netincgrowrate": 108.4513
+      },
+      {
+        "mainbusincgrowrate": -2.2784,
+        "salegrossprofitrto": 21.116,
+        "totalliab": 2.0962341569E8,
+        "operrevenue": -5.024650252E7,
+        "reportdate": 20160331,
+        "totalassets": 2.26011888003E9,
+        "weightedroe": -0.28,
+        "stockcode": "300189",
+        "netincgrowrate": 62.772
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 55.0381,
+        "totalliab": 6.678527347E7,
+        "operrevenue": 0.0,
+        "reportdate": 19941231,
+        "totalassets": 7.066772068E7,
+        "weightedroe": 0.0,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.0581087148E8,
+        "operrevenue": 0.0,
+        "reportdate": 19951231,
+        "totalassets": 2.1232076356E8,
+        "weightedroe": 0.0,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 16.9571,
+        "salegrossprofitrto": 50.403,
+        "totalliab": 1.5320599285E8,
+        "operrevenue": 0.0,
+        "reportdate": 19961231,
+        "totalassets": 2.8388861765E8,
+        "weightedroe": 0.0,
+        "stockcode": "600108",
+        "netincgrowrate": 16.8517
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.373477699E8,
+        "operrevenue": 0.0,
+        "reportdate": 19971231,
+        "totalassets": 7.3480159792E8,
+        "weightedroe": 0.0,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 11.8352,
+        "salegrossprofitrto": 33.0195,
+        "totalliab": 4.1217761651E8,
+        "operrevenue": 6831540.8,
+        "reportdate": 19981231,
+        "totalassets": 1.08289337227E9,
+        "weightedroe": 11.55,
+        "stockcode": "600108",
+        "netincgrowrate": 20.0448
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 6.015566268E8,
+        "operrevenue": 1.4077040612E8,
+        "reportdate": 19991231,
+        "totalassets": 1.66932939284E9,
+        "weightedroe": 13.39,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 4.7112246277E8,
+        "operrevenue": 9.595987317E7,
+        "reportdate": 20001231,
+        "totalassets": 1.58645843994E9,
+        "weightedroe": 10.69,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 4.4494107962E8,
+        "operrevenue": 1.193425992E7,
+        "reportdate": 20011231,
+        "totalassets": 1.84272760465E9,
+        "weightedroe": 6.73,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 21.2894,
+        "salegrossprofitrto": 18.9288,
+        "totalliab": 9.5742033013E8,
+        "operrevenue": 4.310085533E7,
+        "reportdate": 20021231,
+        "totalassets": 2.49484438269E9,
+        "weightedroe": 5.63,
+        "stockcode": "600108",
+        "netincgrowrate": -10.832
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 9.6120498905E8,
+        "operrevenue": 1.9464691302E8,
+        "reportdate": 20031231,
+        "totalassets": 2.56804070443E9,
+        "weightedroe": 6.17,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 7.083752592E8,
+        "operrevenue": 1.1607916449E8,
+        "reportdate": 20041231,
+        "totalassets": 2.39108583293E9,
+        "weightedroe": 3.21,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.26424463654E9,
+        "operrevenue": 1.0646412336E8,
+        "reportdate": 20051231,
+        "totalassets": 3.15630387576E9,
+        "weightedroe": 0.67,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.44989337899E9,
+        "operrevenue": 8.507738613E7,
+        "reportdate": 20061231,
+        "totalassets": 3.33576743198E9,
+        "weightedroe": 1.11,
+        "stockcode": "600108",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 14.392,
+        "salegrossprofitrto": 18.487,
+        "totalliab": 1.34975763063E9,
+        "operrevenue": 5.897718487E7,
+        "reportdate": 20071231,
+        "totalassets": 3.29212199907E9,
+        "weightedroe": 3.58,
+        "stockcode": "600108",
+        "netincgrowrate": 234.043
+      },
+      {
+        "mainbusincgrowrate": 36.5572,
+        "salegrossprofitrto": 16.9426,
+        "totalliab": 1.65672099112E9,
+        "operrevenue": 1.2943962166E8,
+        "reportdate": 20081231,
+        "totalassets": 4.19930943544E9,
+        "weightedroe": 4.07,
+        "stockcode": "600108",
+        "netincgrowrate": 158.4411
+      },
+      {
+        "mainbusincgrowrate": -11.5698,
+        "salegrossprofitrto": 18.8987,
+        "totalliab": 1.96012494726E9,
+        "operrevenue": 1.3603321805E8,
+        "reportdate": 20091231,
+        "totalassets": 4.87193466472E9,
+        "weightedroe": 5.16,
+        "stockcode": "600108",
+        "netincgrowrate": -17.1956
+      },
+      {
+        "mainbusincgrowrate": 0.5742,
+        "salegrossprofitrto": 18.125,
+        "totalliab": 1.61306899049E9,
+        "operrevenue": 5.549412175E7,
+        "reportdate": 20101231,
+        "totalassets": 4.28655987321E9,
+        "weightedroe": 4.85,
+        "stockcode": "600108",
+        "netincgrowrate": 3.5086
+      },
+      {
+        "mainbusincgrowrate": 4.2311,
+        "salegrossprofitrto": 26.1037,
+        "totalliab": 1.73887430312E9,
+        "operrevenue": 6.023271334E7,
+        "reportdate": 20111231,
+        "totalassets": 4.47369358607E9,
+        "weightedroe": 4.13,
+        "stockcode": "600108",
+        "netincgrowrate": -14.9302
+      },
+      {
+        "mainbusincgrowrate": 52.7707,
+        "salegrossprofitrto": 25.536,
+        "totalliab": 1.7539709773E9,
+        "operrevenue": 3.9700643833E8,
+        "reportdate": 20121231,
+        "totalassets": 6.115025974E9,
+        "weightedroe": 12.24,
+        "stockcode": "600108",
+        "netincgrowrate": 309.0168
+      },
+      {
+        "mainbusincgrowrate": 20.1611,
+        "salegrossprofitrto": 22.7543,
+        "totalliab": 1.90069752169E9,
+        "operrevenue": 3.6773895098E8,
+        "reportdate": 20131231,
+        "totalassets": 6.82037254974E9,
+        "weightedroe": 8.41,
+        "stockcode": "600108",
+        "netincgrowrate": -10.1827
+      },
+      {
+        "mainbusincgrowrate": -16.8232,
+        "salegrossprofitrto": 22.1844,
+        "totalliab": 2.85068972729E9,
+        "operrevenue": 1.3653472915E8,
+        "reportdate": 20141231,
+        "totalassets": 7.61082972029E9,
+        "weightedroe": 4.43,
+        "stockcode": "600108",
+        "netincgrowrate": -49.3174
+      },
+      {
+        "mainbusincgrowrate": -2.3935,
+        "salegrossprofitrto": 23.0086,
+        "totalliab": 2.86568129046E9,
+        "operrevenue": 5.566477926E7,
+        "reportdate": 20151231,
+        "totalassets": 7.61938797287E9,
+        "weightedroe": 2.6,
+        "stockcode": "600108",
+        "netincgrowrate": -40.2864
+      },
+      {
+        "mainbusincgrowrate": -7.8205,
+        "salegrossprofitrto": 23.7432,
+        "totalliab": 2.83824650705E9,
+        "operrevenue": 3.320763093E7,
+        "reportdate": 20160331,
+        "totalassets": 7.56995644591E9,
+        "weightedroe": 0.29,
+        "stockcode": "600108",
+        "netincgrowrate": -53.5337
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 8.9918,
+        "totalliab": 3.3451264956E8,
+        "operrevenue": 0.0,
+        "reportdate": 19971231,
+        "totalassets": 5.0838622458E8,
+        "weightedroe": 0.0,
+        "stockcode": "600313",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 32.4509,
+        "salegrossprofitrto": 8.1178,
+        "totalliab": 4.4042828826E8,
+        "operrevenue": 0.0,
+        "reportdate": 19981231,
+        "totalassets": 6.3557233777E8,
+        "weightedroe": 0.0,
+        "stockcode": "600313",
+        "netincgrowrate": -12.3031
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 5.2435793547E8,
+        "operrevenue": 0.0,
+        "reportdate": 19991231,
+        "totalassets": 7.8826568094E8,
+        "weightedroe": 0.0,
+        "stockcode": "600313",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 21.934,
+        "salegrossprofitrto": 5.444,
+        "totalliab": 5.7997030688E8,
+        "operrevenue": -1.1406088106E8,
+        "reportdate": 20001231,
+        "totalassets": 1.34303134029E9,
+        "weightedroe": 7.8,
+        "stockcode": "600313",
+        "netincgrowrate": -38.5337
+      },
+      {
+        "mainbusincgrowrate": 12.1295,
+        "salegrossprofitrto": 5.0791,
+        "totalliab": 5.9255851403E8,
+        "operrevenue": -1.7533804303E8,
+        "reportdate": 20011231,
+        "totalassets": 1.33838957728E9,
+        "weightedroe": 0.81,
+        "stockcode": "600313",
+        "netincgrowrate": -137.9672
+      },
+      {
+        "mainbusincgrowrate": -9.0804,
+        "salegrossprofitrto": 6.4485,
+        "totalliab": 5.6498999569E8,
+        "operrevenue": 3.340498703E7,
+        "reportdate": 20021231,
+        "totalassets": 1.21387914692E9,
+        "weightedroe": -11.63,
+        "stockcode": "600313",
+        "netincgrowrate": -1044.7233
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 4.7667170442E8,
+        "operrevenue": 3.807923674E7,
+        "reportdate": 20031231,
+        "totalassets": 9.8182903112E8,
+        "weightedroe": -19.35,
+        "stockcode": "600313",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": -6.7768,
+        "salegrossprofitrto": 7.968,
+        "totalliab": 4.1177597146E8,
+        "operrevenue": 8.070631312E7,
+        "reportdate": 20041231,
+        "totalassets": 9.6502134752E8,
+        "weightedroe": 0.66,
+        "stockcode": "600313",
+        "netincgrowrate": 103.0356
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 2.618964067E8,
+        "operrevenue": -3.131819663E7,
+        "reportdate": 20051231,
+        "totalassets": 7.9181749047E8,
+        "weightedroe": -2.06,
+        "stockcode": "600313",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 2.0373083292E8,
+        "operrevenue": 1.381055626E7,
+        "reportdate": 20061231,
+        "totalassets": 7.4981094682E8,
+        "weightedroe": 2.77,
+        "stockcode": "600313",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": -41.8115,
+        "salegrossprofitrto": 10.727,
+        "totalliab": 2.2416672258E8,
+        "operrevenue": 5.961188343E7,
+        "reportdate": 20071231,
+        "totalassets": 7.0627070468E8,
+        "weightedroe": -10.66,
+        "stockcode": "600313",
+        "netincgrowrate": -469.7733
+      },
+      {
+        "mainbusincgrowrate": -3.5429,
+        "salegrossprofitrto": 12.1463,
+        "totalliab": 2.2083442122E8,
+        "operrevenue": -1.053534841E7,
+        "reportdate": 20081231,
+        "totalassets": 6.7947092379E8,
+        "weightedroe": -5.0,
+        "stockcode": "600313",
+        "netincgrowrate": 57.1724
+      },
+      {
+        "mainbusincgrowrate": 2.6687,
+        "salegrossprofitrto": 3.2164,
+        "totalliab": 1.539107464E8,
+        "operrevenue": 7.14941664E7,
+        "reportdate": 20091231,
+        "totalassets": 5.7895693922E8,
+        "weightedroe": -5.31,
+        "stockcode": "600313",
+        "netincgrowrate": -2.4146
+      },
+      {
+        "mainbusincgrowrate": 1.1051,
+        "salegrossprofitrto": 0.5208,
+        "totalliab": 6.163815835E7,
+        "operrevenue": 1798756.48,
+        "reportdate": 20101231,
+        "totalassets": 5.7570996807E8,
+        "weightedroe": 11.49,
+        "stockcode": "600313",
+        "netincgrowrate": 323.6065
+      },
+      {
+        "mainbusincgrowrate": 138.772,
+        "salegrossprofitrto": 4.1681,
+        "totalliab": 1.6930230061E8,
+        "operrevenue": 1.780985168E7,
+        "reportdate": 20111231,
+        "totalassets": 7.7566841662E8,
+        "weightedroe": 1.54,
+        "stockcode": "600313",
+        "netincgrowrate": -84.9986
+      },
+      {
+        "mainbusincgrowrate": 123.9605,
+        "salegrossprofitrto": 3.7074,
+        "totalliab": 5.218871348E8,
+        "operrevenue": 4.683919135E7,
+        "reportdate": 20121231,
+        "totalassets": 1.80009266896E9,
+        "weightedroe": 3.73,
+        "stockcode": "600313",
+        "netincgrowrate": 271.4499
+      },
+      {
+        "mainbusincgrowrate": -9.9732,
+        "salegrossprofitrto": 7.2313,
+        "totalliab": 4.5764063995E8,
+        "operrevenue": 7562703.21,
+        "reportdate": 20131231,
+        "totalassets": 1.77813897994E9,
+        "weightedroe": 4.03,
+        "stockcode": "600313",
+        "netincgrowrate": 44.0424
+      },
+      {
+        "mainbusincgrowrate": 20.6082,
+        "salegrossprofitrto": 6.9589,
+        "totalliab": 6.1423969307E8,
+        "operrevenue": 349984.72,
+        "reportdate": 20141231,
+        "totalassets": 2.32398307529E9,
+        "weightedroe": 10.23,
+        "stockcode": "600313",
+        "netincgrowrate": 158.9735
+      },
+      {
+        "mainbusincgrowrate": 23.6896,
+        "salegrossprofitrto": 7.2756,
+        "totalliab": 1.23236295308E9,
+        "operrevenue": 1.2897926864E8,
+        "reportdate": 20151231,
+        "totalassets": 3.76624264238E9,
+        "weightedroe": 6.8,
+        "stockcode": "600313",
+        "netincgrowrate": -23.5476
+      },
+      {
+        "mainbusincgrowrate": 122.9084,
+        "salegrossprofitrto": 4.0383,
+        "totalliab": 1.38002154912E9,
+        "operrevenue": -1.367401463E7,
+        "reportdate": 20160331,
+        "totalassets": 3.94901055303E9,
+        "weightedroe": 0.19,
+        "stockcode": "600313",
+        "netincgrowrate": 139.2851
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 3.8856447815E8,
+        "operrevenue": 0.0,
+        "reportdate": 20001231,
+        "totalassets": 5.8063627662E8,
+        "weightedroe": 12.91,
+        "stockcode": "600354",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": -19.4695,
+        "salegrossprofitrto": 27.4075,
+        "totalliab": 4.2161876642E8,
+        "operrevenue": 0.0,
+        "reportdate": 20011231,
+        "totalassets": 6.2499535658E8,
+        "weightedroe": 11.95,
+        "stockcode": "600354",
+        "netincgrowrate": 0.8244
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 3.8669553419E8,
+        "operrevenue": 1.9032278084E8,
+        "reportdate": 20021231,
+        "totalassets": 6.2454537537E8,
+        "weightedroe": 15.48,
+        "stockcode": "600354",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 6.0763930398E8,
+        "operrevenue": -2.1483840727E8,
+        "reportdate": 20031231,
+        "totalassets": 8.8083371365E8,
+        "weightedroe": 12.53,
+        "stockcode": "600354",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 7.0554114881E8,
+        "operrevenue": -2.8202058872E8,
+        "reportdate": 20041231,
+        "totalassets": 1.43280371091E9,
+        "weightedroe": 4.58,
+        "stockcode": "600354",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 4.436,
+        "salegrossprofitrto": 12.7125,
+        "totalliab": 6.9292239849E8,
+        "operrevenue": 2.934475707E7,
+        "reportdate": 20051231,
+        "totalassets": 1.3023074433E9,
+        "weightedroe": -19.0,
+        "stockcode": "600354",
+        "netincgrowrate": -498.8165
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.0700202886E9,
+        "operrevenue": 1.4396246871E8,
+        "reportdate": 20061231,
+        "totalassets": 1.69715805833E9,
+        "weightedroe": 2.3,
+        "stockcode": "600354",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": -15.8977,
+        "salegrossprofitrto": 18.8691,
+        "totalliab": 1.16705792712E9,
+        "operrevenue": -1.2958595195E8,
+        "reportdate": 20071231,
+        "totalassets": 1.79896290968E9,
+        "weightedroe": -2.56,
+        "stockcode": "600354",
+        "netincgrowrate": -211.8349
+      },
+      {
+        "mainbusincgrowrate": 47.4932,
+        "salegrossprofitrto": 25.885,
+        "totalliab": 1.5134653332E9,
+        "operrevenue": 1.3027420702E8,
+        "reportdate": 20081231,
+        "totalassets": 2.22587801092E9,
+        "weightedroe": 2.45,
+        "stockcode": "600354",
+        "netincgrowrate": 193.7782
+      },
+      {
+        "mainbusincgrowrate": 36.2814,
+        "salegrossprofitrto": 29.6005,
+        "totalliab": 1.66996319015E9,
+        "operrevenue": 4.3491238862E8,
+        "reportdate": 20091231,
+        "totalassets": 2.52464920887E9,
+        "weightedroe": 4.962,
+        "stockcode": "600354",
+        "netincgrowrate": 118.4466
+      },
+      {
+        "mainbusincgrowrate": 5.0678,
+        "salegrossprofitrto": 40.3785,
+        "totalliab": 2.25601716099E9,
+        "operrevenue": 2.2737765973E8,
+        "reportdate": 20101231,
+        "totalassets": 3.34329696405E9,
+        "weightedroe": 12.499,
+        "stockcode": "600354",
+        "netincgrowrate": 168.7387
+      },
+      {
+        "mainbusincgrowrate": 14.309,
+        "salegrossprofitrto": 34.0032,
+        "totalliab": 2.39282408618E9,
+        "operrevenue": -1.9542023539E8,
+        "reportdate": 20111231,
+        "totalassets": 4.02550966348E9,
+        "weightedroe": 1.464,
+        "stockcode": "600354",
+        "netincgrowrate": -80.5947
+      },
+      {
+        "mainbusincgrowrate": 8.6779,
+        "salegrossprofitrto": 24.9663,
+        "totalliab": 2.95325991083E9,
+        "operrevenue": 4.9163538575E8,
+        "reportdate": 20121231,
+        "totalassets": 4.5434805179E9,
+        "weightedroe": -12.33,
+        "stockcode": "600354",
+        "netincgrowrate": -924.4954
+      },
+      {
+        "mainbusincgrowrate": -5.0457,
+        "salegrossprofitrto": 34.0891,
+        "totalliab": 2.46529518717E9,
+        "operrevenue": 2.0568327467E8,
+        "reportdate": 20131231,
+        "totalassets": 4.10467756899E9,
+        "weightedroe": 1.75,
+        "stockcode": "600354",
+        "netincgrowrate": 109.2773
+      },
+      {
+        "mainbusincgrowrate": -33.0141,
+        "salegrossprofitrto": 34.7095,
+        "totalliab": 2.45770255723E9,
+        "operrevenue": 4.7216558155E8,
+        "reportdate": 20141231,
+        "totalassets": 3.70081938916E9,
+        "weightedroe": -40.27,
+        "stockcode": "600354",
+        "netincgrowrate": -2880.4617
+      },
+      {
+        "mainbusincgrowrate": 3.8353,
+        "salegrossprofitrto": 29.8788,
+        "totalliab": 1.81697866371E9,
+        "operrevenue": 3.0741566301E8,
+        "reportdate": 20151231,
+        "totalassets": 3.52736052509E9,
+        "weightedroe": 3.33,
+        "stockcode": "600354",
+        "netincgrowrate": 106.7101
+      },
+      {
+        "mainbusincgrowrate": -36.5003,
+        "salegrossprofitrto": 21.1202,
+        "totalliab": 1.49995365565E9,
+        "operrevenue": -2.2135268224E8,
+        "reportdate": 20160331,
+        "totalassets": 3.14097244606E9,
+        "weightedroe": -5.34,
+        "stockcode": "600354",
+        "netincgrowrate": -16.6728
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 3.6923921387E8,
+        "operrevenue": 0.0,
+        "reportdate": 19961231,
+        "totalassets": 5.8475063611E8,
+        "weightedroe": 0.0,
+        "stockcode": "600359",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 10.0254,
+        "salegrossprofitrto": 47.8679,
+        "totalliab": 3.7934918848E8,
+        "operrevenue": 0.0,
+        "reportdate": 19971231,
+        "totalassets": 6.4905764856E8,
+        "weightedroe": 0.0,
+        "stockcode": "600359",
+        "netincgrowrate": 16.9424
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 5.0919213365E8,
+        "operrevenue": 4.590271566E7,
+        "reportdate": 19981231,
+        "totalassets": 8.963434149E8,
+        "weightedroe": 0.0,
+        "stockcode": "600359",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 3.3997,
+        "salegrossprofitrto": 28.3891,
+        "totalliab": 5.4765034768E8,
+        "operrevenue": 6.047849821E7,
+        "reportdate": 19991231,
+        "totalassets": 1.26263030797E9,
+        "weightedroe": 10.76,
+        "stockcode": "600359",
+        "netincgrowrate": -48.9503
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 5.6425521234E8,
+        "operrevenue": 2.8665918978E8,
+        "reportdate": 20001231,
+        "totalassets": 1.24003802478E9,
+        "weightedroe": 0.0,
+        "stockcode": "600359",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 7.5873808797E8,
+        "operrevenue": -9.863719345E7,
+        "reportdate": 20011231,
+        "totalassets": 1.74371076782E9,
+        "weightedroe": 0.6,
+        "stockcode": "600359",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 24.9496,
+        "salegrossprofitrto": 25.9072,
+        "totalliab": 6.9719833511E8,
+        "operrevenue": 1.9919720256E8,
+        "reportdate": 20021231,
+        "totalassets": 1.73721990476E9,
+        "weightedroe": 3.095,
+        "stockcode": "600359",
+        "netincgrowrate": 647.3897
+      },
+      {
+        "mainbusincgrowrate": 31.9691,
+        "salegrossprofitrto": 27.6444,
+        "totalliab": 1.06118900777E9,
+        "operrevenue": -9069835.2,
+        "reportdate": 20031231,
+        "totalassets": 2.18451778979E9,
+        "weightedroe": 7.334,
+        "stockcode": "600359",
+        "netincgrowrate": 134.0846
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.07314902458E9,
+        "operrevenue": 7.589666924E7,
+        "reportdate": 20041231,
+        "totalassets": 2.25511887684E9,
+        "weightedroe": 9.33,
+        "stockcode": "600359",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": 0.0,
+        "salegrossprofitrto": 0.0,
+        "totalliab": 1.02001812258E9,
+        "operrevenue": 1.5709734065E8,
+        "reportdate": 20051231,
+        "totalassets": 2.2017011575E9,
+        "weightedroe": 0.0,
+        "stockcode": "600359",
+        "netincgrowrate": 0.0
+      },
+      {
+        "mainbusincgrowrate": -4.0753,
+        "salegrossprofitrto": 20.3571,
+        "totalliab": 1.00929139725E9,
+        "operrevenue": 1.0248504851E8,
+        "reportdate": 20061231,
+        "totalassets": 2.19349570054E9,
+        "weightedroe": 2.77,
+        "stockcode": "600359",
+        "netincgrowrate": -45.6373
+      },
+      {
+        "mainbusincgrowrate": -2.9098,
+        "salegrossprofitrto": 21.8969,
+        "totalliab": 1.81314434823E9,
+        "operrevenue": -1.0451717205E8,
+        "reportdate": 20071231,
+        "totalassets": 3.01825899354E9,
+        "weightedroe": 2.31,
+        "stockcode": "600359",
+        "netincgrowrate": -17.3642
+      },
+      {
+        "mainbusincgrowrate": 15.5585,
+        "salegrossprofitrto": 15.0653,
+        "totalliab": 1.93618371359E9,
+        "operrevenue": 1.4442828966E8,
+        "reportdate": 20081231,
+        "totalassets": 2.98096564194E9,
+        "weightedroe": -8.18,
+        "stockcode": "600359",
+        "netincgrowrate": -432.3563
+      },
+      {
+        "mainbusincgrowrate": 93.8968,
+        "salegrossprofitrto": 13.7244,
+        "totalliab": 1.98951207736E9,
+        "operrevenue": 1.7803523308E8,
+        "reportdate": 20091231,
+        "totalassets": 3.15792767999E9,
+        "weightedroe": 5.78,
+        "stockcode": "600359",
+        "netincgrowrate": 170.8928
+      },
+      {
+        "mainbusincgrowrate": -5.254,
+        "salegrossprofitrto": 14.0806,
+        "totalliab": 2.8684134284E9,
+        "operrevenue": 1.8180086891E8,
+        "reportdate": 20101231,
+        "totalassets": 4.04216079637E9,
+        "weightedroe": -1.0,
+        "stockcode": "600359",
+        "netincgrowrate": -116.9013
+      },
+      {
+        "mainbusincgrowrate": -15.6405,
+        "salegrossprofitrto": 10.5045,
+        "totalliab": 3.58123783571E9,
+        "operrevenue": -4.6974429409E8,
+        "reportdate": 20111231,
+        "totalassets": 3.82131691134E9,
+        "weightedroe": -98.3,
+        "stockcode": "600359",
+        "netincgrowrate": -6356.7401
+      },
+      {
+        "mainbusincgrowrate": -16.9494,
+        "salegrossprofitrto": 14.9835,
+        "totalliab": 1.86957252493E9,
+        "operrevenue": 8.735440133E7,
+        "reportdate": 20121231,
+        "totalassets": 2.18942514039E9,
+        "weightedroe": 18.55,
+        "stockcode": "600359",
+        "netincgrowrate": 110.4747
+      },
+      {
+        "mainbusincgrowrate": -35.8699,
+        "salegrossprofitrto": 17.219,
+        "totalliab": 1.65215851973E9,
+        "operrevenue": 7.305858062E7,
+        "reportdate": 20131231,
+        "totalassets": 1.95327439172E9,
+        "weightedroe": 3.78,
+        "stockcode": "600359",
+        "netincgrowrate": -77.4784
+      },
+      {
+        "mainbusincgrowrate": -23.081,
+        "salegrossprofitrto": 18.7833,
+        "totalliab": 1.59378749371E9,
+        "operrevenue": -3.420149553E7,
+        "reportdate": 20141231,
+        "totalassets": 2.44805849499E9,
+        "weightedroe": 2.91,
+        "stockcode": "600359",
+        "netincgrowrate": 34.0146
+      },
+      {
+        "mainbusincgrowrate": -5.4605,
+        "salegrossprofitrto": 23.9764,
+        "totalliab": 1.90491220922E9,
+        "operrevenue": 8.251374681E7,
+        "reportdate": 20151231,
+        "totalassets": 2.74528233354E9,
+        "weightedroe": 1.49,
+        "stockcode": "600359",
+        "netincgrowrate": -33.9396
+      },
+      {
+        "mainbusincgrowrate": 31.368,
+        "salegrossprofitrto": 23.2591,
+        "totalliab": 2.14648980901E9,
+        "operrevenue": -2.938780255E7,
+        "reportdate": 20160331,
+        "totalassets": 2.9651520612E9,
+        "weightedroe": -2.1,
+        "stockcode": "600359",
+        "netincgrowrate": -314.1829
+      }
+    ]
+  }
+]
