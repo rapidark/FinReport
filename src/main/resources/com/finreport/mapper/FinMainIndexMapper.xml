@@ -286,12 +286,22 @@
   </select>
   
   <select id="selectSpecificColumnByStockcodeAndQuater" resultType="hashmap">
-   select 
+   select stockcode,reportdate,
    <foreach collection="columns" item="column" separator=",">${column}</foreach>
     from finindex where stockcode in
    <foreach collection="stockcode" index="index" item="code" open="(" separator="," close=")">
      #{code}
    </foreach>
    and (`quarter` = #{quarter} or reportdate > #{reportdate})
+  </select>
+  
+  <select id="getIndustryCompanyIndex" resultType="hashmap">
+  select symbol, name, current, pettm, marketcapital, round(marketcapital/(totalassets-totalliab),2) as pb, basiceps,round(naps,2) as naps,round(opercashpershare,2) as opercashpershare,mainbusiincome,netprofit from stock s inner join (
+  select fi.stockcode as stockcode, basiceps,naps,opercashpershare,mainbusiincome,netprofit,totalassets,totalliab from finindex fi inner join (
+  SELECT stockcode as stockcode,max(reportdate) as reportdate FROM finindex where stockcode in
+  <foreach collection="stockcode" index="index" item="code" open="(" separator="," close=")">
+     #{code}
+   </foreach>
+  and `quarter` = '12' group by stockcode) as temp on fi.stockcode = temp.stockcode and fi.reportdate = temp.reportdate) as temp1 on temp1.stockcode = s.code
   </select>
 </mapper>

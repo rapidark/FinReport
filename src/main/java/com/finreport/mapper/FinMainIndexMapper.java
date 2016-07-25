@@ -24,4 +24,6 @@ public interface FinMainIndexMapper {
 	List<FinMainIndex> selectByStockcodeAndQuater(@Param("stockcode") String[] stockcode, @Param("reportdate") Integer reportdate, @Param("quarter") String quarter);
 	
 	List<Map<String, Object>> selectSpecificColumnByStockcodeAndQuater(@Param("columns")List<String> columns, @Param("stockcode") String[] stockcode, @Param("reportdate") Integer reportdate, @Param("quarter") String quarter);
+	
+	List<Map<String, Object>> getIndustryCompanyIndex(@Param("stockcode") String[] stockcode);
 }

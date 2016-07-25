@@ -1,6 +1,7 @@
 package com.finreport.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,7 @@ import com.finreport.model.FinMainIndex;
 import com.finreport.model.IncStatement;
 import com.finreport.model.ReducedFinStat;
 import com.finreport.model.ReducedFinStatCriteria;
+import com.finreport.model.Stock;
 import com.finreport.service.FinStatementService;
 
 @RestController
@@ -63,5 +65,21 @@ public class FinStatementController {
 	@RequestMapping(value = "/createfinstatement", method= RequestMethod.GET)
 	public void createFinancialReportTask() {
 		scheduledTasks.createFinancialReportTask();
+	}
+	
+	@RequestMapping(value="/getIndustryCompanyIndex", method = RequestMethod.GET)
+	public List<Map<String, Object>> getIndustryCompanyIndex(String code){
+		String[] codes = code.split(",");
+		return finStatementService.getIndustryCompanyIndex(codes);
+	}
+	
+	@RequestMapping(value="/getMinMartetCapitial", method = RequestMethod.GET)
+	public List<Stock> getMinMartetCapitial() {
+		return finStatementService.getMinMartetCapitial();
+	}
+	
+	@RequestMapping(value="/getMinPb", method = RequestMethod.GET)
+	public List<Map<String, Object>> getMinPb(){
+		return finStatementService.getMinPb();
 	}
 }

@@ -218,4 +218,12 @@
   <select id="getNonFinancialStock" resultType="java.lang.String">
        select symbol from stock where code not in (select stockcode from income)
   </select>
+  <select id="getMinMartetCapitial" resultType="com.finreport.model.Stock">
+       SELECT * FROM finstatement.stock s where marketcapital > 0 and code not like '900%' and code not like '200%' and pettm !=0 order by marketcapital asc limit 10
+  </select>
+  
+  <select id="getMinPb" resultType="hashmap">
+       select name,symbol,marketcapital/netassets as pb from stock inner join (select fin.stockcode,totalassets-totalliab as netassets from finindex fin inner join (select max(reportdate) as reportdate, stockcode from finindex group by stockcode) as t on t.stockcode = fin.stockcode and t.reportdate = fin.reportdate) as temp2 on temp2.stockcode = stock.code where (marketcapital/netassets)>0 and marketcapital > 0 and code not like '900%' and code not like '200%' and pettm !=0 order by pb limit 10
+  </select>
+  
 </mapper>

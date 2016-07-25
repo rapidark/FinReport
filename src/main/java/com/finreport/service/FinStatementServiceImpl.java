@@ -3,7 +3,9 @@ package com.finreport.service;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -232,5 +234,20 @@ public class FinStatementServiceImpl implements FinStatementService {
 		}
 		
 		return reducedFinStats;
+	}
+	
+	@Override
+	public List<Map<String, Object>> getIndustryCompanyIndex(@Param("stockcode") String[] stockcode){
+		return finMainIndexMapper.getIndustryCompanyIndex(stockcode);
+	}
+	
+	@Override
+	public List<Stock> getMinMartetCapitial() {
+		return stockMapper.getMinMartetCapitial();
+	}
+	
+	@Override 
+	public List<Map<String, Object>> getMinPb() {
+		return stockMapper.getMinPb();
 	}
 }

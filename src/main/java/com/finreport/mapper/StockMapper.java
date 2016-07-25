@@ -1,6 +1,7 @@
 package com.finreport.mapper;
 
 import java.util.List;
+import java.util.Map;
 
 import com.finreport.model.Stock;
 
@@ -22,4 +23,8 @@ public interface StockMapper {
     int countByCode(String code);
     
     List<String> getNonFinancialStock();
+    
+    List<Stock> getMinMartetCapitial();
+    
+    List<Map<String, Object>> getMinPb();
 }

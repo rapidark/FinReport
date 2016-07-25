@@ -1,7 +1,9 @@
 package com.finreport.service;
 
 import java.util.List;
+import java.util.Map;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.finreport.model.BalSheet;
@@ -58,4 +60,10 @@ public interface FinStatementService {
 	public List<String> getNonfinancialReport();
 	
 	public List<ReducedFinStat> getSpecificFinStatement(String[] codes, List<ReducedFinStat> reducedFinStats, String quarter);
+	
+	public List<Map<String, Object>> getIndustryCompanyIndex(@Param("stockcode") String[] stockcode);
+	
+	public List<Stock> getMinMartetCapitial();
+	
+	public List<Map<String, Object>> getMinPb();
 }

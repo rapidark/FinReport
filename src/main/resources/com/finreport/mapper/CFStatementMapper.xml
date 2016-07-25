@@ -1022,7 +1022,7 @@
   </select>
   
   <select id="selectSpecificColumnByStockcodeAndQuater" resultType="hashmap">
-   select
+   select stockcode,enddate,
    <foreach collection="columns" item="column" separator=",">
     ${column}
    </foreach>

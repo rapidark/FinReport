@@ -1091,7 +1091,7 @@
   </select>
   
   <select id="selectSpecificColumnByStockcodeAndQuater" resultType="hashmap">
-   select
+   select stockcode,reportdate,
     <foreach collection="columns" item="column" separator=",">
       ${column}
     </foreach>

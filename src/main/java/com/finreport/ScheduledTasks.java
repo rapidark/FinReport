@@ -51,7 +51,7 @@ public class ScheduledTasks {
 	@Autowired
 	FinStatementService finStatementService;
 	
-	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
+//	@Scheduled(fixedRate = 24 * 60 * 60 * 1000)
 	public void updateFinancialReportTask() throws InterruptedException {
 		
 		try {
