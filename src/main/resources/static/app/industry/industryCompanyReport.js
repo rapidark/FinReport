@@ -8,7 +8,7 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
         亿: 100000000,
     }
     var table = ['cash', 'balance', 'income', 'finindex'];
-
+    var year = [];
     var tableColumn = {};
 
     var customColumnFormula = {
@@ -116,8 +116,8 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
             dataType: "json",
             contentType: 'application/json;charset=utf-8',
             success: function (data, status, xhr) {
-                var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
-                horizontalScrollTable.appendTo(panel, table);
+                //var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
+                //horizontalScrollTable.appendTo(panel, table);
 
                 var columnDatas = {};
                 $.each(codes, function (i, code) {
@@ -129,11 +129,20 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                         var cumstomDataName = columns[0][columns[1].indexOf(columnName)];
                         $.each(item['data'], function(i, data){
                             var code = data.stockcode;
+                            if(data.enddate != undefined && year.indexOf(data.enddate) == -1) {
+                                year.push(data.enddate);
+                            } else if(data.reportdate != undefined && year.indexOf(data.reportdate) == -1) {
+                                year.push(data.reportdate);
+                            }
                             columnDatas[code][cumstomDataName].push(data[columnName]);
                         })
                     });
                 });
 
+                year.sort();
+                year.reverse();
+
+                console.log(year);
                 $.each(customColumnFormula, function (columnName) {
                     var dataUnit = customColumnFormula[columnName][1];
                     var itemName = unit[dataUnit] == undefined ? columnName : columnName + '(' + dataUnit + ')';
@@ -206,9 +215,20 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                         }
                         var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
                         horizontalScrollTable.appendTo(panel, table);
+                        var row = $('<tr>');
+                        row.append($('<td>').html('公司\\年份'));
+                        for (var i = 0; i< 10; i++) {
+                            if(year.length > i) {
+                                row.append($('<td>').html(year[i]));
+                            }
+
+                        }
+                        table.append(row);
+
                         $.each(temp, function (code, data) {
                             var tRow = $('<tr>');
                             tRow.append($('<td>').html(checkedCompaniesName[codes.indexOf(code)]));
+                            data.reverse();
                             $.each(data, function (i) {
                                 if (i > 10) {
                                     return false;
@@ -233,10 +253,19 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                     } else {
                         var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
                         horizontalScrollTable.appendTo(panel, table);
+                        var row = $('<tr>');
+                        row.append($('<td>').html('公司\\年份'));
+                        for (var i = 0; i< 10; i++) {
+                            if(year.length > i) {
+                                row.append($('<td>').html(year[i]));
+                            }
+
+                        }
+                        table.append(row);
                         $.each(columnDatas, function (code, columnData) {
                             var tRow = $('<tr>');
                             tRow.append($('<td>').html(checkedCompaniesName[codes.indexOf(code)]));
-                            $.each(columnData[customColumnFormula[columnName][0]], function (i) {
+                            $.each(columnData[customColumnFormula[columnName][0]].reverse(), function (i) {
                                 if (i > 10) {
                                     return false;
                                 }
