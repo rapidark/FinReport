@@ -7,7 +7,7 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
         百万: 1000000,
         亿: 100000000,
     }
-    var table = ['cash', 'balance', 'income', 'finindex'];
+    var table = ['income', 'balance', 'cash', 'finindex'];
     var year = [];
     var tableColumn = {};
 
@@ -104,6 +104,54 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
         return value;
     }
 
+    function initIndustryCompanyIndex(panel, codes) {
+        $.ajax({
+            url: "http://localhost:8080/getIndustryCompanyIndex?code=" + codes.join(','),
+            type: 'GET',
+            success: function (data, status, xhr) {
+                var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
+                horizontalScrollTable.appendTo(panel, table);
+                var row = $('<tr>');
+                $.each(industryCompanyColumnName, function (index, columnName) {
+                    var dataUnit = columnName[1];
+                    var td = $('<td>').html(unit[dataUnit] == undefined ? columnName[0] : columnName[0] + '(' + dataUnit + ')');
+                    row.append(td);
+                    table.append(row);
+
+                });
+
+                $.each(data, function (i, item) {
+                    row = $('<tr>');
+                    $.each(industryCompanyColumnName, function (index, columnName) {
+                        var dataUnit = columnName[1];
+                        if (typeof item[index] == "string") {
+                            var td = $('<td>').html(item[index]);
+                        } else {
+                            var cellData = 0;
+                            if (dataUnit == '%') {
+                                cellData = (item[index] * 100).toFixed(2);
+                            } else if (dataUnit != '' && unit[dataUnit] != undefined) {
+                                cellData = (item[index] / unit[dataUnit]).toFixed(2);
+                            } else {
+                                cellData = item[index].toFixed(2);
+                            }
+
+                            var td = $('<td>').html(dataUnit == '%' ? cellData + "%" : cellData);
+                        }
+
+                        row.append(td);
+                    });
+                    table.append(row);
+                });
+
+                horizontalScrollTable.init(table);
+            },
+            error: function (xhr, error, exception) {
+
+            }
+        });
+    }
+
     function render(panel, codes, checkedCompaniesName) {
         panel.empty();
 
@@ -135,7 +183,7 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                                 year.push(data.reportdate);
                                 
                             }
-                            columnDatas[code][cumstomDataName].push([data[columnName], data.enddate != undefined ? data.enddate : data.reportdate]);
+                            columnDatas[code][cumstomDataName].unshift([data[columnName], data.enddate != undefined ? data.enddate : data.reportdate]);
                         })
                     });
                 });
@@ -247,7 +295,6 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                         $.each(temp, function (code, data) {
                             var tRow = $('<tr>');
                             tRow.append($('<td>').html(checkedCompaniesName[codes.indexOf(code)]));
-                            data.reverse();
                             var index = 0;
                             for(var i = 0; i< 10; i++) {
                                 if(data.length == 0 || data.length <= index || year[i] > data[index] || data[index][0] == '-') {
@@ -294,18 +341,16 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                             var index = 0;
                             console.log(data[columnName]);
                             for(var i = 0; i< 10; i++) {
-                                if(data[columnName].length == 0 || data[columnName].length <= index || year[i] > data[columnName][index]) {
+                                if(data[columnName].length == 0 || data[columnName].length <= index || year[i] > data[columnName][index][1]) {
                                     tRow.append($('<td>').html("-"));
                                     continue;
                                 }
-                                
+
                                 var cellData = 0;
 
                                 if (dataUnit == '%') {
                                     cellData = parseFloat(data[columnName][index][0]).toFixed(2);
                                 } else if (dataUnit != '' && unit[dataUnit] != undefined) {
-                                    console.log(columnName);
-                                    console.log(index);
                                     cellData = (parseFloat(data[columnName][index][0]) / unit[dataUnit]).toFixed(2);
                                 } else {
                                     cellData = parseFloat(data[columnName][index][0]).toFixed(2);
@@ -328,54 +373,6 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
             }
         });
 
-    }
-
-    function initIndustryCompanyIndex(panel, codes) {
-        $.ajax({
-            url: "http://localhost:8080/getIndustryCompanyIndex?code=" + codes.join(','),
-            type: 'GET',
-            success: function (data, status, xhr) {
-                var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
-                horizontalScrollTable.appendTo(panel, table);
-                var row = $('<tr>');
-                $.each(industryCompanyColumnName, function (index, columnName) {
-                    var dataUnit = columnName[1];
-                    var td = $('<td>').html(unit[dataUnit] == undefined ? columnName[0] : columnName[0] + '(' + dataUnit + ')');
-                    row.append(td);
-                    table.append(row);
-
-                });
-
-                $.each(data, function (i, item) {
-                    row = $('<tr>');
-                    $.each(industryCompanyColumnName, function (index, columnName) {
-                        var dataUnit = columnName[1];
-                        if (typeof item[index] == "string") {
-                            var td = $('<td>').html(item[index]);
-                        } else {
-                            var cellData = 0;
-                            if (dataUnit == '%') {
-                                cellData = (item[index] * 100).toFixed(2);
-                            } else if (dataUnit != '' && unit[dataUnit] != undefined) {
-                                cellData = (item[index] / unit[dataUnit]).toFixed(2);
-                            } else {
-                                cellData = item[index].toFixed(2);
-                            }
-
-                            var td = $('<td>').html(dataUnit == '%' ? cellData + "%" : cellData);
-                        }
-
-                        row.append(td);
-                    });
-                    table.append(row);
-                });
-
-                horizontalScrollTable.init(table);
-            },
-            error: function (xhr, error, exception) {
-
-            }
-        });
     }
 
     return {

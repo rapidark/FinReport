@@ -220,16 +220,18 @@ public class FinStatementServiceImpl implements FinStatementService {
 	@Override
 	public List<ReducedFinStat> getSpecificFinStatement(String[] codes, List<ReducedFinStat> reducedFinStats, String quarter) {
 		for (ReducedFinStat reducedFinStat : reducedFinStats) {
-			if(reducedFinStat.getTable().equals(cash)) {
-				reducedFinStat.setData(cfStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
-			} else if (reducedFinStat.getTable().equals(balance)) {
-				reducedFinStat.setData(balSheetMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
-			} else if (reducedFinStat.getTable().equals(income)) {
-				reducedFinStat.setData(incStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
-			} else if(reducedFinStat.getTable().equals(finindex)) {
-				reducedFinStat.setData(finMainIndexMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
-			} else {
-				// to do nothing.
+			if(reducedFinStat.getColumns() != null && reducedFinStat.getColumns().size() > 0) {
+				if(reducedFinStat.getTable().equals(cash)) {
+					reducedFinStat.setData(cfStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
+				} else if (reducedFinStat.getTable().equals(balance)) {
+					reducedFinStat.setData(balSheetMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
+				} else if (reducedFinStat.getTable().equals(income)) {
+					reducedFinStat.setData(incStatementMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
+				} else if(reducedFinStat.getTable().equals(finindex)) {
+					reducedFinStat.setData(finMainIndexMapper.selectSpecificColumnByStockcodeAndQuater(reducedFinStat.getColumns(), codes, beginYear, quarter));
+				} else {
+					// to do nothing.
+				}
 			}
 		}
 		
