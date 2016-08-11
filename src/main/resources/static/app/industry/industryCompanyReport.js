@@ -109,7 +109,7 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
             url: "http://localhost:8080/getIndustryCompanyIndex?code=" + codes.join(','),
             type: 'GET',
             success: function (data, status, xhr) {
-                var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
+                var table = $('<table class="table table-bordered table-striped table-condensed">');
                 horizontalScrollTable.appendTo(panel, table);
                 var row = $('<tr>');
                 $.each(industryCompanyColumnName, function (index, columnName) {
@@ -117,7 +117,6 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                     var td = $('<td>').html(unit[dataUnit] == undefined ? columnName[0] : columnName[0] + '(' + dataUnit + ')');
                     row.append(td);
                     table.append(row);
-
                 });
 
                 $.each(data, function (i, item) {
@@ -281,20 +280,20 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                                 stack.unshift(formula.shift());
                             }
                         }
-                        var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
+                        var table = $('<table class="table table-bordered table-striped table-condensed">');
                         horizontalScrollTable.appendTo(panel, table);
                         var row = $('<tr>');
-                        row.append($('<td>').html('公司\\年份'));
+                        row.append($('<th>').html('公司\\年份'));
                         for (var i = 0; i< 10; i++) {
                             if(year.length > i) {
-                                row.append($('<td>').html(year[i]));
+                                row.append($('<th>').html(year[i]));
                             }
 
                         }
-                        table.append(row);
+                        table.append($('<thead>').append(row));
                         $.each(temp, function (code, data) {
                             var tRow = $('<tr>');
-                            tRow.append($('<td>').html(checkedCompaniesName[codes.indexOf(code)]));
+                            tRow.append($('<th>').html(checkedCompaniesName[codes.indexOf(code)]));
                             var index = 0;
                             for(var i = 0; i< 10; i++) {
                                 if(data.length == 0 || data.length <= index || year[i] > data[index] || data[index][0] == '-') {
@@ -323,21 +322,21 @@ define(['jquery', 'common/horizontalScrollTable', 'company/parser', 'data/finsta
                         });
                         horizontalScrollTable.init(table);
                     } else {
-                        var table = $('<table id="table" class="table table-bordered table-striped table-condensed">');
+                        var table = $('<table class="table table-bordered table-striped table-condensed">');
                         horizontalScrollTable.appendTo(panel, table);
                         var row = $('<tr>');
-                        row.append($('<td>').html('公司\\年份'));
+                        row.append($('<th>').html('公司\\年份'));
                         for (var i = 0; i< 10; i++) {
                             if(year.length > i) {
-                                row.append($('<td>').html(year[i]));
+                                row.append($('<th>').html(year[i]));
                             }
 
                         }
-                        table.append(row);
+                        table.append($('<thead>').append(row));
                         var columnName = customColumnFormula[columnName][0];
                         $.each(columnDatas, function (code, data) {
                             var tRow = $('<tr>');
-                            tRow.append($('<td>').html(checkedCompaniesName[codes.indexOf(code)]));
+                            tRow.append($('<th>').html(checkedCompaniesName[codes.indexOf(code)]));
                             var index = 0;
                             console.log(data[columnName]);
                             for(var i = 0; i< 10; i++) {
